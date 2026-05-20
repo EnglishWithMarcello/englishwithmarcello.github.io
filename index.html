@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --aqua:       #ADDFE4;
+    --aqua-dark:  #7ECDD4;
+    --aqua-deep:  #4AADB5;
+    --navy:       #192A88;
+    --navy-dark:  #101C60;
+    --navy-mid:   #1F35A8;
+    --red:        #D2281A;
+    --pink:       #F1CAC9;
+    --white:      #FFFFFF;
+    --off-white:  #F7F9FA;
+    --light-bg:   #EEF9FA;
+    --muted:      #5A6A9A;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body:    'DM Sans', sans-serif;
+  }
+
+  body {
+    background: var(--white);
+    color: var(--navy);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2.5rem;
+    border-bottom: 2px solid var(--aqua);
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+  }
+  .nav-logo { font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 2px; color: var(--navy); }
+  .nav-logo span { color: var(--aqua-deep); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta { background: var(--navy); color: var(--white); border: none; padding: 0.65rem 1.4rem; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: transform 0.15s, background 0.2s; }
+  .nav-cta:hover { background: var(--navy-dark); transform: scale(1.03); }
+
+  /* HERO */
+  .hero { padding: 5rem 2.5rem 4rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; max-width: 1200px; margin: 0 auto; min-height: 82vh; }
+  .hero-tag { display: inline-block; background: var(--red); color: var(--white); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; padding: 0.35rem 0.9rem; margin-bottom: 1.5rem; }
+  .hero-title { font-family: var(--font-display); font-size: clamp(5rem, 10vw, 9rem); line-height: 0.92; letter-spacing: 2px; margin-bottom: 1.5rem; text-transform: uppercase; color: var(--navy); }
+  .hero-title span { color: var(--aqua-deep); display: block; }
+  .hero-subtitle { color: var(--muted); font-size: 1.05rem; max-width: 420px; margin-bottom: 2.5rem; line-height: 1.75; }
+  .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary { background: var(--navy); color: var(--white); border: none; padding: 1rem 2rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: transform 0.15s, background 0.2s; }
+  .btn-primary:hover { background: var(--navy-dark); transform: translateY(-2px); }
+  .btn-outline { background: transparent; color: var(--navy); border: 1.5px solid var(--aqua-dark); padding: 1rem 2rem; font-weight: 500; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: border-color 0.2s, color 0.2s, background 0.2s; }
+  .btn-outline:hover { border-color: var(--navy); background: var(--aqua); color: var(--navy); }
+
+  /* STAT CARDS */
+  .stat-stack { display: flex; flex-direction: column; gap: 1rem; }
+  .stat-card { background: var(--navy); border-left: 4px solid var(--aqua); padding: 1.5rem; display: flex; align-items: center; gap: 1.5rem; transition: border-left-color 0.2s, transform 0.2s; }
+  .stat-card:hover { border-left-color: var(--red); transform: translateX(4px); }
+  .stat-num { font-family: var(--font-display); font-size: 3.2rem; color: var(--aqua); line-height: 1; min-width: 90px; }
+  .stat-label { font-size: 0.85rem; color: #8A9FCC; line-height: 1.5; }
+  .stat-label strong { display: block; color: var(--white); font-size: 1rem; margin-bottom: 2px; }
+  .flag-row { display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap; }
+  .flag { background: var(--light-bg); border: 1px solid var(--aqua); padding: 0.4rem 0.8rem; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; color: var(--navy); font-weight: 500; }
+
+  /* TICKER */
+  .ticker { background: var(--aqua); padding: 0.85rem 0; overflow: hidden; white-space: nowrap; }
+  .ticker-inner { display: inline-flex; animation: ticker 20s linear infinite; }
+  .ticker-item { color: var(--navy); font-family: var(--font-display); font-size: 1.3rem; letter-spacing: 3px; padding-right: 3rem; }
+  .ticker-dot { color: var(--navy); opacity: 0.4; padding-right: 3rem; font-family: var(--font-display); font-size: 1.3rem; }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* SECTIONS */
+  .section { padding: 5rem 2.5rem; max-width: 1200px; margin: 0 auto; }
+  .section-label { font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase; color: var(--aqua-deep); font-weight: 700; margin-bottom: 1rem; }
+  .section-title { font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5rem); line-height: 0.95; text-transform: uppercase; margin-bottom: 2rem; color: var(--navy); }
+
+  /* ABOUT */
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .about-text p { color: var(--muted); margin-bottom: 1.2rem; line-height: 1.8; font-size: 1rem; }
+  .cert-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
+  .cert-pill { border: 1.5px solid var(--navy); color: var(--navy); padding: 0.35rem 0.9rem; font-size: 0.75rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; transition: background 0.2s, color 0.2s; cursor: default; }
+  .cert-pill:hover { background: var(--navy); color: var(--white); }
+  .quote-block { background: var(--navy); border-left: 4px solid var(--aqua); padding: 2rem; margin-top: 1rem; }
+  .quote-block blockquote { font-size: 1.05rem; color: var(--white); line-height: 1.7; font-style: italic; margin-bottom: 1rem; }
+  .quote-author { font-size: 0.8rem; color: var(--aqua); letter-spacing: 1px; text-transform: uppercase; }
+
+  /* SERVICES */
+  .services-section { background: var(--navy); padding: 5rem 2.5rem; }
+  .services-inner { max-width: 1200px; margin: 0 auto; }
+  .services-inner .section-label { color: var(--aqua); }
+  .services-inner .section-title { color: var(--white); }
+  .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--navy-mid); border: 1px solid var(--navy-mid); margin-top: 3rem; }
+  .service-card { background: var(--navy); padding: 2.5rem; transition: background 0.2s; cursor: default; position: relative; overflow: hidden; }
+  .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--aqua); transition: height 0.3s ease; }
+  .service-card:hover { background: var(--navy-dark); }
+  .service-card:hover::before { height: 100%; }
+  .service-num { font-family: var(--font-display); font-size: 3rem; color: var(--navy-mid); line-height: 1; margin-bottom: 1rem; transition: color 0.3s; }
+  .service-card:hover .service-num { color: var(--aqua); }
+  .service-name { font-weight: 700; font-size: 1.05rem; margin-bottom: 0.5rem; letter-spacing: 0.5px; text-transform: uppercase; color: var(--white); }
+  .service-desc { color: #8A9FCC; font-size: 0.9rem; line-height: 1.7; }
+
+  /* STEPS */
+  .steps-section { background: var(--light-bg); padding: 5rem 2.5rem; }
+  .steps-inner { max-width: 1200px; margin: 0 auto; }
+  .steps-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+  .step { display: flex; flex-direction: column; gap: 1rem; }
+  .step-num { font-family: var(--font-display); font-size: 5rem; color: var(--aqua-deep); line-height: 1; }
+  .step-divider { width: 40px; height: 3px; background: var(--navy); }
+  .step-title { font-weight: 700; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 1px; color: var(--navy); }
+  .step-desc { color: var(--muted); font-size: 0.9rem; line-height: 1.7; }
+
+  /* REVIEWS */
+  .reviews-section { background: var(--white); padding: 5rem 2.5rem; }
+  .reviews-inner { max-width: 1200px; margin: 0 auto; }
+  .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .review-card { background: var(--white); border: 1.5px solid var(--aqua); padding: 2rem; transition: border-color 0.2s, transform 0.2s, background 0.2s; }
+  .review-card:hover { border-color: var(--navy); transform: translateY(-4px); background: var(--light-bg); }
+  .stars { color: var(--aqua-deep); font-size: 1rem; margin-bottom: 1rem; letter-spacing: 2px; }
+  .review-text { color: var(--muted); font-size: 0.9rem; line-height: 1.75; margin-bottom: 1.5rem; font-style: italic; }
+  .review-author { font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--navy); }
+  .review-date { color: #8A9FCC; font-size: 0.75rem; margin-top: 2px; }
+
+  /* PINK BAND */
+  .pink-band { background: var(--pink); padding: 3rem 2.5rem; text-align: center; }
+  .pink-band p { color: var(--navy); font-size: 1.1rem; max-width: 600px; margin: 0 auto 1.5rem; font-weight: 500; }
+
+  /* CTA BAND */
+  .cta-band { background: var(--navy); padding: 5rem 2.5rem; text-align: center; position: relative; overflow: hidden; }
+  .cta-band::before { content: 'EWM'; position: absolute; font-family: var(--font-display); font-size: 18rem; color: rgba(173,223,228,0.05); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; letter-spacing: 10px; }
+  .cta-title { font-family: var(--font-display); font-size: clamp(3.5rem, 8vw, 7rem); color: var(--white); line-height: 0.9; text-transform: uppercase; margin-bottom: 1rem; }
+  .cta-title span { color: var(--aqua); }
+  .cta-sub { color: #8A9FCC; font-size: 1.05rem; max-width: 500px; margin: 0 auto 2.5rem; line-height: 1.7; }
+  .btn-aqua { background: var(--aqua); color: var(--navy); border: none; padding: 1.1rem 2.5rem; font-weight: 700; font-size: 0.9rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: transform 0.15s, background 0.2s; }
+  .btn-aqua:hover { background: var(--aqua-dark); transform: scale(1.04); }
+
+  /* FOOTER */
+  footer { background: var(--navy-dark); border-top: 3px solid var(--aqua); padding: 3rem 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .footer-logo { font-family: var(--font-display); font-size: 1.6rem; letter-spacing: 3px; color: var(--white); }
+  .footer-logo span { color: var(--aqua); }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a { color: #8A9FCC; text-decoration: none; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--aqua); }
+  .footer-copy { color: #3D5070; font-size: 0.75rem; }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+  .animate { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.25s; }
+  .delay-3 { animation-delay: 0.4s; }
+  .delay-4 { animation-delay: 0.55s; }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.2rem; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; padding: 3rem 1.2rem; min-height: auto; }
+    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .services-grid { grid-template-columns: 1fr; }
+    .steps-row { grid-template-columns: 1fr; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; text-align: center; }
+    .footer-links { flex-wrap: wrap; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">ENGLISH WITH <span>MARCELLO</span></div>
+  <ul class="nav-links">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Lessons</a></li>
+    <li><a href="#">Reviews</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Content</a></li>
+  </ul>
+  <button class="nav-cta">Book Free Lesson</button>
+</nav>
+
+<section style="max-width:1200px;margin:0 auto;">
+  <div class="hero">
+    <div class="hero-left">
+      <div class="hero-tag animate delay-1">Native English Teacher · Canada</div>
+      <h1 class="hero-title animate delay-2">
+        SPEAK
+        <span>ENGLISH.</span>
+        NOW.
+      </h1>
+      <p class="hero-subtitle animate delay-3">Online lessons with Marcello — a native Canadian teacher now based in Italy. Real communication. Real confidence. Real results.</p>
+      <div class="hero-buttons animate delay-4">
+        <button class="btn-primary">Book Free Trial</button>
+        <button class="btn-outline">See Lesson Plans</button>
+      </div>
+    </div>
+    <div class="hero-right animate delay-2">
+      <div class="stat-stack">
+        <div class="stat-card">
+          <div class="stat-num">100%</div>
+          <div class="stat-label"><strong>Native Speaker</strong>Born and raised in Canada — authentic accent and idioms</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3x</div>
+          <div class="stat-label"><strong>Certified Teacher</strong>TESOL · TESL · TEFL qualified</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">★ 5.0</div>
+          <div class="stat-label"><strong>Student Reviews</strong>Praised for warmth, clarity and real results</div>
+        </div>
+      </div>
+      <div class="flag-row">
+        <span class="flag">🇨🇦 Canadian English</span>
+        <span class="flag">🇺🇸 American English</span>
+        <span class="flag">🇬🇧 British English</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">SPEAK WITH CONFIDENCE</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">IELTS · TOEFL · CAMBRIDGE</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">ONLINE & IN PERSON</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">FREE TRIAL LESSON</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">A1 TO C2 ALL LEVELS</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">SPEAK WITH CONFIDENCE</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">IELTS · TOEFL · CAMBRIDGE</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">ONLINE & IN PERSON</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">FREE TRIAL LESSON</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">A1 TO C2 ALL LEVELS</span><span class="ticker-dot">·</span>
+  </div>
+</div>
+
+<section class="section">
+  <div class="about-grid">
+    <div class="about-text">
+      <p class="section-label">About Marcello</p>
+      <h2 class="section-title">FROM CANADA<br>TO YOUR SCREEN</h2>
+      <p>I'm Marcello — a native English teacher born and raised in Canada, now living in Italy. I know what it's like to learn a language from scratch, which is why my lessons are built on real communication, not textbook repetition.</p>
+      <p>My approach focuses on speaking, listening, and pronunciation — with grammar and exam prep woven in where you need it. I speak Italian fluently, so I can bridge the gap if you're an Italian learner.</p>
+      <div class="cert-row">
+        <span class="cert-pill">TESOL</span>
+        <span class="cert-pill">TESL</span>
+        <span class="cert-pill">TEFL</span>
+        <span class="cert-pill">IELTS Prep</span>
+        <span class="cert-pill">Cambridge</span>
+      </div>
+    </div>
+    <div>
+      <div class="quote-block">
+        <blockquote>"Before being a teacher, Marcello is a friend. Right from the start, he made me feel at ease and helped me with my goals. The progress has been remarkable."</blockquote>
+        <div class="quote-author">— Gianluca, January 2025</div>
+      </div>
+      <div class="quote-block" style="margin-top:1rem; border-left-color: var(--red);">
+        <blockquote>"Lessons with him feel like a 5-minute talk with your best friend. He has a great accent and is as understandable as can be."</blockquote>
+        <div class="quote-author">— Gleb, July 2024</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="services-section">
+  <div class="services-inner">
+    <p class="section-label">What I Offer</p>
+    <h2 class="section-title">LESSON TYPES</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <div class="service-name">Conversation</div>
+        <div class="service-desc">Improve your speaking fluency and confidence through practical, fun sessions focused on real-life communication.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <div class="service-name">Standard (A1–C2)</div>
+        <div class="service-desc">Develop your grammar, reading, and writing. Structured lessons suitable for all levels from absolute beginner to advanced.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <div class="service-name">Shadowing & Pronunciation</div>
+        <div class="service-desc">Sharpen your accent and listening comprehension with targeted shadowing exercises used by professional language coaches.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <div class="service-name">Exam Preparation</div>
+        <div class="service-desc">Structured guidance for IELTS, TOEFL, and Cambridge exams — practice tests, strategies, and confidence-building sessions.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="steps-section">
+  <div class="steps-inner">
+    <p class="section-label">Getting Started</p>
+    <h2 class="section-title">THREE STEPS<br>TO FLUENCY</h2>
+    <div class="steps-row">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-divider"></div>
+        <div class="step-title">Take the Level Test</div>
+        <div class="step-desc">A quick English level test helps Marcello understand exactly where you are and where you want to go.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-divider"></div>
+        <div class="step-title">Book Your Free Trial</div>
+        <div class="step-desc">No commitment. No cost. Just a real lesson so you can feel the difference for yourself.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-divider"></div>
+        <div class="step-title">Start Speaking</div>
+        <div class="step-desc">Get a personalized lesson plan and start building real confidence in English — from the very first session.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="reviews-section">
+  <div class="reviews-inner">
+    <p class="section-label">Student Testimonials</p>
+    <h2 class="section-title">WHAT STUDENTS SAY</h2>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">"Before being a teacher, Marcello is a friend. The progress has been remarkable, and thanks to his approach, I can now speak English fluently."</div>
+        <div class="review-author">Gianluca</div>
+        <div class="review-date">January 2025</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">"It's always a pleasure to learn English with Marcello. He always brings positive energy and I am very proud of every step I've taken."</div>
+        <div class="review-author">Nathanaël</div>
+        <div class="review-date">December 2024</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">"Lessons feel like a 5-minute talk with your best friend. After a few months I'm sure I will pass IELTS. If you're scrolling for a reason — book the lesson."</div>
+        <div class="review-author">Gleb</div>
+        <div class="review-date">July 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pink-band">
+  <p>Practice your English with free grammar quizzes, vocabulary exercises, and real-life examples — from A1 to C2.</p>
+  <button class="btn-primary">Access Free Resources</button>
+</div>
+
+<div class="cta-band">
+  <h2 class="cta-title">READY TO<br><span>START?</span></h2>
+  <p class="cta-sub">Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence.</p>
+  <button class="btn-aqua">Book Your Free Lesson Now</button>
+</div>
+
+<footer>
+  <div class="footer-logo">ENGLISH WITH <span>MARCELLO</span></div>
+  <div class="footer-links">
+    <a href="#">LinkedIn</a>
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+    <a href="#">TikTok</a>
+    <a href="#">Facebook</a>
+  </div>
+  <div class="footer-copy">info@englishwithmarcello.com · +39 338 746 2067</div>
+</footer>
+
+</body>
+</html>

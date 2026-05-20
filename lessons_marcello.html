@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --aqua: #ADDFE4; --aqua-dark: #7ECDD4; --aqua-deep: #4AADB5;
+    --navy: #192A88; --navy-dark: #101C60; --navy-mid: #1F35A8;
+    --red: #D2281A; --pink: #F1CAC9; --white: #FFFFFF;
+    --light-bg: #EEF9FA; --muted: #5A6A9A;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+  body { background: var(--white); color: var(--navy); font-family: var(--font-body); overflow-x: hidden; font-size: 16px; line-height: 1.6; }
+
+  /* NAV */
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 2.5rem; border-bottom: 2px solid var(--aqua); position: sticky; top: 0; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); z-index: 100; }
+  .nav-logo { font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 2px; color: var(--navy); }
+  .nav-logo span { color: var(--aqua-deep); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta { background: var(--navy); color: var(--white); border: none; padding: 0.65rem 1.4rem; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: transform 0.15s, background 0.2s; }
+  .nav-cta:hover { background: var(--navy-dark); transform: scale(1.03); }
+
+  /* PAGE HERO */
+  .page-hero { background: var(--navy); padding: 5rem 2.5rem; position: relative; overflow: hidden; }
+  .page-hero::before { content: 'LESSONS'; position: absolute; font-family: var(--font-display); font-size: 14rem; color: rgba(173,223,228,0.05); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; letter-spacing: 10px; white-space: nowrap; }
+  .page-hero-inner { max-width: 1200px; margin: 0 auto; position: relative; }
+  .page-tag { display: inline-block; background: var(--red); color: var(--white); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; padding: 0.35rem 0.9rem; margin-bottom: 1.5rem; }
+  .page-title { font-family: var(--font-display); font-size: clamp(4rem, 10vw, 8rem); line-height: 0.92; color: var(--white); text-transform: uppercase; margin-bottom: 1.5rem; }
+  .page-title span { color: var(--aqua); display: block; }
+  .page-subtitle { color: #8A9FCC; font-size: 1.05rem; max-width: 580px; line-height: 1.75; margin-bottom: 2rem; }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-aqua { background: var(--aqua); color: var(--navy); border: none; padding: 1rem 2rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: transform 0.15s, background 0.2s; text-decoration: none; display: inline-block; }
+  .btn-aqua:hover { background: var(--aqua-dark); transform: translateY(-2px); }
+  .btn-outline-white { background: transparent; color: var(--white); border: 1.5px solid rgba(173,223,228,0.5); padding: 1rem 2rem; font-weight: 500; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: border-color 0.2s, background 0.2s; text-decoration: none; display: inline-block; }
+  .btn-outline-white:hover { border-color: var(--aqua); background: rgba(173,223,228,0.08); }
+
+  /* TICKER */
+  .ticker { background: var(--aqua); padding: 0.85rem 0; overflow: hidden; white-space: nowrap; }
+  .ticker-inner { display: inline-flex; animation: ticker 22s linear infinite; }
+  .ticker-item { color: var(--navy); font-family: var(--font-display); font-size: 1.3rem; letter-spacing: 3px; padding-right: 3rem; }
+  .ticker-dot { color: var(--navy); opacity: 0.4; padding-right: 3rem; font-family: var(--font-display); font-size: 1.3rem; }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* SECTION COMMONS */
+  .section { padding: 5rem 2.5rem; max-width: 1200px; margin: 0 auto; }
+  .section-label { font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase; color: var(--aqua-deep); font-weight: 700; margin-bottom: 1rem; }
+  .section-title { font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5rem); line-height: 0.95; text-transform: uppercase; margin-bottom: 2rem; color: var(--navy); }
+
+  /* FORMATS */
+  .formats-section { background: var(--light-bg); padding: 5rem 2.5rem; }
+  .formats-inner { max-width: 1200px; margin: 0 auto; }
+  .formats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
+  .format-card { background: var(--navy); border-left: 4px solid var(--aqua); padding: 2.5rem; transition: border-left-color 0.2s, transform 0.2s; position: relative; overflow: hidden; }
+  .format-card:hover { border-left-color: var(--red); transform: translateX(4px); }
+  .format-card.group { border-left-color: var(--aqua-deep); }
+  .format-type { font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; color: var(--aqua); font-weight: 700; margin-bottom: 0.75rem; }
+  .format-name { font-family: var(--font-display); font-size: 3rem; color: var(--white); line-height: 1; margin-bottom: 1rem; }
+  .format-desc { color: #8A9FCC; font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem; }
+  .format-cta { display: inline-block; background: transparent; border: 1.5px solid rgba(173,223,228,0.35); color: var(--aqua); padding: 0.6rem 1.2rem; font-size: 0.75rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; font-family: var(--font-body); cursor: pointer; text-decoration: none; transition: background 0.2s, border-color 0.2s; }
+  .format-cta:hover { background: rgba(173,223,228,0.1); border-color: var(--aqua); }
+
+  /* LESSONS GRID */
+  .lessons-section { background: var(--white); padding: 5rem 2.5rem; }
+  .lessons-inner { max-width: 1200px; margin: 0 auto; }
+  .lessons-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: #e0eef0; border: 1px solid #e0eef0; margin-top: 3rem; }
+
+  .lesson-card { background: var(--white); padding: 2.5rem; position: relative; overflow: hidden; transition: background 0.2s; cursor: default; }
+  .lesson-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--aqua-deep); transition: height 0.3s ease; }
+  .lesson-card:hover { background: var(--light-bg); }
+  .lesson-card:hover::before { height: 100%; }
+  .lesson-card.full-width { grid-column: 1 / -1; }
+
+  .lesson-num { font-family: var(--font-display); font-size: 3rem; color: #d0e8ea; line-height: 1; margin-bottom: 0.75rem; transition: color 0.3s; }
+  .lesson-card:hover .lesson-num { color: var(--aqua-deep); }
+  .lesson-badge { display: inline-flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
+  .badge-pill { font-size: 0.68rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; padding: 0.25rem 0.7rem; border-radius: 0; }
+  .badge-level { background: var(--navy); color: var(--aqua); }
+  .badge-type { background: var(--light-bg); color: var(--aqua-deep); border: 1px solid var(--aqua); }
+  .lesson-name { font-family: var(--font-display); font-size: 2rem; color: var(--navy); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; line-height: 1.1; }
+  .lesson-skill { font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: var(--aqua-deep); font-weight: 700; margin-bottom: 0.75rem; }
+  .lesson-desc { color: var(--muted); font-size: 0.9rem; line-height: 1.7; }
+
+  /* STANDARD sub-cards */
+  .standard-sub { margin-top: 1.5rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .sub-card { border: 1.5px solid var(--aqua); padding: 1.2rem; transition: border-color 0.2s, background 0.2s; }
+  .sub-card:hover { border-color: var(--navy); background: rgba(173,223,228,0.07); }
+  .sub-level { font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase; color: var(--aqua-deep); font-weight: 700; margin-bottom: 0.4rem; }
+  .sub-name { font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--navy); margin-bottom: 0.35rem; }
+  .sub-range { font-size: 0.75rem; color: var(--muted); }
+
+  /* PINK BAND */
+  .pink-band { background: var(--pink); padding: 3rem 2.5rem; text-align: center; }
+  .pink-band p { color: var(--navy); font-size: 1.05rem; max-width: 600px; margin: 0 auto 1.5rem; font-weight: 500; line-height: 1.7; }
+  .btn-navy { background: var(--navy); color: var(--white); border: none; padding: 1rem 2rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: transform 0.15s, background 0.2s; text-decoration: none; display: inline-block; }
+  .btn-navy:hover { background: var(--navy-dark); transform: translateY(-2px); }
+
+  /* CTA BAND */
+  .cta-band { background: var(--navy); padding: 5rem 2.5rem; text-align: center; position: relative; overflow: hidden; }
+  .cta-band::before { content: 'EWM'; position: absolute; font-family: var(--font-display); font-size: 18rem; color: rgba(173,223,228,0.05); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; letter-spacing: 10px; }
+  .cta-title { font-family: var(--font-display); font-size: clamp(3.5rem, 8vw, 7rem); color: var(--white); line-height: 0.9; text-transform: uppercase; margin-bottom: 1rem; }
+  .cta-title span { color: var(--aqua); }
+  .cta-sub { color: #8A9FCC; font-size: 1.05rem; max-width: 500px; margin: 0 auto 2.5rem; line-height: 1.7; }
+
+  /* FOOTER */
+  footer { background: var(--navy-dark); border-top: 3px solid var(--aqua); padding: 3rem 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .footer-logo { font-family: var(--font-display); font-size: 1.6rem; letter-spacing: 3px; color: var(--white); }
+  .footer-logo span { color: var(--aqua); }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a { color: #8A9FCC; text-decoration: none; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--aqua); }
+  .footer-copy { color: #3D5070; font-size: 0.75rem; }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+  .animate { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.25s; } .delay-3 { animation-delay: 0.4s; }
+
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.2rem; } .nav-links { display: none; }
+    .formats-grid, .lessons-grid { grid-template-columns: 1fr; }
+    .lesson-card.full-width { grid-column: 1; }
+    .standard-sub { grid-template-columns: 1fr; }
+    footer { flex-direction: column; text-align: center; }
+    .footer-links { flex-wrap: wrap; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">ENGLISH WITH <span>MARCELLO</span></div>
+  <ul class="nav-links">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Lessons</a></li>
+    <li><a href="#">Reviews</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Content</a></li>
+  </ul>
+  <button class="nav-cta">Book Free Lesson</button>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-tag animate delay-1">English Courses · All Levels</div>
+    <h1 class="page-title animate delay-2">
+      MY
+      <span>LESSONS</span>
+    </h1>
+    <p class="page-subtitle animate delay-3">Courses designed to help you develop your language skills in a practical and engaging way. After an initial assessment test, we will create a personalized study plan to maximize your progress.</p>
+    <div class="hero-actions animate delay-3">
+      <a href="https://www.englishwithmarcello.com/_files/ugd/ac4bed_2df143523a75467b963aa82d7162c3ea.pdf" target="_blank" class="btn-aqua">📄 Download Price List</a>
+      <a href="https://www.englishwithmarcello.com/waiting-list" target="_blank" class="btn-outline-white">Join the Waiting List</a>
+    </div>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">INDIVIDUAL & GROUP</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">CONVERSATION · GRAMMAR · PRONUNCIATION</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">IELTS · TOEFL · CAMBRIDGE</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">A1 TO C2 ALL LEVELS</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">FREE TRIAL LESSON</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">INDIVIDUAL & GROUP</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">CONVERSATION · GRAMMAR · PRONUNCIATION</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">IELTS · TOEFL · CAMBRIDGE</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">A1 TO C2 ALL LEVELS</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">FREE TRIAL LESSON</span><span class="ticker-dot">·</span>
+  </div>
+</div>
+
+<!-- FORMATS -->
+<div class="formats-section">
+  <div class="formats-inner">
+    <p class="section-label">Lesson Formats</p>
+    <h2 class="section-title">HOW WE WORK</h2>
+    <div class="formats-grid">
+      <div class="format-card">
+        <div class="format-type">Format 01</div>
+        <div class="format-name">INDIVIDUAL</div>
+        <div class="format-desc">Tailored lessons built entirely around your needs and goals. Your pace, your topics, your progress — fully personalized from day one.</div>
+        <a href="#" class="format-cta">Book Free Trial →</a>
+      </div>
+      <div class="format-card group">
+        <div class="format-type">Format 02</div>
+        <div class="format-name">GROUP<br>5–8 People</div>
+        <div class="format-desc">Join a group once a week, learn and make new friends! A dynamic, collaborative environment that keeps you motivated and engaged.</div>
+        <a href="https://www.englishwithmarcello.com/waiting-list" target="_blank" class="format-cta">Join the Waiting List →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AVAILABLE LESSONS -->
+<div class="lessons-section">
+  <div class="lessons-inner">
+    <p class="section-label">Available Lessons</p>
+    <h2 class="section-title">LESSON TYPES</h2>
+    <div class="lessons-grid">
+
+      <!-- CONVERSATION -->
+      <div class="lesson-card">
+        <div class="lesson-num">01</div>
+        <div class="lesson-badge">
+          <span class="badge-pill badge-level">B1 – C2</span>
+          <span class="badge-pill badge-type">Speaking</span>
+        </div>
+        <div class="lesson-name">Conversation</div>
+        <div class="lesson-skill">Speaking & Fluency</div>
+        <div class="lesson-desc">Boost your English communication with dynamic, hands-on lessons that build fluency, confidence, and natural expression. Real topics, real conversations.</div>
+      </div>
+
+      <!-- SHADOWING -->
+      <div class="lesson-card">
+        <div class="lesson-num">04</div>
+        <div class="lesson-badge">
+          <span class="badge-pill badge-level">B1 – C2</span>
+          <span class="badge-pill badge-type">Pronunciation</span>
+        </div>
+        <div class="lesson-name">Shadowing</div>
+        <div class="lesson-skill">Pronunciation & Comprehension</div>
+        <div class="lesson-desc">Improve your pronunciation, rhythm, and fluency with the shadowing technique: repeat a native speaker's speech in real time to make your English clearer, more natural, and more fluent.</div>
+      </div>
+
+      <!-- STANDARD – full width -->
+      <div class="lesson-card full-width">
+        <div class="lesson-num">02</div>
+        <div class="lesson-badge">
+          <span class="badge-pill badge-level">A1 – C2</span>
+          <span class="badge-pill badge-type">Grammar & All Four Skills</span>
+        </div>
+        <div class="lesson-name">Standard</div>
+        <div class="lesson-skill">Grammar, Reading, Writing, Listening</div>
+        <div class="lesson-desc">Structured lessons for every level — develop all four language skills with a course built around where you are now and where you want to go.</div>
+        <div class="standard-sub">
+          <div class="sub-card">
+            <div class="sub-level">A1 – A2</div>
+            <div class="sub-name">Beginner English</div>
+            <div class="sub-range">Develop foundational English skills to communicate confidently in everyday situations.</div>
+          </div>
+          <div class="sub-card">
+            <div class="sub-level">B1 – B2</div>
+            <div class="sub-name">Intermediate English</div>
+            <div class="sub-range">Enhance your overall proficiency with expanded vocabulary, improved comprehension, and effective communication.</div>
+          </div>
+          <div class="sub-card">
+            <div class="sub-level">C1 – C2</div>
+            <div class="sub-name">Advanced English</div>
+            <div class="sub-range">Refine advanced language abilities to achieve fluent, accurate, and nuanced communication.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXAM PREP – full width -->
+      <div class="lesson-card full-width">
+        <div class="lesson-num">03</div>
+        <div class="lesson-badge">
+          <span class="badge-pill badge-level">All Levels</span>
+          <span class="badge-pill badge-type">Cambridge · IELTS · TOEFL</span>
+        </div>
+        <div class="lesson-name">Exam Preparation</div>
+        <div class="lesson-skill">All Four Skills · Strategies · Practice Tests</div>
+        <div class="lesson-desc">Specialized IELTS, TOEFL, and Cambridge prep courses that develop all four skills with strategies, practice tests, and personalized feedback to boost your score and your confidence on exam day.</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- PINK BAND -->
+<div class="pink-band">
+  <p>Not sure which course is right for you? Take the free level assessment and Marcello will help you find the perfect starting point.</p>
+  <a href="#" class="btn-navy">Take the Level Test</a>
+</div>
+
+<!-- CTA -->
+<div class="cta-band">
+  <h2 class="cta-title">READY TO<br><span>START?</span></h2>
+  <p class="cta-sub">Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence.</p>
+  <a href="#" class="btn-aqua">Book Your Free Lesson Now</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">ENGLISH WITH <span>MARCELLO</span></div>
+  <div class="footer-links">
+    <a href="#">LinkedIn</a>
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+    <a href="#">TikTok</a>
+    <a href="#">Facebook</a>
+  </div>
+  <div class="footer-copy">info@englishwithmarcello.com · +39 338 746 2067</div>
+</footer>
+
+</body>
+</html>

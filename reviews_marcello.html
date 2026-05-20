@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --aqua: #ADDFE4; --aqua-dark: #7ECDD4; --aqua-deep: #4AADB5;
+    --navy: #192A88; --navy-dark: #101C60; --navy-mid: #1F35A8;
+    --red: #D2281A; --pink: #F1CAC9; --white: #FFFFFF;
+    --light-bg: #EEF9FA; --muted: #5A6A9A;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+  body { background: var(--white); color: var(--navy); font-family: var(--font-body); overflow-x: hidden; font-size: 16px; line-height: 1.6; }
+
+  /* NAV */
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 2.5rem; border-bottom: 2px solid var(--aqua); position: sticky; top: 0; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); z-index: 100; }
+  .nav-logo { font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 2px; color: var(--navy); }
+  .nav-logo span { color: var(--aqua-deep); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta { background: var(--navy); color: var(--white); border: none; padding: 0.65rem 1.4rem; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: transform 0.15s, background 0.2s; }
+  .nav-cta:hover { background: var(--navy-dark); transform: scale(1.03); }
+
+  /* PAGE HERO */
+  .page-hero { background: var(--navy); padding: 5rem 2.5rem; position: relative; overflow: hidden; }
+  .page-hero::before { content: 'REVIEWS'; position: absolute; font-family: var(--font-display); font-size: 13rem; color: rgba(173,223,228,0.05); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; letter-spacing: 10px; white-space: nowrap; }
+  .page-hero-inner { max-width: 1200px; margin: 0 auto; position: relative; }
+  .page-tag { display: inline-block; background: var(--red); color: var(--white); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; padding: 0.35rem 0.9rem; margin-bottom: 1.5rem; }
+  .page-title { font-family: var(--font-display); font-size: clamp(4rem, 10vw, 8rem); line-height: 0.92; color: var(--white); text-transform: uppercase; margin-bottom: 1.5rem; }
+  .page-title span { color: var(--aqua); display: block; }
+  .page-subtitle { color: #8A9FCC; font-size: 1.05rem; max-width: 560px; line-height: 1.75; }
+
+  /* STATS BAND */
+  .stats-band { background: var(--aqua); padding: 2.5rem; }
+  .stats-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--aqua-dark); border: 1px solid var(--aqua-dark); }
+  .stat-box { background: var(--aqua); padding: 2rem; text-align: center; }
+  .stat-num { font-family: var(--font-display); font-size: 3.5rem; color: var(--navy); line-height: 1; }
+  .stat-label { font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase; color: var(--navy-mid); font-weight: 700; margin-top: 0.4rem; }
+
+  /* TICKER */
+  .ticker { background: var(--navy); padding: 0.85rem 0; overflow: hidden; white-space: nowrap; }
+  .ticker-inner { display: inline-flex; animation: ticker 22s linear infinite; }
+  .ticker-item { color: var(--aqua); font-family: var(--font-display); font-size: 1.3rem; letter-spacing: 3px; padding-right: 3rem; }
+  .ticker-dot { color: var(--aqua); opacity: 0.3; padding-right: 3rem; font-family: var(--font-display); font-size: 1.3rem; }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* FEATURED REVIEWS */
+  .featured-section { padding: 5rem 2.5rem; max-width: 1200px; margin: 0 auto; }
+  .section-label { font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase; color: var(--aqua-deep); font-weight: 700; margin-bottom: 1rem; }
+  .section-title { font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5rem); line-height: 0.95; text-transform: uppercase; margin-bottom: 3rem; color: var(--navy); }
+
+  .featured-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .featured-card { background: var(--navy); border-left: 4px solid var(--aqua); padding: 2.5rem; position: relative; overflow: hidden; transition: border-left-color 0.2s, transform 0.2s; }
+  .featured-card:hover { border-left-color: var(--red); transform: translateX(4px); }
+  .featured-card.large { grid-column: 1 / -1; border-left-color: var(--aqua-deep); }
+  .fc-stars { color: var(--aqua); font-size: 1rem; letter-spacing: 3px; margin-bottom: 1rem; }
+  .fc-text { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.8; font-style: italic; margin-bottom: 1.5rem; }
+  .fc-author { font-family: var(--font-display); font-size: 1.4rem; color: var(--aqua); letter-spacing: 1px; }
+  .fc-date { font-size: 0.75rem; color: #8A9FCC; letter-spacing: 1px; text-transform: uppercase; margin-top: 3px; }
+
+  /* ALL REVIEWS GRID */
+  .all-section { background: var(--light-bg); padding: 5rem 2.5rem; }
+  .all-inner { max-width: 1200px; margin: 0 auto; }
+  .all-inner .section-title { margin-bottom: 2.5rem; }
+  .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .review-card { background: var(--white); border: 1.5px solid var(--aqua); padding: 2rem; transition: border-color 0.2s, transform 0.2s, background 0.2s; display: flex; flex-direction: column; gap: 0.75rem; }
+  .review-card:hover { border-color: var(--navy); transform: translateY(-4px); background: var(--white); }
+  .rc-stars { color: var(--aqua-deep); font-size: 0.9rem; letter-spacing: 2px; }
+  .rc-text { color: var(--muted); font-size: 0.88rem; line-height: 1.75; font-style: italic; flex: 1; }
+  .rc-bottom { margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--aqua); }
+  .rc-author { font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--navy); }
+  .rc-date { color: #8A9FCC; font-size: 0.73rem; margin-top: 2px; letter-spacing: 0.5px; }
+
+  /* LANG TAG */
+  .lang-tag { display: inline-block; font-size: 0.65rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; padding: 0.2rem 0.6rem; background: var(--light-bg); border: 1px solid var(--aqua); color: var(--aqua-deep); margin-bottom: 0.25rem; }
+
+  /* CTA BAND */
+  .cta-band { background: var(--navy); padding: 5rem 2.5rem; text-align: center; position: relative; overflow: hidden; }
+  .cta-band::before { content: 'EWM'; position: absolute; font-family: var(--font-display); font-size: 18rem; color: rgba(173,223,228,0.05); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; letter-spacing: 10px; }
+  .cta-title { font-family: var(--font-display); font-size: clamp(3.5rem, 8vw, 7rem); color: var(--white); line-height: 0.9; text-transform: uppercase; margin-bottom: 1rem; position: relative; }
+  .cta-title span { color: var(--aqua); }
+  .cta-sub { color: #8A9FCC; font-size: 1.05rem; max-width: 500px; margin: 0 auto 2.5rem; line-height: 1.7; position: relative; }
+  .btn-aqua { display: inline-block; background: var(--aqua); color: var(--navy); border: none; padding: 1.1rem 2.5rem; font-weight: 700; font-size: 0.9rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: transform 0.15s, background 0.2s; text-decoration: none; position: relative; }
+  .btn-aqua:hover { background: var(--aqua-dark); transform: scale(1.04); }
+
+  /* FOOTER */
+  footer { background: var(--navy-dark); border-top: 3px solid var(--aqua); padding: 3rem 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .footer-logo { font-family: var(--font-display); font-size: 1.6rem; letter-spacing: 3px; color: var(--white); }
+  .footer-logo span { color: var(--aqua); }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a { color: #8A9FCC; text-decoration: none; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--aqua); }
+  .footer-copy { color: #3D5070; font-size: 0.75rem; }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+  .animate { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.25s; } .delay-3 { animation-delay: 0.4s; }
+
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.2rem; } .nav-links { display: none; }
+    .stats-inner { grid-template-columns: repeat(2, 1fr); }
+    .featured-grid { grid-template-columns: 1fr; }
+    .featured-card.large { grid-column: 1; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; text-align: center; }
+    .footer-links { flex-wrap: wrap; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">ENGLISH WITH <span>MARCELLO</span></div>
+  <ul class="nav-links">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Lessons</a></li>
+    <li><a href="#">Reviews</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Content</a></li>
+  </ul>
+  <button class="nav-cta">Book Free Lesson</button>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-tag animate delay-1">Student Testimonials</div>
+    <h1 class="page-title animate delay-2">
+      WHAT STUDENTS
+      <span>SAY</span>
+    </h1>
+    <p class="page-subtitle animate delay-3">Real words from real students — from Tokyo to Toronto, Milan to Montreal. Every review is a story of progress, confidence, and growth.</p>
+  </div>
+</div>
+
+<!-- STATS BAND -->
+<div class="stats-band">
+  <div class="stats-inner">
+    <div class="stat-box">
+      <div class="stat-num">★ 5.0</div>
+      <div class="stat-label">Average Rating</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">25+</div>
+      <div class="stat-label">Reviews</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">5-Star Reviews</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">10+</div>
+      <div class="stat-label">Nationalities</div>
+    </div>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">REAL STUDENTS</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">REAL RESULTS</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">★★★★★ ALL REVIEWS</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">IELTS · TOEFL · CELPIP</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">CONVERSATION · GRAMMAR · PRONUNCIATION</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">REAL STUDENTS</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">REAL RESULTS</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">★★★★★ ALL REVIEWS</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">IELTS · TOEFL · CELPIP</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">CONVERSATION · GRAMMAR · PRONUNCIATION</span><span class="ticker-dot">·</span>
+  </div>
+</div>
+
+<!-- FEATURED REVIEWS -->
+<section class="featured-section">
+  <p class="section-label">Highlighted Reviews</p>
+  <h2 class="section-title">STUDENT<br>FAVOURITES</h2>
+  <div class="featured-grid">
+
+    <div class="featured-card large">
+      <div class="fc-stars">★★★★★</div>
+      <p class="fc-text">"Finalmente ho trovato il tutor perfetto! Marcello è speciale, perché riesce a trasformare le lezioni in veri momenti di divertimento e studio, senza passare minuti noiosi o stressanti. Il fatto che Marcello parli un italiano perfetto fa la differenza con gli altri tutor che ho conosciuto. Marcello personalizza le lezioni con una cura impressionante per i dettagli. Raccomando vivamente questo tutor a chiunque sia interessato alla lingua inglese, principianti, livelli intermedi e avanzati. Grazie Mille Marcello!"</p>
+      <div class="fc-author">Gianluca</div>
+      <div class="fc-date">August 2024</div>
+    </div>
+
+    <div class="featured-card">
+      <div class="fc-stars">★★★★★</div>
+      <p class="fc-text">"Marcello is an amazing teacher. Lessons with him feel like a 5-minute talk with your best friend. He has a great accent and is as understandable as can be. If you're scrolling through comments trying to find a reason to pick Marcello — the reason is here. Book the lesson and see for yourself."</p>
+      <div class="fc-author">Gleb</div>
+      <div class="fc-date">July 2024</div>
+    </div>
+
+    <div class="featured-card">
+      <div class="fc-stars">★★★★★</div>
+      <p class="fc-text">"I can't thank Marcello enough for the incredible support throughout my IELTS preparation. He tailored lessons to my specific needs, ensuring I improved in all areas. His feedback was always detailed and constructive. Thanks to his expertise, I was fully prepared and achieved the score I needed. Highly recommend!"</p>
+      <div class="fc-author">Steven</div>
+      <div class="fc-date">October 2024</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ALL REVIEWS -->
+<div class="all-section">
+  <div class="all-inner">
+    <p class="section-label">All Testimonials</p>
+    <h2 class="section-title">EVERY VOICE<br>COUNTS</h2>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Before being a teacher, Marcello is a friend. Right from the start, he made me feel at ease and helped me with my goals. The progress has been remarkable — I can now speak English fluently."</p>
+        <div class="rc-bottom"><div class="rc-author">Samuele</div><div class="rc-date">August 5, 2025</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <div class="lang-tag">🇯🇵 Japanese</div>
+        <p class="rc-text">"本当に素晴らしい先生です。毎回のレッスンで先生の情熱を感じます！説明はとても明確で、質問にも丁寧に答えてくれます。"</p>
+        <div class="rc-bottom"><div class="rc-author">Ryota</div><div class="rc-date">July 22, 2025</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"A fantastic teacher and a wonderful friend! He adapts to your needs and helps you achieve your goals. He helped me obtain my English certification — he was an invaluable support."</p>
+        <div class="rc-bottom"><div class="rc-author">Carlotta</div><div class="rc-date">May 16, 2025</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"It's always a pleasure to learn English with Marcello. He always brings positive energy. It's a long journey and I hope that I will get what I always wanted thanks to Marcello 💛."</p>
+        <div class="rc-bottom"><div class="rc-author">Nathanael</div><div class="rc-date">December 26, 2024</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"I've been preparing for my CELPIP test with Marcello and I couldn't ask for a better teacher! Patient, comprehensive, and his personalized approach makes all the difference. I highly recommend him to anyone!"</p>
+        <div class="rc-bottom"><div class="rc-author">Carolina</div><div class="rc-date">October 19, 2024</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Marcello è un insegnante straordinario. Riesce a creare un ambiente sereno in cui l'apprendimento diventa naturale. Insegnare non è solo il suo lavoro, ma una vera vocazione che coltiva con passione ogni giorno."</p>
+        <div class="rc-bottom"><div class="rc-author">Giovanni</div><div class="rc-date">October 6, 2024</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Always great to have Marcello as a teacher! The lessons are always in line with my objectives. Thank you."</p>
+        <div class="rc-bottom"><div class="rc-author">Aude</div><div class="rc-date">December 6, 2024</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Ottima lezione con Marcello, è molto preparato nel seguire le tue carenze linguistiche e nell'aiutarti a migliorare con la comprensione sia della grammatica che della pronuncia."</p>
+        <div class="rc-bottom"><div class="rc-author">Marco</div><div class="rc-date">December 6, 2024</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Marcello è un insegnante bravissimo. Riesce a farti sentire a tuo agio nonostante le difficoltà ed è bravo e paziente nell'insegnamento. Lo consiglio a tutte le persone che hanno voglia di perfezionare il proprio inglese."</p>
+        <div class="rc-bottom"><div class="rc-author">Claudio</div><div class="rc-date">October 10, 2024</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Mi sto trovando molto bene nelle lezioni con Marcello. Con lui mi sento a mio agio perché è professionale e accogliente. Le lezioni sono sempre ben modulate in base agli obiettivi generali."</p>
+        <div class="rc-bottom"><div class="rc-author">Marilina</div><div class="rc-date">October 21, 2024</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Marcello è un ottimo insegnante, soprattutto paziente per chi, come me, ha difficoltà a sbloccarsi nello speaking. Molto simpatico e comunicativo."</p>
+        <div class="rc-bottom"><div class="rc-author">Elisa</div><div class="rc-date">July 5, 2024</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Grande Marcello!! Imparare divertendosi e poter dialogare in maniera veloce e con argomenti a 360°. Ottimo anche perché sapendo l'italiano ha una marcia in più."</p>
+        <div class="rc-bottom"><div class="rc-author">Cinzia</div><div class="rc-date">September 10, 2024</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Marcello is an outstanding tutor and a supportive friend. His expertise in teaching English makes learning enjoyable and effective. He's patient, encouraging, and adapts his teaching to your needs."</p>
+        <div class="rc-bottom"><div class="rc-author">Lisa</div><div class="rc-date">July 19, 2024</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Con Marcello sto lavorando tanto sullo Speaking — cerca sempre di farmi parlare il più possibile per migliorare la fluidità, correggendomi quando serve e stimolando la conversazione. Ottimo insegnante!"</p>
+        <div class="rc-bottom"><div class="rc-author">Dario</div><div class="rc-date">September 8, 2024</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Sto avendo il piacere di imparare l'inglese con Marcello, che con la sua simpatia, pazienza e allegria, rende ogni lezione un'esperienza piacevole e stimolante. Consiglio i suoi corsi a chiunque!"</p>
+        <div class="rc-bottom"><div class="rc-author">Fabio</div><div class="rc-date">July 4, 2024</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Marcello è un tutor perfetto, si sa adeguare al tuo passo, ti lascia dei momenti per assorbire quello che sta spiegando e poi approfondisce. Si impegna molto. Grazie Marcello!"</p>
+        <div class="rc-bottom"><div class="rc-author">Nicola</div><div class="rc-date">July 1, 2024</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Great teacher, who can explain difficult things in a few minutes. He's very cozy and easy-going — it's a pleasure to have lessons with him!"</p>
+        <div class="rc-bottom"><div class="rc-author">Konstantin</div><div class="rc-date">December 28, 2023</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"I am studying TOEFL Speaking & Writing with Marcello and he is really good at teaching English. He always explains with real life examples. He is always punctual and his pronunciation is very clear. He is passionate!!!!"</p>
+        <div class="rc-bottom"><div class="rc-author">Jin</div><div class="rc-date">December 7, 2023</div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Bravissimo, paziente e simpatico. Sa mettere gli allievi a proprio agio."</p>
+        <div class="rc-bottom"><div class="rc-author">Lucrezia</div><div class="rc-date">October 6, 2024</div></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-band">
+  <h2 class="cta-title">YOUR TURN TO<br><span>GET STARTED</span></h2>
+  <p class="cta-sub">Join dozens of students who have already transformed their English. Book your free 25-minute trial lesson today.</p>
+  <a href="https://tally.so/r/n0DVE0" target="_blank" class="btn-aqua">Book Your Free Lesson Now</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">ENGLISH WITH <span>MARCELLO</span></div>
+  <div class="footer-links">
+    <a href="#">LinkedIn</a>
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+    <a href="#">TikTok</a>
+    <a href="#">Facebook</a>
+  </div>
+  <div class="footer-copy">info@englishwithmarcello.com · +39 338 746 2067</div>
+</footer>
+
+</body>
+</html>
