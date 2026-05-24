@@ -14,7 +14,6 @@
     --aqua-deep:  #5a9e96;
     --navy:       #011d7f;
     --navy-dark:  #010f4a;
-    --navy-mid:   #0a2a9a;
     --red:        #D2281A;
     --pink:       #F1CAC9;
     --white:      #FFFFFF;
@@ -200,7 +199,6 @@
   .step-desc { font-size: 0.9rem; color: var(--navy); opacity: 0.75; line-height: 1.7; }
 
   /* ── CTA BAND ── */
-  /* CTA BAND */
   .cta-band { background: var(--navy); padding: 5rem 2.5rem; text-align: center; position: relative; overflow: hidden; }
   .cta-band::before { content: 'EWM'; position: absolute; font-family: var(--font-display); font-size: 18rem; color: rgba(152,204,196,0.05); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; letter-spacing: 10px; }
   .cta-title { font-family: var(--font-display); font-size: clamp(3.5rem, 8vw, 7rem); color: var(--white); line-height: 0.9; text-transform: uppercase; margin-bottom: 1rem; }
@@ -214,6 +212,8 @@
   .footer-links a { color: var(--white); text-decoration: none; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
   .footer-links a:hover { color: var(--aqua); }
   .footer-copy { color: var(--white); font-size: 0.75rem; }
+  .footer-privacy { color: var(--white); font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; opacity: 0.7; transition: opacity 0.2s; }
+  .footer-privacy:hover { opacity: 1; }
 
   /* ── ANIMATE ── */
   .animate { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
@@ -260,17 +260,6 @@
     .section { padding: 2.5rem 1.2rem; }
   }
 
-
-  /* PAGE-RESPONSIVE-waiting-list_html.html */
-  @media (max-width: 768px) {
-    .hero-waitlist { padding: 2.5rem 1.2rem; }
-    .hero-title { font-size: clamp(2.8rem, 12vw, 5rem); }
-    .form-grid { grid-template-columns: 1fr; }
-    .section { padding: 3rem 1.2rem; }
-    .section-title { font-size: clamp(2.2rem, 8vw, 3rem); }
-    footer { flex-direction: column; align-items: center; text-align: center; gap: 1rem; padding: 2rem 1.2rem; }
-    .footer-links { flex-wrap: wrap; justify-content: center; gap: 1rem; }
-  }
 </style>
 </head>
 <body>
@@ -380,11 +369,11 @@
     <div class="form-row">
       <div class="field-group">
         <label for="wl-name" data-en="Full Name *" data-it="Nome e Cognome *">Full Name *</label>
-        <input type="text" id="wl-name" name="name" placeholder="Es. Maria Rossi" required>
+        <input type="text" id="wl-name" name="name" data-placeholder-en="Ex. Maria Rossi" data-placeholder-it="Es. Maria Rossi" placeholder="Ex. Maria Rossi" required>
       </div>
       <div class="field-group">
         <label for="wl-email" data-en="Email Address *" data-it="Indirizzo Email *">Email Address *</label>
-        <input type="email" id="wl-email" name="email" placeholder="email@esempio.it" required>
+        <input type="email" id="wl-email" name="email" data-placeholder-en="email@example.com" data-placeholder-it="email@esempio.it" placeholder="email@example.com" required>
       </div>
     </div>
 
@@ -398,12 +387,12 @@
       </p>
       <select id="wl-level" name="level" required>
         <option value="" disabled selected data-en="Select your level…" data-it="Seleziona il tuo livello…">Select your level…</option>
-        <option value="A1">A1 – Principiante / Beginner</option>
-        <option value="A2">A2 – Elementare / Elementary</option>
-        <option value="B1">B1 – Intermedio / Intermediate</option>
-        <option value="B2">B2 – Intermedio Superiore / Upper-Intermediate</option>
-        <option value="C1">C1 – Avanzato / Advanced</option>
-        <option value="C2">C2 – Madrelingua / Proficiency</option>
+        <option value="A1" data-en="A1 – Beginner" data-it="A1 – Principiante">A1 – Beginner</option>
+        <option value="A2" data-en="A2 – Elementary" data-it="A2 – Elementare">A2 – Elementary</option>
+        <option value="B1" data-en="B1 – Intermediate" data-it="B1 – Intermedio">B1 – Intermediate</option>
+        <option value="B2" data-en="B2 – Upper-Intermediate" data-it="B2 – Intermedio Superiore">B2 – Upper-Intermediate</option>
+        <option value="C1" data-en="C1 – Advanced" data-it="C1 – Avanzato">C1 – Advanced</option>
+        <option value="C2" data-en="C2 – Proficiency" data-it="C2 – Madrelingua">C2 – Proficiency</option>
         <option value="unknown" data-en="I don't know my level" data-it="Non conosco il mio livello">I don't know my level</option>
       </select>
     </div>
@@ -471,7 +460,7 @@
     <a href="https://www.facebook.com/share/18917LsM4G/" target="_blank">Facebook</a>
   </div>
   <div class="footer-copy">info@englishwithmarcello.com · +39 338 746 2067</div>
-  <a href="privacy.html" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'" data-en="Privacy Policy" data-it="Privacy Policy">Privacy Policy</a>
+  <a href="privacy.html" class="footer-privacy" data-en="Privacy Policy" data-it="Privacy Policy">Privacy Policy</a>
 </footer>
 
 <!-- ── EmailJS SDK ── -->
@@ -497,6 +486,7 @@
 
   function setLang(lang) {
     currentLang = lang;
+    localStorage.setItem('ewm_lang', lang);
     document.getElementById('btn-en').classList.toggle('active', lang === 'en');
     document.getElementById('btn-it').classList.toggle('active', lang === 'it');
     const mbtnEn = document.getElementById('mbtn-en');
@@ -519,12 +509,21 @@
     // Textarea placeholder
     const ta = document.getElementById('wl-message');
     if (ta) ta.placeholder = ta.getAttribute('data-placeholder-' + lang);
+    // Name and email placeholders
+    ['wl-name', 'wl-email'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.placeholder = el.getAttribute('data-placeholder-' + lang);
+    });
 
     // Select placeholder
     const sel = document.querySelector('#wl-level option[disabled]');
     if (sel) {
       sel.textContent = lang === 'it' ? 'Seleziona il tuo livello…' : 'Select your level…';
     }
+    // Update all level dropdown options
+    document.querySelectorAll('#wl-level option[data-en]').forEach(opt => {
+      opt.textContent = opt.getAttribute('data-' + lang);
+    });
   }
 
   /* ─── Form submission ─── */
@@ -603,6 +602,13 @@
     btn.classList.toggle("open");
     document.body.style.overflow = nav.classList.contains("open") ? "hidden" : "";
   }
+
+  // Restore saved language: URL param takes priority, then localStorage
+  (function(){
+    var params = new URLSearchParams(window.location.search);
+    var lang = params.get('lang') || localStorage.getItem('ewm_lang');
+    if(lang) setLang(lang);
+  })();
 </script>
 </body>
 </html>

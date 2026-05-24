@@ -334,9 +334,9 @@
            data-it="Unisciti a un gruppo una volta a settimana, impara e fai nuove amicizie! Un ambiente dinamico e coinvolgente dove ci si esercita e cresce insieme.">
           Join a group once a week, learn and make new friends! A dynamic and engaging setting where you practise together and grow together.
         </p>
-        <a href="https://www.englishwithmarcello.com/waiting-list"
-           target="_blank"
+        <a href="waiting-list.html"
            class="btn-waiting"
+           onclick="this.href='waiting-list.html?lang='+(localStorage.getItem('ewm_lang')||'en')"
            data-en="Join the Waiting List →"
            data-it="Unisciti alla Lista d'Attesa →">
           Join the Waiting List →
@@ -472,6 +472,7 @@
 
   function setLang(lang) {
     currentLang = lang;
+    localStorage.setItem('ewm_lang', lang);
     document.getElementById('btn-en').classList.toggle('active', lang === 'en');
     document.getElementById('btn-it').classList.toggle('active', lang === 'it');
     const mbtnEn = document.getElementById('mbtn-en');
@@ -517,6 +518,9 @@
     btn.classList.toggle("open");
     document.body.style.overflow = nav.classList.contains("open") ? "hidden" : "";
   }
+
+  // Restore saved language on page load
+  (function(){ var saved = localStorage.getItem('ewm_lang'); if(saved) setLang(saved); })();
 </script>
 </body>
 </html>

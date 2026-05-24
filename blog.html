@@ -180,13 +180,13 @@
     <span>ENGLISH WITH <span class="logo-marcello">MARCELLO</span></span>
   </a>
   <ul class="nav-center">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="lessons.html">Lessons</a></li>
-    <li><a href="bookings.html">Bookings</a></li>
-    <li><a href="reviews.html">Reviews</a></li>
-    <li><a href="#" class="active" onclick="showPage('blog-list')">Blog</a></li>
-    <li><a href="content.html">Content</a></li>
+    <li><a href="index.html" data-en="Home" data-it="Home">Home</a></li>
+    <li><a href="about.html" data-en="About" data-it="Chi sono">About</a></li>
+    <li><a href="lessons.html" data-en="Lessons" data-it="Lezioni">Lessons</a></li>
+    <li><a href="bookings.html" data-en="Bookings" data-it="Prenotazioni">Bookings</a></li>
+    <li><a href="reviews.html" data-en="Reviews" data-it="Recensioni">Reviews</a></li>
+    <li><a href="#" class="active" onclick="showPage('blog-list')" data-en="Blog" data-it="Blog">Blog</a></li>
+    <li><a href="content.html" data-en="Content" data-it="Contenuti">Content</a></li>
     <li>
       <div class="lang-switch">
         <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
@@ -659,6 +659,7 @@ function updateUI() {
 
 function setLang(lang) {
   currentLang = lang;
+  localStorage.setItem('ewm_lang', lang);
   document.getElementById('btn-en').classList.toggle('active', lang === 'en');
   document.getElementById('btn-it').classList.toggle('active', lang === 'it');
   const mbtnEn = document.getElementById('mbtn-en');
@@ -707,6 +708,9 @@ function showArticle(index) {
 
 buildGrid();
 
+
+  // Restore saved language on page load
+  (function(){ var saved = localStorage.getItem('ewm_lang'); if(saved && saved !== 'en') setLang(saved); })();
 </script>
 </body>
 </html>

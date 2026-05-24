@@ -502,6 +502,7 @@
 
   function setLang(lang) {
     currentLang = lang;
+    localStorage.setItem('ewm_lang', lang);
     document.getElementById('btn-en').classList.toggle('active', lang === 'en');
     document.getElementById('btn-it').classList.toggle('active', lang === 'it');
     const mbtnEn = document.getElementById('mbtn-en');
@@ -534,6 +535,9 @@
     btn.classList.toggle("open");
     document.body.style.overflow = nav.classList.contains("open") ? "hidden" : "";
   }
+
+  // Restore saved language on page load
+  (function(){ var saved = localStorage.getItem('ewm_lang'); if(saved) setLang(saved); })();
 </script>
 </body>
 </html>
