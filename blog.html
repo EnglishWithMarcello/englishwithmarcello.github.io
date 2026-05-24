@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLOG | English With Marcello</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --aqua: #98ccc4; --aqua-dark: #7ab8b0; --aqua-deep: #5a9e96;
+    --navy: #011d7f; --navy-dark: #010f4a; --navy-mid: #0a2a9a;
+    --red: #D2281A; --white: #FFFFFF; --light-bg: #eef6f5; --muted: #5A6A9A;
+    --font-display: 'Bebas Neue', sans-serif; --font-body: 'DM Sans', sans-serif;
+  }
+  body { background: var(--white); color: var(--navy); font-family: var(--font-body); overflow-x: hidden; font-size: 16px; line-height: 1.6; }
+
+  /* NAV */
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 2.5rem; border-bottom: 2px solid var(--aqua); position: sticky; top: 0; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); z-index: 100; }
+  .nav-logo { font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 2px; color: var(--navy); display: flex; align-items: center; text-decoration: none; }
+  .nav-logo img { width: 36px; height: 36px; object-fit: contain; margin-right: 0.6rem; }
+  .logo-marcello { color: var(--aqua-deep); }
+  .nav-center { display: flex; gap: 2rem; list-style: none; align-items: center; }
+  .nav-center a { color: var(--muted); text-decoration: none; font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
+  .nav-center a:hover, .nav-center a.active { color: var(--navy); }
+  .nav-right { display: flex; align-items: center; gap: 1rem; }
+  .lang-switch { display: flex; border: 1.5px solid var(--aqua-deep); overflow: hidden; }
+  .lang-btn { background: transparent; border: none; padding: 0.3rem 0.65rem; font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; cursor: pointer; color: var(--muted); transition: background 0.2s, color 0.2s; }
+  .lang-btn.active { background: var(--navy); color: var(--white); }
+  .lang-btn:not(.active):hover { background: var(--aqua); color: var(--navy); }
+  .nav-cta { background: var(--navy); color: var(--white); border: none; padding: 0.65rem 1.4rem; font-family: var(--font-body); font-weight: 700; font-size: 0.72rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: transform 0.15s, background 0.2s; white-space: nowrap; }
+  .nav-cta:hover { background: var(--navy-dark); transform: scale(1.03); }
+
+  /* TICKER */
+  .ticker { background: var(--aqua); padding: 0.85rem 0; overflow: hidden; white-space: nowrap; }
+  .ticker-inner { display: inline-flex; animation: ticker 28s linear infinite; }
+  .ticker-item { color: var(--navy); font-family: var(--font-display); font-size: 1.3rem; letter-spacing: 3px; padding-right: 3rem; }
+  .ticker-dot { color: var(--navy); opacity: 0.4; padding-right: 3rem; font-family: var(--font-display); font-size: 1.3rem; }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* PAGES */
+  .page { display: none; }
+  .page.active { display: block; }
+
+  /* BLOG LIST */
+  .blog-hero { background: var(--navy); padding: 5rem 2.5rem 4rem; position: relative; overflow: hidden; }
+  .blog-hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; background: var(--aqua); opacity: 0.06; border-radius: 50%; }
+  .blog-hero-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
+  .blog-hero-flags { display: flex; gap: 0.75rem; margin-bottom: 1.5rem; align-items: center; }
+  .flag-badge { font-family: var(--font-display); font-size: 2.5rem; line-height: 1; letter-spacing: 2px; color: var(--aqua); }
+  .flag-vs { font-family: var(--font-display); font-size: 1.2rem; color: var(--muted); padding: 0 0.5rem; }
+  .blog-hero-title { font-family: var(--font-display); font-size: clamp(3rem, 7vw, 6rem); line-height: 0.92; letter-spacing: 2px; text-transform: uppercase; color: var(--white); margin-bottom: 1.5rem; }
+  .blog-hero-title span { color: var(--aqua); }
+  .blog-hero-sub { color: #8A9FCC; font-size: 1rem; max-width: 520px; line-height: 1.75; }
+  .blog-hero-deco { font-family: var(--font-display); font-size: 9rem; color: var(--white); opacity: 0.04; letter-spacing: 4px; user-select: none; white-space: nowrap; }
+
+  .blog-section { padding: 5rem 2.5rem; max-width: 1200px; margin: 0 auto; }
+  .section-label { font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase; color: var(--aqua-deep); font-weight: 700; margin-bottom: 1rem; }
+  .section-title { font-family: var(--font-display); font-size: clamp(2.8rem, 5vw, 4rem); line-height: 1; text-transform: uppercase; margin-bottom: 3rem; color: var(--navy); letter-spacing: 1px; }
+
+  .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .blog-card { border: 1.5px solid var(--aqua); background: var(--white); display: flex; flex-direction: column; transition: border-color 0.2s, transform 0.2s, background 0.2s; cursor: pointer; position: relative; overflow: hidden; }
+  .blog-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--aqua-deep); transition: height 0.3s ease; }
+  .blog-card:hover { border-color: var(--navy); transform: translateY(-4px); background: var(--light-bg); }
+  .blog-card:hover::before { height: 100%; }
+  .blog-card-body { padding: 2rem; flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+  .blog-category { display: inline-block; font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; color: var(--aqua-deep); background: var(--light-bg); padding: 0.3rem 0.75rem; align-self: flex-start; }
+  .blog-card-title { font-weight: 700; font-size: 1rem; letter-spacing: 0.5px; color: var(--navy); line-height: 1.4; text-transform: uppercase; }
+  .blog-card-excerpt { color: var(--muted); font-size: 0.88rem; line-height: 1.7; flex: 1; }
+  .blog-card-footer { padding: 1rem 2rem; border-top: 1px solid var(--aqua); }
+  .read-more { font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: color 0.2s, gap 0.2s; cursor: pointer; background: none; border: none; font-family: var(--font-body); padding: 0; }
+  .read-more:hover { color: var(--aqua-deep); gap: 0.75rem; }
+  .blog-card.featured { grid-column: span 2; }
+  .blog-card.featured .blog-card-body { padding: 2.5rem; }
+  .blog-card.featured .blog-card-title { font-size: 1.3rem; }
+  .blog-card.featured .blog-card-excerpt { font-size: 0.93rem; }
+  .featured-accent { background: var(--navy); padding: 1rem 2.5rem; }
+  .featured-label { font-family: var(--font-display); font-size: 1rem; letter-spacing: 3px; color: var(--aqua); text-transform: uppercase; }
+
+  /* ARTICLE PAGE */
+  .article-page { max-width: 800px; margin: 0 auto; padding: 4rem 2.5rem 5rem; }
+  .back-btn { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); cursor: pointer; background: none; border: none; font-family: var(--font-body); margin-bottom: 2.5rem; transition: color 0.2s; padding: 0; }
+  .back-btn:hover { color: var(--navy); }
+  .article-category { display: inline-block; font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; color: var(--aqua-deep); background: var(--light-bg); padding: 0.3rem 0.75rem; margin-bottom: 1.5rem; }
+  .article-title { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: 1; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); margin-bottom: 2rem; }
+  .article-divider { width: 60px; height: 3px; background: var(--aqua); margin-bottom: 2.5rem; }
+  .article-body p { color: var(--muted); font-size: 1rem; line-height: 1.85; margin-bottom: 1.4rem; }
+  .article-body ul, .article-body ol { color: var(--muted); font-size: 1rem; line-height: 1.85; margin-bottom: 1.4rem; padding-left: 1.5rem; }
+  .article-body li { margin-bottom: 0.4rem; }
+  .article-body strong { color: var(--navy); font-weight: 700; }
+  .english-corner { background: var(--navy); padding: 2rem 2.5rem; margin-top: 3rem; }
+  .english-corner-label { font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 3px; color: var(--aqua); text-transform: uppercase; margin-bottom: 1rem; }
+  .english-corner ul { list-style: none; padding: 0; }
+  .english-corner li { color: #8A9FCC; font-size: 0.92rem; line-height: 1.7; padding: 0.5rem 0; border-bottom: 1px solid rgba(152,204,196,0.15); }
+  .english-corner li:last-child { border-bottom: none; }
+  .english-corner li strong { color: var(--aqua); }
+
+  /* CTA */
+  .cta-band { background: var(--navy); padding: 5rem 2.5rem; text-align: center; position: relative; overflow: hidden; }
+  .cta-band::before { content: ''; position: absolute; bottom: -100px; left: 50%; transform: translateX(-50%); width: 600px; height: 300px; background: var(--aqua); opacity: 0.05; border-radius: 50%; pointer-events: none; }
+  .cta-title { font-family: var(--font-display); font-size: clamp(4rem, 9vw, 7rem); line-height: 0.9; text-transform: uppercase; color: var(--white); letter-spacing: 3px; margin-bottom: 1.5rem; }
+  .cta-title span { color: var(--aqua); }
+  .cta-sub { color: #8A9FCC; font-size: 1rem; max-width: 520px; margin: 0 auto 2.5rem; line-height: 1.75; }
+  .btn-aqua { background: var(--aqua); color: var(--navy); border: none; padding: 1rem 2.5rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: background 0.2s, transform 0.15s; }
+  .btn-aqua:hover { background: var(--aqua-dark); transform: translateY(-2px); }
+
+  /* FOOTER */
+  footer { background: var(--navy-dark); border-top: 3px solid var(--aqua); padding: 3rem 2.5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1rem; text-align: center; }
+  .footer-links { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; justify-content: center; }
+  .footer-links a { color: var(--white); text-decoration: none; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--aqua); }
+  .footer-copy { color: var(--white); font-size: 0.75rem; }
+
+  @media (max-width: 900px) {
+    .blog-grid { grid-template-columns: 1fr 1fr; }
+    .blog-card.featured { grid-column: span 2; }
+    .blog-hero-inner { grid-template-columns: 1fr; }
+    .blog-hero-deco { display: none; }
+  }
+  @media (max-width: 600px) {
+    nav { padding: 0 1.2rem; }
+    .nav-center { display: none; }
+    .blog-grid { grid-template-columns: 1fr; }
+    .blog-card.featured { grid-column: span 1; }
+    .blog-hero { padding: 3rem 1.5rem; }
+    .blog-section { padding: 3rem 1.5rem; }
+    .cta-band { padding: 3.5rem 1.5rem; }
+    footer { padding: 2rem 1.5rem; }
+    .article-page { padding: 3rem 1.5rem 4rem; }
+  }
+
+  /* HAMBURGER */
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); transition: all 0.3s; }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .mobile-nav { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--white); z-index: 200; flex-direction: column; padding: 5rem 2rem 2rem; overflow-y: auto; }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav-close { position: absolute; top: 1.2rem; right: 1.5rem; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--navy); line-height: 1; }
+  .mobile-nav a { display: block; padding: 1rem 0; font-size: 1.1rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--aqua); }
+  .mobile-nav .mobile-lang { display: flex; gap: 0; margin-top: 1.5rem; border: 1.5px solid var(--aqua-deep); width: fit-content; }
+  .mobile-nav .mobile-cta { margin-top: 1.5rem; background: var(--navy); color: var(--white); border: none; padding: 1rem 2rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); width: 100%; }
+
+
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.2rem; }
+    .nav-links { display: none; }
+    .nav-cta { display: none; }
+    .hamburger { display: flex; }
+  }
+  @media (max-width: 480px) {
+    .ticker-item, .ticker-dot { font-size: 1rem; }
+    .section { padding: 2.5rem 1.2rem; }
+  }
+
+
+  /* PAGE-RESPONSIVE-blog_html.html */
+  @media (max-width: 900px) {
+    .blog-grid { grid-template-columns: repeat(2, 1fr); }
+    .featured-post { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    .blog-hero { padding: 2.5rem 1.2rem; }
+    .section { padding: 3rem 1.2rem; }
+    .section-title { font-size: clamp(2.2rem, 8vw, 3rem); }
+    .blog-grid { grid-template-columns: 1fr; }
+    .blog-content { padding: 1.5rem 1.2rem; }
+    .blog-content p { font-size: 0.95rem; }
+    footer { flex-direction: column; align-items: center; text-align: center; gap: 1rem; padding: 2rem 1.2rem; }
+    .footer-links { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html" onclick="showPage('blog-list')">
+    <img src="data:image/jpeg;base64,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" alt="English With Marcello">
+    <span>ENGLISH WITH <span class="logo-marcello">MARCELLO</span></span>
+  </a>
+  <ul class="nav-center">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="bookings.html">Bookings</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="#" class="active" onclick="showPage('blog-list')">Blog</a></li>
+    <li><a href="content.html">Content</a></li>
+    <li>
+      <div class="lang-switch">
+        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="btn-it" onclick="setLang('it')">IT</button>
+      </div>
+    </li>
+  </ul>
+  <div class="nav-right">
+    <button class="nav-cta" id="nav-cta-btn" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
+  </div>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="toggleMenu()" aria-label="Close">×</button>
+  <a href="index.html" data-en="Home" data-it="Home">Home</a>
+  <a href="about.html" data-en="About" data-it="Chi sono">About</a>
+  <a href="lessons.html" data-en="Lessons" data-it="Lezioni">Lessons</a>
+  <a href="bookings.html" data-en="Bookings" data-it="Prenotazioni">Bookings</a>
+  <a href="reviews.html" data-en="Reviews" data-it="Recensioni">Reviews</a>
+  <a href="blog.html" data-en="Blog" data-it="Blog">Blog</a>
+  <a href="content.html" data-en="Content" data-it="Contenuti">Content</a>
+  <div class="mobile-lang">
+    <button class="lang-btn active" id="mbtn-en" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" id="mbtn-it" onclick="setLang('it')">IT</button>
+  </div>
+  <button class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis">Book Free Lesson</button>
+</div>
+
+<!-- BLOG LIST PAGE -->
+<div id="page-blog-list" class="page active">
+  <div class="blog-hero">
+    <div class="blog-hero-inner">
+      <div>
+        <div class="blog-hero-flags">
+          <span class="flag-badge">CA</span>
+          <span class="flag-vs">VS</span>
+          <span class="flag-badge">IT</span>
+        </div>
+        <h1 class="blog-hero-title" id="hero-title">CANADA VS ITALY<br><span>THE BLOG</span></h1>
+        <p class="blog-hero-sub" id="hero-sub">Explore cultural curiosities between Canada and Italy. Discover the most interesting differences and improve your English through stories!</p>
+      </div>
+      <div class="blog-hero-deco">BLOG</div>
+    </div>
+  </div>
+
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span class="ticker-item">A1 TO C2 ALL LEVELS</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">SPEAK WITH CONFIDENCE</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">IELTS · TOEFL · CAMBRIDGE</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">ONLINE</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">FREE TRIAL LESSON</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">A1 TO C2 ALL LEVELS</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">SPEAK WITH CONFIDENCE</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">IELTS · TOEFL · CAMBRIDGE</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">ONLINE</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">FREE TRIAL LESSON</span><span class="ticker-dot">·</span>
+    </div>
+  </div>
+
+  <div class="blog-section">
+    <p class="section-label" id="list-label">Latest Articles</p>
+    <h2 class="section-title" id="list-title">ALL POSTS</h2>
+    <div class="blog-grid" id="blog-grid"></div>
+  </div>
+
+<div class="cta-band">
+  <h2 class="cta-title" data-en="READY TO<br><span>START?</span>" data-it="PRONTO A<br><span>INIZIARE?</span>">READY TO<br><span>START?</span></h2>
+  <p class="cta-sub" data-en="Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence." data-it="Prenota oggi la tua lezione di prova gratuita. Nessun impegno — solo tu, Marcello, e il tuo primo passo verso un inglese davvero sicuro.">Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence.</p>
+  <button class="btn-aqua" data-en="Book Your Free Lesson Now" data-it="Prenota Ora la Tua Lezione Gratuita" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Your Free Lesson Now</button>
+</div>
+  <footer>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/englishwithmarcello" target="_blank">LinkedIn</a><a href="https://www.instagram.com/englishwithmarcello?igsh=aHppOHNodXR5MGM4" target="_blank">Instagram</a><a href="https://www.youtube.com/@englishwithmarcello" target="_blank">YouTube</a><a href="https://www.tiktok.com/@englishwithmarcello?_r=1&_t=ZN-96Zcgc1IfLS" target="_blank">TikTok</a><a href="https://www.facebook.com/share/18917LsM4G/" target="_blank">Facebook</a>
+    </div>
+    <div class="footer-copy">info@englishwithmarcello.com · +39 338 746 2067</div>
+    <a href="privacy.html" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" id="privacy-list">Privacy Policy</a>
+  </footer>
+</div>
+
+<!-- ARTICLE PAGE -->
+<div id="page-article" class="page">
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span class="ticker-item">A1 TO C2 ALL LEVELS</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">SPEAK WITH CONFIDENCE</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">IELTS · TOEFL · CAMBRIDGE</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">ONLINE</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">FREE TRIAL LESSON</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">A1 TO C2 ALL LEVELS</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">SPEAK WITH CONFIDENCE</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">IELTS · TOEFL · CAMBRIDGE</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">ONLINE</span><span class="ticker-dot">·</span>
+      <span class="ticker-item">FREE TRIAL LESSON</span><span class="ticker-dot">·</span>
+    </div>
+  </div>
+  <div class="article-page">
+    <button class="back-btn" onclick="showPage('blog-list')" id="back-btn-text">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+      Back to Blog
+    </button>
+    <span class="blog-category" id="art-category"></span>
+    <h1 class="article-title" id="art-title"></h1>
+    <div class="article-divider"></div>
+    <div class="article-body" id="art-body"></div>
+  </div>
+<div class="cta-band">
+  <h2 class="cta-title" data-en="READY TO<br><span>START?</span>" data-it="PRONTO A<br><span>INIZIARE?</span>">READY TO<br><span>START?</span></h2>
+  <p class="cta-sub" data-en="Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence." data-it="Prenota oggi la tua lezione di prova gratuita. Nessun impegno — solo tu, Marcello, e il tuo primo passo verso un inglese davvero sicuro.">Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence.</p>
+  <button class="btn-aqua" data-en="Book Your Free Lesson Now" data-it="Prenota Ora la Tua Lezione Gratuita" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Your Free Lesson Now</button>
+</div>
+  <footer>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/englishwithmarcello" target="_blank">LinkedIn</a><a href="https://www.instagram.com/englishwithmarcello?igsh=aHppOHNodXR5MGM4" target="_blank">Instagram</a><a href="https://www.youtube.com/@englishwithmarcello" target="_blank">YouTube</a><a href="https://www.tiktok.com/@englishwithmarcello?_r=1&_t=ZN-96Zcgc1IfLS" target="_blank">TikTok</a><a href="https://www.facebook.com/share/18917LsM4G/" target="_blank">Facebook</a>
+    </div>
+    <div class="footer-copy">info@englishwithmarcello.com · +39 338 746 2067</div>
+    <a href="privacy.html" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" id="privacy-art">Privacy Policy</a>
+  </footer>
+</div>
+
+<script>
+const articles = [
+  {
+    en: {
+      category: "Daily Life",
+      title: "The Coffee Shock: From Tim Hortons to the Italian Bar",
+      excerpt: "From giant Tim Hortons cups to espresso sipped standing at the bar. Life lessons you learn right there, on the spot.",
+      body: `<p>Hello, lovely readers! Today, I want to tell you about my first real culture shock in Italy: coffee.</p>
+<p>In Canada, my day always started with a stop at Tim Hortons. For those who don't know it, Tim Hortons is the Canadian coffee chain — basically our national religion. A <strong>double-double</strong> (coffee with double cream and double sugar) in a giant paper cup, maybe with a Boston Cream Donut, and ready to get to work.</p>
+<p>Then I arrived in Italy.</p>
+<p>The first time I ordered a <strong>coffee to go</strong> at a bar in Florence, Tuscany, the barista looked at me as if I'd asked to buy the Leaning Tower of Pisa. "To go? But where are you going?" he said with a smile. I immediately understood I was in the wrong place… or maybe the right place, but with the wrong rules.</p>
+<p><strong>The unwritten rules of Italian coffee:</strong></p>
+<ul><li>An espresso is drunk standing at the bar, in under 2 minutes</li><li>Cappuccino only at breakfast (never after 12 pm)</li><li>"Americano" coffee is basically considered dirty water</li><li>It costs €1.50 — not $5 like in Canada</li></ul>
+<p>The first time I ordered a cappuccino after lunch, the waitress asked me three times if I was sure. "Are you <em>really</em> sure?" I thought she was joking. She wasn't.</p>
+<p>My moment of enlightenment came when I started to understand that the Italian bar isn't just a place to grab a coffee — it's a social <strong>hub</strong>. It's where you read the newspaper, talk about soccer, greet your neighbors, and live everyday life.</p>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Coffee to go</strong> = takeaway coffee</li><li><strong>Double-double</strong> = Canadian coffee with double cream and double sugar</li><li><strong>Hub</strong> = center, point of reference</li></ul></div>`
+    },
+    it: {
+      category: "Vita Quotidiana",
+      title: "Lo Shock del Caffè: da Tim Hortons al Bar Italiano",
+      excerpt: "Dalle grandi tazze di Tim Hortons all'espresso bevuto in piedi al bar. Lezioni di vita che impari lì, sul momento.",
+      body: `<p>Ciao a tutti! Oggi voglio raccontarvi del mio primo vero shock culturale in Italia: il caffè.</p>
+<p>In Canada, la mia giornata iniziava sempre con una tappa da Tim Hortons. Per chi non lo conosce, Tim Hortons è la catena di caffè canadese — praticamente la nostra religione nazionale. Un <strong>double-double</strong> (caffè con doppia panna e doppio zucchero) in un gigantesco bicchiere di carta, magari con un Boston Cream Donut, e via a lavorare.</p>
+<p>Poi sono arrivato in Italia.</p>
+<p>La prima volta che ho ordinato un <strong>caffè to go</strong> in un bar a Firenze, in Toscana, il barista mi ha guardato come se gli avessi chiesto di comprarmi la Torre di Pisa. "Da portare via? Ma dove deve andare?" mi ha detto con un sorriso. Ho capito subito di essere nel posto sbagliato… o forse nel posto giusto, ma con le regole sbagliate.</p>
+<p><strong>Le regole non scritte del caffè italiano:</strong></p>
+<ul><li>L'espresso si beve in piedi al banco, in meno di 2 minuti</li><li>Il cappuccino solo a colazione (mai dopo le 12)</li><li>Il caffè "americano" è considerato sostanzialmente acqua sporca</li><li>Costa 1,50€ — non 5$ come in Canada</li></ul>
+<p>La prima volta che ho ordinato un cappuccino dopo pranzo, la cameriera mi ha chiesto tre volte se ero sicuro. "È davvero <em>sicuro</em>?" Pensavo stesse scherzando. Non stava scherzando.</p>
+<p>Il mio momento di illuminazione è arrivato quando ho iniziato a capire che il bar italiano non è solo un posto dove prendere un caffè — è un <strong>hub</strong> sociale. È il luogo dove si legge il giornale, si parla di calcio, si salutano i vicini e si vive la vita quotidiana.</p>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Coffee to go</strong> = caffè da asporto</li><li><strong>Double-double</strong> = caffè canadese con doppia panna e doppio zucchero</li><li><strong>Hub</strong> = centro, punto di riferimento</li></ul></div>`
+    }
+  },
+  {
+    en: {
+      category: "Climate",
+      title: "Canadian Winters vs Italian Winters: -25°C vs 3°C",
+      excerpt: "In Canada, winter forces you to stay inside for months, while in Italy you're still out drinking spritz!",
+      body: `<p>Glad you're here! Today, let's talk about how winter completely changes the way you live. And trust me: the difference between Canada and Italy is huge!</p>
+<p><strong>Canadian winter = social hibernation</strong><br>From November to March, your social life basically stops. But we're talking about -25°C here, not just "a bit chilly." With temperatures that freeze your breath in 30 seconds, going outside literally becomes dangerous.</p>
+<p>At -25°C it's not about "putting on an extra jacket." It's about survival: the air burns your skin, and walking for more than 10 minutes can give you <strong>frostbite</strong>.</p>
+<p>Our winter activities? <strong>Netflix and chill</strong>, out of necessity. We plan <strong>movie nights</strong> at home, order food delivery, and do video calls with friends because meeting up in person means risking hypothermia. Bars close early, restaurants empty out. If you go out, it's for an absolute necessity: work, quick groceries, the gym.</p>
+<p><strong>Italian winter = life goes on</strong><br>My first winter in Florence, January: 3°C, I'm at home in my pajamas thinking "Perfect, hibernation season activated."</p>
+<p>At 6 pm a friend texts me: "Aperitivo tonight?"<br>"But it's 3°C!" I answer.<br>"So what? We'll just wear a scarf!" he says.</p>
+<p>That's when I realized Italians are right: even at 3°C you can live normally! Spritz at 6 pm? Totally doable. Evening walk in the city? Possible. Dinner out? Of course, just wear a good coat.</p>
+<ul><li>Canada: -25°C = real risk of freezing, forced isolation</li><li>Italy: +3°C = "kinda cold", but normal life goes on</li></ul>
+<p>In Canada, winter is a real enemy that can kill you. In Italy, it's just winter.</p>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Frostbite</strong> = when your skin freezes</li><li><strong>Netflix and chill</strong> = relaxing at home watching TV shows</li><li><strong>Movie nights</strong> = evenings dedicated to watching movies together</li></ul></div>`
+    },
+    it: {
+      category: "Clima",
+      title: "Inverni Canadesi vs Inverni Italiani: -25°C vs 3°C",
+      excerpt: "In Canada l'inverno ti costringe a stare in casa per mesi, mentre in Italia sei ancora fuori a bere lo spritz!",
+      body: `<p>Contento che siate qui! Oggi parliamo di come l'inverno cambia completamente il modo di vivere. E credetemi: la differenza tra Canada e Italia è enorme!</p>
+<p><strong>L'inverno canadese = ibernazione sociale</strong><br>Da novembre a marzo, la vita sociale si ferma praticamente del tutto. Ma stiamo parlando di -25°C, non di "un po' freddino." Con temperature che gelano il respiro in 30 secondi, uscire diventa letteralmente pericoloso.</p>
+<p>A -25°C non si tratta di "mettere un maglione in più." È una questione di sopravvivenza: l'aria brucia la pelle e camminare più di 10 minuti può causare <strong>frostbite</strong>.</p>
+<p>Le nostre attività invernali? <strong>Netflix and chill</strong>, per necessità. Si organizzano <strong>movie nights</strong> a casa, si ordina cibo a domicilio e si fanno videochiamate con gli amici perché incontrarsi di persona significa rischiare l'ipotermia. I bar chiudono presto, i ristoranti si svuotano. Se esci, è per assoluta necessità: lavoro, spesa veloce, palestra.</p>
+<p><strong>L'inverno italiano = la vita continua</strong><br>Il mio primo inverno a Firenze, gennaio: 3°C, sono a casa in pigiama pensando "Perfetto, stagione ibernazione attivata."</p>
+<p>Alle 18 un amico mi scrive: "Aperitivo stasera?"<br>"Ma ci sono 3°C!" rispondo.<br>"E allora? Ci mettiamo la sciarpa!" dice lui.</p>
+<p>È lì che ho capito che gli italiani hanno ragione: anche a 3°C si può vivere normalmente! Spritz alle 18? Assolutamente fattibile. Passeggiata serale in città? Possibile. Cena fuori? Certo, basta un buon cappotto.</p>
+<ul><li>Canada: -25°C = rischio reale di gelo, isolamento forzato</li><li>Italia: +3°C = "un po' freddo", ma la vita normale continua</li></ul>
+<p>In Canada l'inverno è un vero nemico che può ucciderti. In Italia è semplicemente inverno.</p>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Frostbite</strong> = congelamento della pelle</li><li><strong>Netflix and chill</strong> = rilassarsi a casa guardando serie TV</li><li><strong>Movie nights</strong> = serate dedicate a guardare film insieme</li></ul></div>`
+    }
+  },
+  {
+    en: {
+      category: "Myths",
+      title: "Canadian Stereotypes Italians Actually Believe",
+      excerpt: "Cabins in the woods? Bears in the city? And other myths about Canada that we tell ourselves in Italy.",
+      body: `<p>Hey, there! Today, let's bust some <strong>myths</strong> about Canada that I often hear in Italy.</p>
+<p><strong>#1 There are polar bears on the streets</strong><br>Reality: Polar bears live in the Arctic. I'm from Toronto. It's like saying there are penguins in Milan because it's cold in winter. But I admit: I have seen black bears. A few times, at the <strong>cottage</strong>, a mother bear crossed the road with her cubs.</p>
+<p><strong>#2 You always have barbecues even in the snow</strong><br>Reality: This is true! My dad has grilled in -20°C. "Snow doesn't stop a good steak," he used to say.</p>
+<p><strong>#3 Everyone lives in a cabin in the woods</strong><br>Reality: Toronto has 3 million people. Vancouver is ultra-modern. Montreal is more European than many European cities. We also have skyscrapers, streetcars, and traffic jams.</p>
+<p><strong>#4 You all speak French</strong><br>Reality: Only Quebec is truly bilingual. In Toronto, if you try speaking French, people will look at you puzzled, as if you were speaking in code.</p>
+<p><strong>#5 You all know all the Native Americans</strong><br>Reality: Canada has many different <strong>First Nations</strong>, with completely different cultures, languages, and traditions. It's like saying all Europeans are the same.</p>
+<p><strong>What's really typical of Canada:</strong></p>
+<ul><li>Poutine (fries with cheese curds and gravy)</li><li>Maple syrup on everything</li><li>Saying "about" in a funny way (Americans notice right away)</li><li>Being obsessed with the weather</li><li>Saying sorry for everything (even when it's not our fault)</li></ul>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Myths</strong> = false or exaggerated beliefs</li><li><strong>First Nations</strong> = Indigenous peoples of Canada</li><li><strong>Cottage</strong> = lake house / country house</li></ul></div>`
+    },
+    it: {
+      category: "Miti",
+      title: "Gli Stereotipi sul Canada che gli Italiani Credono Siano Veri",
+      excerpt: "Capanne nei boschi? Orsi in città? E altri miti sul Canada che ci raccontiamo in Italia.",
+      body: `<p>Ciao a tutti! Oggi sfatiamo alcuni <strong>myths</strong> sul Canada che sento spesso in Italia.</p>
+<p><strong>#1 Ci sono orsi polari per le strade</strong><br>Realtà: Gli orsi polari vivono nell'Artico. Io sono di Toronto. È come dire che ci sono pinguini a Milano perché fa freddo d'inverno. Però ammetto: ho visto orsi neri. Alcune volte, <strong>al cottage</strong>, un'orsa ha attraversato la strada con i suoi cuccioli.</p>
+<p><strong>#2 Fate sempre il barbecue anche con la neve</strong><br>Realtà: Questo è vero! Mio padre ha grigliato a -20°C. "La neve non ferma una buona bistecca," diceva sempre.</p>
+<p><strong>#3 Tutti vivono in una capanna nel bosco</strong><br>Realtà: Toronto ha 3 milioni di abitanti. Vancouver è ultra-moderna. Montreal è più europea di molte città europee. Abbiamo anche grattacieli, tram e ingorghi stradali.</p>
+<p><strong>#4 Parlate tutti francese</strong><br>Realtà: Solo il Quebec è davvero bilingue. A Toronto, se provi a parlare francese, la gente ti guarda perplessa, come se stessi parlando in codice.</p>
+<p><strong>#5 Conoscete tutti i Nativi Americani</strong><br>Realtà: Il Canada ha molte diverse <strong>First Nations</strong>, con culture, lingue e tradizioni completamente diverse tra loro. È come dire che tutti gli europei sono uguali.</p>
+<p><strong>Cosa è davvero tipico del Canada:</strong></p>
+<ul><li>La poutine (patatine fritte con formaggio e salsa)</li><li>Lo sciroppo d'acero su tutto</li><li>Dire "about" in modo strano (gli americani se ne accorgono subito)</li><li>Essere ossessionati dal meteo</li><li>Chiedere scusa per tutto (anche quando non è colpa nostra)</li></ul>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Myths</strong> = miti, credenze false o esagerate</li><li><strong>First Nations</strong> = popoli indigeni del Canada</li><li><strong>Cottage</strong> = casa al lago / casa in campagna</li></ul></div>`
+    }
+  },
+  {
+    en: {
+      category: "Geography",
+      title: "Canada vs Italy: How Distance Feels Different",
+      excerpt: "A three-hour drive takes you to the next city in Canada — but in Italy, a different world.",
+      body: `<p>Welcome to my blog! Today let's talk about distances. And about how I had to completely recalibrate my idea of "near" and "far."</p>
+<p><strong>Canada is big, really BIG.</strong> To go from Toronto to Vancouver, you have to drive about 4,400 km. That's 44 hours of driving. To give you an idea: it's like driving from Milan to… Jerusalem.</p>
+<p><strong>My first Italian shock:</strong></p>
+<ul><li>In Canada, three hours by car takes you to the next city: same landscape, same people, same accent.</li><li>In Italy, three hours throw you into a completely different world: a new region, a dialect you don't understand, food you've never tasted, and even the climate changes!</li></ul>
+<p>This experience really changed my <strong>mindset</strong>. Before, I thought 3 hours driving was a short trip. Now, I see that it means very different things depending on the country.</p>
+<p><strong>Canadian geography for Italians:</strong></p>
+<ul><li>Canada is as big as the whole of Europe.</li><li>The province of Ontario is as big as France + Germany + the UK.</li><li>In Quebec, you can drive 12 hours in a straight line and still be in the same province.</li></ul>
+<p>This affects the <strong>lifestyle</strong> — in Canada, long drives are normal and often necessary for work or school. In Italy, people tend to live closer to their jobs or schools, so daily travel distances are usually much shorter.</p>
+<p><strong>Europe: everything is next door</strong></p>
+<p>Another major difference is the distance between European <strong>locations</strong>.</p>
+<ul><li>In Europe, with a two-hour flight you can go anywhere: London, Paris, Madrid, Amsterdam.</li><li>In Canada, with a two-hour flight you're still in the same province — if you're lucky, maybe you'll reach Ottawa.</li></ul>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Mindset</strong> = the way you think and see the world</li><li><strong>Lifestyle</strong> = how you live every day</li><li><strong>Locations</strong> = the places where something or someone is</li></ul></div>`
+    },
+    it: {
+      category: "Geografia",
+      title: "Canada vs Italia: Come la Distanza si Percepisce Diversamente",
+      excerpt: "Tre ore di macchina ti portano alla città successiva in Canada, ma in Italia in un mondo completamente diverso.",
+      body: `<p>Benvenuti nel mio blog! Oggi parliamo di distanze. E di come ho dovuto ricalibrare completamente la mia idea di "vicino" e "lontano."</p>
+<p><strong>Il Canada è grande, davvero GRANDE.</strong> Per andare da Toronto a Vancouver bisogna percorrere circa 4.400 km. Sono 44 ore di guida. Per darvi un'idea: è come guidare da Milano a… Gerusalemme.</p>
+<p><strong>Il mio primo shock italiano:</strong></p>
+<ul><li>In Canada, tre ore di macchina ti portano alla città successiva: stesso paesaggio, stessa gente, stesso accento.</li><li>In Italia, tre ore ti catapultano in un mondo completamente diverso: una nuova regione, un dialetto che non capisci, cibo che non hai mai assaggiato, e persino il clima cambia!</li></ul>
+<p>Questa esperienza ha davvero cambiato il mio <strong>mindset</strong>. Prima pensavo che 3 ore di guida fossero un breve viaggio. Ora capisco che significa cose molto diverse a seconda del paese.</p>
+<p><strong>La geografia canadese per gli italiani:</strong></p>
+<ul><li>Il Canada è grande quanto tutta Europa.</li><li>La provincia dell'Ontario è grande quanto Francia + Germania + Regno Unito.</li><li>Nel Quebec si possono guidare 12 ore in linea retta e trovarsi ancora nella stessa provincia.</li></ul>
+<p>Questo influisce sul <strong>lifestyle</strong> — in Canada i lunghi spostamenti sono normali e spesso necessari. In Italia le persone tendono a vivere più vicino al lavoro o alla scuola.</p>
+<p><strong>L'Europa: tutto è a portata di mano</strong></p>
+<p>Un'altra grande differenza è la distanza tra le <strong>locations</strong> europee.</p>
+<ul><li>In Europa con due ore di volo puoi andare ovunque: Londra, Parigi, Madrid, Amsterdam.</li><li>In Canada con due ore di volo sei ancora nella stessa provincia — se sei fortunato, forse raggiungi Ottawa.</li></ul>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Mindset</strong> = il modo in cui pensi e vedi il mondo</li><li><strong>Lifestyle</strong> = come vivi ogni giorno</li><li><strong>Locations</strong> = i luoghi in cui si trova qualcosa o qualcuno</li></ul></div>`
+    }
+  },
+  {
+    en: {
+      category: "Sport",
+      title: "Hockey Night vs Football: National Sports Passions",
+      excerpt: "Hockey in Canada, football in Italy: two ways to live sport, between rituals, passion, and identity.",
+      body: `<p>Hi everyone! Today, I'll tell you about two different religions: hockey in Canada and football in Italy.</p>
+<p><strong>Hockey in Canada: more than just a sport</strong><br>In Canada, Saturday night is special. "Hockey Night in Canada" airs on CBC at 7 pm. Everyone stops: stores close, streets are empty, families gather in front of the TV. You must cheer for an <strong>NHL</strong> team (I cheered for the Toronto Maple Leafs), know at least 5 famous players, and hate at least one American team.</p>
+<p><strong>Football in Italy: pure passion</strong><br>Here football isn't just a sport: it's life, politics, geography, and family history. One game can unite or divide generations. Every family argues about football at least once a week, derbies literally stop cities, and there are stadium chants everyone knows by heart.</p>
+<p>My <strong>bandwagon</strong> fan moment: Italy vs. England, Euro 2020 final. I was in a square in Toronto with tons of Italian-Canadians. When Italy won on penalties, I was overjoyed — for one night, I felt Italian too.</p>
+<p><strong>Absurd comparison:</strong></p>
+<ul><li>Season: Canada — 6 months on the ice. Italy — 10 months on grass</li><li>Teams: Canada — 20 NHL teams. Italy — 20 Serie A teams + thousands of local teams</li><li>Fights: Canada — allowed. Italy — well, they still happen anyway</li></ul>
+<p>What I'm learning is that explaining the offside rule to a Canadian is difficult, and trying to explain <strong>body checking</strong> to an Italian is even harder.</p>
+<p>National sports are windows into a culture. Hockey reflects Canada: tough, direct, fast, but fair. Football reflects Italy: technical, passionate, strategic, and full of history.</p>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>NHL</strong> = National Hockey League</li><li><strong>Body checking</strong> = legal physical contact in hockey</li><li><strong>Bandwagon</strong> = supporting a winning team even if you didn't follow them before</li></ul></div>`
+    },
+    it: {
+      category: "Sport",
+      title: "Hockey Night vs Calcio: le Passioni Sportive Nazionali",
+      excerpt: "Hockey in Canada, calcio in Italia: due modi di vivere lo sport, tra rituali, passione e identità.",
+      body: `<p>Ciao a tutti! Oggi vi parlerò di due religioni diverse: l'hockey in Canada e il calcio in Italia.</p>
+<p><strong>L'hockey in Canada: più di un semplice sport</strong><br>In Canada, il sabato sera è speciale. "Hockey Night in Canada" va in onda su CBC alle 19. Tutti si fermano: i negozi chiudono, le strade si svuotano, le famiglie si riuniscono davanti alla TV. Devi fare il tifo per una squadra <strong>NHL</strong> (io tifavo per i Toronto Maple Leafs), conoscere almeno 5 giocatori famosi e odiare almeno una squadra americana.</p>
+<p><strong>Il calcio in Italia: pura passione</strong><br>Qui il calcio non è solo uno sport: è vita, politica, geografia e storia di famiglia. Una partita può unire o dividere generazioni. Ogni famiglia litiga di calcio almeno una volta a settimana, i derby fermano letteralmente le città e ci sono cori da stadio che tutti conoscono a memoria.</p>
+<p><strong>Il mio momento da "bandwagon fan":</strong> Italia vs. Inghilterra, finale Euro 2020. Ero in una piazza di Toronto con tantissimi italo-canadesi. Quando l'Italia ha vinto ai rigori, ero euforico — per una notte mi sono sentito italiano anch'io.</p>
+<p><strong>Confronto assurdo:</strong></p>
+<ul><li>Stagione: Canada — 6 mesi sul ghiaccio. Italia — 10 mesi sull'erba</li><li>Squadre: Canada — 20 squadre NHL. Italia — 20 squadre di Serie A + migliaia di squadre locali</li><li>Risse: Canada — permesse. Italia — beh, succedono comunque</li></ul>
+<p>Quello che sto imparando è che spiegare il fuorigioco a un canadese è difficile, e cercare di spiegare il <strong>body checking</strong> a un italiano è ancora più difficile.</p>
+<p>Gli sport nazionali sono finestre sulla cultura. L'hockey riflette il Canada: duro, diretto, veloce, ma leale. Il calcio riflette l'Italia: tecnico, appassionato, strategico e ricco di storia.</p>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>NHL</strong> = Lega Nazionale di Hockey</li><li><strong>Body checking</strong> = contatto fisico legale nell'hockey</li><li><strong>Bandwagon</strong> = tifare per una squadra vincente anche se non la seguivi prima</li></ul></div>`
+    }
+  },
+  {
+    en: {
+      category: "Culture",
+      title: "Two Countries, Two Summers and Two Very Different Ways of Living Them",
+      excerpt: "The air conditioning paradox: arctic freezers, killer drafts, and grandmas on high alert.",
+      body: `<p>Hello, lovely readers! Today I want to share one of the most dramatic cultural contrasts I've experienced: the eternal battle between the North American obsession with air conditioning and the Italian fear of a <em>colpo d'aria</em>.</p>
+<p><strong>When it's summer outside and winter inside</strong><br>In Canada, summer arrives and with it, the sacred ritual of turning every indoor space into a giant walk-in freezer. The office? 18°C. The mall? You need an Arctic expedition. The cinema? Bring a parka. The supermarket was the worst — you'd walk in wearing shorts and flip-flops and within minutes start questioning all your life choices.</p>
+<p>My first summer at university in London, Ontario: 25°C outside, North Pole inside. I practically needed thermal underwear to make it through my classes!</p>
+<p><strong>How to risk your life by turning on the AC</strong><br>My first Italian summer: I set the AC to 19-20°C like I always do. Ten minutes later I was surrounded by horrified stares. "Are you crazy? Do you want to get sick?" "The temperature difference will give you a stiff neck, stomach issues, and probably ruin your digestion for a week!"</p>
+<p>The science behind the Italian <em>colpo d'aria</em> is fascinating. Apparently, any movement of air when you're hot can cause digestive problems, shoulder pain, instant neck paralysis, or general life malfunction. Just one <strong>draft</strong> is enough to spark panic among grandmothers.</p>
+<p><strong>The final paradox:</strong> Italians complain about the heat all summer but blast the AC only as a last resort. Canadians do the opposite — they blast it so hard they wander around the house with blankets and mugs of steaming coffee to survive the indoor <strong>chill</strong>.</p>
+<p>In the end, a Canadian learns not to <strong>freeze</strong> everyone to death, and an Italian learns not to fear every breeze. And if you really don't know which side to pick… always carry a scarf and a fan.</p>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Draft</strong> = an unwanted cold current of air</li><li><strong>Chill</strong> = that cold feeling when the room temperature drops</li><li><strong>Freeze</strong> = extreme cold state, near zero temperature indoors</li></ul></div>`
+    },
+    it: {
+      category: "Cultura",
+      title: "Due Paesi, Due Estati e Due Modi Molto Diversi di Viverle",
+      excerpt: "Il paradosso dell'aria condizionata: congelatori artici, correnti killer e nonne in allerta massima.",
+      body: `<p>Ciao a tutti! Oggi voglio condividere uno dei contrasti culturali più drammatici che ho vissuto: l'eterna battaglia tra l'ossessione nordamericana per l'aria condizionata e la paura italiana del colpo d'aria.</p>
+<p><strong>Quando fuori è estate e dentro è inverno</strong><br>In Canada, l'estate arriva e con essa il rituale sacro di trasformare ogni spazio al chiuso in un enorme freezer. L'ufficio? 18°C. Il centro commerciale? Serve una spedizione artica. Il cinema? Portati il piumino o rischi il <strong>freeze</strong>. Il supermercato era il peggio — entravi in pantaloncini e flip-flop e in pochi minuti iniziavi a mettere in discussione tutte le tue scelte di vita.</p>
+<p>La mia prima estate all'università a London, Ontario: 25°C fuori, Polo Nord dentro. Avevo praticamente bisogno di biancheria termica per sopravvivere alle lezioni!</p>
+<p><strong>Come rischiare la vita accendendo il condizionatore</strong><br>La mia prima estate italiana: imposto il condizionatore a 19-20°C come faccio sempre. Dieci minuti dopo mi trovo circondato da sguardi inorriditi. "Sei matto? Vuoi ammalarti?" "La differenza di temperatura ti darà il torcicollo, problemi di stomaco e probabilmente rovinerà la digestione per una settimana!"</p>
+<p>La scienza dietro al colpo d'aria italiano è affascinante. A quanto pare, qualsiasi movimento d'aria quando si ha caldo può causare problemi digestivi, dolori alle spalle, paralisi istantanea del collo o malfunzionamento generale della vita. In Italia basta un <strong>draft</strong> per scatenare panico tra le nonne.</p>
+<p><strong>Il paradosso finale:</strong> gli italiani si lamentano del caldo per tutta l'estate ma accendono il condizionatore solo come ultima risorsa. I canadesi fanno il contrario — lo sparano così forte da girare per casa con coperte e tazze di caffè bollente per sopravvivere al freddo che hanno creato, sopportando il <strong>chill</strong> tra le mura domestiche.</p>
+<p>Alla fine, un canadese impara a non congelare tutti, e un italiano impara a non temere ogni brezza. E se non sai da che parte stare… porta sempre una sciarpa e un ventaglio.</p>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Draft</strong> = una corrente d'aria fredda indesiderata</li><li><strong>Chill</strong> = quella sensazione di freddo quando la temperatura scende</li><li><strong>Freeze</strong> = stato di freddo estremo, vicino allo zero in casa</li></ul></div>`
+    }
+  },
+  {
+    en: {
+      category: "Food",
+      title: "Poutine vs Pizza: The Taste of Home",
+      excerpt: "Two countries, two stories of flavour: poutine and pizza show us how food brings people together everywhere.",
+      body: `<p>Hello everyone! Today, I'm taking you on a journey between two iconic dishes: Canadian poutine and Italian pizza. Two different styles, one goal: bringing joy to the plate.</p>
+<p><strong>Poutine: Canada's pride</strong><br>For those who don't know it, poutine is the Canadian dish: French fries, <strong>cheese curds</strong>, and <strong>gravy</strong>. It might sound like a mess, but it's pure genius. Poutine isn't just food — it's a symbol of comfort, resilience, and community spirit. Every serving tells a story of shared moments after a long day, family gatherings, and warmth needed to face cold winters.</p>
+<p><strong>Pizza: the Italian conquest</strong><br>Pizza isn't just food in Italy, it's a symbol of tradition, regional pride, and shared moments. Each slice tells a story of <strong>homemade</strong> family recipes, local ingredients, and centuries of history.</p>
+<p><strong>What I miss about poutine:</strong></p>
+<ul><li>Simplicity: In Canada, you order "poutine" and you know what to expect. In Italy, you order "pizza" and they ask you 47 questions about toppings.</li><li>Availability: In Canada, you can find poutine 24/7. In Italy, if you want pizza at 3 pm, you wait until 7 pm.</li></ul>
+<p><strong>What I discovered about Italian pizza:</strong><br>Every city has its own pizza: in Naples, thick and soft; in Rome, thin and crispy; in Sicily, rectangular and thicker; in Puglia, soft and fragrant. These different styles spark epic debates about the "real" pizza.</p>
+<p>Both have their unique charm. Poutine offers warmth and comfort during cold winters, while pizza represents a rich culinary tradition full of variety and artistry.</p>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Cheese curds</strong> = fresh, soft pieces of cheese used in poutine</li><li><strong>Gravy</strong> = a thick sauce made from meat juices</li><li><strong>Homemade</strong> = food made at home, not bought from a store</li></ul></div>`
+    },
+    it: {
+      category: "Cibo",
+      title: "Poutine vs Pizza: il Sapore di Casa",
+      excerpt: "Due paesi, due storie di sapori: poutine e pizza ci mostrano come il cibo unisce le persone ovunque.",
+      body: `<p>Ciao a tutti! Oggi vi porto in un viaggio tra due piatti iconici: la poutine canadese e la pizza italiana. Due stili diversi, un obiettivo: portare gioia nel piatto.</p>
+<p><strong>La poutine: l'orgoglio canadese</strong><br>Per chi non la conoscesse, la poutine è il piatto canadese per eccellenza: patatine fritte, <strong>cheese curds</strong> e salsa <strong>gravy</strong>. Potrebbe sembrare un disastro, ma è pura genialità. La poutine non è solo cibo — è un simbolo di comfort, resilienza e spirito comunitario. Ogni porzione racconta una storia di momenti condivisi dopo una lunga giornata, riunioni di famiglia e il calore necessario per affrontare i freddi inverni.</p>
+<p><strong>La pizza: la conquista italiana</strong><br>In Italia la pizza non è solo cibo, è un simbolo di tradizione, orgoglio regionale e momenti condivisi. Ogni fetta racconta storie di ricette <strong>homemade</strong> di famiglia, ingredienti locali e secoli di storia.</p>
+<p><strong>Cosa mi manca della poutine:</strong></p>
+<ul><li>Semplicità: in Canada ordini "poutine" e sai cosa aspettarti. In Italia ordini "pizza" e ti fanno 47 domande sul condimento.</li><li>Disponibilità: in Canada trovi la poutine 24 ore su 24. In Italia, se vuoi la pizza alle 15, aspetti fino alle 19.</li></ul>
+<p><strong>Cosa ho scoperto della pizza italiana:</strong><br>Ogni città ha la sua pizza: a Napoli spessa e morbida; a Roma sottile e croccante; in Sicilia rettangolare e più alta; in Puglia con una base soffice e profumata. Questi stili diversi scatenano dibattiti epici su quale sia la pizza "vera".</p>
+<p>Entrambe hanno il loro fascino unico. La poutine offre calore e conforto durante i freddi inverni canadesi, mentre la pizza rappresenta una ricca tradizione culinaria piena di varietà e creatività.</p>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Cheese curds</strong> = pezzi freschi e morbidi di formaggio usati nella poutine</li><li><strong>Gravy</strong> = una salsa densa a base di succhi di carne</li><li><strong>Homemade</strong> = fatto in casa, non comprato al negozio</li></ul></div>`
+    }
+  },
+  {
+    en: {
+      category: "Communication",
+      title: "From Canadian Calm to Italian Chaos: How Communication Changes",
+      excerpt: "Discover how Canadians stay calm and quiet while Italians turn every WhatsApp into endless chaos.",
+      body: `<p>Glad you're here! Today, I'll talk about the funny differences in how Italians and Canadians use WhatsApp.</p>
+<p><strong>My Canadian WhatsApp experience</strong><br>In Canada, WhatsApp conversations are like <strong>business meetings</strong>: short, direct, efficient. "Hey, how are you?" "Good, you?" "Good. Coffee later?" "Sure. 3pm?" "Perfect." Conversation over. We treat WhatsApp like a tool — get the information, make the plan, done.</p>
+<p><strong>My first Italian WhatsApp shock</strong><br>First <strong>group chat</strong>: "Surprise Party." 73 messages in 2 hours. Topic: organizing a birthday party. My first thought: "Are they all crazy?" In Canada, that same conversation would have taken 10 messages, maximum.</p>
+<p><strong>Italian WhatsApp groups: a parallel world</strong><br>The Italian family group chat: 247 messages a day with photos of every meal, mandatory good mornings and good nights. At first invasive, now I feel abandoned without 50 daily notifications.</p>
+<p>Planning an aperitivo: 89 messages to end up at the same place as always. Someone replies three days later to an urgent question. <strong>Voice messages</strong> five minutes long just to say "okay, see you there."</p>
+<p><strong>Voice messages: a new world</strong><br>In Canada, <strong>voice messages</strong> are for emergencies. In Italy, you use them to talk about anything: even just to say you're at the supermarket, what you're buying, whether you're getting whole milk or skimmed. All in one 4-minute voice message. At first I hated them. Now I send 6-minute audios just to say I'll be 10 minutes late.</p>
+<p><strong>Canada vs Italy:</strong></p>
+<ul><li>Reply time: In Canada, a whole day without replying — no one notices. In Italy, disappear for 2 hours and people start calling to check if you're alive!</li><li>Sharing culture: Canadians share a photo only if it's really special. Italians share a sunset, a coffee, everything.</li><li>Group chats: Canadians make groups for practical things, then silence. Italians have groups that never sleep.</li></ul>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Business meetings</strong> = scheduled meetings to discuss work topics</li><li><strong>Voice messages</strong> = audio messages</li><li><strong>Group chat</strong> = a shared messaging thread with multiple people</li></ul></div>`
+    },
+    it: {
+      category: "Comunicazione",
+      title: "Dalla Calma Canadese al Caos Italiano: Come Cambia la Comunicazione",
+      excerpt: "Scopri come i canadesi restano calmi mentre gli italiani trasformano ogni WhatsApp in un caos infinito.",
+      body: `<p>Contento che siate qui! Oggi parlerò delle divertenti differenze nel modo in cui italiani e canadesi usano WhatsApp.</p>
+<p><strong>La mia esperienza canadese con WhatsApp</strong><br>In Canada, le conversazioni su WhatsApp sono come <strong>business meetings</strong>: brevi, dirette, efficienti. "Ciao, come stai?" "Bene, e tu?" "Bene. Caffè dopo?" "Certo. Alle 15?" "Perfetto." Conversazione chiusa. Usiamo WhatsApp come uno strumento — prendi le informazioni, fai il piano, fine.</p>
+<p><strong>Il mio primo shock WhatsApp italiano</strong><br>Primo gruppo: "Festa a sorpresa." 73 messaggi in 2 ore. Argomento: organizzare una festa di compleanno. Primo pensiero: "Sono tutti matti?" In Canada, la stessa conversazione avrebbe richiesto 10 messaggi al massimo.</p>
+<p><strong>I gruppi WhatsApp italiani: un mondo parallelo</strong><br>La <strong>group chat</strong> della famiglia su WhatsApp è meravigliosa e terrificante allo stesso tempo: 247 messaggi al giorno con foto di ogni pasto, buongiorno e buonanotte obbligatori. All'inizio invasivo, ora mi sento abbandonato senza almeno 50 notifiche al giorno.</p>
+<p>Organizzare un aperitivo: 89 messaggi per finire sempre nello stesso posto di sempre. Qualcuno risponde tre giorni dopo a una domanda urgente. I <strong>voice messages</strong> di cinque minuti solo per dire "ok, ci vediamo lì".</p>
+<p><strong>I messaggi vocali: un nuovo mondo</strong><br>In Canada, i vocali sono per le emergenze. In Italia li usi per raccontare qualsiasi cosa: anche solo per dire che sei al supermercato, cosa stai comprando, se prendi il latte intero o scremato. Tutto in un vocale di 4 minuti. All'inizio li odiavo. Ora mando audio di 6 minuti solo per dire che farò 10 minuti di ritardo.</p>
+<p><strong>Canada vs Italia:</strong></p>
+<ul><li>Tempo di risposta: in Canada puoi passare un'intera giornata senza rispondere e nessuno se ne accorge. In Italia, se sparisci per 2 ore, la gente inizia a chiamare per controllare se sei vivo!</li><li>Cultura della condivisione: i canadesi condividono una foto solo se è davvero speciale. Gli italiani condividono un tramonto, un caffè, tutto.</li><li>Gruppi chat: i canadesi li creano per cose pratiche, poi silenzio. Gli italiani hanno gruppi che non dormono mai.</li></ul>
+<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Business meetings</strong> = riunioni di lavoro programmate</li><li><strong>Voice messages</strong> = messaggi vocali</li><li><strong>Group chat</strong> = una chat condivisa con più persone</li></ul></div>`
+    }
+  },
+  {
+    en: {
+      category: "Culture",
+      title: "Halloween, Christmas and Easter: Two Countries, a Thousand Differences",
+      excerpt: "How do Halloween, Christmas, and Easter change between the two countries? Find out here!",
+      body: `<p>Hey, there! Today, I'm sharing some fun differences in traditions between these two countries.</p>
+<p><strong>Halloween: my annual heartbreak</strong><br>In Canada: Halloween is religion. By July, you're planning your costume. By August, buying decorations. By September, the house is a horror set. Pumpkins? Huge. Candy? Tons. Costumes? True works of art. And the kids? Smiles knocking on every door in the neighborhood.</p>
+<p>In Italy: Halloween? That "American party" that ends with buying a pumpkin at the supermarket. Every year I wander Italian supermarkets like a ghost looking for decent decorations. Result? Three lopsided pumpkins that look like orange zucchinis, two broken plastic spiders, and a vampire mask that's more funny than scary.</p>
+<p>Italian kids trying to trick-or-treat end up in front of grandmas who say: "What are you doing, darlings? Here, take a candy… but next time, please don't ring the bell anymore, okay?"</p>
+<p><strong>Christmas: the magic that lights up Canadian winter</strong><br>In Canada: Christmas starts November 1st. No joke. The day after Halloween, first Christmas lights appear. Houses shining, buildings decorated like masterpieces.</p>
+<p>In Italy: the elegance in decorations, the artistic nativity scenes, that warm atmosphere that makes you feel like you're at grandma's house… truly special. But the Befana? How do I explain to my Canadian friends that on January 6th a witch comes on a broomstick? "Guys, forget Santa Claus, here we have a witch who brings coal!"</p>
+<p><strong>Easter: the sweet challenge</strong><br>In Canada: Easter Bunny, egg hunts, chocolate everywhere. Simple, direct, effective. In Italy: Easter is a culinary event that takes weeks of preparation. The Italian Easter lunch is a gastronomic marathon that ends when someone calls an ambulance for indigestion.</p>
+<p>On October 31st, I light a candle — the only Halloween decoration I can find — and look at pictures of my Canadian Halloweens with a lot of nostalgia.</p>
+<p><strong>The harsh truth</strong><br>Here in Italy, I've learned to appreciate beautiful traditions, but Halloween? Every year I fall into a bit of a seasonal blues.<br>On October 31st, I light a candle (the only Halloween decoration I can find) and look at pictures of my Canadian Halloweens with a lot of nostalgia and melancholy.</p>`
+    },
+    it: {
+      category: "Cultura",
+      title: "Halloween, Natale e Pasqua: Due Paesi, Mille Differenze",
+      excerpt: "Come cambiano Halloween, Natale e Pasqua tra i due paesi? Scoprilo qui!",
+      body: `<p>Ciao a tutti! Oggi condivido alcune divertenti differenze nelle tradizioni tra questi due paesi.</p>
+<p><strong>Halloween: il mio dramma annuale</strong><br>In Canada: Halloween è una religione. A luglio stai già pianificando il costume. Ad agosto compri le prime decorazioni. A settembre la casa è un set horror. Zucche? Enormi. Dolci? Tonnellate. Costumi? Vere opere d'arte. E i bambini? Con zaini sulle spalle e mani appiccicose di caramelle, a bussare a ogni porta del quartiere.</p>
+<p>In Italia: Halloween? Quella "festa americana" che qui finisce con l'acquisto di una zucca al supermercato. Ogni anno giro per i supermercati italiani come un fantasma cercando decorazioni decenti. Risultato? Tre zucche storte che sembrano zucchine arancioni, due ragni di plastica semirotti e una maschera da vampiro più comica che spaventosa.</p>
+<p>I bambini italiani che cercano di fare il giro delle case finiscono davanti a nonne che aprono la porta e dicono: "Cosa fate, cari? Ecco una caramella… ma la prossima volta non suonate più il campanello, va bene?"</p>
+<p><strong>Natale: la magia che illumina l'inverno canadese</strong><br>In Canada: il Natale inizia il 1° novembre. Sul serio. Il giorno dopo Halloween appaiono già le prime luci di Natale. Le case risplendono, gli edifici decorati come capolavori.</p>
+<p>In Italia: l'eleganza nelle decorazioni, i presepi artistici, quella calda atmosfera che ti fa sentire a casa della nonna… davvero speciale. Ma la Befana? Come lo spiego ai miei amici canadesi che il 6 gennaio arriva una strega su una scopa? "Ragazzi, dimenticate Babbo Natale, qui abbiamo una strega che porta il carbone!"</p>
+<p><strong>Pasqua: la dolce sfida</strong><br>In Canada: Coniglietto di Pasqua, caccia alle uova, cioccolato ovunque. Semplice, diretto, efficace. In Italia: la Pasqua è un evento culinario che richiede settimane di preparazione. Il pranzo di Pasqua italiano è una maratona gastronomica che finisce quando qualcuno chiama l'ambulanza per indigestione.</p>
+<p>Il 31 ottobre accendo una candela — l'unica decorazione di Halloween che riesco a trovare — e guardo le foto dei miei Halloween canadesi con tanta nostalgia.</p>
+<p><strong>La cruda verità</strong><br>Qui in Italia ho imparato ad apprezzare tradizioni bellissime, ma Halloween? Ogni anno cado in depressione.<br>Il 31 ottobre, accendo una candela (l'unica decorazione halloweeniana che riesco a trovare) e guardo foto dei miei Halloween canadesi con tanta nostalgia e malinconia.</p>`
+    }
+  }
+];
+
+let currentLang = 'en';
+let currentArticle = 0;
+
+const ui = {
+  en: {
+    heroTitle: 'CANADA VS ITALY<br><span>THE BLOG</span>',
+    heroSub: 'Explore cultural curiosities between Canada and Italy. Discover the most interesting differences and improve your English through stories!',
+    listLabel: 'Latest Articles',
+    listTitle: 'ALL POSTS',
+    featuredLabel: 'Featured Post',
+    readMore: 'Read more',
+    backBtn: 'Back to Blog',
+    ctaTitle: 'READY TO<br><span>START?</span>',
+    ctaSub: 'Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence.',
+    ctaBtn: 'Book Your Free Lesson Now',
+    navCta: 'Book Free Lesson'
+  },
+  it: {
+    heroTitle: 'CANADA VS ITALIA<br><span>IL BLOG</span>',
+    heroSub: 'Esplora le curiosità culturali tra Canada e Italia. Scopri le differenze più interessanti e migliora il tuo inglese attraverso le storie!',
+    listLabel: 'Ultimi Articoli',
+    listTitle: 'TUTTI I POST',
+    featuredLabel: 'Post in Evidenza',
+    readMore: 'Leggi di più',
+    backBtn: 'Torna al Blog',
+    ctaTitle: 'PRONTO A<br><span>INIZIARE?</span>',
+    ctaSub: 'Prenota oggi la tua lezione di prova gratuita. Nessun impegno — solo tu, Marcello, e il tuo primo passo verso un inglese davvero sicuro.',
+    ctaBtn: 'Prenota Ora la Tua Lezione Gratuita',
+    navCta: 'Prenota Lezione Gratuita'
+  }
+};
+
+function buildGrid() {
+  const grid = document.getElementById('blog-grid');
+  if (!grid) return;
+  const lang = currentLang;
+  const t = ui[lang];
+  grid.innerHTML = '';
+  articles.forEach((a, i) => {
+    const d = a[lang];
+    const featured = i === 0 ? 'featured' : '';
+    const featuredAccent = i === 0 ? `<div class="featured-accent"><span class="featured-label">${t.featuredLabel}</span></div>` : '';
+    grid.innerHTML += `
+      <div class="blog-card ${featured}" onclick="showArticle(${i})">
+        ${featuredAccent}
+        <div class="blog-card-body">
+          <span class="blog-category">${d.category}</span>
+          <div class="blog-card-title">${d.title}</div>
+          <p class="blog-card-excerpt">${d.excerpt}</p>
+        </div>
+        <div class="blog-card-footer">
+          <button class="read-more">${t.readMore} <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+        </div>
+      </div>`;
+  });
+}
+
+function updateUI() {
+  const t = ui[currentLang];
+  document.getElementById('hero-title').innerHTML = t.heroTitle;
+  document.getElementById('hero-sub').textContent = t.heroSub;
+  document.getElementById('list-label').textContent = t.listLabel;
+  document.getElementById('list-title').textContent = t.listTitle;
+  document.getElementById('back-btn-text').lastChild.textContent = ' ' + t.backBtn;
+  document.getElementById('nav-cta-btn').textContent = t.navCta;
+  buildGrid();
+  if (document.getElementById('page-article').classList.contains('active')) {
+    renderArticle(currentArticle);
+  }
+}
+
+function setLang(lang) {
+  currentLang = lang;
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-it').classList.toggle('active', lang === 'it');
+  const mbtnEn = document.getElementById('mbtn-en');
+  const mbtnIt = document.getElementById('mbtn-it');
+  if (mbtnEn) mbtnEn.classList.toggle('active', lang === 'en');
+  if (mbtnIt) mbtnIt.classList.toggle('active', lang === 'it');
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (val !== null) {
+      if (el.tagName === 'H2' || el.innerHTML.includes('<span>')) {
+        el.innerHTML = val;
+      } else {
+        el.textContent = val;
+      }
+    }
+  });
+  updateUI();
+}
+
+function toggleMenu() {
+  const nav = document.getElementById('mobileNav');
+  const btn = document.getElementById('hamburger');
+  nav.classList.toggle('open');
+  btn.classList.toggle('open');
+  document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+}
+
+function showPage(name) {
+  document.getElementById('page-blog-list').classList.toggle('active', name === 'blog-list');
+  document.getElementById('page-article').classList.toggle('active', name === 'article');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderArticle(index) {
+  const a = articles[index][currentLang];
+  document.getElementById('art-category').textContent = a.category;
+  document.getElementById('art-title').textContent = a.title;
+  document.getElementById('art-body').innerHTML = a.body;
+}
+
+function showArticle(index) {
+  currentArticle = index;
+  renderArticle(index);
+  showPage('article');
+}
+
+buildGrid();
+
+</script>
+</body>
+</html>

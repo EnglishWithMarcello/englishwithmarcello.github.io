@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | English With Marcello</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -59,141 +60,95 @@
   .lang-btn.active { background: var(--navy); color: var(--white); }
   .lang-btn:not(.active):hover { background: var(--aqua); color: var(--navy); }
 
-  .nav-cta { background: var(--navy); color: var(--white); border: none; padding: 0.65rem 1.4rem; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: transform 0.15s, background 0.2s; }
+  .nav-cta { background: var(--navy); color: var(--white); border: none; padding: 0.65rem 1.4rem; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: transform 0.15s, background 0.2s; text-decoration: none; display: inline-block; }
   .nav-cta:hover { background: var(--navy-dark); transform: scale(1.03); }
 
-  /* HERO */
-  .hero { padding: 5rem 2.5rem 4rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; max-width: 1200px; margin: 0 auto; min-height: 82vh; }
-  .hero-tag { display: inline-block; background: var(--red); color: var(--white); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; padding: 0.35rem 0.9rem; margin-bottom: 1.5rem; }
-  .hero-title { font-family: var(--font-display); font-size: clamp(5rem, 10vw, 9rem); line-height: 0.92; letter-spacing: 2px; margin-bottom: 1.5rem; text-transform: uppercase; color: var(--navy); }
-  .hero-title span { color: var(--aqua-deep); display: block; }
-  .hero-subtitle { color: var(--muted); font-size: 1.05rem; max-width: 420px; margin-bottom: 2.5rem; line-height: 1.75; }
-  .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
-  .btn-primary { background: var(--navy); color: var(--white); border: none; padding: 1rem 2rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: transform 0.15s, background 0.2s; }
-  .btn-primary:hover { background: var(--navy-dark); transform: translateY(-2px); }
-  .btn-outline { background: transparent; color: var(--navy); border: 1.5px solid var(--aqua-dark); padding: 1rem 2rem; font-weight: 500; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: border-color 0.2s, color 0.2s, background 0.2s; }
-  .btn-outline:hover { border-color: var(--navy); background: var(--aqua); color: var(--navy); }
-
-  /* STAT CARDS */
-  .stat-stack { display: flex; flex-direction: column; gap: 1rem; }
-  .stat-card { background: var(--navy); border-left: 4px solid var(--aqua); padding: 1.5rem; display: flex; align-items: center; gap: 1.5rem; transition: border-left-color 0.2s, transform 0.2s; }
-  .stat-card:hover { border-left-color: var(--red); transform: translateX(4px); }
-  .stat-num { font-family: var(--font-display); font-size: 3.2rem; color: var(--aqua); line-height: 1; min-width: 90px; }
-  .stat-label { font-size: 0.85rem; color: #8A9FCC; line-height: 1.5; }
-  .stat-label strong { display: block; color: var(--white); font-size: 1rem; margin-bottom: 2px; }
-  .flag-row { display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap; }
-  .flag { background: var(--light-bg); border: 1px solid var(--aqua); padding: 0.4rem 0.8rem; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; color: var(--navy); font-weight: 500; }
-
-  /* TICKER */
-  .ticker { background: var(--aqua); padding: 0.85rem 0; overflow: hidden; white-space: nowrap; }
-  .ticker-inner { display: inline-flex; animation: ticker 20s linear infinite; }
-  .ticker-item { color: var(--navy); font-family: var(--font-display); font-size: 1.3rem; letter-spacing: 3px; padding-right: 3rem; }
-  .ticker-dot { color: var(--navy); opacity: 0.4; padding-right: 3rem; font-family: var(--font-display); font-size: 1.3rem; }
-  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-
-  /* SECTIONS */
-  .section { padding: 5rem 2.5rem; max-width: 1200px; margin: 0 auto; }
-  .section-label { font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase; color: var(--aqua-deep); font-weight: 700; margin-bottom: 1rem; }
-  .section-title { font-family: var(--font-display); font-size: clamp(2.8rem, 5vw, 4rem); line-height: 1; text-transform: uppercase; margin-bottom: 2rem; color: var(--navy); letter-spacing: 1px; }
-
-  /* ABOUT */
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: stretch; }
-  .about-photo-wrap { display: flex; max-width: 380px; }
-  .about-photo { width: 100%; object-fit: cover; object-position: top center; display: block; border: 2px solid var(--aqua); }
-  .about-text p { color: var(--muted); margin-bottom: 1.2rem; line-height: 1.8; font-size: 1rem; }
-  .cert-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
-  .cert-pill { border: 1.5px solid var(--navy); color: var(--navy); padding: 0.35rem 0.9rem; font-size: 0.75rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; transition: background 0.2s, color 0.2s; cursor: default; }
-  .cert-pill:hover { background: var(--navy); color: var(--white); }
-
-  /* Photo placeholder */
-  .photo-placeholder {
-    width: 100%;
-    aspect-ratio: 3/4;
-    background: var(--light-bg);
-    border: 2px dashed var(--aqua-dark);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--aqua-deep);
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-    text-align: center;
-    gap: 0.75rem;
-    cursor: pointer;
-    transition: background 0.2s, border-color 0.2s;
+  /* HERO BAND */
+  .page-hero {
+    background: var(--navy);
+    padding: 4rem 2.5rem 3.5rem;
     position: relative;
     overflow: hidden;
   }
-  .photo-placeholder:hover { background: #d8eeed; border-color: var(--navy); }
-  .photo-placeholder svg { width: 48px; height: 48px; opacity: 0.5; }
-  .photo-placeholder input[type=file] { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
-  .photo-placeholder img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .photo-placeholder .upload-label { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; pointer-events: none; }
+  .page-hero::before {
+    content: 'PRIVACY';
+    position: absolute;
+    font-family: var(--font-display);
+    font-size: clamp(8rem, 20vw, 18rem);
+    color: rgba(255,255,255,0.04);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    pointer-events: none;
+    letter-spacing: 8px;
+  }
+  .page-hero-inner { max-width: 900px; margin: 0 auto; position: relative; }
+  .page-hero-tag { display: inline-block; background: var(--red); color: var(--white); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; padding: 0.35rem 0.9rem; margin-bottom: 1.2rem; }
+  .page-hero h1 { font-family: var(--font-display); font-size: clamp(3.5rem, 8vw, 6.5rem); line-height: 0.95; letter-spacing: 2px; text-transform: uppercase; color: var(--white); margin-bottom: 1.5rem; }
+  .page-hero h1 span { color: var(--aqua); }
+  .page-hero-meta { color: rgba(255,255,255,0.5); font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 1.2rem; }
 
-  /* SERVICES */
-  .services-section { background: var(--navy); padding: 5rem 2.5rem; }
-  .services-inner { max-width: 1200px; margin: 0 auto; }
-  .services-inner .section-label { color: var(--aqua); }
-  .services-inner .section-title { color: var(--white); }
-  .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--navy-mid); border: 1px solid var(--navy-mid); margin-top: 3rem; }
-  .service-card { background: var(--navy); padding: 2.5rem; transition: background 0.2s; cursor: default; position: relative; overflow: hidden; }
-  .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--aqua); transition: height 0.3s ease; }
-  .service-card:hover { background: var(--navy-dark); }
-  .service-card:hover::before { height: 100%; }
-  .service-num { font-family: var(--font-display); font-size: 3rem; color: var(--white); line-height: 1; margin-bottom: 1rem; transition: color 0.3s; }
-  .service-card:hover .service-num { color: var(--aqua); }
-  .service-name { font-weight: 700; font-size: 1.05rem; margin-bottom: 0.5rem; letter-spacing: 0.5px; text-transform: uppercase; color: var(--white); }
-  .service-desc { color: #8A9FCC; font-size: 0.9rem; line-height: 1.7; }
-  .services-footer { margin-top: 2.5rem; text-align: center; }
-  .services-footer p { color: var(--white); font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.7; }
-  .btn-aqua-outline { background: transparent; color: var(--aqua); border: 1.5px solid var(--aqua); padding: 1rem 2.5rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: background 0.2s, color 0.2s; }
-  .btn-aqua-outline:hover { background: var(--aqua); color: var(--navy); }
+  /* CONTENT */
+  .privacy-wrap { max-width: 860px; margin: 0 auto; padding: 4rem 2.5rem 6rem; }
 
-  /* STEPS */
-  .steps-section { background: var(--light-bg); padding: 5rem 2.5rem; }
-  .steps-inner { max-width: 1200px; margin: 0 auto; }
-  .steps-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
-  .step { display: flex; flex-direction: column; gap: 1rem; }
-  .step-num { font-family: var(--font-display); font-size: 5rem; color: var(--aqua-deep); line-height: 1; }
-  .step-divider { width: 40px; height: 3px; background: var(--navy); }
-  .step-title { font-weight: 700; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 1px; color: var(--navy); }
-  .step-desc { color: var(--muted); font-size: 0.9rem; line-height: 1.7; }
-  .contact-strip { margin-top: 3rem; display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; justify-content: center; padding: 1.5rem 2rem; background: var(--navy); border-left: 4px solid var(--aqua); }
-  .contact-strip a { color: var(--white); font-size: 0.9rem; font-weight: 500; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; letter-spacing: 0.5px; transition: color 0.2s; }
-  .contact-strip a:hover { color: var(--aqua); }
-  .contact-strip-label { color: var(--white); font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+  .pp-section { margin-bottom: 3.5rem; }
+  .pp-section-label { font-size: 0.65rem; letter-spacing: 4px; text-transform: uppercase; color: var(--aqua-deep); font-weight: 700; margin-bottom: 0.75rem; }
+  .pp-section h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 2.6rem); text-transform: uppercase; color: var(--navy); letter-spacing: 1.5px; margin-bottom: 1.5rem; line-height: 1; border-bottom: 2px solid var(--aqua); padding-bottom: 0.75rem; }
+  .pp-section h3 { font-family: var(--font-body); font-size: 0.95rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--navy); margin-bottom: 0.6rem; margin-top: 2rem; }
+  .pp-section p { color: var(--muted); margin-bottom: 1.1rem; line-height: 1.8; font-size: 0.97rem; }
+  .pp-section ul { list-style: none; padding: 0; margin-bottom: 1.2rem; }
+  .pp-section ul li { color: var(--muted); font-size: 0.97rem; line-height: 1.8; padding-left: 1.4rem; position: relative; margin-bottom: 0.3rem; }
+  .pp-section ul li::before { content: '—'; position: absolute; left: 0; color: var(--aqua-deep); font-weight: 700; }
+  .pp-section a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s; }
+  .pp-section a:hover { color: var(--aqua-deep); }
 
-  /* REVIEWS */
-  .reviews-section { background: var(--white); padding: 5rem 2.5rem; }
-  .reviews-inner { max-width: 1200px; margin: 0 auto; }
-  .reviews-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem; }
-  .review-card { background: var(--white); border: 1.5px solid var(--aqua); padding: 2rem; transition: border-color 0.2s, transform 0.2s, background 0.2s; }
-  .review-card:hover { border-color: var(--navy); transform: translateY(-4px); background: var(--light-bg); }
-  .stars { color: #f5a623; font-size: 1rem; margin-bottom: 1rem; letter-spacing: 2px; }
-  .review-text { color: var(--muted); font-size: 0.9rem; line-height: 1.75; margin-top: 1rem; font-style: italic; }
-  .review-author { font-weight: 700; font-size: 1rem; letter-spacing: 0.5px; color: var(--navy); }
-  .review-date { color: #8A9FCC; font-size: 0.8rem; margin-top: 2px; }
+  /* INFO BOX */
+  .info-box { background: var(--navy); border-left: 4px solid var(--aqua); padding: 1.5rem 2rem; margin-bottom: 3.5rem; }
+  .info-box p { color: rgba(255,255,255,0.75); font-size: 0.92rem; line-height: 1.75; margin-bottom: 0.5rem; }
+  .info-box p:last-child { margin-bottom: 0; }
+  .info-box strong { color: var(--white); }
+  .info-box a { color: var(--aqua); }
 
-  .reviews-footer { margin-top: 2.5rem; text-align: center; }
-  .btn-navy-outline { background: transparent; color: var(--navy); border: 1.5px solid var(--navy); padding: 1rem 2.5rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: background 0.2s, color 0.2s; }
-  .btn-navy-outline:hover { background: var(--navy); color: var(--white); }
-  .pink-band { background: var(--aqua); padding: 4rem 2.5rem; text-align: center; }
-  .pink-band .section-label { color: var(--navy); opacity: 0.7; margin-bottom: 0.75rem; }
-  .pink-band-title { color: var(--navy) !important; font-size: clamp(2.8rem, 5vw, 4rem) !important; font-family: var(--font-display) !important; margin-bottom: 1.5rem; }
-  .pink-band p:not(.section-label) { color: var(--navy); font-size: 1.1rem; max-width: 600px; margin: 0 auto 1.5rem; font-weight: 500; line-height: 1.7; }
-  .btn-red-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); padding: 1rem 2.5rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: background 0.2s, color 0.2s; }
-  .btn-red-outline:hover { background: var(--navy); color: var(--aqua); }
+  /* TOOL CARDS */
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+  .tool-card { border: 1.5px solid var(--aqua); padding: 1.3rem 1.5rem; transition: border-color 0.2s, transform 0.2s; }
+  .tool-card:hover { border-color: var(--navy); transform: translateY(-2px); }
+  .tool-card-name { font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--navy); margin-bottom: 0.3rem; }
+  .tool-card-purpose { font-size: 0.82rem; color: var(--aqua-deep); font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.5px; }
+  .tool-card-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+  .tool-card-desc a { color: var(--muted); font-size: 0.8rem; }
 
-  /* CTA BAND */
-  .cta-band { background: var(--navy); padding: 5rem 2.5rem; text-align: center; position: relative; overflow: hidden; }
-  .cta-band::before { content: 'EWM'; position: absolute; font-family: var(--font-display); font-size: 18rem; color: rgba(152,204,196,0.05); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; letter-spacing: 10px; }
-  .cta-title { font-family: var(--font-display); font-size: clamp(3.5rem, 8vw, 7rem); color: var(--white); line-height: 0.9; text-transform: uppercase; margin-bottom: 1rem; }
-  .cta-title span { color: var(--aqua); }
-  .cta-sub { color: #8A9FCC; font-size: 1.05rem; max-width: 500px; margin: 0 auto 2.5rem; line-height: 1.7; }
-  .btn-aqua { background: var(--aqua); color: var(--navy); border: none; padding: 1.1rem 2.5rem; font-weight: 700; font-size: 0.9rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: transform 0.15s, background 0.2s; }
-  .btn-aqua:hover { background: var(--aqua-dark); transform: scale(1.04); }
+  /* DATA TABLE */
+  .data-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.88rem; }
+  .data-table th { background: var(--navy); color: var(--white); text-align: left; padding: 0.75rem 1rem; font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+  .data-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--light-bg); color: var(--muted); vertical-align: top; line-height: 1.6; }
+  .data-table tr:nth-child(even) td { background: var(--off-white); }
+  .data-table .tag { display: inline-block; background: var(--light-bg); border: 1px solid var(--aqua); color: var(--navy); font-size: 0.7rem; padding: 0.15rem 0.5rem; letter-spacing: 0.5px; font-weight: 600; border-radius: 2px; }
+  .tag-req { border-color: var(--red) !important; color: var(--red) !important; }
+
+  /* RIGHTS GRID */
+  .rights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+  .right-card { border: 1.5px solid var(--aqua); padding: 1.2rem 1.4rem; transition: border-color 0.2s, transform 0.2s; }
+  .right-card:hover { border-color: var(--navy); transform: translateY(-2px); }
+  .right-card-icon { font-size: 1.3rem; margin-bottom: 0.6rem; }
+  .right-card-title { font-weight: 700; font-size: 0.82rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--navy); margin-bottom: 0.4rem; }
+  .right-card-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+
+  /* HIGHLIGHT BAND */
+  .highlight-band { background: var(--light-bg); border-left: 4px solid var(--aqua-deep); padding: 1.4rem 1.8rem; margin: 1.5rem 0; }
+  .highlight-band p { color: var(--navy); font-size: 0.95rem; line-height: 1.75; margin: 0; }
+
+  /* CONTACT CTA */
+  .contact-cta { background: var(--aqua); padding: 2.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; margin-top: 4rem; }
+  .contact-cta-text h3 { font-family: var(--font-display); font-size: 2rem; letter-spacing: 2px; color: var(--navy); text-transform: uppercase; line-height: 1; margin-bottom: 0.4rem; }
+  .contact-cta-text p { font-size: 0.9rem; color: var(--navy); opacity: 0.8; }
+  .contact-cta-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .cta-link-btn { background: var(--navy); color: var(--white); border: none; padding: 0.8rem 1.5rem; font-family: var(--font-body); font-weight: 700; font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s, transform 0.15s; }
+  .cta-link-btn:hover { background: var(--navy-dark); transform: translateY(-2px); }
+
+  .pp-divider { border: none; border-top: 1px solid var(--aqua); margin: 3rem 0; }
+  .updated-badge { display: inline-block; background: var(--light-bg); border: 1.5px solid var(--aqua-dark); padding: 0.5rem 1.2rem; font-size: 0.78rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--aqua-deep); margin-bottom: 3rem; }
 
   footer { background: var(--navy-dark); border-top: 3px solid var(--aqua); padding: 3rem 2.5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; flex-wrap: wrap; gap: 1rem; text-align: center; }
   .footer-links { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
@@ -201,12 +156,16 @@
   .footer-links a:hover { color: var(--aqua); }
   .footer-copy { color: var(--white); font-size: 0.75rem; }
 
-  @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-  .animate { animation: fadeUp 0.6s ease forwards; opacity: 0; }
-  .delay-1 { animation-delay: 0.1s; }
-  .delay-2 { animation-delay: 0.25s; }
-  .delay-3 { animation-delay: 0.4s; }
-  .delay-4 { animation-delay: 0.55s; }
+    @media (max-width: 700px) {
+    nav { padding: 1rem 1.2rem; gap: 0.8rem; flex-wrap: wrap; }
+    .nav-links { display: none; }
+    .privacy-wrap { padding: 2.5rem 1.2rem 4rem; }
+    .page-hero { padding: 3rem 1.2rem 2.5rem; }
+    .contact-cta { flex-direction: column; align-items: flex-start; }
+    .rights-grid, .tools-grid { grid-template-columns: 1fr; }
+    .data-table { font-size: 0.8rem; }
+    .data-table th, .data-table td { padding: 0.6rem 0.7rem; }
+  }
 
   /* HAMBURGER */
   .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
@@ -214,78 +173,34 @@
   .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .hamburger.open span:nth-child(2) { opacity: 0; }
   .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-  /* MOBILE DRAWER */
-  .mobile-nav { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--white); z-index: 200; flex-direction: column; padding: 5rem 2rem 2rem; gap: 0; overflow-y: auto; }
+  .mobile-nav { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--white); z-index: 200; flex-direction: column; padding: 5rem 2rem 2rem; overflow-y: auto; }
   .mobile-nav.open { display: flex; }
   .mobile-nav-close { position: absolute; top: 1.2rem; right: 1.5rem; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--navy); line-height: 1; }
   .mobile-nav a { display: block; padding: 1rem 0; font-size: 1.1rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--aqua); }
-  .mobile-nav a:last-of-type { border-bottom: none; }
   .mobile-nav .mobile-lang { display: flex; gap: 0; margin-top: 1.5rem; border: 1.5px solid var(--aqua-deep); width: fit-content; }
   .mobile-nav .mobile-cta { margin-top: 1.5rem; background: var(--navy); color: var(--white); border: none; padding: 1rem 2rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); width: 100%; }
 
-  /* RESPONSIVE */
-  @media (max-width: 900px) {
-    .reviews-grid { grid-template-columns: repeat(2, 1fr); }
-  }
 
   @media (max-width: 768px) {
-    /* NAV */
     nav { padding: 1rem 1.2rem; }
     .nav-links { display: none; }
     .nav-cta { display: none; }
     .hamburger { display: flex; }
-
-    /* HERO */
-    .hero { grid-template-columns: 1fr; padding: 2.5rem 1.2rem 3rem; min-height: auto; gap: 2rem; }
-    .hero-title { font-size: clamp(3.5rem, 15vw, 6rem); }
-    .hero-subtitle { font-size: 0.95rem; max-width: 100%; }
-    .hero-buttons { flex-direction: column; }
-    .btn-primary, .btn-outline { width: 100%; text-align: center; }
-    .stat-stack { flex-direction: row; flex-wrap: wrap; gap: 0.75rem; }
-    .stat-card { flex: 1 1 calc(50% - 0.375rem); min-width: 0; padding: 1rem; gap: 0.75rem; }
-    .stat-num { font-size: 2.2rem; min-width: 60px; }
-
-    /* SECTIONS */
-    .section { padding: 3rem 1.2rem; }
-    .section-title { font-size: clamp(2.2rem, 8vw, 3rem); }
-
-    /* ABOUT */
-    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .about-photo-wrap { max-width: 100%; }
-
-    /* SERVICES */
-    .services-section { padding: 3rem 1.2rem; }
-    .services-grid { grid-template-columns: 1fr; }
-    .service-card { padding: 1.5rem; }
-
-    /* STEPS */
-    .steps-section { padding: 3rem 1.2rem; }
-    .steps-row { grid-template-columns: 1fr; gap: 1.5rem; }
-    .step-num { font-size: 3.5rem; }
-    .contact-strip { flex-direction: column; gap: 0.75rem; text-align: center; padding: 1.25rem 1rem; }
-
-    /* REVIEWS */
-    .reviews-section { padding: 3rem 1.2rem; }
-    .reviews-grid { grid-template-columns: 1fr; }
-    .review-card { padding: 1.25rem; }
-
-    /* BANDS */
-    .pink-band { padding: 3rem 1.2rem; }
-    .cta-band { padding: 3rem 1.2rem; }
-    .cta-title { font-size: clamp(2.8rem, 12vw, 5rem); }
-    .btn-aqua, .btn-red-outline { width: 100%; }
-
-    /* FOOTER */
-    footer { flex-direction: column; align-items: center; text-align: center; gap: 1rem; padding: 2rem 1.2rem; }
-    .footer-links { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+  }
+  @media (max-width: 480px) {
+    .ticker-item, .ticker-dot { font-size: 1rem; }
+    .section { padding: 2.5rem 1.2rem; }
   }
 
-  @media (max-width: 480px) {
-    .stat-stack { flex-direction: column; }
-    .stat-card { flex: none; width: 100%; }
-    .hero-title { font-size: clamp(3rem, 16vw, 5rem); }
-    .ticker-item, .ticker-dot { font-size: 1rem; }
+
+  /* PAGE-RESPONSIVE-privacy_html.html */
+  @media (max-width: 768px) {
+    .privacy-hero { padding: 2.5rem 1.2rem; }
+    .privacy-content { padding: 3rem 1.2rem; }
+    .privacy-content table { font-size: 0.85rem; }
+    .privacy-content td, .privacy-content th { padding: 0.5rem; }
+    footer { flex-direction: column; align-items: center; text-align: center; gap: 1rem; padding: 2rem 1.2rem; }
+    .footer-links { flex-wrap: wrap; justify-content: center; gap: 1rem; }
   }
 </style>
 </head>
@@ -309,9 +224,7 @@
     </li>
   </ul>
   <button class="nav-cta" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
-  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
 <div class="mobile-nav" id="mobileNav">
@@ -330,196 +243,279 @@
   <button class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis">Book Free Lesson</button>
 </div>
 
-<section style="max-width:1200px;margin:0 auto;">
-  <div class="hero">
-    <div class="hero-left">
-      <div class="hero-tag animate delay-1" data-en="Native English Teacher · Canada" data-it="Insegnante Madrelingua · Canada">Native English Teacher · Canada</div>
-      <h1 class="hero-title animate delay-2">
-        SPEAK
-        <span>ENGLISH.</span>
-        NOW.
-      </h1>
-      <p class="hero-subtitle animate delay-3" data-en="Online lessons with Marcello — a native Canadian teacher now based in Milan, Italy. Real communication. Effective method. Real results." data-it="Lezioni online con Marcello — insegnante canadese madrelingua ora a Milano, Italia. Comunicazione reale. Metodo efficace. Risultati concreti.">Online lessons with Marcello — a native Canadian teacher now based in Milan, Italy. Real communication. Effective method. Real results.</p>
-      <div class="hero-buttons animate delay-4">
-        <button class="btn-primary" data-en="Book Free Trial" data-it="Prenota Prova Gratuita" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Trial</button>
-      </div>
-    </div>
-    <div class="hero-right animate delay-2">
-      <div class="stat-stack">
-        <div class="stat-card">
-          <div class="stat-num">100%</div>
-          <div class="stat-label"><strong data-en="Native Speaker" data-it="Madrelingua">Native Speaker</strong><span data-en="Born and raised in Canada — authentic accent and idioms" data-it="Nato e cresciuto in Canada — accento autentico e modi di dire reali">Born and raised in Canada — authentic accent and idioms</span></div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">5x</div>
-          <div class="stat-label"><strong data-en="Certified Teacher" data-it="Insegnante Certificato">Certified Teacher</strong><span data-en="TESOL · TESL · TEFL · IELTS · TOEFL qualified" data-it="Qualificato TESOL · TESL · TEFL · IELTS · TOEFL">TESOL · TESL · TEFL · IELTS · TOEFL qualified</span></div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">★ 5.0</div>
-          <div class="stat-label"><strong data-en="Student Reviews" data-it="Recensioni Studenti">Student Reviews</strong><span data-en="Praised for warmth, clarity and real results" data-it="Apprezzato per calore, chiarezza e risultati reali">Praised for warmth, clarity and real results</span></div>
-        </div>
-      </div>
-      <div class="flag-row">
-        <span class="flag">🇨🇦 Canadian English</span>
-        <span class="flag">🇺🇸 American English</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="ticker">
-  <div class="ticker-inner">
-    <span class="ticker-item">SPEAK WITH CONFIDENCE</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">IELTS · TOEFL · CAMBRIDGE</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">ONLINE</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">FREE TRIAL LESSON</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">A1 TO C2 ALL LEVELS</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">SPEAK WITH CONFIDENCE</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">IELTS · TOEFL · CAMBRIDGE</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">ONLINE</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">FREE TRIAL LESSON</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">A1 TO C2 ALL LEVELS</span><span class="ticker-dot">·</span>
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-tag" data-en="Legal" data-it="Legale">Legal</div>
+    <h1 data-en="PRIVACY<br><span>POLICY</span>" data-it="PRIVACY<br><span>POLICY</span>">PRIVACY<br><span>POLICY</span></h1>
+    <p class="page-hero-meta" data-en="Last updated: June 2026 · English With Marcello · Milan, Italy" data-it="Ultimo aggiornamento: Giugno 2026 · English With Marcello · Milano, Italia">Last updated: June 2026 · English With Marcello · Milan, Italy</p>
   </div>
 </div>
 
-<section class="section">
-  <p class="section-label" data-en="About Marcello" data-it="Chi è Marcello">About Marcello</p>
-  <h2 class="section-title" data-en="FROM CANADA TO ITALY" data-it="DAL CANADA ALL'ITALIA">FROM CANADA TO ITALY</h2>
-  <div class="about-grid">
-    <div class="about-text">
-      <p data-en="I'm Marcello — a native English speaker from Toronto, Canada, now living in Milan. I moved to Italy in 2022, drawn by my Italian roots and a desire to build something new. What started as a personal adventure became a teaching career built on one simple idea: the best way to learn a language is to actually use it." data-it="Sono Marcello — madrelingua inglese di Toronto, Canada, ora a Milano. Mi sono trasferito in Italia nel 2022, spinto dalle mie radici italiane e dal desiderio di costruire qualcosa di nuovo. Quella che è iniziata come un'avventura personale è diventata una carriera nell'insegnamento fondata su un'idea semplice: il modo migliore per imparare una lingua è usarla davvero.">I'm Marcello — a native English speaker from Toronto, Canada, now living in Milan. I moved to Italy in 2022, drawn by my Italian roots and a desire to build something new. What started as a personal adventure became a teaching career built on one simple idea: the best way to learn a language is to actually use it.</p>
-      <p data-en="I've been on both sides of the classroom. I learned Italian from scratch in Florence, and I know the frustration, the breakthroughs, and everything in between. That's why my lessons focus on speaking and listening first — with grammar and exam prep tailored to your needs." data-it="Ho vissuto l'esperienza da entrambi i lati dell'aula. Ho imparato l'italiano da zero a Firenze, e conosco bene la frustrazione, i progressi e tutto quello che c'è in mezzo. Per questo le mie lezioni mettono prima il parlato e l'ascolto — con grammatica e preparazione agli esami su misura per te.">I've been on both sides of the classroom. I learned Italian from scratch in Florence, and I know the frustration, the breakthroughs, and everything in between. That's why my lessons focus on speaking and listening first — with grammar and exam prep tailored to your needs.</p>
-      <p data-en="Whether you're starting from zero or refining your skills, I'm here to make the journey less daunting — and a lot more effective." data-it="Che tu parta da zero o voglia affinare le tue competenze, sono qui per rendere il percorso meno difficile — e molto più efficace.">Whether you're starting from zero or refining your skills, I'm here to make the journey less daunting — and a lot more effective.</p>
-      <div class="cert-row">
-        <span class="cert-pill">TESOL</span>
-        <span class="cert-pill">TESL</span>
-        <span class="cert-pill">TEFL</span>
-        <span class="cert-pill">IELTS Prep</span>
-        <span class="cert-pill">Cambridge</span>
-      </div>
-      <div style="margin-top:2rem;">
-        <button class="btn-outline" onclick="window.location.href='about.html'" data-en="Learn About My Journey" data-it="Scopri il Mio Percorso">Learn About My Journey</button>
-      </div>
+<div class="privacy-wrap">
+
+  <div class="updated-badge" data-en="Updated June 2026" data-it="Aggiornato Giugno 2026">Updated June 2026</div>
+
+  <!-- DATA CONTROLLER -->
+  <div class="info-box">
+    <p><strong data-en="Data Controller" data-it="Titolare del Trattamento">Data Controller</strong></p>
+    <p data-en="Marcello Riccardo Larosa — Private English Teacher, Milan, Italy" data-it="Marcello Riccardo Larosa — Insegnante di inglese privato, Milano, Italia">Marcello Riccardo Larosa — Private English Teacher, Milan, Italy</p>
+    <p data-en="Business number: 13534870962 · info@englishwithmarcello.com" data-it="Partita Iva: 13534870962 · info@englishwithmarcello.com">Business number: 13534870962 &nbsp;·&nbsp; <a href="mailto:info@englishwithmarcello.com">info@englishwithmarcello.com</a></p>
+    <p data-en="Only the data controller has direct access to the personal data collected and uses it solely for the purposes described in this policy." data-it="Solo il titolare del trattamento ha accesso diretto ai dati personali raccolti e li utilizza esclusivamente per le finalità descritte in questa informativa.">Only the data controller has direct access to the personal data collected and uses it solely for the purposes described in this policy.</p>
+  </div>
+
+  <!-- 01 INTRODUCTION -->
+  <div class="pp-section">
+    <p class="pp-section-label" data-en="01 — Introduction" data-it="01 — Introduzione">01 — Introduction</p>
+    <h2 data-en="PURPOSE & SCOPE" data-it="SCOPO E AMBITO">PURPOSE & SCOPE</h2>
+
+    <p data-en="At English With Marcello (www.englishwithmarcello.com), I respect your privacy and am committed to protecting your personal data. This policy explains what information I collect, how I obtain it, how I use it, and where I store it. It also explains how your choices affect the collection and use of your information." data-it="Da English With Marcello (www.englishwithmarcello.com), rispetto la tua privacy e mi impegno a proteggere i tuoi dati personali. Questa informativa spiega quali dati raccolgo, come li ottengo, come li utilizzo e dove li conservo. Spiega anche in che modo le tue scelte influenzano la raccolta e l'uso delle tue informazioni.">At English With Marcello (<a href="https://www.englishwithmarcello.com">www.englishwithmarcello.com</a>), I respect your privacy and am committed to protecting your personal data. This policy explains what information I collect, how I obtain it, how I use it, and where I store it. It also explains how your choices affect the collection and use of your information.</p>
+
+    <p data-en="By using this website, you acknowledge this Privacy Policy. Where required by applicable law, certain data processing activities — such as analytics and advertising cookies — are activated only after your explicit consent through the cookie banner." data-it="Utilizzando questo sito, prendi atto della presente Informativa sulla Privacy. Ove richiesto dalla legge applicabile, alcune attività di trattamento dei dati — come i cookie di analytics e pubblicità — vengono attivate solo dopo il tuo esplicito consenso tramite il banner dei cookie.">By using this website, you acknowledge this Privacy Policy. Where required by applicable law, certain data processing activities — such as analytics and advertising cookies — are activated only after your explicit consent through the cookie banner.</p>
+
+    <div class="highlight-band">
+      <p data-en="This policy applies only to www.englishwithmarcello.com and its visitors. It does not cover information collected through other channels (phone, email) or third-party websites linked from this site." data-it="Questa informativa si applica solo a www.englishwithmarcello.com e ai suoi visitatori. Non copre le informazioni raccolte tramite altri canali (telefono, email) o siti web di terze parti collegati da questo sito.">This policy applies only to <strong>www.englishwithmarcello.com</strong> and its visitors. It does not cover information collected through other channels (phone, email) or third-party websites linked from this site.</p>
     </div>
-    <div class="about-photo-wrap">
-      <img src="data:image/png;base64,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" alt="Marcello" class="about-photo">
+
+    <h3 data-en="Updates" data-it="Aggiornamenti">Updates</h3>
+    <p data-en="Any changes to this policy will be published on this page. Please check regularly. Questions? Write to info@englishwithmarcello.com." data-it="Eventuali modifiche a questa informativa saranno pubblicate su questa pagina. Ti invito a controllarla regolarmente. Domande? Scrivimi a info@englishwithmarcello.com.">Any changes to this policy will be published on this page. Please check regularly. Questions? Write to <a href="mailto:info@englishwithmarcello.com">info@englishwithmarcello.com</a>.</p>
+  </div>
+
+  <hr class="pp-divider">
+
+  <!-- 02 WHAT I COLLECT -->
+  <div class="pp-section">
+    <p class="pp-section-label" data-en="02 — Data Collection" data-it="02 — Raccolta Dati">02 — Data Collection</p>
+    <h2 data-en="WHAT I COLLECT & WHERE" data-it="COSA RACCOLGO E DOVE">WHAT I COLLECT & WHERE</h2>
+
+    <p data-en="Below is a complete overview of every data collection point across the website." data-it="Di seguito una panoramica completa di ogni punto di raccolta dati presente nel sito.">Below is a complete overview of every data collection point across the website.</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th data-en="Where" data-it="Dove">Where</th>
+          <th data-en="Tool" data-it="Strumento">Tool</th>
+          <th data-en="Data Collected" data-it="Dati Raccolti">Data Collected</th>
+          <th data-en="Required?" data-it="Obbligatorio?">Required?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-en="Free lesson booking (all pages — 'Book Free Lesson' / 'Ready to Start' buttons)" data-it="Prenotazione lezione gratuita (tutte le pagine — pulsanti 'Prenota Gratis' / 'Pronto a iniziare')">Free lesson booking<br><small data-en="('Book Free Lesson' button, all pages)" data-it="(pulsante 'Prenota Gratis', tutte le pagine)">("Book Free Lesson" button, all pages)</small></td>
+          <td><strong>Tally</strong><br><small>tally.so/r/n0DVE0</small></td>
+          <td data-en="Email address, goals/notes" data-it="Indirizzo email, obiettivi/note">Email address, goals/notes</td>
+          <td><span class="tag tag-req" data-en="Email required" data-it="Email obbligatoria">Email required</span></td>
+        </tr>
+        <tr>
+          <td data-en="English level quiz (Bookings page, Waiting List page)" data-it="Quiz livello di inglese (pagina Bookings, pagina Lista d'Attesa)">English level quiz<br><small data-en="(Bookings page, Waiting List)" data-it="(pag. Bookings, Lista d'Attesa)">(Bookings, Waiting List)</small></td>
+          <td><strong>Tally</strong><br><small>tally.so/r/3XQ4WY</small></td>
+          <td data-en="Quiz answers (no personal identifiers unless voluntarily added)" data-it="Risposte al quiz (nessun dato identificativo a meno che non venga aggiunto volontariamente)">Quiz answers<br><small data-en="(no personal ID unless added)" data-it="(nessun dato personale salvo aggiunta volontaria)">(no personal ID unless added)</small></td>
+          <td><span class="tag" data-en="Optional" data-it="Facoltativo">Optional</span></td>
+        </tr>
+        <tr>
+          <td data-en="Waiting list sign-up (Waiting List page — form)" data-it="Iscrizione lista d'attesa (pagina Lista d'Attesa — modulo)">Waiting list<br><small data-en="(Waiting List page)" data-it="(pagina Lista d'Attesa)">(Waiting List page)</small></td>
+          <td><strong>EmailJS</strong><br><small>emailjs.com</small></td>
+          <td data-en="Full name, email address, English level, optional notes/goals" data-it="Nome e cognome, indirizzo email, livello di inglese, note/obiettivi (opzionale)">Full name, email, English level, notes/goals</td>
+          <td><span class="tag tag-req" data-en="Name + email required" data-it="Nome + email obbligatori">Name + email required</span></td>
+        </tr>
+        <tr>
+          <td data-en="Lesson booking calendar (Bookings page)" data-it="Calendario prenotazione lezioni (pagina Bookings)">Lesson booking calendar<br><small data-en="(Bookings page)" data-it="(pagina Bookings)">(Bookings page)</small></td>
+          <td><strong>Calendly</strong><br><small>calendly.com</small></td>
+          <td data-en="Name, email address, chosen date and time slot" data-it="Nome, indirizzo email, data e orario scelto">Name, email, chosen date & time</td>
+          <td><span class="tag tag-req" data-en="Required by Calendly" data-it="Obbligatorio per Calendly">Required by Calendly</span></td>
+        </tr>
+        <tr>
+          <td data-en="Testimonials (Home, Reviews pages)" data-it="Testimonianze (pagine Home, Recensioni)">Testimonials<br><small data-en="(Home, Reviews pages)" data-it="(pagine Home, Recensioni)">(Home, Reviews pages)</small></td>
+          <td data-en="Public platforms (e.g. Google, social media)" data-it="Piattaforme pubbliche (es. Google, social media)">Public platforms</td>
+          <td data-en="First name + review text only (no photos, no contact details)" data-it="Solo nome di battesimo + testo della recensione (nessuna foto, nessun contatto)">First name + review text only</td>
+          <td><span class="tag" data-en="Already public" data-it="Già pubblici">Already public</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 data-en="About Tally (free lesson booking & level quiz)" data-it="Su Tally (prenotazione lezione gratuita e quiz di livello)">About Tally (free lesson booking & level quiz)</h3>
+    <p data-en="All 'Book Free Lesson', 'Ready to Start', and 'Book Free Trial' buttons on the site link to Tally forms. Tally processes the data you submit through its own secure servers and has its own privacy policy. I receive only the information you choose to enter, which I use exclusively to respond to your request and organise lessons." data-it="Tutti i pulsanti 'Prenota Gratis', 'Pronto a iniziare' e 'Prenota Prova Gratuita' del sito rimandano a moduli Tally. Tally elabora i dati inviati tramite i propri server sicuri e ha la propria informativa sulla privacy. Ricevo solo le informazioni che scegli di inserire, che utilizzo esclusivamente per rispondere alla tua richiesta e organizzare le lezioni.">All "Book Free Lesson", "Ready to Start", and "Book Free Trial" buttons on the site link to Tally forms. Tally processes the data you submit through its own secure servers and has its own privacy policy. I receive only the information you choose to enter, which I use exclusively to respond to your request and organise lessons.</p>
+
+    <h3 data-en="About the waiting list form (EmailJS)" data-it="Sul modulo lista d'attesa (EmailJS)">About the waiting list form (EmailJS)</h3>
+    <p data-en="The waiting list form on the dedicated page is built directly into the website and sends submissions via EmailJS. The data you enter (name, email, level, optional notes) is delivered securely to my inbox and is used only to contact you when a group spot opens. I do not share this data with third parties." data-it="Il modulo della lista d'attesa nella pagina dedicata è integrato direttamente nel sito e invia le iscrizioni tramite EmailJS. I dati inseriti (nome, email, livello, note opzionali) vengono consegnati in modo sicuro alla mia casella di posta e vengono utilizzati solo per contattarti quando si libera un posto in gruppo. Non condivido questi dati con terze parti.">The waiting list form on the dedicated page is built directly into the website and sends submissions via EmailJS. The data you enter (name, email, level, optional notes) is delivered securely to my inbox and is used only to contact you when a group spot opens. I do not share this data with third parties.</p>
+
+    <h3 data-en="About Calendly (lesson booking)" data-it="Su Calendly (prenotazione lezioni)">About Calendly (lesson booking)</h3>
+    <p data-en="The booking calendar on the Bookings page is powered by Calendly. When you book a 50-minute lesson, Calendly collects your name, email address, and chosen slot. Calendly has its own privacy policy. I receive a booking confirmation and use your details only to manage and conduct the lesson." data-it="Il calendario di prenotazione nella pagina Bookings è gestito da Calendly. Quando prenoti una lezione da 50 minuti, Calendly raccoglie nome, email e slot scelto. Calendly ha la propria informativa sulla privacy. Ricevo una conferma di prenotazione e utilizzo i tuoi dati solo per gestire e tenere la lezione.">The booking calendar on the Bookings page is powered by Calendly. When you book a 50-minute lesson, Calendly collects your name, email address, and chosen slot. Calendly has its own privacy policy. I receive a booking confirmation and use your details only to manage and conduct the lesson.</p>
+
+    <h3 data-en="Student testimonials" data-it="Testimonianze degli studenti">Student testimonials</h3>
+    <p data-en="Reviews shown on the Home and Reviews pages are taken from public platforms (such as Google or social media). Only the student's first name and the text of their review are published — no photos, contact details, or other personally identifiable information." data-it="Le recensioni mostrate nelle pagine Home e Recensioni sono prese da piattaforme pubbliche (come Google o social media). Vengono pubblicati solo il nome di battesimo dello studente e il testo della sua recensione — nessuna foto, contatto o altra informazione identificativa.">Reviews shown on the Home and Reviews pages are taken from public platforms (such as Google or social media). Only the student's first name and the text of their review are published — no photos, contact details, or other personally identifiable information.</p>
+    <div class="highlight-band">
+      <p data-en="If you are a student and wish to have your testimonial removed from this website, contact me at any time at info@englishwithmarcello.com and I will remove it promptly." data-it="Se sei uno studente e desideri che la tua testimonianza venga rimossa dal sito, contattami in qualsiasi momento a info@englishwithmarcello.com e la rimuoverò tempestivamente.">If you are a student and wish to have your testimonial removed from this website, contact me at any time at <a href="mailto:info@englishwithmarcello.com">info@englishwithmarcello.com</a> and I will remove it promptly.</p>
     </div>
   </div>
-</section>
 
-<div class="services-section">
-  <div class="services-inner">
-    <p class="section-label" data-en="What I Offer" data-it="Cosa Offro">What I Offer</p>
-    <h2 class="section-title" data-en="LESSON TYPES" data-it="TIPI DI LEZIONE">LESSON TYPES</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-num">01</div>
-        <div class="service-name" data-en="Conversation" data-it="Conversazione">Conversation</div>
-        <div class="service-desc" data-en="Improve your speaking fluency and confidence through practical, fun sessions focused on real-life communication." data-it="Migliora la tua fluidità e sicurezza nel parlato attraverso sessioni pratiche e divertenti focalizzate sulla comunicazione reale.">Improve your speaking fluency and confidence through practical, fun sessions focused on real-life communication.</div>
+  <hr class="pp-divider">
+
+  <!-- 03 THIRD-PARTY TOOLS -->
+  <div class="pp-section">
+    <p class="pp-section-label" data-en="03 — Third-Party Tools" data-it="03 — Strumenti di Terze Parti">03 — Third-Party Tools</p>
+    <h2 data-en="TOOLS & SERVICES USED" data-it="STRUMENTI E SERVIZI UTILIZZATI">TOOLS & SERVICES USED</h2>
+
+    <p data-en="The following third-party services are integrated into this website. Each has its own privacy policy that governs how it handles data independently." data-it="I seguenti servizi di terze parti sono integrati in questo sito. Ognuno ha la propria informativa sulla privacy che disciplina in modo indipendente la gestione dei dati.">The following third-party services are integrated into this website. Each has its own privacy policy that governs how it handles data independently.</p>
+
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="tool-card-name">Tally</div>
+        <div class="tool-card-purpose" data-en="Form management" data-it="Gestione moduli">Form management</div>
+        <div class="tool-card-desc" data-en="Free lesson booking and English level quiz forms. tally.so" data-it="Moduli di prenotazione lezione gratuita e quiz di livello inglese.">Free lesson booking & level quiz. <a href="https://tally.so/privacy" target="_blank">tally.so/privacy</a></div>
       </div>
-      <div class="service-card">
-        <div class="service-num">02</div>
-        <div class="service-name" data-en="Standard (A1–C2)" data-it="Standard (A1–C2)">Standard (A1–C2)</div>
-        <div class="service-desc" data-en="Develop your grammar, reading, and writing. Structured lessons suitable for all levels from absolute beginner to advanced." data-it="Sviluppa grammatica, lettura e scrittura. Lezioni strutturate adatte a tutti i livelli, dal principiante assoluto all'avanzato.">Develop your grammar, reading, and writing. Structured lessons suitable for all levels from absolute beginner to advanced.</div>
+      <div class="tool-card">
+        <div class="tool-card-name">EmailJS</div>
+        <div class="tool-card-purpose" data-en="Waiting list form delivery" data-it="Invio modulo lista d'attesa">Waiting list form delivery</div>
+        <div class="tool-card-desc" data-en="Securely delivers waiting list form submissions to my inbox." data-it="Consegna in modo sicuro le iscrizioni alla lista d'attesa nella mia casella di posta.">Delivers waiting list form submissions securely. <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank">Privacy policy</a></div>
       </div>
-      <div class="service-card">
-        <div class="service-num">03</div>
-        <div class="service-name" data-en="Shadowing & Pronunciation" data-it="Shadowing & Pronuncia">Shadowing & Pronunciation</div>
-        <div class="service-desc" data-en="Sharpen your accent and listening comprehension with targeted shadowing exercises — a proven technique used by language learners worldwide." data-it="Affina il tuo accento e la comprensione all'ascolto con esercizi mirati di shadowing — una tecnica efficace per chi vuole parlare in modo naturale.">Sharpen your accent and listening comprehension with targeted shadowing exercises — a proven technique used by language learners worldwide.</div>
+      <div class="tool-card">
+        <div class="tool-card-name">Calendly</div>
+        <div class="tool-card-purpose" data-en="Lesson scheduling" data-it="Prenotazione lezioni">Lesson scheduling</div>
+        <div class="tool-card-desc" data-en="50-minute lesson booking calendar embedded on the Bookings page." data-it="Calendario prenotazione lezioni da 50 minuti integrato nella pagina Bookings.">50-min lesson booking calendar. <a href="https://calendly.com/privacy" target="_blank">Privacy policy</a></div>
       </div>
-      <div class="service-card">
-        <div class="service-num">04</div>
-        <div class="service-name" data-en="Exam Preparation" data-it="Preparazione agli Esami">Exam Preparation</div>
-        <div class="service-desc" data-en="Structured guidance for IELTS, TOEFL, and Cambridge exams — practice tests, strategies, and confidence-building sessions." data-it="Guida strutturata per IELTS, TOEFL e Cambridge — test pratici, strategie e sessioni per costruire sicurezza.">Structured guidance for IELTS, TOEFL, and Cambridge exams — practice tests, strategies, and confidence-building sessions.</div>
-      </div>
-    </div>
-    <div class="services-footer">
-      <p data-en="I offer online lessons, both individual and group, tailored to your needs." data-it="Offro lezioni online, sia individuali che di gruppo, su misura per le tue esigenze.">I offer online lessons, both individual and group, tailored to your needs.</p>
-      <button class="btn-aqua-outline" onclick="window.location.href='lessons.html'" data-en="Explore the Lessons" data-it="Scopri le Lezioni">Explore the Lessons</button>
     </div>
   </div>
-</div>
 
-<div class="steps-section">
-  <div class="steps-inner">
-    <p class="section-label" data-en="Getting Started" data-it="Come Iniziare">Getting Started</p>
-    <h2 class="section-title" data-en="THREE STEPS TO FLUENCY" data-it="TRE PASSI VERSO LA FLUIDITÀ">THREE STEPS TO FLUENCY</h2>
-    <div class="steps-row">
-      <div class="step">
-        <div class="step-num">01</div>
-        <div class="step-divider"></div>
-        <div class="step-title" data-en="Take the Level Test" data-it="Fai il Test di Livello">Take the Level Test</div>
-        <div class="step-desc" data-en="A quick English level test helps understand exactly where you are and where you want to go." data-it="Un rapido test di livello aiuta a capire esattamente dove sei e dove vuoi arrivare.">A quick English level test helps understand exactly where you are and where you want to go.</div>
+  <hr class="pp-divider">
+
+  <!-- 04 HOW I USE DATA -->
+  <div class="pp-section">
+    <p class="pp-section-label" data-en="04 — Data Use" data-it="04 — Utilizzo dei Dati">04 — Data Use</p>
+    <h2 data-en="HOW I USE YOUR DATA" data-it="COME USO I TUOI DATI">HOW I USE YOUR DATA</h2>
+
+    <p data-en="I use personal data to:" data-it="Utilizzo i dati personali per:">I use personal data to:</p>
+    <ul>
+      <li data-en="Respond to enquiries and lesson booking requests" data-it="Rispondere a richieste e prenotazioni di lezioni">Respond to enquiries and lesson booking requests</li>
+      <li data-en="Manage the waiting list and contact interested students when a group spot opens" data-it="Gestire la lista d'attesa e contattare gli studenti interessati quando si libera un posto in gruppo">Manage the waiting list and contact students when a group spot opens</li>
+      <li data-en="Confirm, schedule, and conduct individual or group lessons" data-it="Confermare, pianificare e tenere lezioni individuali o di gruppo">Confirm, schedule, and conduct individual or group lessons</li>
+      <li data-en="Send lesson-related communications (confirmations, reminders, updates)" data-it="Inviare comunicazioni relative alle lezioni (conferme, promemoria, aggiornamenti)">Send lesson-related communications (confirmations, reminders, updates)</li>
+      <li data-en="Operate and improve the website" data-it="Gestire e migliorare il sito web">Operate and improve the website</li>
+      <li data-en="Analyse how visitors interact with the site (via analytics tools)" data-it="Analizzare come i visitatori interagiscono con il sito (tramite strumenti di analytics)">Analyse how visitors interact with the site (via analytics tools)</li>
+      <li data-en="Comply with applicable legal requirements" data-it="Rispettare i requisiti legali applicabili">Comply with applicable legal requirements</li>
+    </ul>
+
+    <div class="highlight-band">
+      <p data-en="I do not sell, rent, or share your personal data with third parties for their marketing purposes." data-it="Non vendo, affitto o condivido i tuoi dati personali con terze parti per loro scopi di marketing."><strong data-en="I do not sell, rent, or share" data-it="Non vendo, affitto o condivido">I do not sell, rent, or share</strong> your personal data with third parties for their marketing purposes.</p>
+    </div>
+
+    <h3 data-en="Data location" data-it="Luogo di conservazione dei dati">Data location</h3>
+    <p data-en="I store and process personal data in Italy. Data submitted through third-party tools (Tally, Calendly, EmailJS) is processed on their own servers in accordance with their privacy policies." data-it="Conservo ed elaboro i dati personali in Italia. I dati inviati tramite strumenti di terze parti (Tally, Calendly, EmailJS) vengono elaborati sui loro server in conformità con le rispettive informative sulla privacy.">I store and process personal data in Italy. Data submitted through third-party tools (Tally, Calendly, EmailJS) is processed on their own servers in accordance with their privacy policies.</p>
+  </div>
+
+  <hr class="pp-divider">
+
+  <!-- 05 LEGAL BASIS -->
+  <div class="pp-section">
+    <p class="pp-section-label" data-en="05 — Legal Basis" data-it="05 — Base Giuridica">05 — Legal Basis</p>
+    <h2 data-en="LEGAL BASIS FOR PROCESSING" data-it="BASE GIURIDICA DEL TRATTAMENTO">LEGAL BASIS FOR PROCESSING</h2>
+
+    <p data-en="Under the General Data Protection Regulation (GDPR), I process personal data only when a valid legal basis exists." data-it="Ai sensi del Regolamento Generale sulla Protezione dei Dati (GDPR), tratto i dati personali solo quando esiste una valida base giuridica.">Under the General Data Protection Regulation (GDPR), I process personal data only when a valid legal basis exists.</p>
+
+    <ul>
+      <li data-en="&lt;strong&gt;Consent&lt;/strong&gt; — when you voluntarily submit forms, sign up to the waiting list, or accept optional cookies." data-it="&lt;strong&gt;Consenso&lt;/strong&gt; — quando invii volontariamente moduli, ti iscrivi alla lista d'attesa o accetti cookie opzionali."><strong>Consent</strong> — when you voluntarily submit forms, sign up to the waiting list, or accept optional cookies.</li>
+      <li data-en="&lt;strong&gt;Performance of a contract&lt;/strong&gt; — when processing is necessary to organise, schedule, and conduct the lessons you have requested." data-it="&lt;strong&gt;Esecuzione di un contratto&lt;/strong&gt; — quando il trattamento è necessario per organizzare, pianificare e svolgere le lezioni richieste da te."><strong>Performance of a contract</strong> — when processing is necessary to organise, schedule, and conduct the lessons you have requested.</li>
+      <li data-en="&lt;strong&gt;Legal obligations&lt;/strong&gt; — when certain information must be retained or processed to comply with applicable laws and regulations." data-it="&lt;strong&gt;Obblighi legali&lt;/strong&gt; — quando determinate informazioni devono essere conservate o trattate per rispettare leggi e regolamenti applicabili."><strong>Legal obligations</strong> — when certain information must be retained or processed to comply with applicable laws and regulations.</li>
+      <li data-en="&lt;strong&gt;Legitimate interest&lt;/strong&gt; — when processing is necessary to protect, maintain, and improve the website and its services, with due respect for your rights and freedoms." data-it="&lt;strong&gt;Interesse legittimo&lt;/strong&gt; — quando il trattamento è necessario per proteggere, mantenere e migliorare il sito web e i relativi servizi, nel rispetto dei tuoi diritti e delle tue libertà."><strong>Legitimate interest</strong> — when processing is necessary to protect, maintain, and improve the website and its services, with due respect for your rights and freedoms.</li>
+    </ul>
+  </div>
+
+  <hr class="pp-divider">
+
+  <!-- 06 GDPR RIGHTS -->
+  <div class="pp-section">
+    <p class="pp-section-label" data-en="06 — Your Rights" data-it="06 — I Tuoi Diritti">06 — Your Rights</p>
+    <h2 data-en="GDPR RIGHTS" data-it="DIRITTI GDPR">GDPR RIGHTS</h2>
+
+    <p data-en="If you are a resident of an EU country, the following rights apply to your personal data:" data-it="Se sei residente in un paese UE, hai i seguenti diritti riguardo ai tuoi dati personali:">If you are a resident of an EU country, the following rights apply to your personal data:</p>
+
+    <div class="rights-grid">
+      <div class="right-card">
+        <div class="right-card-icon">ℹ️</div>
+        <div class="right-card-title" data-en="Right to Information" data-it="Diritto all'Informazione">Right to Information</div>
+        <div class="right-card-desc" data-en="You can ask whether I am processing your personal data." data-it="Puoi chiedere se sto elaborando i tuoi dati personali.">You can ask whether I am processing your personal data.</div>
       </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <div class="step-divider"></div>
-        <div class="step-title" data-en="Book Your Free Trial" data-it="Prenota la Prova Gratuita">Book Your Free Trial</div>
-        <div class="step-desc" data-en="No commitment. No cost. Just a real lesson so you can feel the difference for yourself." data-it="Nessun impegno. Nessun costo. Solo una vera lezione per sentire la differenza di persona.">No commitment. No cost. Just a real lesson so you can feel the difference for yourself.</div>
+      <div class="right-card">
+        <div class="right-card-icon">🔍</div>
+        <div class="right-card-title" data-en="Right of Access" data-it="Diritto di Accesso">Right of Access</div>
+        <div class="right-card-desc" data-en="You can request a copy of the personal data I hold about you, in a portable format." data-it="Puoi richiedere una copia dei dati personali che detengo su di te, in formato portabile.">You can request a copy of the personal data I hold about you, in a portable format.</div>
       </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <div class="step-divider"></div>
-        <div class="step-title" data-en="Start Speaking" data-it="Inizia a Parlare">Start Speaking</div>
-        <div class="step-desc" data-en="Start practising and using English right away — real conversations, real progress, from the very first session." data-it="Inizia subito a praticare e usare l'inglese — conversazioni reali, progressi concreti, fin dalla prima sessione.">Start practising and using English right away — real conversations, real progress, from the very first session.</div>
+      <div class="right-card">
+        <div class="right-card-icon">✏️</div>
+        <div class="right-card-title" data-en="Right of Correction" data-it="Diritto di Rettifica">Right of Correction</div>
+        <div class="right-card-desc" data-en="You can request correction of inaccurate or incomplete data." data-it="Puoi richiedere la correzione di dati inesatti o incompleti.">You can request correction of inaccurate or incomplete data.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">🗑️</div>
+        <div class="right-card-title" data-en="Right of Deletion" data-it="Diritto alla Cancellazione">Right of Deletion</div>
+        <div class="right-card-desc" data-en="You can ask for your data to be deleted if it is no longer necessary or being processed unlawfully." data-it="Puoi chiedere la cancellazione dei tuoi dati se non sono più necessari o vengono trattati illecitamente.">You can ask for your data to be deleted if it is no longer necessary or being processed unlawfully.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">🚫</div>
+        <div class="right-card-title" data-en="Right to Opt-Out" data-it="Diritto di Opposizione">Right to Opt-Out</div>
+        <div class="right-card-desc" data-en="You can opt out of processing your data for marketing or other specified purposes at any time." data-it="Puoi opporti al trattamento dei tuoi dati per scopi di marketing o altri fini specifici in qualsiasi momento.">You can opt out of processing your data for marketing or other specified purposes at any time.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">⏸️</div>
+        <div class="right-card-title" data-en="Right of Restriction" data-it="Diritto di Limitazione">Right of Restriction</div>
+        <div class="right-card-desc" data-en="You can request restrictions on how your data is processed in specific circumstances." data-it="Puoi richiedere limitazioni al trattamento dei tuoi dati in circostanze specifiche.">You can request restrictions on how your data is processed in specific circumstances.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">👤</div>
+        <div class="right-card-title" data-en="Right to Human Oversight" data-it="Diritto alla Supervisione Umana">Right to Human Oversight</div>
+        <div class="right-card-desc" data-en="You have the right to human involvement in any automated decision that affects you." data-it="Hai diritto al coinvolgimento umano in qualsiasi decisione automatizzata che ti riguarda.">You have the right to human involvement in any automated decision that affects you.</div>
       </div>
     </div>
-    <div class="contact-strip">
-      <span class="contact-strip-label" data-en="Contact Marcello" data-it="Contatta Marcello">Contact Marcello</span>
-      <a href="https://wa.me/393387462067"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> +39 338 746 2067</a>
-      <a href="mailto:info@englishwithmarcello.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> info@englishwithmarcello.com</a>
+
+    <p data-en="To exercise any of these rights, contact me at info@englishwithmarcello.com. I will respond within one month. If more time is needed due to the complexity of the request, I will notify you within one month of the delay." data-it="Per esercitare uno qualsiasi di questi diritti, contattami a info@englishwithmarcello.com. Risponderò entro un mese. Se è necessario più tempo per la complessità della richiesta, ti notificherò entro un mese del ritardo.">To exercise any of these rights, contact me at <a href="mailto:info@englishwithmarcello.com">info@englishwithmarcello.com</a>. I will respond within one month. If more time is needed due to the complexity of the request, I will notify you within one month of the delay.</p>
+
+    <h3 data-en="Data breach notification" data-it="Notifica di violazione dei dati">Data breach notification</h3>
+    <p data-en="In the event of a data breach that poses a risk to your rights, I will notify you as quickly as possible and within 72 hours of becoming aware of it." data-it="In caso di una violazione dei dati che comporti un rischio per i tuoi diritti, ti notificherò il prima possibile e comunque entro 72 ore da quando ne vengo a conoscenza.">In the event of a data breach that poses a risk to your rights, I will notify you as quickly as possible and within 72 hours of becoming aware of it.</p>
+  </div>
+
+  <hr class="pp-divider">
+
+  <!-- 07 SECURITY & OTHER -->
+  <div class="pp-section">
+    <p class="pp-section-label" data-en="07 — Security & Other" data-it="07 — Sicurezza e Altro">07 — Security & Other</p>
+    <h2 data-en="SECURITY & CHOICES" data-it="SICUREZZA E SCELTE">SECURITY & CHOICES</h2>
+
+    <h3 data-en="Security" data-it="Sicurezza">Security</h3>
+    <p data-en="I take reasonable technical and organisational measures to protect the personal data I collect. However, no online data transmission is ever 100% secure. You can help by using a strong, unique password and keeping your devices secure." data-it="Adotto ragionevoli misure tecniche e organizzative per proteggere i dati personali raccolti. Tuttavia, nessuna trasmissione di dati online è mai sicura al 100%. Puoi aiutare utilizzando una password forte e unica e mantenendo i tuoi dispositivi protetti.">I take reasonable technical and organisational measures to protect the personal data I collect. However, no online data transmission is ever 100% secure. You can help by using a strong, unique password and keeping your devices secure.</p>
+
+    <h3 data-en="Accuracy of information provided" data-it="Accuratezza delle informazioni fornite">Accuracy of information provided</h3>
+    <p data-en="By submitting any form on this website, you confirm that the information you provide is accurate and up to date. I cannot be held responsible for errors, delays, or issues arising from incorrect or incomplete information provided by you." data-it="Inviando qualsiasi modulo su questo sito, confermi che le informazioni fornite sono accurate e aggiornate. Non posso essere ritenuto responsabile per errori, ritardi o problemi derivanti da informazioni errate o incomplete fornite da te.">By submitting any form on this website, you confirm that the information you provide is accurate and up to date. I cannot be held responsible for errors, delays, or issues arising from incorrect or incomplete information provided by you.</p>
+
+    <h3 data-en="Limitation of liability" data-it="Limitazione di responsabilità">Limitation of liability</h3>
+    <p data-en="The content on this website is provided for informational purposes only. While I make every effort to keep information accurate and up to date, I accept no liability for any loss or damage arising from reliance on the content of this website or from interruptions in service." data-it="I contenuti di questo sito sono forniti a solo scopo informativo. Pur facendo ogni sforzo per mantenere le informazioni accurate e aggiornate, non mi assumo alcuna responsabilità per perdite o danni derivanti dall'affidamento sui contenuti di questo sito o da interruzioni del servizio.">The content on this website is provided for informational purposes only. While I make every effort to keep information accurate and up to date, I accept no liability for any loss or damage arising from reliance on the content of this website or from interruptions in service.</p>
+
+    <h3 data-en="Use of lesson materials" data-it="Utilizzo dei materiali didattici">Use of lesson materials</h3>
+    <p data-en="Any materials, resources, or content shared during lessons or via this website are for the personal educational use of the student only. They may not be reproduced, distributed, shared, or published without my prior written consent." data-it="Qualsiasi materiale, risorsa o contenuto condiviso durante le lezioni o tramite questo sito è destinato esclusivamente all'uso educativo personale dello studente. Non può essere riprodotto, distribuito, condiviso o pubblicato senza il mio previo consenso scritto.">Any materials, resources, or content shared during lessons or via this website are for the personal educational use of the student only. They may not be reproduced, distributed, shared, or published without my prior written consent.</p>
+
+    <h3 data-en="Recording of lessons" data-it="Registrazione delle lezioni">Recording of lessons</h3>
+    <p data-en="Lessons may not be recorded by the student — in audio or video — without my explicit prior consent. Any unauthorised recording is a violation of my privacy and intellectual property rights." data-it="Le lezioni non possono essere registrate dallo studente — in audio o video — senza il mio esplicito consenso preventivo. Qualsiasi registrazione non autorizzata costituisce una violazione della mia privacy e dei miei diritti di proprietà intellettuale.">Lessons may not be recorded by the student — in audio or video — without my explicit prior consent. Any unauthorised recording is a violation of my privacy and intellectual property rights.</p>
+
+    <h3 data-en="Your responsibilities as a user" data-it="Responsabilità dell'utente">Your responsibilities as a user</h3>
+    <p data-en="By using this website, you agree to do so in compliance with all applicable laws and regulations, including those governing internet use, intellectual property, and data protection. I accept no responsibility for any unlawful or improper use of this website or its content by users." data-it="Utilizzando questo sito, ti impegni a farlo nel rispetto di tutte le leggi e normative applicabili, incluse quelle che regolano l'uso di internet, la proprietà intellettuale e la protezione dei dati. Non mi assumo alcuna responsabilità per un utilizzo illecito o improprio di questo sito o dei suoi contenuti da parte degli utenti.">By using this website, you agree to do so in compliance with all applicable laws and regulations, including those governing internet use, intellectual property, and data protection. I accept no responsibility for any unlawful or improper use of this website or its content by users.</p>
+
+    <h3 data-en="Removal from the waiting list" data-it="Rimozione dalla lista d'attesa">Removal from the waiting list</h3>
+    <p data-en="If you wish to be removed from the waiting list, contact me directly at info@englishwithmarcello.com and I will delete your data promptly." data-it="Se desideri essere rimosso dalla lista d'attesa, contattami direttamente a info@englishwithmarcello.com e cancellerò i tuoi dati tempestivamente.">If you wish to be removed from the waiting list, contact me directly at <a href="mailto:info@englishwithmarcello.com">info@englishwithmarcello.com</a> and I will delete your data promptly.</p>
+
+    <h3 data-en="US State privacy rights" data-it="Diritti sulla privacy degli Stati USA">US State privacy rights</h3>
+    <p data-en="If you are a US resident and specific state privacy laws apply to the processing of your data, you have certain rights under those laws. I will make a good-faith effort to comply." data-it="Se sei residente negli USA e leggi specifiche sulla privacy statale si applicano al trattamento dei tuoi dati, hai determinati diritti in base a tali leggi. Mi impegno a rispettarle in buona fede.">If you are a US resident and specific state privacy laws apply to the processing of your data, you have certain rights under those laws. I will make a good-faith effort to comply.</p>
+  </div>
+
+  <!-- CONTACT CTA -->
+  <div class="contact-cta">
+    <div class="contact-cta-text">
+      <h3 data-en="Questions?" data-it="Domande?">Questions?</h3>
+      <p data-en="Reach out about anything related to your data." data-it="Contattami per qualsiasi cosa relativa ai tuoi dati.">Reach out about anything related to your data.</p>
+    </div>
+    <div class="contact-cta-links">
+      <a class="cta-link-btn" href="mailto:info@englishwithmarcello.com">📧 info@englishwithmarcello.com</a>
+      <a class="cta-link-btn" href="https://wa.me/393387462067" target="_blank">📱 WhatsApp</a>
     </div>
   </div>
-</div>
 
-<div class="reviews-section">
-  <div class="reviews-inner">
-    <p class="section-label" data-en="Student Testimonials" data-it="Testimonianze degli Studenti">Student Testimonials</p>
-    <h2 class="section-title" data-en="WHAT STUDENTS SAY" data-it="COSA DICONO GLI STUDENTI">WHAT STUDENTS SAY</h2>
-    <div class="reviews-grid">
-      <div class="review-card">
-        <div class="review-author">Samuele</div>
-        <div class="review-date">August 5, 2025</div>
-        <div class="stars">★★★★★</div>
-        <div class="review-text">"Before being a teacher, Marcello is a friend. Right from the start, he made me feel at ease and helped me with my goals. The progress has been remarkable, and thanks to his teaching approach, I can now speak English fluently."</div>
-      </div>
-      <div class="review-card">
-        <div class="review-author">Gianluca</div>
-        <div class="review-date">January 16, 2025</div>
-        <div class="stars">★★★★★</div>
-        <div class="review-text">"Marcello è un ottimo insegnante e ti fa capire le cose in modo molto semplice."</div>
-      </div>
-      <div class="review-card">
-        <div class="review-author">Nathanaël</div>
-        <div class="review-date">December 26, 2024</div>
-        <div class="stars">★★★★★</div>
-        <div class="review-text">"It's always a pleasure to learn English with Marcello. He is always bring some positives energies and I am very proud of myself for every works that I have done. It's a long journey and I hope that I will get what I always wanted thanks to Marcello 💛."</div>
-      </div>
-      <div class="review-card">
-        <div class="review-author">Gleb</div>
-        <div class="review-date">July 23, 2024</div>
-        <div class="stars">★★★★★</div>
-        <div class="review-text">"Marcello is amazing teacher. He is pretty easy going in any conversation. Lesson with him feels as 5 minutes talk with best friend. He has a great accent, is understandable as much as can be. On our lessons we are learning everything for IELTS and after a few months speaking with Marcello I'm sure I will pass it well. If you scrolling the comments and trying to find a reason "why I should pick Marcello" - than reason is here. Book the lesson and see for yourself."</div>
-      </div>
-    </div></div>
-    <div class="reviews-footer">
-      <button class="btn-navy-outline" onclick="window.location.href='reviews.html'" data-en="Read All Reviews" data-it="Leggi Tutte le Recensioni">Read All Reviews</button>
-    </div>
-  </div>
-</div>
-
-<div class="pink-band">
-  <p class="section-label" data-en="Free Resources" data-it="Risorse Gratuite">Free Resources</p>
-  <h2 class="section-title pink-band-title" data-en="PRACTICE YOUR ENGLISH" data-it="ESERCITA IL TUO INGLESE">PRACTICE YOUR ENGLISH</h2>
-  <p data-en="Practice your English with free grammar quizzes, vocabulary exercises, and real-life examples — from A1 to C2." data-it="Esercita il tuo inglese con quiz di grammatica gratuiti, esercizi di vocabolario ed esempi dalla vita reale — da A1 a C2.">Practice your English with free grammar quizzes, vocabulary exercises, and real-life examples — from A1 to C2.</p>
-  <button class="btn-red-outline" onclick="window.location.href='content.html'"  data-en="Access Free Resources" data-it="Accedi alle Risorse Gratuite">Access Free Resources</button>
-</div>
-
-
-<div class="cta-band">
-  <h2 class="cta-title" data-en="READY TO<br><span>START?</span>" data-it="PRONTO A<br><span>INIZIARE?</span>">READY TO<br><span>START?</span></h2>
-  <p class="cta-sub" data-en="Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence." data-it="Prenota oggi la tua lezione di prova gratuita. Nessun impegno — solo tu, Marcello, e il tuo primo passo verso un inglese davvero sicuro.">Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence.</p>
-  <button class="btn-aqua" data-en="Book Your Free Lesson Now" data-it="Prenota Ora la Tua Lezione Gratuita" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Your Free Lesson Now</button>
 </div>
 
 <footer>
@@ -535,9 +531,7 @@
 </footer>
 
 <script>
-  // Language switcher
   let currentLang = 'en';
-
   function setLang(lang) {
     currentLang = lang;
     document.getElementById('btn-en').classList.toggle('active', lang === 'en');
@@ -546,11 +540,10 @@
     const mbtnIt = document.getElementById('mbtn-it');
     if (mbtnEn) mbtnEn.classList.toggle('active', lang === 'en');
     if (mbtnIt) mbtnIt.classList.toggle('active', lang === 'it');
-
     document.querySelectorAll('[data-en]').forEach(el => {
       const val = el.getAttribute('data-' + lang);
       if (val !== null) {
-        if (el.tagName === 'H2' || el.innerHTML.includes('<span>')) {
+        if (el.tagName === 'H1' || el.tagName === 'H2' || el.innerHTML.includes('<span>') || el.innerHTML.includes('<br>') || el.innerHTML.includes('<strong>') || el.innerHTML.includes('<a ')) {
           el.innerHTML = val;
         } else {
           el.textContent = val;
@@ -560,30 +553,12 @@
   }
 
   function toggleMenu() {
-    const nav = document.getElementById('mobileNav');
-    const btn = document.getElementById('hamburger');
-    nav.classList.toggle('open');
-    btn.classList.toggle('open');
-    document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
-  }
-
-  // Photo upload
-  function loadPhoto(e) {
-    const file = e.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = function(ev) {
-      const box = document.getElementById('photoBox');
-      const label = document.getElementById('uploadLabel');
-      label.style.display = 'none';
-      // Remove old img if any
-      const old = box.querySelector('img');
-      if (old) old.remove();
-      const img = document.createElement('img');
-      img.src = ev.target.result;
-      box.appendChild(img);
-    };
-    reader.readAsDataURL(file);
+    const nav = document.getElementById("mobileNav");
+    const btn = document.getElementById("hamburger");
+    if (!nav || !btn) return;
+    nav.classList.toggle("open");
+    btn.classList.toggle("open");
+    document.body.style.overflow = nav.classList.contains("open") ? "hidden" : "";
   }
 </script>
 </body>
