@@ -20,10 +20,10 @@
   .nav-logo { font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 2px; color: var(--navy); display: flex; align-items: center; text-decoration: none; }
   .nav-logo img { width: 36px; height: 36px; object-fit: contain; margin-right: 0.6rem; }
   .logo-marcello { color: var(--aqua-deep); }
-  .nav-center { display: flex; gap: 2rem; list-style: none; align-items: center; }
-  .nav-center a { color: var(--muted); text-decoration: none; font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
-  .nav-center a:hover, .nav-center a.active { color: var(--navy); }
-  .nav-right { display: flex; align-items: center; gap: 1rem; margin-left: auto; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--navy); }
+  .nav-right { display: none; }
   .lang-switch { display: flex; border: 1.5px solid var(--aqua-deep); overflow: hidden; }
   .lang-btn { background: transparent; border: none; padding: 0.3rem 0.65rem; font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; cursor: pointer; color: var(--muted); transition: background 0.2s, color 0.2s; }
   .lang-btn.active { background: var(--navy); color: var(--white); }
@@ -119,7 +119,7 @@
   }
   @media (max-width: 600px) {
     nav { padding: 0 1.2rem; }
-    .nav-center { display: none; }
+    .nav-links { display: none; }
     .blog-grid { grid-template-columns: 1fr; }
     .blog-card.featured { grid-column: span 1; }
     .blog-hero { padding: 3rem 1.5rem; }
@@ -142,8 +142,7 @@
   .mobile-nav .mobile-lang { display: none; }
   .header-lang { display: none; }
   @media (max-width: 768px) {
-    .nav-right { display: none; }
-    .nav-mobile-right { display: flex; align-items: center; gap: 8px; }
+    .nav-right { display: flex; align-items: center; gap: 8px; margin-left: auto; }
     .header-lang { display: flex; border: 1.5px solid var(--aqua-deep); overflow: hidden; }
   }
   .mobile-nav .mobile-cta { margin-top: 1.5rem; background: var(--navy); color: var(--white); border: none; padding: 1rem 2rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); width: 100%; }
@@ -187,7 +186,7 @@
     <img src="assets/images/Maple-Leaf-Logo.png" alt="Maple Leaf Logo" alt="English With Marcello">
     <span>ENGLISH WITH <span class="logo-marcello">MARCELLO</span></span>
   </a>
-  <ul class="nav-center">
+  <ul class="nav-links">
     <li><a href="index.html" data-en="Home" data-it="Home">Home</a></li>
     <li><a href="about.html" data-en="About" data-it="Chi sono">About</a></li>
     <li><a href="lessons.html" data-en="Lessons" data-it="Lezioni">Lessons</a></li>
@@ -202,10 +201,8 @@
       </div>
     </li>
   </ul>
+  <button class="nav-cta" id="nav-cta-btn" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
   <div class="nav-right">
-    <button class="nav-cta" id="nav-cta-btn" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
-  </div>
-  <div class="nav-mobile-right">
     <div class="header-lang lang-switch">
       <button class="lang-btn active" id="mbtn-en" onclick="setLang('en')">EN</button>
       <button class="lang-btn" id="mbtn-it" onclick="setLang('it')">IT</button>
