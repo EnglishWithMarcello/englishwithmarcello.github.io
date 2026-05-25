@@ -175,7 +175,9 @@
   .mobile-nav.open { display: flex; }
   .mobile-nav-close { position: absolute; top: 1.2rem; right: 1.5rem; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--navy); line-height: 1; }
   .mobile-nav a { display: block; padding: 1rem 0; font-size: 1.1rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--aqua); }
-  .mobile-nav .mobile-lang { display: flex; gap: 0; margin-top: 1.5rem; border: 1.5px solid var(--aqua-deep); width: fit-content; }
+  .mobile-nav .mobile-lang { display: none; }
+  .header-lang { display: none; }
+  @media (max-width: 768px) { .header-lang { display: flex; border: 1.5px solid var(--aqua-deep); overflow: hidden; } }
   .mobile-nav .mobile-cta { margin-top: 1.5rem; background: var(--navy); color: var(--white); border: none; padding: 1rem 2rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); width: 100%; }
 
 
@@ -234,6 +236,10 @@
     </li>
   </ul>
   <button class="nav-cta" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
+  <div class="header-lang lang-switch">
+    <button class="lang-btn active" id="mbtn-en" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" id="mbtn-it" onclick="setLang('it')">IT</button>
+  </div>
   <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
@@ -246,10 +252,6 @@
   <a href="reviews.html" data-en="Reviews" data-it="Recensioni">Reviews</a>
   <a href="blog.html" data-en="Blog" data-it="Blog">Blog</a>
   <a href="content.html" data-en="Content" data-it="Contenuti">Content</a>
-  <div class="mobile-lang">
-    <button class="lang-btn active" id="mbtn-en" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" id="mbtn-it" onclick="setLang('it')">IT</button>
-  </div>
   <button class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis">Book Free Lesson</button>
 </div>
 
