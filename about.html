@@ -110,14 +110,11 @@
 }
 .cert-modal {
   position: relative;
-  max-width: 90vw;
-  max-height: 85vh;
   background: var(--navy-dark);
   border: 2px solid var(--aqua);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  max-width: 90vw;
+  max-height: 85vh;
+  overflow: visible;
 }
 .cert-modal-close {
   position: absolute;
@@ -129,30 +126,28 @@
   color: var(--white);
   border: none;
   font-size: 1.2rem;
-  line-height: 1;
+  line-height: 2.2rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1001;
+  z-index: 1002;
+  border-radius: 0;
 }
 .cert-modal iframe {
-  width: 90vw;
-  max-width: 860px;
-  height: 85vh;
-  border: none;
   display: block;
-  flex-shrink: 0;
+  width: 86vw;
+  max-width: 860px;
+  height: 82vh;
+  border: none;
 }
 .cert-modal img {
-  max-width: 90vw;
-  max-height: 85vh;
+  display: block;
+  max-width: 86vw;
+  max-height: 82vh;
   width: auto;
   height: auto;
-  border: none;
-  display: block;
   object-fit: contain;
-  flex-shrink: 1;
 }
 .cert-modal-overlay-bg {
   position: absolute;
