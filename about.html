@@ -114,9 +114,10 @@
   max-height: 85vh;
   background: var(--navy-dark);
   border: 2px solid var(--aqua);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .cert-modal-close {
   position: absolute;
@@ -141,6 +142,7 @@
   height: 85vh;
   border: none;
   display: block;
+  flex-shrink: 0;
 }
 .cert-modal img {
   max-width: 90vw;
@@ -150,6 +152,7 @@
   border: none;
   display: block;
   object-fit: contain;
+  flex-shrink: 1;
 }
 .cert-modal-overlay-bg {
   position: absolute;
