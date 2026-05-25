@@ -339,21 +339,21 @@
       <div class="qual-card">
         <div class="qual-card-title">Oxford Seminars</div>
         <div class="qual-card-desc" data-en="TESOL · TESL · TEFL · IELTS Prep · TOEFL Prep — complete English teaching certification programme." data-it="TESOL · TESL · TEFL · Prep IELTS · Prep TOEFL — programma completo di certificazione per l'insegnamento dell'inglese.">TESOL · TESL · TEFL · IELTS Prep · TOEFL Prep — complete English teaching certification programme.</div>
-        <a href="assets/certificates/TESOL-TESL-TEFL-Certification-with-Specialization-in-Teaching-IELTS-and-TOEFL-Preparation.pdf" download="Oxford_Seminars_Certificate.pdf" class="btn-cert" data-en="VIEW CERTIFICATE" data-it="APRI CERTIFICATO">VIEW CERTIFICATE</a>
-        <a href="assets/certificates/Traduzione-Certificato-Insegnamento-di-Inglese-per-Stranieri.pdf" download="Oxford_Seminars_Translation.pdf" class="btn-cert" data-en="VIEW TRANSLATION (IT)" data-it="APRI TRADUZIONE (IT)">VIEW TRANSLATION (IT)</a>
+        <a href="assets/certificates/TESOL-TESL-TEFL-Certification-with-Specialization-in-Teaching-IELTS-and-TOEFL-Preparation.pdf" class="btn-cert" data-en="VIEW CERTIFICATE" data-it="APRI CERTIFICATO">VIEW CERTIFICATE</a>
+        <a href="assets/certificates/Traduzione-Certificato-Insegnamento-di-Inglese-per-Stranieri.pdf" class="btn-cert" data-en="VIEW TRANSLATION (IT)" data-it="APRI TRADUZIONE (IT)">VIEW TRANSLATION (IT)</a>
       </div>
 
       <div class="qual-card">
         <div class="qual-card-title">Scuola Leonardo Da Vinci</div>
         <div class="qual-card-desc" data-en="Italian language certification from one of Italy's most prestigious language schools, Florence." data-it="Certificazione di lingua italiana da una delle scuole di lingue più prestigiose d'Italia, Firenze.">Italian language certification from one of Italy's most prestigious language schools, Florence.</div>
-        <a href="assets/certificates/Attestato-Formazione-per-Insegnanti-di-Italiano.jpg" download="Scuola_Leonardo_Da_Vinci_Certificato_1.pdf" class="btn-cert" data-en="VIEW CERTIFICATE 1 (IT)" data-it="APRI CERTIFICATO 1 (IT)">VIEW CERTIFICATE 1 (IT)</a>
-        <a href="assets/certificates/Certificato-di-Italiano-C2.jpg" download="Scuola_Leonardo_Da_Vinci_Certificato_2.pdf" class="btn-cert" data-en="VIEW CERTIFICATE 2 (IT)" data-it="APRI CERTIFICATO 2 (IT)">VIEW CERTIFICATE 2 (IT)</a>
+        <a href="assets/certificates/Attestato-Formazione-per-Insegnanti-di-Italiano.jpg" class="btn-cert" data-en="VIEW CERTIFICATE 1 (IT)" data-it="APRI CERTIFICATO 1 (IT)">VIEW CERTIFICATE 1 (IT)</a>
+        <a href="assets/certificates/Certificato-di-Italiano-C2.jpg" class="btn-cert" data-en="VIEW CERTIFICATE 2 (IT)" data-it="APRI CERTIFICATO 2 (IT)">VIEW CERTIFICATE 2 (IT)</a>
       </div>
 
       <div class="qual-card">
         <div class="qual-card-title">Preply</div>
         <div class="qual-card-desc" data-en="Verified tutor certification on Preply — one of the world's leading online language learning platforms." data-it="Certificazione come tutor verificato su Preply — una delle principali piattaforme mondiali di apprendimento linguistico online.">Verified tutor certification on Preply — one of the world's leading online language learning platforms.</div>
-        <a href="assets/certificates/How-to-Teach-a-Language-Certificate.pdf" download="Preply_Certificate.pdf" class="btn-cert" data-en="VIEW CERTIFICATE" data-it="APRI CERTIFICATO">VIEW CERTIFICATE</a>
+        <a href="assets/certificates/How-to-Teach-a-Language-Certificate.pdf" class="btn-cert" data-en="VIEW CERTIFICATE" data-it="APRI CERTIFICATO">VIEW CERTIFICATE</a>
       </div>
 
     </div>
@@ -479,6 +479,7 @@
     document.querySelectorAll('.btn-cert').forEach(function (btn) {
       btn.addEventListener('click', function (e) {
         e.preventDefault();
+        e.stopPropagation();
         var url = btn.getAttribute('href');
         if (!url) return;
 
