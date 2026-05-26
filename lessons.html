@@ -444,7 +444,7 @@
             Specialized IELTS and TOEFL prep courses that develop all four skills with strategies, practice tests, and personalized feedback to boost your score.
           </p>
         </div>
-        <div class="lesson-card">
+        <div class="lesson-card" id="shadowing-card">
           <div class="lesson-card-tag" data-en="Pronunciation · Comprehension" data-it="Pronuncia · Comprensione">Pronunciation · Comprehension</div>
           <div class="lesson-card-name">
             <svg viewBox="0 0 120 24" xmlns="http://www.w3.org/2000/svg" style="width:120px;height:24px;display:block;overflow:visible;">
@@ -541,6 +541,44 @@
 
   // Restore saved language on page load
   (function(){ var saved = localStorage.getItem('ewm_lang'); if(saved) setLang(saved); })();
+
+  /* ── Mouse shadow on Shadowing card ── */
+  (function() {
+    const card = document.getElementById('shadowing-card');
+    if (!card) return;
+
+    const blob = document.createElement('div');
+    blob.style.cssText = `
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0) 70%);
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.25s ease;
+      opacity: 0;
+      z-index: 0;
+    `;
+    card.appendChild(blob);
+
+    card.addEventListener('mouseenter', () => {
+      blob.style.opacity = '1';
+    });
+
+    card.addEventListener('mouseleave', () => {
+      blob.style.opacity = '0';
+    });
+
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      blob.style.left = x + 'px';
+      blob.style.top = y + 'px';
+    });
+  })();
+
 </script>
 </body>
 </html>
