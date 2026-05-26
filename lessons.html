@@ -118,7 +118,7 @@
   .lessons-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
   .lessons-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
 
-  .lesson-card { background: rgba(255,255,255,0.55); padding: 2.2rem 2rem; position: relative; overflow: hidden; transition: background 0.2s; cursor: default; border-right: 1.5px solid rgba(1,29,127,0.18); border-bottom: 1.5px solid rgba(1,29,127,0.18); }
+  .lesson-card { background: rgba(255,255,255,0.55); padding: 2.2rem 2rem; position: relative; overflow: visible; transition: background 0.2s; cursor: default; border-right: 1.5px solid rgba(1,29,127,0.18); border-bottom: 1.5px solid rgba(1,29,127,0.18); }
   .lesson-card:last-child { border-right: none; }
   .lesson-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--navy); transition: height 0.3s; }
   .lesson-card:hover { background: rgba(255,255,255,0.8); }
@@ -446,7 +446,7 @@
         </div>
         <div class="lesson-card">
           <div class="lesson-card-tag" data-en="Pronunciation · Comprehension" data-it="Pronuncia · Comprensione">Pronunciation · Comprehension</div>
-          <div class="lesson-card-name" data-en="Shadowing" data-it="Shadowing">
+          <div class="lesson-card-name">
             <svg viewBox="0 0 900 140" xmlns="http://www.w3.org/2000/svg" style="width:260px;height:40px;display:block;overflow:visible;">
               <defs>
                 <filter id="shadowBlur" x="-5%" y="-5%" width="160%" height="130%">
