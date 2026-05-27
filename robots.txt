@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block the privacy page from being indexed (handled via noindex meta tag too)
+Disallow: /privacy.html
+
+Sitemap: https://www.englishwithmarcello.com/sitemap.xml
