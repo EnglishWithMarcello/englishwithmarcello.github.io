@@ -382,5 +382,18 @@ TRY YOUR<span>FREE LESSON</span>TODAY!
   (function(){ var saved = localStorage.getItem('ewm_lang'); if(saved) setLang(saved); })();
 </script>
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script>
+  // Calendly postMessage event listener
+  window.addEventListener('message', function(e) {
+    if (e.origin !== 'https://calendly.com') return;
+    if (e.data && e.data.event) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'calendly_' + e.data.event.replace('calendly.', ''),
+        calendly_event: e.data.event
+      });
+    }
+  });
+</script>
 </body>
 </html>
