@@ -1,7 +1,30 @@
 User-agent: *
 Allow: /
-
-# Block the privacy page from being indexed (handled via noindex meta tag too)
 Disallow: /privacy.html
+
+# AI Crawlers - explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
 
 Sitemap: https://www.englishwithmarcello.com/sitemap.xml

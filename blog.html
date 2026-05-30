@@ -203,6 +203,131 @@
     .footer-links { flex-wrap: wrap; justify-content: center; gap: 1rem; }
   }
 </style>
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.englishwithmarcello.com/#marcello",
+      "name": "Marcello",
+      "url": "https://www.englishwithmarcello.com",
+      "jobTitle": "English Language Teacher",
+      "description": "Professional online English teacher based in Milan, Italy. Offering Business English, exam preparation (IELTS, TOEFL, Cambridge, Oxford, CELPIP), conversation practice, grammar, and pronunciation lessons to students worldwide.",
+      "knowsLanguage": ["English", "Italian"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Milan",
+        "addressCountry": "IT"
+      },
+      "sameAs": [
+        "https://www.englishwithmarcello.com"
+      ]
+    },
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://www.englishwithmarcello.com/#organization",
+      "name": "English With Marcello",
+      "url": "https://www.englishwithmarcello.com",
+      "description": "Online English lessons with a professional teacher based in Milan, Italy. Lessons available for all levels from beginner to advanced.",
+      "founder": {
+        "@id": "https://www.englishwithmarcello.com/#marcello"
+      },
+      "location": {
+        "@type": "VirtualLocation",
+        "url": "https://www.englishwithmarcello.com"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "English Lessons",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Business & Professional English",
+              "description": "Individual online lessons focused on workplace communication, emails, presentations, meetings, and professional vocabulary.",
+              "provider": { "@id": "https://www.englishwithmarcello.com/#organization" },
+              "educationalLevel": "All levels",
+              "inLanguage": "en"
+            },
+            "price": "24",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Exam Preparation — IELTS, TOEFL, Cambridge, Oxford, CELPIP",
+              "description": "Individual online coaching for major English language proficiency exams.",
+              "provider": { "@id": "https://www.englishwithmarcello.com/#organization" },
+              "educationalLevel": "Intermediate to Advanced",
+              "inLanguage": "en"
+            },
+            "price": "24",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Conversation Practice",
+              "description": "Individual and group online lessons for fluency building, confidence, and natural spoken English.",
+              "provider": { "@id": "https://www.englishwithmarcello.com/#organization" },
+              "educationalLevel": "All levels",
+              "inLanguage": "en"
+            },
+            "price": "24",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Grammar Lessons",
+              "description": "Individual and group structured grammar instruction for all levels.",
+              "provider": { "@id": "https://www.englishwithmarcello.com/#organization" },
+              "educationalLevel": "All levels",
+              "inLanguage": "en"
+            },
+            "price": "24",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Pronunciation Lessons",
+              "description": "Individual online lessons focusing on accent reduction, phonetics, and clear spoken English.",
+              "provider": { "@id": "https://www.englishwithmarcello.com/#organization" },
+              "educationalLevel": "All levels",
+              "inLanguage": "en"
+            },
+            "price": "24",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.englishwithmarcello.com/#website",
+      "url": "https://www.englishwithmarcello.com",
+      "name": "English With Marcello",
+      "description": "Online English lessons for all levels with a professional teacher based in Milan, Italy.",
+      "publisher": { "@id": "https://www.englishwithmarcello.com/#organization" },
+      "inLanguage": ["en", "it"]
+    }
+  ]
+}
+</script>
+
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
