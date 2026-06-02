@@ -33,18 +33,145 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Course",
-  "name": "Online English Lessons with Marcello",
-  "description": "Personalised one-to-one online English lessons covering conversational English, exam preparation, and business English.",
-  "provider": {
-    "@type": "Person",
-    "name": "Marcello",
-    "url": "https://www.englishwithmarcello.com"
-  },
-  "hasCourseInstance": {
-    "@type": "CourseInstance",
-    "courseMode": "online"
-  }
+  "@graph": [
+    {
+      "@type": ["ProfessionalService", "EducationalOrganization"],
+      "@id": "https://www.englishwithmarcello.com/#business",
+      "name": "English With Marcello",
+      "url": "https://www.englishwithmarcello.com/"
+    },
+    {
+      "@type": "Course",
+      "name": "Conversation English",
+      "description": "Dynamic, hands-on conversation lessons that build fluency, confidence, and natural expression. Suitable for levels B1–C2.",
+      "url": "https://www.englishwithmarcello.com/lessons.html",
+      "inLanguage": "en",
+      "educationalLevel": "CEFR B1–C2",
+      "teaches": "Spoken English fluency and conversation",
+      "provider": { "@id": "https://www.englishwithmarcello.com/#business" },
+      "offers": {
+        "@type": "Offer",
+        "price": "24",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "category": "Starting price (per lesson)"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "PT1H"
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Beginner English (A1–A2)",
+      "description": "Develop foundational English skills to communicate confidently in everyday situations. Grammar and all four skills. Suitable for levels A1–A2.",
+      "url": "https://www.englishwithmarcello.com/lessons.html",
+      "inLanguage": "en",
+      "educationalLevel": "CEFR A1–A2",
+      "teaches": "Foundational English grammar, reading, writing, listening and speaking",
+      "provider": { "@id": "https://www.englishwithmarcello.com/#business" },
+      "offers": {
+        "@type": "Offer",
+        "price": "24",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "category": "Starting price (per lesson)"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "PT1H"
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Intermediate English (B1–B2)",
+      "description": "Enhance your overall English proficiency with expanded vocabulary, improved comprehension, and effective communication. Suitable for levels B1–B2.",
+      "url": "https://www.englishwithmarcello.com/lessons.html",
+      "inLanguage": "en",
+      "educationalLevel": "CEFR B1–B2",
+      "teaches": "Intermediate English vocabulary, comprehension and communication",
+      "provider": { "@id": "https://www.englishwithmarcello.com/#business" },
+      "offers": {
+        "@type": "Offer",
+        "price": "24",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "category": "Starting price (per lesson)"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "PT1H"
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Advanced English (C1–C2)",
+      "description": "Refine advanced language abilities to achieve fluent, accurate and nuanced communication. Suitable for levels C1–C2.",
+      "url": "https://www.englishwithmarcello.com/lessons.html",
+      "inLanguage": "en",
+      "educationalLevel": "CEFR C1–C2",
+      "teaches": "Advanced English fluency, accuracy and nuanced communication",
+      "provider": { "@id": "https://www.englishwithmarcello.com/#business" },
+      "offers": {
+        "@type": "Offer",
+        "price": "24",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "category": "Starting price (per lesson)"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "PT1H"
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Exam Preparation (IELTS, TOEFL, Cambridge)",
+      "description": "Specialised IELTS, TOEFL and Cambridge preparation that develops all four skills with strategies, practice tests, and personalised feedback to boost your score.",
+      "url": "https://www.englishwithmarcello.com/lessons.html",
+      "inLanguage": "en",
+      "teaches": "IELTS, TOEFL and Cambridge exam strategies, practice tests and all four skills",
+      "provider": { "@id": "https://www.englishwithmarcello.com/#business" },
+      "offers": {
+        "@type": "Offer",
+        "price": "25",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "category": "Starting price (per lesson)"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "PT1H"
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Shadowing & Pronunciation",
+      "description": "Improve your pronunciation, rhythm, and fluency with the shadowing technique: repeating a native speaker's speech in real time to make your English clearer, more natural, and more fluent. Suitable for levels B1–C2.",
+      "url": "https://www.englishwithmarcello.com/lessons.html",
+      "inLanguage": "en",
+      "educationalLevel": "CEFR B1–C2",
+      "teaches": "English pronunciation, rhythm and fluency via shadowing",
+      "provider": { "@id": "https://www.englishwithmarcello.com/#business" },
+      "offers": {
+        "@type": "Offer",
+        "price": "25",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "category": "Starting price (per lesson)"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "PT1H"
+      }
+    }
+  ]
 }
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -168,6 +295,9 @@
   .lesson-card:hover::before { height: 100%; }
 
   .lesson-card-name { font-weight: 700; font-size: 1rem; color: var(--navy); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.4rem; }
+  .lesson-card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; }
+  .lesson-card-head .lesson-card-name { margin-bottom: 0; }
+  .lesson-card-price { font-weight: 700; font-size: 0.8rem; letter-spacing: 0.5px; color: var(--red); text-transform: uppercase; white-space: nowrap; margin-bottom: 0.4rem; }
   .lesson-card-level { display: inline-block; font-size: 0.68rem; letter-spacing: 1.5px; text-transform: uppercase; background: rgba(1,29,127,0.1); color: var(--navy); padding: 0.2rem 0.55rem; margin-bottom: 0.7rem; font-weight: 700; border: 1px solid rgba(1,29,127,0.3); }
   .lesson-card-desc { color: var(--navy); font-size: 0.9rem; line-height: 1.75; opacity: 0.8; }
   .lesson-card-tag { display: block; font-size: 0.68rem; letter-spacing: 2px; color: var(--navy-mid); text-transform: uppercase; margin-bottom: 0.5rem; font-weight: 700; }
@@ -428,7 +558,10 @@
       </div>
       <div class="lessons-grid cols-1">
         <div class="lesson-card">
-          <div class="lesson-card-name" data-en="Conversation" data-it="Conversazione">Conversation</div>
+          <div class="lesson-card-head">
+            <div class="lesson-card-name" data-en="Conversation" data-it="Conversazione">Conversation</div>
+            <span class="lesson-card-price" data-en="from €24" data-it="da €24">from €24</span>
+          </div>
           <div class="lesson-card-level" data-en="Suitable for levels B1–C2" data-it="Adatto ai livelli B1–C2">Suitable for levels B1–C2</div>
           <p class="lesson-card-desc"
              data-en="Boost your English communication with dynamic, hands-on lessons that build fluency, confidence, and natural expression."
@@ -447,7 +580,10 @@
       </div>
       <div class="lessons-grid cols-3">
         <div class="lesson-card">
-          <div class="lesson-card-name" data-en="Beginner English" data-it="Inglese per Principianti">Beginner English</div>
+          <div class="lesson-card-head">
+            <div class="lesson-card-name" data-en="Beginner English" data-it="Inglese per Principianti">Beginner English</div>
+            <span class="lesson-card-price" data-en="from €24" data-it="da €24">from €24</span>
+          </div>
           <div class="lesson-card-level" data-en="Suitable for levels A1–A2" data-it="Adatto ai livelli A1–A2">Suitable for levels A1–A2</div>
           <p class="lesson-card-desc"
              data-en="Develop foundational English skills to communicate confidently in everyday situations."
@@ -456,7 +592,10 @@
           </p>
         </div>
         <div class="lesson-card">
-          <div class="lesson-card-name" data-en="Intermediate English" data-it="Inglese Intermedio">Intermediate English</div>
+          <div class="lesson-card-head">
+            <div class="lesson-card-name" data-en="Intermediate English" data-it="Inglese Intermedio">Intermediate English</div>
+            <span class="lesson-card-price" data-en="from €24" data-it="da €24">from €24</span>
+          </div>
           <div class="lesson-card-level" data-en="Suitable for levels B1–B2" data-it="Adatto ai livelli B1–B2">Suitable for levels B1–B2</div>
           <p class="lesson-card-desc"
              data-en="Enhance your overall English proficiency with expanded vocabulary, improved comprehension, and effective communication."
@@ -465,7 +604,10 @@
           </p>
         </div>
         <div class="lesson-card">
-          <div class="lesson-card-name" data-en="Advanced English" data-it="Inglese Avanzato">Advanced English</div>
+          <div class="lesson-card-head">
+            <div class="lesson-card-name" data-en="Advanced English" data-it="Inglese Avanzato">Advanced English</div>
+            <span class="lesson-card-price" data-en="from €24" data-it="da €24">from €24</span>
+          </div>
           <div class="lesson-card-level" data-en="Suitable for levels C1–C2" data-it="Adatto ai livelli C1–C2">Suitable for levels C1–C2</div>
           <p class="lesson-card-desc"
              data-en="Refine advanced language abilities to achieve fluent, accurate and nuanced communication."
@@ -484,7 +626,10 @@
       <div class="lessons-grid cols-2">
         <div class="lesson-card">
           <div class="lesson-card-tag" data-en="Cambridge · IELTS · TOEFL" data-it="Cambridge · IELTS · TOEFL">Cambridge · IELTS · TOEFL</div>
-          <div class="lesson-card-name" data-en="Exam Preparation" data-it="Preparazione agli Esami">Exam Preparation</div>
+          <div class="lesson-card-head">
+            <div class="lesson-card-name" data-en="Exam Preparation" data-it="Preparazione agli Esami">Exam Preparation</div>
+            <span class="lesson-card-price" data-en="from €25" data-it="da €25">from €25</span>
+          </div>
           <p class="lesson-card-desc"
              data-en="Specialized IELTS and TOEFL prep courses that develop all four skills with strategies, practice tests, and personalized feedback to boost your score."
              data-it="Corsi specializzati di preparazione IELTS e TOEFL che sviluppano le quattro abilità con strategie, test pratici e feedback personalizzato per migliorare il punteggio.">
@@ -493,20 +638,23 @@
         </div>
         <div class="lesson-card" id="shadowing-card">
           <div class="lesson-card-tag" data-en="Pronunciation · Comprehension" data-it="Pronuncia · Comprensione">Pronunciation · Comprehension</div>
-          <div class="lesson-card-name">
-            <svg viewBox="0 0 120 24" xmlns="http://www.w3.org/2000/svg" style="width:120px;height:24px;display:block;overflow:visible;">
-              <defs>
-                <filter id="shadowBlur" x="-5%" y="-5%" width="300%" height="500%">
-                  <feGaussianBlur stdDeviation="0.3"/>
-                </filter>
-              </defs>
-              <g font-family="'DM Sans', sans-serif" font-weight="700" font-size="16" letter-spacing="0.5">
-                <g transform="translate(0, 19) skewX(-79) scale(1, 0.25)" filter="url(#shadowBlur)">
-                  <text x="0" y="0" fill="rgba(0,0,0,0.75)">SHADOWING</text>
+          <div class="lesson-card-head">
+            <div class="lesson-card-name">
+              <svg viewBox="0 0 120 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Shadowing" style="width:120px;height:24px;display:block;overflow:visible;">
+                <defs>
+                  <filter id="shadowBlur" x="-5%" y="-5%" width="300%" height="500%">
+                    <feGaussianBlur stdDeviation="0.3"/>
+                  </filter>
+                </defs>
+                <g font-family="'DM Sans', sans-serif" font-weight="700" font-size="16" letter-spacing="0.5" aria-hidden="true">
+                  <g transform="translate(0, 19) skewX(-79) scale(1, 0.25)" filter="url(#shadowBlur)">
+                    <text x="0" y="0" fill="rgba(0,0,0,0.75)">SHADOWING</text>
+                  </g>
+                  <text x="0" y="19" fill="#011d7f">SHADOWING</text>
                 </g>
-                <text x="0" y="19" fill="#011d7f">SHADOWING</text>
-              </g>
-            </svg>
+              </svg>
+            </div>
+            <span class="lesson-card-price" data-en="from €25" data-it="da €25">from €25</span>
           </div>
           <div class="lesson-card-level" data-en="Suitable for levels B1–C2" data-it="Adatto ai livelli B1–C2">Suitable for levels B1–C2</div>
           <p class="lesson-card-desc"
