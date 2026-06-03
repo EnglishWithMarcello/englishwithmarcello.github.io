@@ -504,7 +504,7 @@ TRY YOUR<span>FREE LESSON</span>TODAY!
   }
 
   // Restore saved language on page load
-  (function(){ var saved = localStorage.getItem('ewm_lang'); if(saved) setLang(saved); })();
+  (function(){ var saved = localStorage.getItem('ewm_lang'); var lang = saved || (/^it/i.test(navigator.language||navigator.userLanguage||'en') ? 'it' : 'en'); if(lang === 'it') setLang('it'); })();
 </script>
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <script>

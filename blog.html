@@ -871,7 +871,7 @@ buildGrid();
 
 
   // Restore saved language on page load
-  (function(){ var saved = localStorage.getItem('ewm_lang'); if(saved && saved !== 'en') setLang(saved); })();
+  (function(){ var saved = localStorage.getItem('ewm_lang'); var lang = saved || (/^it/i.test(navigator.language||navigator.userLanguage||'en') ? 'it' : 'en'); if(lang === 'it') setLang('it'); })();
 </script>
 </body>
 </html>

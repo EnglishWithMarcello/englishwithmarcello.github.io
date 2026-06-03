@@ -528,7 +528,6 @@
         </p>
         <a href="waiting-list.html"
            class="btn-waiting"
-           onclick="this.href='waiting-list.html?lang='+(localStorage.getItem('ewm_lang')||'en')"
            data-en="Join the Waiting List →"
            data-it="Unisciti alla Lista d'Attesa →">
           Join the Waiting List →
@@ -735,7 +734,7 @@
   }
 
   // Restore saved language on page load
-  (function(){ var saved = localStorage.getItem('ewm_lang'); if(saved) setLang(saved); })();
+  (function(){ var saved = localStorage.getItem('ewm_lang'); var lang = saved || (/^it/i.test(navigator.language||navigator.userLanguage||'en') ? 'it' : 'en'); if(lang === 'it') setLang('it'); })();
 
   /* ── Mouse shadow on Shadowing card ── */
   (function() {

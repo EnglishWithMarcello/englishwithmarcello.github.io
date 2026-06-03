@@ -764,12 +764,8 @@
     document.body.style.overflow = nav.classList.contains("open") ? "hidden" : "";
   }
 
-  // Restore saved language: URL param takes priority, then localStorage
-  (function(){
-    var params = new URLSearchParams(window.location.search);
-    var lang = params.get('lang') || localStorage.getItem('ewm_lang');
-    if(lang) setLang(lang);
-  })();
+  // Restore saved language on page load
+  (function(){ var saved = localStorage.getItem('ewm_lang'); var lang = saved || (/^it/i.test(navigator.language||navigator.userLanguage||'en') ? 'it' : 'en'); if(lang === 'it') setLang('it'); })();
 </script>
 </body>
 </html>
