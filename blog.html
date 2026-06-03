@@ -337,7 +337,7 @@
 
 <nav>
   <a class="nav-logo" href="index.html" onclick="showPage('blog-list')">
-    <img src="assets/images/Maple-Leaf-Logo.png" alt="Maple Leaf Logo" alt="English With Marcello">
+    <img src="assets/images/Maple-Leaf-Logo.png" alt="English With Marcello logo" alt="English With Marcello">
     <span>ENGLISH WITH <span class="logo-marcello">MARCELLO</span></span>
   </a>
   <ul class="nav-links">
@@ -447,7 +447,7 @@
   </div>
   <div class="article-page">
     <button class="back-btn" onclick="showPage('blog-list')" id="back-btn-text">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
       Back to Blog
     </button>
     <span class="blog-category" id="art-category"></span>
@@ -798,7 +798,7 @@ function buildGrid() {
           <p class="blog-card-excerpt">${d.excerpt}</p>
         </div>
         <div class="blog-card-footer">
-          <button class="read-more">${t.readMore} <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+          <button class="read-more">${t.readMore} <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
         </div>
       </div>`;
   });
