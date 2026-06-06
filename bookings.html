@@ -19,6 +19,9 @@
 <meta name="description" content="Book your online English lesson with Marcello. Choose your lesson type, pick a time that works for you, and start learning. Free trial lesson available for new students.">
 <meta name="keywords" content="book English lesson online, English lesson booking, free trial English lesson, book English tutor, online English class booking, CELPIP">
 <link rel="canonical" href="https://www.englishwithmarcello.com/bookings.html">
+<link rel="alternate" hreflang="en" href="https://www.englishwithmarcello.com/bookings.html">
+<link rel="alternate" hreflang="it" href="https://www.englishwithmarcello.com/it/bookings.html">
+<link rel="alternate" hreflang="x-default" href="https://www.englishwithmarcello.com/bookings.html">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -66,6 +69,8 @@
   .lang-btn { background: transparent; border: none; padding: 0.3rem 0.65rem; font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; cursor: pointer; color: var(--muted); transition: background 0.2s, color 0.2s; }
   .lang-btn.active { background: var(--navy); color: var(--white); }
   .lang-btn:not(.active):hover { background: var(--aqua); color: var(--navy); }
+  .lang-switch a.lang-btn { font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; text-transform: none; line-height: normal; text-decoration: none; }
+  .lang-switch a.lang-btn.active { color: var(--white); }
   .nav-cta { background: var(--navy); color: var(--white); border: none; padding: 0.65rem 1.4rem; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: transform 0.15s, background 0.2s; }
   .nav-cta:hover { background: var(--navy-dark); transform: scale(1.03); }
 
@@ -206,25 +211,25 @@
 <nav>
   <a class="nav-logo" href="index.html"><img src="assets/images/Maple-Leaf-Logo.png" alt="English With Marcello logo" alt="Logo"> ENGLISH WITH <span>&nbsp;MARCELLO</span></a>
   <ul class="nav-links">
-    <li><a href="index.html" data-en="Home" data-it="Home">Home</a></li>
-    <li><a href="about.html" data-en="About" data-it="Chi sono">About</a></li>
-    <li><a href="lessons.html" data-en="Lessons" data-it="Lezioni">Lessons</a></li>
-    <li><a href="bookings.html" class="active" data-en="Bookings" data-it="Prenotazioni">Bookings</a></li>
-    <li><a href="reviews.html" data-en="Reviews" data-it="Recensioni">Reviews</a></li>
-    <li><a href="blog.html" data-en="Blog" data-it="Blog">Blog</a></li>
-    <li><a href="content.html" data-en="Content" data-it="Contenuti">Content</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="bookings.html" class="active">Bookings</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="content.html">Content</a></li>
     <li>
       <div class="lang-switch">
-        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
-        <button class="lang-btn" id="btn-it" onclick="setLang('it')">IT</button>
+        <a class="lang-btn active" id="btn-en" href="bookings.html" onclick="localStorage.setItem('ewm_lang','en')">EN</a>
+        <a class="lang-btn" id="btn-it" href="it/bookings.html" onclick="localStorage.setItem('ewm_lang','it')">IT</a>
       </div>
     </li>
   </ul>
-  <button data-button-click="book-free-trial-lesson" class="nav-cta" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
+  <button data-button-click="book-free-trial-lesson" class="nav-cta" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
   <div class="nav-right">
     <div class="header-lang lang-switch">
-    <button class="lang-btn active" id="mbtn-en" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" id="mbtn-it" onclick="setLang('it')">IT</button>
+    <a class="lang-btn active" id="mbtn-en" href="bookings.html" onclick="localStorage.setItem('ewm_lang','en')">EN</a>
+    <a class="lang-btn" id="mbtn-it" href="it/bookings.html" onclick="localStorage.setItem('ewm_lang','it')">IT</a>
   </div>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -232,27 +237,27 @@
 
 <div class="mobile-nav" id="mobileNav">
   <button class="mobile-nav-close" onclick="toggleMenu()" aria-label="Close">×</button>
-  <a href="index.html" data-en="Home" data-it="Home">Home</a>
-  <a href="about.html" data-en="About" data-it="Chi sono">About</a>
-  <a href="lessons.html" data-en="Lessons" data-it="Lezioni">Lessons</a>
-  <a href="bookings.html" data-en="Bookings" data-it="Prenotazioni">Bookings</a>
-  <a href="reviews.html" data-en="Reviews" data-it="Recensioni">Reviews</a>
-  <a href="blog.html" data-en="Blog" data-it="Blog">Blog</a>
-  <a href="content.html" data-en="Content" data-it="Contenuti">Content</a>
-  <button data-button-click="book-free-trial-lesson" class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis">Book Free Lesson</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="lessons.html">Lessons</a>
+  <a href="bookings.html">Bookings</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="blog.html">Blog</a>
+  <a href="content.html">Content</a>
+  <button data-button-click="book-free-trial-lesson" class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
 </div>
 
 
 <!-- ── HERO ── -->
 <div class="hero-bookings">
   <div class="hero-bookings-inner">
-    <div class="hero-tag animate delay-1" data-en="Book Your Lesson" data-it="Prenota la Tua Lezione">Book Your Lesson</div>
-    <h1 class="hero-bookings-title animate delay-2" data-en="TRY YOUR<span>FREE LESSON</span>TODAY!" data-it="PROVA LA TUA<span>LEZIONE GRATUITA</span>OGGI!">
+    <div class="hero-tag animate delay-1">Book Your Lesson</div>
+    <h1 class="hero-bookings-title animate delay-2">
 TRY YOUR<span>FREE LESSON</span>TODAY!
     </h1>
-    <p class="hero-bookings-subtitle animate delay-3" data-en="Click the button to send me some information about yourself, do my free English test to find out your level and book your free 25-minute trial lesson!" data-it="Clicca il pulsante per inviarmi alcune informazioni su di te, fai il mio test d'inglese gratuito per scoprire il tuo livello e prenota la tua lezione di prova gratuita di 25 minuti!">Click the button to send me some information about yourself, do my free English test to find out your level and book your free 25-minute trial lesson!</p>
+    <p class="hero-bookings-subtitle animate delay-3">Click the button to send me some information about yourself, do my free English test to find out your level and book your free 25-minute trial lesson!</p>
     <div class="animate delay-4">
-      <button data-button-click="book-free-trial-lesson" class="btn-primary" onclick="window.open('https://tally.so/r/n0DVE0','_blank')" data-en="GET STARTED" data-it="INIZIA ORA">GET STARTED</button>
+      <button data-button-click="book-free-trial-lesson" class="btn-primary" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">GET STARTED</button>
     </div>
   </div>
 </div>
@@ -276,19 +281,19 @@ TRY YOUR<span>FREE LESSON</span>TODAY!
 <!-- ── OPTIONS ── -->
 <div class="intro-section">
   <div class="intro-inner">
-    <p class="section-label animate" data-en="How To Book" data-it="Come Prenotare">How To Book</p>
-    <h2 class="section-title animate" data-en="CHOOSE YOUR PATH" data-it="SCEGLI IL TUO PERCORSO">CHOOSE YOUR PATH</h2>
+    <p class="section-label animate">How To Book</p>
+    <h2 class="section-title animate">CHOOSE YOUR PATH</h2>
     <div class="options-grid">
       <div class="option-card animate delay-1">
         <div class="option-num">01</div>
-        <div class="option-title" data-en="Free 25-Min Trial Lesson" data-it="Lezione di Prova Gratuita di 25 Min">Free 25-Min Trial Lesson</div>
-        <div class="option-desc" data-en="Not sure yet? Start with a free trial. Fill in a short form, take the free English level test, and book your first lesson at no cost — no commitment required." data-it="Non sei ancora sicuro? Inizia con una prova gratuita. Compila un breve modulo, fai il test di livello d'inglese gratuito e prenota la tua prima lezione senza costi — nessun impegno richiesto.">Not sure yet? Start with a free trial. Fill in a short form, take the free English level test, and book your first lesson at no cost — no commitment required.</div>
-        <button data-button-click="book-free-trial-lesson" class="btn-primary" onclick="window.open('https://tally.so/r/n0DVE0','_blank')" data-en="Book Free Trial" data-it="Prenota Prova Gratuita">Book Free Trial</button>
+        <div class="option-title">Free 25-Min Trial Lesson</div>
+        <div class="option-desc">Not sure yet? Start with a free trial. Fill in a short form, take the free English level test, and book your first lesson at no cost — no commitment required.</div>
+        <button data-button-click="book-free-trial-lesson" class="btn-primary" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Trial</button>
       </div>
       <div class="option-card animate delay-2">
         <div class="option-num">02</div>
-        <div class="option-title" data-en="Book a 50-Min Lesson Directly" data-it="Prenota Direttamente una Lezione di 50 Min">Book a 50-Min Lesson Directly</div>
-        <div class="option-desc" data-en="Ready to get started? Book a full 50-minute lesson directly using the calendar below. For information about packages and pricing, check the price list." data-it="Pronto per iniziare? Prenota direttamente una lezione completa di 50 minuti tramite il calendario qui sotto. Per informazioni su pacchetti e prezzi, consulta il listino prezzi.">Ready to get started? Book a full 50-minute lesson directly using the calendar below. For information about packages and pricing, check the price list.</div>
+        <div class="option-title">Book a 50-Min Lesson Directly</div>
+        <div class="option-desc">Ready to get started? Book a full 50-minute lesson directly using the calendar below. For information about packages and pricing, check the price list.</div>
       </div>
     </div>
   </div>
@@ -297,14 +302,14 @@ TRY YOUR<span>FREE LESSON</span>TODAY!
 <!-- ── CALENDLY ── -->
 <div class="calendly-section">
   <div class="calendly-inner">
-    <p class="section-label animate" data-en="Online Booking" data-it="Prenotazione Online">Online Booking</p>
-    <h2 class="section-title animate" data-en="BOOK YOUR LESSON" data-it="PRENOTA LA TUA LEZIONE">BOOK YOUR LESSON</h2>
-    <p class="section-sub animate" data-en="If you want to book a 50-minute lesson directly, use the calendar below to choose your preferred date and time." data-it="Se vuoi prenotare direttamente una lezione di 50 minuti, usa il calendario qui sotto per scegliere la data e l'ora che preferisci.">If you want to book a 50-minute lesson directly, use the calendar below to choose your preferred date and time.</p>
+    <p class="section-label animate">Online Booking</p>
+    <h2 class="section-title animate">BOOK YOUR LESSON</h2>
+    <p class="section-sub animate">If you want to book a 50-minute lesson directly, use the calendar below to choose your preferred date and time.</p>
     <div class="calendly-embed-wrap animate">
       <div class="calendly-inline-widget" data-url="https://calendly.com/english-with-marcello?hide_gdpr_banner=1" style="min-width:320px;height:900px;"></div>
     </div>
     <div class="contact-strip">
-      <span class="contact-strip-label" data-en="Contact Marcello" data-it="Contatta Marcello">Contact Marcello</span>
+      <span class="contact-strip-label">Contact Marcello</span>
       <a href="https://wa.me/393387462067"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> +39 338 746 2067</a>
       <a href="mailto:info@englishwithmarcello.com"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> info@englishwithmarcello.com</a>
     </div>
@@ -313,9 +318,9 @@ TRY YOUR<span>FREE LESSON</span>TODAY!
 
 <!-- ── CTA BAND ── -->
 <div class="cta-band">
-  <h2 class="cta-title" data-en="READY TO<br><span>START?</span>" data-it="PRONTO A<br><span>INIZIARE?</span>">READY TO<br><span>START?</span></h2>
-  <p class="cta-sub" data-en="Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence." data-it="Prenota oggi la tua lezione di prova gratuita. Nessun impegno — solo tu, Marcello, e il tuo primo passo verso un inglese davvero sicuro.">Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence.</p>
-  <button data-button-click="book-free-trial-lesson" class="btn-aqua" data-en="Book Your Free Lesson Now" data-it="Prenota Ora la Tua Lezione Gratuita" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Your Free Lesson Now</button>
+  <h2 class="cta-title">READY TO<br><span>START?</span></h2>
+  <p class="cta-sub">Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence.</p>
+  <button data-button-click="book-free-trial-lesson" class="btn-aqua" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Your Free Lesson Now</button>
 </div>
 
 <footer>
@@ -327,37 +332,13 @@ TRY YOUR<span>FREE LESSON</span>TODAY!
     <a href="https://www.facebook.com/share/18917LsM4G/" target="_blank">Facebook</a>
   </div>
   <div class="footer-copy"><a href="mailto:info@englishwithmarcello.com" style="color:inherit;text-decoration:none;">info@englishwithmarcello.com</a> · <a href="tel:+393387462067" style="color:inherit;text-decoration:none;">+39 338 746 2067</a></div>
-  <div class="footer-legal"><a href="faq.html" class="faq-link" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'" data-en="FAQ" data-it="FAQ">FAQ</a> <span style="color:var(--white);font-size:0.75rem;letter-spacing:1px;opacity:0.7;">·</span> <a href="privacy.html" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" data-en="Privacy Policy" data-it="Privacy Policy">Privacy Policy</a></div>
+  <div class="footer-legal"><a href="faq.html" class="faq-link" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">FAQ</a> <span style="color:var(--white);font-size:0.75rem;letter-spacing:1px;opacity:0.7;">·</span> <a href="privacy.html" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;">Privacy Policy</a></div>
 </footer>
 
 <!-- Calendly widget JS -->
 
 
 <script>
-  let currentLang = 'en';
-  function setLang(lang) {
-    currentLang = lang;
-    localStorage.setItem('ewm_lang', lang);
-    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-    document.getElementById('btn-it').classList.toggle('active', lang === 'it');
-    const mbtnEn = document.getElementById('mbtn-en');
-    const mbtnIt = document.getElementById('mbtn-it');
-    if (mbtnEn) mbtnEn.classList.toggle('active', lang === 'en');
-    if (mbtnIt) mbtnIt.classList.toggle('active', lang === 'it');
-    document.querySelectorAll('[data-en]').forEach(el => {
-      const val = el.getAttribute('data-' + lang);
-      if (val !== null) {
-        if (el.tagName === 'H1' || el.tagName === 'H2' || el.innerHTML.includes('<span>') || el.innerHTML.includes('<br>')) {
-          el.innerHTML = val;
-        } else {
-          el.textContent = val;
-        }
-      }
-    });
-    // Switch price list PDF based on language
-    const btn = document.getElementById('price-list-btn');
-    if (btn) btn.href = lang === 'it' ? 'Listino_prezzi.pdf' : 'Price_list.pdf';
-  }
 
   // Animate on scroll
   const animateEls = document.querySelectorAll('.animate');
@@ -380,9 +361,6 @@ TRY YOUR<span>FREE LESSON</span>TODAY!
     btn.classList.toggle("open");
     document.body.style.overflow = nav.classList.contains("open") ? "hidden" : "";
   }
-
-  // Restore saved language on page load
-  (function(){ var saved = localStorage.getItem('ewm_lang'); var lang = saved || (/^it/i.test(navigator.language||navigator.userLanguage||'en') ? 'it' : 'en'); if(lang === 'it') setLang('it'); })();
 </script>
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <script>
@@ -397,13 +375,6 @@ TRY YOUR<span>FREE LESSON</span>TODAY!
       });
     }
   });
-</script>
-<script>
-(function(){
-  function applyFaqLang(){ var lang=localStorage.getItem('ewm_lang')||(/^it/i.test(navigator.language||navigator.userLanguage||'en')?'it':'en'); var href=(lang==='it')?'it/faq.html':'faq.html'; document.querySelectorAll('a.faq-link').forEach(function(a){a.setAttribute('href',href);}); }
-  applyFaqLang();
-  ['btn-en','mbtn-en','btn-it','mbtn-it'].forEach(function(id){var b=document.getElementById(id); if(b) b.addEventListener('click',function(){setTimeout(applyFaqLang,0);});});
-})();
 </script>
 </body>
 </html>
