@@ -19,6 +19,9 @@
 <meta name="description" content="Read what students say about learning English online with Marcello. Real reviews from real students — praised for warmth, clarity and genuine results.">
 <meta name="keywords" content="English teacher reviews, English tutor testimonials, online English lesson reviews, Marcello English teacher reviews, student feedback English lessons, CELPIP">
 <link rel="canonical" href="https://www.englishwithmarcello.com/reviews.html">
+<link rel="alternate" hreflang="en" href="https://www.englishwithmarcello.com/reviews.html">
+<link rel="alternate" hreflang="it" href="https://www.englishwithmarcello.com/it/reviews.html">
+<link rel="alternate" hreflang="x-default" href="https://www.englishwithmarcello.com/reviews.html">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.englishwithmarcello.com/reviews.html">
@@ -83,6 +86,8 @@
   .lang-btn { background: transparent; border: none; padding: 0.3rem 0.65rem; font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; cursor: pointer; color: var(--muted); transition: background 0.2s, color 0.2s; }
   .lang-btn.active { background: var(--navy); color: var(--white); }
   .lang-btn:not(.active):hover { background: var(--aqua); color: var(--navy); }
+  .lang-switch a.lang-btn { font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; text-transform: none; line-height: normal; text-decoration: none; }
+  .lang-switch a.lang-btn.active { color: var(--white); }
   .nav-cta { background: var(--navy); color: var(--white); border: none; padding: 0.65rem 1.4rem; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: transform 0.15s, background 0.2s; }
   .nav-cta:hover { background: var(--navy-dark); transform: scale(1.03); }
 
@@ -116,10 +121,18 @@
   .rating-stars { color: #FFB900; font-size: 1.5rem; letter-spacing: 2px; }
   .rating-count { font-size: 0.82rem; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
 
-  /* Reviews grid */
-  .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-
+  /* Reviews carousel */
+  .carousel-wrap { position: relative; }
+  .carousel-track-outer { overflow: hidden; }
+  .reviews-grid {
+    display: flex;
+    gap: 1.5rem;
+    transition: transform 0.45s cubic-bezier(0.4,0,0.2,1);
+    will-change: transform;
+  }
   .review-card {
+    flex: 0 0 calc((100% - 3rem) / 3);
+    min-width: 0;
     border: 1.5px solid var(--aqua);
     padding: 2rem;
     display: flex;
@@ -151,6 +164,81 @@
   .review-text::before { content: '\201C'; }
   .review-text::after { content: '\201D'; }
 
+  /* Carousel nav buttons */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--navy);
+    color: var(--white);
+    border: none;
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .carousel-btn:hover { background: var(--aqua-deep); transform: translateY(-50%) scale(1.08); }
+  .carousel-btn.prev { left: -22px; }
+  .carousel-btn.next { right: -22px; }
+  .carousel-btn:disabled { opacity: 0.25; cursor: default; }
+  .carousel-btn:disabled:hover { background: var(--navy); transform: translateY(-50%); }
+
+  /* Carousel dots */
+  .carousel-dots { display: flex; justify-content: center; gap: 0.5rem; margin-top: 2rem; }
+  .carousel-dot { width: 8px; height: 8px; border-radius: 0; background: var(--aqua); border: none; cursor: pointer; padding: 0; transition: background 0.2s, transform 0.2s; }
+  .carousel-dot.active { background: var(--navy); transform: scale(1.3); }
+
+  /* ── GOOGLE REVIEW BANNER ── */
+  .google-review-band {
+    background: var(--light-bg);
+    border-top: 2px solid var(--aqua);
+    border-bottom: 2px solid var(--aqua);
+    padding: 3.5rem 2.5rem;
+    text-align: center;
+  }
+  .google-review-band .section-label { margin-bottom: 0.75rem; }
+  .google-review-band h2 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+  .google-review-band p {
+    color: var(--muted);
+    font-size: 1rem;
+    max-width: 520px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+  }
+  .btn-google {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--white);
+    color: var(--navy);
+    border: 2px solid var(--navy);
+    padding: 0.9rem 2rem;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+  }
+  .btn-google:hover { background: var(--navy); color: var(--white); transform: scale(1.03); }
+  .btn-google svg { flex-shrink: 0; }
+
   /* ── CTA BAND ── */
   /* CTA BAND */
   .cta-band { background: var(--navy); padding: 5rem 2.5rem; text-align: center; position: relative; overflow: hidden; }
@@ -176,14 +264,19 @@
 
   /* ── RESPONSIVE ── */
   @media (max-width: 1024px) {
-    .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+    .reviews-grid { /* 2 cards visible */ }
+    .review-card { flex: 0 0 calc((100% - 1.5rem) / 2); }
+    .carousel-btn.prev { left: -16px; }
+    .carousel-btn.next { right: -16px; }
   }
   @media (max-width: 680px) {
     nav { padding: 1rem 1.2rem; flex-wrap: wrap; gap: 0.5rem; }
     .nav-links { gap: 0.8rem; flex-wrap: wrap; }
-    .reviews-grid { grid-template-columns: 1fr; }
+    .review-card { flex: 0 0 100%; }
     .hero-reviews, .reviews-section, .cta-band { padding: 3rem 1.2rem; }
     .rating-summary { flex-direction: column; gap: 0.5rem; padding: 1.5rem; }
+    .carousel-btn.prev { left: -12px; }
+    .carousel-btn.next { right: -12px; }
   }
 
   /* HAMBURGER */
@@ -229,7 +322,7 @@
     .section { padding: 3rem 1.2rem; }
     .section-title { font-size: clamp(2.2rem, 8vw, 3rem); }
     .reviews-masonry { columns: 1; }
-    .reviews-grid { grid-template-columns: 1fr; }
+    /* carousel single-card handled above */
     .stats-row { flex-direction: column; align-items: center; gap: 1.5rem; }
     footer { flex-direction: column; align-items: center; text-align: center; gap: 1rem; padding: 2rem 1.2rem; }
     .footer-links { flex-wrap: wrap; justify-content: center; gap: 1rem; }
@@ -246,25 +339,25 @@
 <nav>
   <a class="nav-logo" href="index.html"><img src="assets/images/Maple-Leaf-Logo.png" alt="English With Marcello logo" alt="Logo"> ENGLISH WITH <span>&nbsp;MARCELLO</span></a>
   <ul class="nav-links">
-    <li><a href="index.html" data-en="Home" data-it="Home">Home</a></li>
-    <li><a href="about.html" data-en="About" data-it="Chi sono">About</a></li>
-    <li><a href="lessons.html" data-en="Lessons" data-it="Lezioni">Lessons</a></li>
-    <li><a href="bookings.html" data-en="Bookings" data-it="Prenotazioni">Bookings</a></li>
-    <li><a href="reviews.html" class="active" data-en="Reviews" data-it="Recensioni">Reviews</a></li>
-    <li><a href="blog.html" data-en="Blog" data-it="Blog">Blog</a></li>
-    <li><a href="content.html" data-en="Content" data-it="Contenuti">Content</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="bookings.html">Bookings</a></li>
+    <li><a href="reviews.html" class="active">Reviews</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="content.html">Content</a></li>
     <li>
       <div class="lang-switch">
-        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
-        <button class="lang-btn" id="btn-it" onclick="setLang('it')">IT</button>
+        <a class="lang-btn active" id="btn-en" href="reviews.html" onclick="localStorage.setItem('ewm_lang','en')">EN</a>
+        <a class="lang-btn" id="btn-it" href="it/reviews.html" onclick="localStorage.setItem('ewm_lang','it')">IT</a>
       </div>
     </li>
   </ul>
-  <button data-button-click="book-free-trial-lesson" class="nav-cta" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
+  <button data-button-click="book-free-trial-lesson" class="nav-cta" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
   <div class="nav-right">
     <div class="header-lang lang-switch">
-    <button class="lang-btn active" id="mbtn-en" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" id="mbtn-it" onclick="setLang('it')">IT</button>
+    <a class="lang-btn active" id="mbtn-en" href="reviews.html" onclick="localStorage.setItem('ewm_lang','en')">EN</a>
+    <a class="lang-btn" id="mbtn-it" href="it/reviews.html" onclick="localStorage.setItem('ewm_lang','it')">IT</a>
   </div>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -272,28 +365,24 @@
 
 <div class="mobile-nav" id="mobileNav">
   <button class="mobile-nav-close" onclick="toggleMenu()" aria-label="Close">×</button>
-  <a href="index.html" data-en="Home" data-it="Home">Home</a>
-  <a href="about.html" data-en="About" data-it="Chi sono">About</a>
-  <a href="lessons.html" data-en="Lessons" data-it="Lezioni">Lessons</a>
-  <a href="bookings.html" data-en="Bookings" data-it="Prenotazioni">Bookings</a>
-  <a href="reviews.html" data-en="Reviews" data-it="Recensioni">Reviews</a>
-  <a href="blog.html" data-en="Blog" data-it="Blog">Blog</a>
-  <a href="content.html" data-en="Content" data-it="Contenuti">Content</a>
-  <button data-button-click="book-free-trial-lesson" class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis">Book Free Lesson</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="lessons.html">Lessons</a>
+  <a href="bookings.html">Bookings</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="blog.html">Blog</a>
+  <a href="content.html">Content</a>
+  <button data-button-click="book-free-trial-lesson" class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
 </div>
 
 <!-- ── HERO ── -->
 <div class="hero-reviews">
   <div class="hero-reviews-inner animate delay-1">
-    <div class="hero-tag" data-en="Student Testimonials" data-it="Testimonianze degli Studenti">Student Testimonials</div>
-    <h1 class="hero-reviews-title"
-        data-en="WHAT STUDENTS <span>SAY.</span>"
-        data-it="COSA DICONO <span>GLI STUDENTI.</span>">
+    <div class="hero-tag">Student Testimonials</div>
+    <h1 class="hero-reviews-title">
       WHAT STUDENTS <span>SAY.</span>
     </h1>
-    <p class="hero-reviews-sub"
-       data-en="Real feedback from real students. Discover what people say about learning English with my methods."
-       data-it="Feedback reale da studenti reali. Scopri cosa dicono le persone sull'apprendimento dell'inglese con i miei metodi.">
+    <p class="hero-reviews-sub">
       Real feedback from real students. Discover what people say about learning English with my methods.
     </p>
   </div>
@@ -318,8 +407,8 @@
 <!-- ── REVIEWS ── -->
 <div class="reviews-section">
   <div class="reviews-header animate">
-    <p class="section-label" data-en="Student Testimonials" data-it="Testimonianze degli Studenti">Student Testimonials</p>
-    <h2 class="section-title" data-en="ALL REVIEWS" data-it="TUTTE LE RECENSIONI">ALL REVIEWS</h2>
+    <p class="section-label">Student Testimonials</p>
+    <h2 class="section-title">ALL REVIEWS</h2>
   </div>
 
   <!-- Rating summary -->
@@ -327,14 +416,52 @@
     <div class="rating-big">5.0</div>
     <div class="rating-right">
       <div class="rating-stars">★★★★★</div>
-      <div class="rating-count" data-en="Based on verified student reviews" data-it="Basato su recensioni verificate degli studenti">Based on verified student reviews</div>
+      <div class="rating-count">32 verified student reviews</div>
     </div>
   </div>
 
-  <!-- Reviews Grid -->
-  <div class="reviews-grid">
+  <!-- Reviews Carousel -->
+  <div class="carousel-wrap animate delay-2">
+    <button class="carousel-btn prev" id="prevBtn" aria-label="Previous reviews">&#8592;</button>
+    <div class="carousel-track-outer">
+      <div class="reviews-grid" id="reviewsTrack">
 
     <div class="review-card animate delay-1">
+      <div class="review-author">Massimiliano</div>
+      <div class="review-date">June 9, 2026</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">Tutor eccezionale. È madrelingua inglese ma conosce molto bene anche la lingua italiana (e la sua grammatica). Questa combinazione è un grande valore perché permette spiegazioni precise in entrambe le lingue e, soprattutto, gli consente di comprendere le tipiche difficoltà di uno studente italiano e di affrontarle nel modo giusto. Consigliatissimo!</div>
+    </div>
+
+    <div class="review-card animate delay-2">
+      <div class="review-author">Marco</div>
+      <div class="review-date">May 27, 2026</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">Marcello is an outstanding English teacher. Thanks to him, I passed the IELTS with an impressive 7.5! His preparation and knowledge are top-notch, but what truly sets him apart is his endless patience and his friendly, engaging personality that makes every lesson enjoyable. Highly recommended!</div>
+    </div>
+
+    <div class="review-card animate delay-3">
+      <div class="review-author">Jolie</div>
+      <div class="review-date">May 17, 2026</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">He helped me with IELTS and pointed out some issues that I could easily improve. With his assistance, I was able to reach my goal!!</div>
+    </div>
+
+    <div class="review-card animate">
+      <div class="review-author">Amine</div>
+      <div class="review-date">May 6, 2026</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">Great tutor, patient, clear, and very helpful. Highly recommend!</div>
+    </div>
+
+    <div class="review-card animate delay-1">
+      <div class="review-author">Marco</div>
+      <div class="review-date">February 13, 2026</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">Con Marcello ti troverai bene, imposta la lezione come vuoi e lui ti seguirà. Da italiano apprezzo il fatto che sia fluente anche nella mia lingua cosi nei momenti di difficolta posso switchare in ita e velocizzare. Vai tranquillo!</div>
+    </div>
+
+    <div class="review-card animate delay-2">
       <div class="review-author">Ismael</div>
       <div class="review-date">August 25, 2025</div>
       <div class="review-stars">★★★★★</div>
@@ -516,14 +643,34 @@
       <div class="review-text">I am studying Toefl Speaking&writing with Marcello and he is really good at teaching English. He always explain english with real life examples and it really helps me. He is always punctual and his pronunciation is very clear :) He is passionate!!!!</div>
     </div>
 
-  </div>
+  </div><!-- /reviews-grid -->
+  </div><!-- /carousel-track-outer -->
+  <button class="carousel-btn next" id="nextBtn" aria-label="Next reviews">&#8594;</button>
+</div><!-- /carousel-wrap -->
+<div class="carousel-dots" id="carouselDots"></div>
+</div>
+
+<!-- ── GOOGLE REVIEW BANNER ── -->
+<div class="google-review-band animate">
+  <p class="section-label">Share Your Experience</p>
+  <h2>Studied with Marcello?<br>Leave a Review on Google</h2>
+  <p>Your feedback helps other students find the right teacher. It only takes a minute — and it means the world.</p>
+  <a class="btn-google" href="https://g.page/r/CfKDJ8AmPwQ-EAE/review" target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true">
+      <path fill="#4285F4" d="M44.5 20H24v8.5h11.8C34.7 33.9 29.9 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 5.1 29.6 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21c10.5 0 20-7.6 20-21 0-1.3-.2-2.7-.5-4z"/>
+      <path fill="#34A853" d="M6.3 14.7l7 5.1C15 16.1 19.1 13 24 13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 5.1 29.6 3 24 3c-7.7 0-14.4 4.6-17.7 11.7z"/>
+      <path fill="#FBBC05" d="M24 45c5.8 0 10.7-1.9 14.3-5.2l-6.6-5.4C29.9 36.1 27.1 37 24 37c-5.8 0-10.7-3.9-12.5-9.3l-7 5.4C8 40.1 15.5 45 24 45z"/>
+      <path fill="#EA4335" d="M44.5 20H24v8.5h11.8c-.9 2.6-2.6 4.8-4.9 6.3l6.6 5.4C41.6 36.9 45 31 45 24c0-1.3-.2-2.7-.5-4z"/>
+    </svg>
+    Leave a Review on Google
+  </a>
 </div>
 
 <!-- ── CTA BAND ── -->
 <div class="cta-band">
-  <h2 class="cta-title" data-en="READY TO<br><span>START?</span>" data-it="PRONTO A<br><span>INIZIARE?</span>">READY TO<br><span>START?</span></h2>
-  <p class="cta-sub" data-en="Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence." data-it="Prenota oggi la tua lezione di prova gratuita. Nessun impegno — solo tu, Marcello, e il tuo primo passo verso un inglese davvero sicuro.">Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence.</p>
-  <button data-button-click="book-free-trial-lesson" class="btn-aqua" data-en="Book Your Free Lesson Now" data-it="Prenota Ora la Tua Lezione Gratuita" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Your Free Lesson Now</button>
+  <h2 class="cta-title">READY TO<br><span>START?</span></h2>
+  <p class="cta-sub">Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence.</p>
+  <button data-button-click="book-free-trial-lesson" class="btn-aqua" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Your Free Lesson Now</button>
 </div>
 
 <footer>
@@ -535,33 +682,10 @@
     <a href="https://www.facebook.com/share/18917LsM4G/" target="_blank">Facebook</a>
   </div>
   <div class="footer-copy"><a href="mailto:info@englishwithmarcello.com" style="color:inherit;text-decoration:none;">info@englishwithmarcello.com</a> · <a href="tel:+393387462067" style="color:inherit;text-decoration:none;">+39 338 746 2067</a></div>
-  <div class="footer-legal"><a href="faq.html" class="faq-link" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'" data-en="FAQ" data-it="FAQ">FAQ</a> <span style="color:var(--white);font-size:0.75rem;letter-spacing:1px;opacity:0.7;">·</span> <a href="privacy.html" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" data-en="Privacy Policy" data-it="Privacy Policy">Privacy Policy</a></div>
+  <div class="footer-legal"><a href="faq.html" class="faq-link" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">FAQ</a> <span style="color:var(--white);font-size:0.75rem;letter-spacing:1px;opacity:0.7;">·</span> <a href="privacy.html" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;">Privacy Policy</a></div>
 </footer>
 
 <script>
-  let currentLang = 'en';
-
-  function setLang(lang) {
-    currentLang = lang;
-    localStorage.setItem('ewm_lang', lang);
-    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-    document.getElementById('btn-it').classList.toggle('active', lang === 'it');
-    const mbtnEn = document.getElementById('mbtn-en');
-    const mbtnIt = document.getElementById('mbtn-it');
-    if (mbtnEn) mbtnEn.classList.toggle('active', lang === 'en');
-    if (mbtnIt) mbtnIt.classList.toggle('active', lang === 'it');
-    document.querySelectorAll('[data-en]').forEach(el => {
-      const val = el.getAttribute('data-' + lang);
-      if (val !== null) {
-        if (el.tagName === 'H1' || el.tagName === 'H2' || el.innerHTML.includes('<span>') || el.innerHTML.includes('<br>')) {
-          el.innerHTML = val;
-        } else {
-          el.textContent = val;
-        }
-      }
-    });
-  }
-
   // Animate on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
@@ -577,15 +701,72 @@
     document.body.style.overflow = nav.classList.contains("open") ? "hidden" : "";
   }
 
-  // Restore saved language on page load
-  (function(){ var saved = localStorage.getItem('ewm_lang'); var lang = saved || (/^it/i.test(navigator.language||navigator.userLanguage||'en') ? 'it' : 'en'); if(lang === 'it') setLang('it'); })();
-</script>
-<script>
-(function(){
-  function applyFaqLang(){ var lang=localStorage.getItem('ewm_lang')||(/^it/i.test(navigator.language||navigator.userLanguage||'en')?'it':'en'); var href=(lang==='it')?'it/faq.html':'faq.html'; document.querySelectorAll('a.faq-link').forEach(function(a){a.setAttribute('href',href);}); }
-  applyFaqLang();
-  ['btn-en','mbtn-en','btn-it','mbtn-it'].forEach(function(id){var b=document.getElementById(id); if(b) b.addEventListener('click',function(){setTimeout(applyFaqLang,0);});});
-})();
+  // ── CAROUSEL ──
+  (function() {
+    const track    = document.getElementById('reviewsTrack');
+    const prevBtn  = document.getElementById('prevBtn');
+    const nextBtn  = document.getElementById('nextBtn');
+    const dotsWrap = document.getElementById('carouselDots');
+
+    function cardsPerView() {
+      return window.innerWidth <= 680 ? 1 : window.innerWidth <= 1024 ? 2 : 3;
+    }
+
+    const cards = Array.from(track.children);
+    const total = cards.length;
+    let current = 0;
+
+    function pageCount() { return Math.ceil(total / cardsPerView()); }
+
+    function buildDots() {
+      dotsWrap.innerHTML = '';
+      const pages = pageCount();
+      for (let i = 0; i < pages; i++) {
+        const d = document.createElement('button');
+        d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', 'Page ' + (i + 1));
+        d.addEventListener('click', () => goTo(i * cardsPerView()));
+        dotsWrap.appendChild(d);
+      }
+    }
+
+    function updateDots() {
+      const dots = dotsWrap.querySelectorAll('.carousel-dot');
+      const page = Math.floor(current / cardsPerView());
+      dots.forEach((d, i) => d.classList.toggle('active', i === page));
+    }
+
+    function goTo(index) {
+      const cpv = cardsPerView();
+      const maxIndex = Math.max(0, total - cpv);
+      current = Math.max(0, Math.min(index, maxIndex));
+      const cardWidth = cards[0].getBoundingClientRect().width;
+      const gap = 24; // 1.5rem
+      track.style.transform = `translateX(-${current * (cardWidth + gap)}px)`;
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current >= maxIndex;
+      updateDots();
+    }
+
+    prevBtn.addEventListener('click', () => goTo(current - cardsPerView()));
+    nextBtn.addEventListener('click', () => goTo(current + cardsPerView()));
+
+    // Touch/swipe support
+    let touchStartX = 0;
+    track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', e => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) goTo(diff > 0 ? current + cardsPerView() : current - cardsPerView());
+    });
+
+    function init() {
+      buildDots();
+      goTo(0);
+    }
+
+    init();
+    window.addEventListener('resize', () => { buildDots(); goTo(0); });
+  })();
 </script>
 </body>
 </html>
