@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PKKQVTMV');</script>
+  <!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="facebook-domain-verification" content="fmg7bz8xfhjopul4vxbx7wei5a1qqi">
+<title>Privacy Policy | English With Marcello</title>
+<meta name="description" content="Leggi l'informativa sulla privacy di English With Marcello. Scopri come i tuoi dati personali vengono raccolti, utilizzati e protetti in conformità con il GDPR.">
+<link rel="canonical" href="https://www.englishwithmarcello.com/it/privacy.html">
+<link rel="alternate" hreflang="en" href="https://www.englishwithmarcello.com/privacy.html">
+<link rel="alternate" hreflang="it" href="https://www.englishwithmarcello.com/it/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://www.englishwithmarcello.com/privacy.html">
+<meta name="robots" content="noindex, follow">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --aqua:       #98ccc4;
+    --aqua-dark:  #7ab8b0;
+    --aqua-deep:  #5a9e96;
+    --navy:       #011d7f;
+    --navy-dark:  #010f4a;
+    --navy-mid:   #0a2a9a;
+    --red:        #D2281A;
+    --pink:       #F1CAC9;
+    --white:      #FFFFFF;
+    --off-white:  #F7F9FA;
+    --light-bg:   #eef6f5;
+    --muted:      #5A6A9A;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body:    'DM Sans', sans-serif;
+  }
+
+  body {
+    background: var(--white);
+    color: var(--navy);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2.5rem;
+    border-bottom: 2px solid var(--aqua);
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+  }
+  .nav-logo { font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 2px; color: var(--navy); display: flex; align-items: center; text-decoration: none; }
+  .nav-logo img { width: 36px; height: 36px; object-fit: contain; margin-right: 0.6rem; }
+  .nav-logo span { color: var(--aqua-deep); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+
+  /* Language switcher */
+  .lang-switch { display: flex; gap: 0; border: 1.5px solid var(--aqua-deep); overflow: hidden; }
+  .lang-btn { background: transparent; border: none; padding: 0.3rem 0.65rem; font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; cursor: pointer; color: var(--muted); transition: background 0.2s, color 0.2s; }
+  .lang-btn.active { background: var(--navy); color: var(--white); }
+  .lang-btn:not(.active):hover { background: var(--aqua); color: var(--navy); }
+  .lang-switch a.lang-btn { font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; text-transform: none; line-height: normal; text-decoration: none; }
+  .lang-switch a.lang-btn.active { color: var(--white); }
+
+  .nav-cta { background: var(--navy); color: var(--white); border: none; padding: 0.65rem 1.4rem; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: transform 0.15s, background 0.2s; text-decoration: none; display: inline-block; }
+  .nav-cta:hover { background: var(--navy-dark); transform: scale(1.03); }
+
+  /* HERO BAND */
+  .page-hero {
+    background: var(--navy);
+    padding: 4rem 2.5rem 3.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .page-hero::before {
+    content: 'PRIVACY';
+    position: absolute;
+    font-family: var(--font-display);
+    font-size: clamp(8rem, 20vw, 18rem);
+    color: rgba(255,255,255,0.04);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    pointer-events: none;
+    letter-spacing: 8px;
+  }
+  .page-hero-inner { max-width: 900px; margin: 0 auto; position: relative; }
+  .page-hero-tag { display: inline-block; background: var(--red); color: var(--white); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; padding: 0.35rem 0.9rem; margin-bottom: 1.2rem; }
+  .page-hero h1 { font-family: var(--font-display); font-size: clamp(3.5rem, 8vw, 6.5rem); line-height: 0.95; letter-spacing: 2px; text-transform: uppercase; color: var(--white); margin-bottom: 1.5rem; }
+  .page-hero h1 span { color: var(--aqua); }
+  .page-hero-meta { color: rgba(255,255,255,0.5); font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 1.2rem; }
+
+  /* CONTENT */
+  .privacy-wrap { max-width: 860px; margin: 0 auto; padding: 4rem 2.5rem 6rem; }
+
+  .pp-section { margin-bottom: 3.5rem; }
+  .pp-section-label { font-size: 0.65rem; letter-spacing: 4px; text-transform: uppercase; color: var(--aqua-deep); font-weight: 700; margin-bottom: 0.75rem; }
+  .pp-section h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 2.6rem); text-transform: uppercase; color: var(--navy); letter-spacing: 1.5px; margin-bottom: 1.5rem; line-height: 1; border-bottom: 2px solid var(--aqua); padding-bottom: 0.75rem; }
+  .pp-section h3 { font-family: var(--font-body); font-size: 0.95rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--navy); margin-bottom: 0.6rem; margin-top: 2rem; }
+  .pp-section p { color: var(--muted); margin-bottom: 1.1rem; line-height: 1.8; font-size: 0.97rem; }
+  .pp-section ul { list-style: none; padding: 0; margin-bottom: 1.2rem; }
+  .pp-section ul li { color: var(--muted); font-size: 0.97rem; line-height: 1.8; padding-left: 1.4rem; position: relative; margin-bottom: 0.3rem; }
+  .pp-section ul li::before { content: '—'; position: absolute; left: 0; color: var(--aqua-deep); font-weight: 700; }
+  .pp-section a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s; }
+  .pp-section a:hover { color: var(--aqua-deep); }
+
+  /* INFO BOX */
+  .info-box { background: var(--navy); border-left: 4px solid var(--aqua); padding: 1.5rem 2rem; margin-bottom: 3.5rem; }
+  .info-box p { color: rgba(255,255,255,0.75); font-size: 0.92rem; line-height: 1.75; margin-bottom: 0.5rem; }
+  .info-box p:last-child { margin-bottom: 0; }
+  .info-box strong { color: var(--white); }
+  .info-box a { color: var(--aqua); }
+
+  /* TOOL CARDS */
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+  .tool-card { border: 1.5px solid var(--aqua); padding: 1.3rem 1.5rem; transition: border-color 0.2s, transform 0.2s; }
+  .tool-card:hover { border-color: var(--navy); transform: translateY(-2px); }
+  .tool-card-name { font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--navy); margin-bottom: 0.3rem; }
+  .tool-card-purpose { font-size: 0.82rem; color: var(--aqua-deep); font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.5px; }
+  .tool-card-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+  .tool-card-desc a { color: var(--muted); font-size: 0.8rem; }
+
+  /* DATA TABLE */
+  .data-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.88rem; }
+  .data-table th { background: var(--navy); color: var(--white); text-align: left; padding: 0.75rem 1rem; font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+  .data-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--light-bg); color: var(--muted); vertical-align: top; line-height: 1.6; }
+  .data-table tr:nth-child(even) td { background: var(--off-white); }
+  .data-table .tag { display: inline-block; background: var(--light-bg); border: 1px solid var(--aqua); color: var(--navy); font-size: 0.7rem; padding: 0.15rem 0.5rem; letter-spacing: 0.5px; font-weight: 600; border-radius: 2px; }
+  .tag-req { border-color: var(--red) !important; color: var(--red) !important; }
+
+  /* RIGHTS GRID */
+  .rights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+  .right-card { border: 1.5px solid var(--aqua); padding: 1.2rem 1.4rem; transition: border-color 0.2s, transform 0.2s; }
+  .right-card:hover { border-color: var(--navy); transform: translateY(-2px); }
+  .right-card-icon { font-size: 1.3rem; margin-bottom: 0.6rem; }
+  .right-card-title { font-weight: 700; font-size: 0.82rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--navy); margin-bottom: 0.4rem; }
+  .right-card-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+
+  /* HIGHLIGHT BAND */
+  .highlight-band { background: var(--light-bg); border-left: 4px solid var(--aqua-deep); padding: 1.4rem 1.8rem; margin: 1.5rem 0; }
+  .highlight-band p { color: var(--navy); font-size: 0.95rem; line-height: 1.75; margin: 0; }
+
+  /* CONTACT CTA */
+  .contact-cta { background: var(--aqua); padding: 2.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; margin-top: 4rem; }
+  .contact-cta-text h3 { font-family: var(--font-display); font-size: 2rem; letter-spacing: 2px; color: var(--navy); text-transform: uppercase; line-height: 1; margin-bottom: 0.4rem; }
+  .contact-cta-text p { font-size: 0.9rem; color: var(--navy); opacity: 0.8; }
+  .contact-cta-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .cta-link-btn { background: var(--navy); color: var(--white); border: none; padding: 0.8rem 1.5rem; font-family: var(--font-body); font-weight: 700; font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s, transform 0.15s; }
+  .cta-link-btn:hover { background: var(--navy-dark); transform: translateY(-2px); }
+
+  .pp-divider { border: none; border-top: 1px solid var(--aqua); margin: 3rem 0; }
+  .updated-badge { display: inline-block; background: var(--light-bg); border: 1.5px solid var(--aqua-dark); padding: 0.5rem 1.2rem; font-size: 0.78rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--aqua-deep); margin-bottom: 3rem; }
+
+  footer { background: var(--navy-dark); border-top: 3px solid var(--aqua); padding: 3rem 2.5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; flex-wrap: wrap; gap: 1rem; text-align: center; }
+  .footer-links { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
+  .footer-links a { color: var(--white); text-decoration: none; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--aqua); }
+  .footer-copy { color: var(--white); font-size: 0.75rem; }
+
+    @media (max-width: 700px) {
+    nav { padding: 1rem 1.2rem; gap: 0.8rem; flex-wrap: wrap; }
+    .nav-links { display: none; }
+    .privacy-wrap { padding: 2.5rem 1.2rem 4rem; }
+    .page-hero { padding: 3rem 1.2rem 2.5rem; }
+    .contact-cta { flex-direction: column; align-items: flex-start; }
+    .rights-grid, .tools-grid { grid-template-columns: 1fr; }
+    .data-table { font-size: 0.8rem; }
+    .data-table th, .data-table td { padding: 0.6rem 0.7rem; }
+  }
+
+  /* HAMBURGER */
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); transition: all 0.3s; }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .mobile-nav { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--white); z-index: 200; flex-direction: column; padding: 5rem 2rem 2rem; overflow-y: auto; }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav-close { position: absolute; top: 1.2rem; right: 1.5rem; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--navy); line-height: 1; }
+  .mobile-nav a { display: block; padding: 1rem 0; font-size: 1.1rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--aqua); }
+  .mobile-nav .mobile-lang { display: none; }
+  .nav-right { display: none; }
+  .header-lang { display: none; }
+  @media (max-width: 768px) {
+    .nav-right { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+    .header-lang { display: flex; border: 1.5px solid var(--aqua-deep); overflow: hidden; }
+  }
+  .mobile-nav .mobile-cta { margin-top: 1.5rem; background: var(--navy); color: var(--white); border: none; padding: 1rem 2rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); width: 100%; }
+
+
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.2rem; }
+    .nav-links { display: none; }
+    .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .nav-logo { font-size: clamp(0.85rem, 4.5vw, 1.4rem); letter-spacing: 0; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .nav-logo img { width: clamp(28px, 6.5vw, 34px); height: clamp(28px, 6.5vw, 34px); margin-right: clamp(0.3rem, 1.2vw, 0.5rem); flex-shrink: 0; }
+  }
+  @media (max-width: 480px) {
+    .ticker-item, .ticker-dot { font-size: 1rem; }
+    .section { padding: 2.5rem 1.2rem; }
+  }
+
+
+  /* PAGE-RESPONSIVE-privacy_html.html */
+  @media (max-width: 768px) {
+    .privacy-hero { padding: 2.5rem 1.2rem; }
+    .privacy-content { padding: 3rem 1.2rem; }
+    .privacy-content table { font-size: 0.85rem; }
+    .privacy-content td, .privacy-content th { padding: 0.5rem; }
+    footer { flex-direction: column; align-items: center; text-align: center; gap: 1rem; padding: 2rem 1.2rem; }
+    .footer-links { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKKQVTMV"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<nav>
+  <a href="../index.html" class="nav-logo"><img src="../assets/images/Maple-Leaf-Logo.png" alt="English With Marcello logo">ENGLISH WITH&nbsp;<span>MARCELLO</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about.html">Chi sono</a></li>
+    <li><a href="../lessons.html">Lezioni</a></li>
+    <li><a href="../bookings.html">Prenotazioni</a></li>
+    <li><a href="../reviews.html">Recensioni</a></li>
+    <li><a href="../blog.html">Blog</a></li>
+    <li><a href="../content.html">Contenuti</a></li>
+    <li>
+      <div class="lang-switch">
+        <a class="lang-btn" id="btn-en" href="../privacy.html" onclick="localStorage.setItem('ewm_lang','en')">EN</a>
+        <a class="lang-btn active" id="btn-it" href="privacy.html" onclick="localStorage.setItem('ewm_lang','it')">IT</a>
+      </div>
+    </li>
+  </ul>
+  <button data-button-click="book-free-trial-lesson" class="nav-cta" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Prenota Lezione Gratis</button>
+  <div class="nav-right">
+    <div class="header-lang lang-switch">
+    <a class="lang-btn" id="mbtn-en" href="../privacy.html" onclick="localStorage.setItem('ewm_lang','en')">EN</a>
+    <a class="lang-btn active" id="mbtn-it" href="privacy.html" onclick="localStorage.setItem('ewm_lang','it')">IT</a>
+  </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="toggleMenu()" aria-label="Close">×</button>
+  <a href="../index.html">Home</a>
+  <a href="../about.html">Chi sono</a>
+  <a href="../lessons.html">Lezioni</a>
+  <a href="../bookings.html">Prenotazioni</a>
+  <a href="../reviews.html">Recensioni</a>
+  <a href="../blog.html">Blog</a>
+  <a href="../content.html">Contenuti</a>
+  <button data-button-click="book-free-trial-lesson" class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')">Prenota Lezione Gratis</button>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-tag">Legale</div>
+    <h1>PRIVACY<br><span>POLICY</span></h1>
+    <p class="page-hero-meta">Ultimo aggiornamento: Giugno 2026 · English With Marcello · Milano, Italia</p>
+  </div>
+</div>
+
+<div class="privacy-wrap">
+
+  <div class="updated-badge">Aggiornato Giugno 2026</div>
+
+  <!-- DATA CONTROLLER -->
+  <div class="info-box">
+    <p><strong>Titolare del Trattamento</strong></p>
+    <p>Marcello Riccardo Larosa — Insegnante di inglese privato, Milano, Italia</p>
+    <p>Partita Iva: 13534870962 · <a href="mailto:info@englishwithmarcello.com">info@englishwithmarcello.com</a></p>
+    <p>Solo il titolare del trattamento ha accesso diretto ai dati personali raccolti e li utilizza esclusivamente per le finalità descritte in questa informativa.</p>
+  </div>
+
+  <!-- 01 INTRODUCTION -->
+  <div class="pp-section">
+    <p class="pp-section-label">01 — Introduzione</p>
+    <h2>SCOPO E AMBITO</h2>
+
+    <p>Da English With Marcello (<a href="https://www.englishwithmarcello.com/it/">www.englishwithmarcello.com</a>), rispetto la tua privacy e mi impegno a proteggere i tuoi dati personali. Questa informativa spiega quali dati raccolgo, come li ottengo, come li utilizzo e dove li conservo. Spiega anche in che modo le tue scelte influenzano la raccolta e l'uso delle tue informazioni.</p>
+
+    <p>Utilizzando questo sito, prendi atto della presente Informativa sulla Privacy. Ove richiesto dalla legge applicabile, alcune attività di trattamento dei dati — come i cookie di analytics e pubblicità — vengono attivate solo dopo il tuo esplicito consenso tramite il banner dei cookie.</p>
+
+    <div class="highlight-band">
+      <p>Questa informativa si applica solo a <strong>www.englishwithmarcello.com</strong> e ai suoi visitatori. Non copre le informazioni raccolte tramite altri canali (telefono, email) o siti web di terze parti collegati da questo sito.</p>
+    </div>
+
+    <h3>Aggiornamenti</h3>
+    <p>Eventuali modifiche a questa informativa saranno pubblicate su questa pagina. Ti invito a controllarla regolarmente. Domande? Scrivimi a <a href="mailto:info@englishwithmarcello.com">info@englishwithmarcello.com</a>.</p>
+  </div>
+
+  <hr class="pp-divider">
+
+  <!-- 02 WHAT I COLLECT -->
+  <div class="pp-section">
+    <p class="pp-section-label">02 — Raccolta Dati</p>
+    <h2>COSA RACCOLGO E DOVE</h2>
+
+    <p>Di seguito una panoramica completa di ogni punto di raccolta dati presente nel sito.</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Dove</th>
+          <th>Strumento</th>
+          <th>Dati Raccolti</th>
+          <th>Obbligatorio?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Prenotazione lezione gratuita<br><small>(pulsante 'Prenota Gratis', tutte le pagine)</small></td>
+          <td><strong>Tally</strong><br><small>tally.so/r/n0DVE0</small></td>
+          <td>Nome, indirizzo email, obiettivi/note (opzionale)</td>
+          <td><span class="tag tag-req">Nome + email obbligatori</span></td>
+        </tr>
+        <tr>
+          <td>Quiz livello di inglese<br><small>(pag. Bookings, Lista d'Attesa)</small></td>
+          <td><strong>Tally</strong><br><small>tally.so/r/3XQ4WY</small></td>
+          <td>Nome, indirizzo email, risposte al quiz</td>
+          <td><span class="tag tag-req">Nome + email obbligatori</span></td>
+        </tr>
+        <tr>
+          <td>Lista d'attesa<br><small>(pagina Lista d'Attesa)</small></td>
+          <td><strong>EmailJS</strong><br><small>emailjs.com</small></td>
+          <td>Nome e cognome, indirizzo email, livello di inglese, note/obiettivi (opzionale)</td>
+          <td><span class="tag tag-req">Nome + email obbligatori</span></td>
+        </tr>
+        <tr>
+          <td>Calendario prenotazione lezioni<br><small>(pagina Bookings)</small></td>
+          <td><strong>Calendly</strong><br><small>calendly.com</small></td>
+          <td>Nome, indirizzo email, data e orario scelto</td>
+          <td><span class="tag tag-req">Obbligatorio per Calendly</span></td>
+        </tr>
+        <tr>
+          <td>Testimonianze<br><small>(pagine Home, Recensioni)</small></td>
+          <td>Piattaforme pubbliche (es. Google, social media)</td>
+          <td>Solo nome di battesimo + testo della recensione (nessuna foto, nessun contatto)</td>
+          <td><span class="tag">Già pubblici</span></td>
+        </tr>
+        <tr>
+          <td>Tutte le pagine<br><small>— analytics</small></td>
+          <td><strong>Google Analytics</strong></td>
+          <td>Pagine visitate, tempo sul sito, sorgente di traffico, tipo di dispositivo, indirizzo IP (anonimizzato)</td>
+          <td><span class="tag">Consenso (cookie)</span></td>
+        </tr>
+        <tr>
+          <td>Tutte le pagine<br><small>— pubblicità</small></td>
+          <td><strong>Google Ads</strong></td>
+          <td>Interazioni con annunci, conversioni, pubblici di remarketing</td>
+          <td><span class="tag">Consenso (cookie)</span></td>
+        </tr>
+        <tr>
+          <td>Tutte le pagine<br><small>— pubblicità</small></td>
+          <td><strong>Meta Pixel</strong></td>
+          <td>Visualizzazioni pagina, interazioni con annunci, tipo di dispositivo, indirizzo IP</td>
+          <td><span class="tag">Consenso (cookie)</span></td>
+        </tr>
+        <tr>
+          <td>Tutte le pagine<br><small>— pubblicità</small></td>
+          <td><strong>TikTok Pixel</strong></td>
+          <td>Visualizzazioni pagina, interazioni con annunci, tipo di dispositivo, indirizzo IP</td>
+          <td><span class="tag">Consenso (cookie)</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Su Tally (prenotazione lezione gratuita e quiz di livello)</h3>
+    <p>Tutti i pulsanti 'Prenota Gratis', 'Pronto a iniziare' e 'Prenota Prova Gratuita' del sito rimandano a moduli Tally. Entrambi i moduli richiedono come minimo un nome e un indirizzo email per procedere — queste informazioni sono necessarie per poterti contattare riguardo alla tua lezione di prova o per un follow-up come potenziale studente. I campi aggiuntivi (come obiettivi o risposte al quiz) sono facoltativi. Tally elabora i dati inviati tramite i propri server sicuri e ha la propria informativa sulla privacy. Ricevo solo le informazioni inserite, che utilizzo esclusivamente per rispondere alla tua richiesta e organizzare le lezioni.</p>
+
+    <h3>Sul modulo lista d'attesa (EmailJS)</h3>
+    <p>Il modulo della lista d'attesa nella pagina dedicata è integrato direttamente nel sito e invia le iscrizioni tramite EmailJS. I dati inseriti (nome, email, livello, note opzionali) vengono consegnati in modo sicuro alla mia casella di posta e vengono utilizzati solo per contattarti quando si libera un posto in gruppo. Non condivido questi dati con terze parti.</p>
+
+    <h3>Su Calendly (prenotazione lezioni)</h3>
+    <p>Il calendario di prenotazione nella pagina Bookings è gestito da Calendly. Quando prenoti una lezione, Calendly raccoglie nome, email e slot scelto. Calendly ha la propria informativa sulla privacy. Ricevo una conferma di prenotazione e utilizzo i tuoi dati solo per gestire e tenere la lezione.</p>
+
+    <h3>Testimonianze degli studenti</h3>
+    <p>Le recensioni mostrate nelle pagine Home e Recensioni sono prese da piattaforme pubbliche (come Google o social media). Vengono pubblicati solo il nome di battesimo dello studente e il testo della sua recensione — nessuna foto, contatto o altra informazione identificativa.</p>
+    <div class="highlight-band">
+      <p>Se sei uno studente e desideri che la tua testimonianza venga rimossa dal sito, contattami in qualsiasi momento a <a href="mailto:info@englishwithmarcello.com">info@englishwithmarcello.com</a> e la rimuoverò tempestivamente.</p>
+    </div>
+  </div>
+
+  <hr class="pp-divider">
+
+  <!-- 03 THIRD-PARTY TOOLS -->
+  <div class="pp-section">
+    <p class="pp-section-label">03 — Strumenti di Terze Parti</p>
+    <h2>STRUMENTI E SERVIZI UTILIZZATI</h2>
+
+    <p>I seguenti servizi di terze parti sono integrati in questo sito. Ognuno ha la propria informativa sulla privacy che disciplina in modo indipendente la gestione dei dati.</p>
+
+    <p>Gli strumenti di analytics e pubblicità (Google Analytics, Google Ads, Meta Pixel, TikTok Pixel) utilizzano cookie e tecnologie di tracciamento simili per raccogliere dati su come i visitatori interagiscono con il sito. Questi dati vengono utilizzati per analizzare le prestazioni del sito e misurare l'efficacia delle campagne pubblicitarie a pagamento. Questi strumenti vengono attivati solo dopo il tuo esplicito consenso tramite il banner dei cookie.</p>
+
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="tool-card-name">Tally</div>
+        <div class="tool-card-purpose">Gestione moduli</div>
+        <div class="tool-card-desc">Moduli di prenotazione lezione gratuita e quiz di livello inglese. <a href="https://tally.so/privacy" target="_blank">tally.so/privacy</a></div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-card-name">EmailJS</div>
+        <div class="tool-card-purpose">Invio modulo lista d'attesa</div>
+        <div class="tool-card-desc">Consegna in modo sicuro le iscrizioni alla lista d'attesa nella mia casella di posta. <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank">Privacy policy</a></div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-card-name">Calendly</div>
+        <div class="tool-card-purpose">Prenotazione lezioni</div>
+        <div class="tool-card-desc">Calendario prenotazione lezioni da 50 minuti integrato nella pagina Bookings. <a href="https://calendly.com/privacy" target="_blank">Privacy policy</a></div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-card-name">Google Analytics</div>
+        <div class="tool-card-purpose">Analytics sito web</div>
+        <div class="tool-card-desc">Monitora pagine visitate, sorgenti di traffico, tempo sul sito e dati del dispositivo tramite cookie. I dati possono essere trasferiti ai server di Google negli USA. <a href="https://policies.google.com/privacy" target="_blank">Privacy policy</a></div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-card-name">Google Ads</div>
+        <div class="tool-card-purpose">Pubblicità e remarketing</div>
+        <div class="tool-card-desc">Utilizzato per misurare l'efficacia delle campagne pubblicitarie e mostrare annunci pertinenti agli utenti che hanno visitato il sito. I dati possono essere trasferiti ai server di Google negli USA. <a href="https://policies.google.com/privacy" target="_blank">Privacy policy</a></div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-card-name">Meta Pixel</div>
+        <div class="tool-card-purpose">Analytics e pubblicità</div>
+        <div class="tool-card-desc">Monitora le interazioni su questo sito per misurare l'efficacia della pubblicità su Facebook e Instagram. I dati possono essere trasferiti ai server di Meta negli USA. <a href="https://www.facebook.com/privacy/policy/" target="_blank">Privacy policy</a></div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-card-name">TikTok Pixel</div>
+        <div class="tool-card-purpose">Analytics e pubblicità</div>
+        <div class="tool-card-desc">Monitora le interazioni su questo sito per misurare l'efficacia della pubblicità su TikTok. I dati possono essere trasferiti ai server di TikTok al di fuori dell'UE. <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank">Privacy policy</a></div>
+      </div>
+    </div>
+  </div>
+
+
+  <hr class="pp-divider">
+
+  <!-- 03b COOKIES -->
+  <div class="pp-section">
+    <p class="pp-section-label">03b — Cookie</p>
+    <h2>COOKIE E TRACCIAMENTO</h2>
+
+    <p>Questo sito utilizza cookie e tecnologie di tracciamento simili. I cookie sono piccoli file di testo memorizzati sul tuo dispositivo che aiutano il sito a funzionare e consentono a me e a terze parti di capire come i visitatori utilizzano il sito.</p>
+
+    <p>Quando visiti il sito per la prima volta, un banner cookie ti chiederà il consenso prima che vengano impostati cookie non essenziali. Puoi accettare tutti i cookie, rifiutare tutti i cookie non essenziali o personalizzare le tue preferenze per categoria. Puoi modificare o revocare il consenso in qualsiasi momento cliccando sul link delle impostazioni cookie nel footer.</p>
+
+    <h3>Categorie di cookie</h3>
+    <ul>
+      <li><strong>Strettamente necessari</strong> — essenziali per il funzionamento del sito. Non possono essere disabilitati.</li>
+      <li><strong>Analytics</strong> — aiutano a capire come i visitatori interagiscono con il sito. Impostati solo con il tuo consenso.</li>
+      <li><strong>Marketing e pubblicità</strong> — utilizzati per mostrare annunci pertinenti e misurare l'efficacia delle campagne. Impostati solo con il tuo consenso.</li>
+    </ul>
+
+    <h3>Elenco completo dei cookie</h3>
+
+    <div style="overflow-x:auto;">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Nome cookie</th>
+            <th>Fornitore</th>
+            <th>Finalità</th>
+            <th>Durata</th>
+            <th>Categoria</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>cky-consent</strong></td>
+            <td>CookieYes</td>
+            <td>Memorizza le tue preferenze di consenso cookie in modo che il banner non riappaia ad ogni visita.</td>
+            <td>1 anno</td>
+            <td><span class="tag tag-req">Necessario</span></td>
+          </tr>
+          <tr>
+            <td><strong>cky-consent-categories</strong></td>
+            <td>CookieYes</td>
+            <td>Memorizza le categorie di cookie che hai accettato o rifiutato.</td>
+            <td>1 anno</td>
+            <td><span class="tag tag-req">Necessario</span></td>
+          </tr>
+          <tr>
+            <td><strong>_ga</strong></td>
+            <td>Google Analytics (Google Ireland Ltd)</td>
+            <td>Identifica i visitatori unici e tiene traccia delle sessioni. Utilizzato per generare dati statistici sull'utilizzo del sito.</td>
+            <td>2 anni</td>
+            <td><span class="tag">Analytics</span></td>
+          </tr>
+          <tr>
+            <td><strong>_ga_XXXXXXXX</strong></td>
+            <td>Google Analytics (Google Ireland Ltd)</td>
+            <td>Mantiene lo stato della sessione tra le richieste di pagina per Google Analytics 4.</td>
+            <td>2 anni</td>
+            <td><span class="tag">Analytics</span></td>
+          </tr>
+          <tr>
+            <td><strong>_gcl_au</strong></td>
+            <td>Google Ads (Google Ireland Ltd)</td>
+            <td>Utilizzato da Google Ads per memorizzare e tracciare le conversioni dai clic sugli annunci su questo sito.</td>
+            <td>3 mesi</td>
+            <td><span class="tag">Marketing</span></td>
+          </tr>
+          <tr>
+            <td><strong>_gads / _gac_*</strong></td>
+            <td>Google Ads (Google Ireland Ltd)</td>
+            <td>Utilizzato per il remarketing — mostra annunci agli utenti che hanno precedentemente visitato questo sito. Utilizzato anche per misurare l'efficacia delle campagne.</td>
+            <td>13 mesi</td>
+            <td><span class="tag">Marketing</span></td>
+          </tr>
+          <tr>
+            <td><strong>_fbp</strong></td>
+            <td>Meta Platforms Ireland Ltd</td>
+            <td>Utilizzato da Meta (Facebook/Instagram) per erogare, misurare e migliorare la pertinenza degli annunci mostrati agli utenti che hanno visitato questo sito.</td>
+            <td>3 mesi</td>
+            <td><span class="tag">Marketing</span></td>
+          </tr>
+          <tr>
+            <td><strong>_fbc</strong></td>
+            <td>Meta Platforms Ireland Ltd</td>
+            <td>Memorizza l'identificatore del clic su Facebook dall'ultimo annuncio. Utilizzato per l'attribuzione e il tracciamento delle conversioni.</td>
+            <td>3 mesi</td>
+            <td><span class="tag">Marketing</span></td>
+          </tr>
+          <tr>
+            <td><strong>_ttp</strong></td>
+            <td>TikTok Technology Limited</td>
+            <td>Utilizzato da TikTok per misurare l'efficacia delle campagne pubblicitarie e mostrare annunci pertinenti agli utenti che hanno visitato questo sito.</td>
+            <td>13 mesi</td>
+            <td><span class="tag">Marketing</span></td>
+          </tr>
+          <tr>
+            <td><strong>_tt_enable_cookie</strong></td>
+            <td>TikTok Technology Limited</td>
+            <td>Determina se il TikTok Pixel deve essere abilitato per il visitatore corrente.</td>
+            <td>13 mesi</td>
+            <td><span class="tag">Marketing</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="font-size:0.82rem; color:var(--muted); margin-top:1rem;">Nota: Google Tag Manager (GTM) viene utilizzato per gestire e distribuire tutti i tag di analytics e pubblicità su questo sito. GTM stesso non imposta cookie — è semplicemente un contenitore che attiva i tag sopra in base alle tue preferenze di consenso.</p>
+
+    <h3>Come gestire o eliminare i cookie</h3>
+    <p>Oltre al banner cookie su questo sito, puoi gestire o eliminare i cookie direttamente dalle impostazioni del tuo browser. Tieni presente che la disabilitazione di alcuni cookie potrebbe influire sul funzionamento del sito. I seguenti link forniscono indicazioni per i browser più comuni:</p>
+    <ul>
+      <li><a href="https://support.google.com/chrome/answer/95647" target="_blank">Google Chrome</a></li>
+      <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank">Mozilla Firefox</a></li>
+      <li><a href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac" target="_blank">Apple Safari</a></li>
+      <li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge" target="_blank">Microsoft Edge</a></li>
+    </ul>
+  </div>
+
+
+  <hr class="pp-divider">
+
+  <!-- 04 HOW I USE DATA -->
+  <div class="pp-section">
+    <p class="pp-section-label">04 — Utilizzo dei Dati</p>
+    <h2>COME USO I TUOI DATI</h2>
+
+    <p>Utilizzo i dati personali per:</p>
+    <ul>
+      <li>Rispondere a richieste e prenotazioni di lezioni</li>
+      <li>Gestire la lista d'attesa e contattare gli studenti interessati quando si libera un posto in gruppo</li>
+      <li>Confermare, pianificare e tenere lezioni individuali o di gruppo</li>
+      <li>Inviare comunicazioni relative alle lezioni (conferme, promemoria, aggiornamenti)</li>
+      <li>Gestire e migliorare il sito web</li>
+      <li>Analizzare come i visitatori interagiscono con il sito (tramite strumenti di analytics)</li>
+      <li>Rispettare i requisiti legali applicabili</li>
+    </ul>
+
+    <div class="highlight-band">
+      <p><strong>Non vendo, affitto o condivido</strong> i tuoi dati personali con terze parti per loro scopi di marketing.</p>
+    </div>
+
+    <h3>Luogo di conservazione dei dati</h3>
+    <p>Conservo ed elaboro i dati personali in Italia. I dati inviati tramite strumenti di terze parti (Tally, Calendly, EmailJS) vengono elaborati sui loro server. I dati di analytics e pubblicità (Google Analytics, Google Ads, Meta Pixel, TikTok Pixel) possono essere trasferiti a server al di fuori dell'UE, inclusi gli USA, in conformità con le rispettive informative sulla privacy e i meccanismi di trasferimento dati applicabili.</p>
+  </div>
+
+  <hr class="pp-divider">
+
+  <!-- 05 LEGAL BASIS -->
+  <div class="pp-section">
+    <p class="pp-section-label">05 — Base Giuridica</p>
+    <h2>BASE GIURIDICA DEL TRATTAMENTO</h2>
+
+    <p>Ai sensi del Regolamento Generale sulla Protezione dei Dati (GDPR), tratto i dati personali solo quando esiste una valida base giuridica.</p>
+
+    <ul>
+      <li><strong>Consenso</strong> — quando invii volontariamente moduli, ti iscrivi alla lista d'attesa o accetti cookie opzionali.</li>
+      <li><strong>Esecuzione di un contratto</strong> — quando il trattamento è necessario per organizzare, pianificare e svolgere le lezioni richieste da te.</li>
+      <li><strong>Obblighi legali</strong> — quando determinate informazioni devono essere conservate o trattate per rispettare leggi e regolamenti applicabili.</li>
+      <li><strong>Interesse legittimo</strong> — quando il trattamento è necessario per proteggere, mantenere e migliorare il sito web e i relativi servizi, nel rispetto dei tuoi diritti e delle tue libertà.</li>
+    </ul>
+  </div>
+
+  <hr class="pp-divider">
+
+  <!-- 06 GDPR RIGHTS -->
+  <div class="pp-section">
+    <p class="pp-section-label">06 — I Tuoi Diritti</p>
+    <h2>DIRITTI GDPR</h2>
+
+    <p>Se sei residente in un paese UE, hai i seguenti diritti riguardo ai tuoi dati personali:</p>
+
+    <div class="rights-grid">
+      <div class="right-card">
+        <div class="right-card-icon">ℹ️</div>
+        <div class="right-card-title">Diritto all'Informazione</div>
+        <div class="right-card-desc">Puoi chiedere se sto elaborando i tuoi dati personali.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">🔍</div>
+        <div class="right-card-title">Diritto di Accesso</div>
+        <div class="right-card-desc">Puoi richiedere una copia dei dati personali che detengo su di te, in formato portabile.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">✏️</div>
+        <div class="right-card-title">Diritto di Rettifica</div>
+        <div class="right-card-desc">Puoi richiedere la correzione di dati inesatti o incompleti.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">🗑️</div>
+        <div class="right-card-title">Diritto alla Cancellazione</div>
+        <div class="right-card-desc">Puoi chiedere la cancellazione dei tuoi dati se non sono più necessari o vengono trattati illecitamente.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">🚫</div>
+        <div class="right-card-title">Diritto di Opposizione</div>
+        <div class="right-card-desc">Puoi opporti al trattamento dei tuoi dati per scopi di marketing o altri fini specifici in qualsiasi momento.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">⏸️</div>
+        <div class="right-card-title">Diritto di Limitazione</div>
+        <div class="right-card-desc">Puoi richiedere limitazioni al trattamento dei tuoi dati in circostanze specifiche.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">👤</div>
+        <div class="right-card-title">Diritto alla Supervisione Umana</div>
+        <div class="right-card-desc">Hai diritto al coinvolgimento umano in qualsiasi decisione automatizzata che ti riguarda.</div>
+      </div>
+    </div>
+
+    <p>Per esercitare uno qualsiasi di questi diritti, contattami a <a href="mailto:info@englishwithmarcello.com">info@englishwithmarcello.com</a>. Risponderò entro un mese. Se è necessario più tempo per la complessità della richiesta, ti notificherò entro un mese del ritardo.</p>
+
+    <h3>Notifica di violazione dei dati</h3>
+    <p>In caso di una violazione dei dati che comporti un rischio per i tuoi diritti, ti notificherò il prima possibile e comunque entro 72 ore da quando ne vengo a conoscenza.</p>
+  </div>
+
+  <hr class="pp-divider">
+
+  <!-- 07 SECURITY & OTHER -->
+  <div class="pp-section">
+    <p class="pp-section-label">07 — Sicurezza e Altro</p>
+    <h2>SICUREZZA E SCELTE</h2>
+
+    <h3>Sicurezza</h3>
+    <p>Adotto ragionevoli misure tecniche e organizzative per proteggere i dati personali raccolti. Tuttavia, nessuna trasmissione di dati online è mai sicura al 100%. Puoi aiutare utilizzando una password forte e unica e mantenendo i tuoi dispositivi protetti.</p>
+
+    <h3>Accuratezza delle informazioni fornite</h3>
+    <p>Inviando qualsiasi modulo su questo sito, confermi che le informazioni fornite sono accurate e aggiornate. Non posso essere ritenuto responsabile per errori, ritardi o problemi derivanti da informazioni errate o incomplete fornite da te.</p>
+
+    <h3>Limitazione di responsabilità</h3>
+    <p>I contenuti di questo sito sono forniti a solo scopo informativo. Pur facendo ogni sforzo per mantenere le informazioni accurate e aggiornate, non mi assumo alcuna responsabilità per perdite o danni derivanti dall'affidamento sui contenuti di questo sito o da interruzioni del servizio.</p>
+
+    <h3>Utilizzo dei materiali didattici</h3>
+    <p>Qualsiasi materiale, risorsa o contenuto condiviso durante le lezioni o tramite questo sito è destinato esclusivamente all'uso educativo personale dello studente. Non può essere riprodotto, distribuito, condiviso o pubblicato senza il mio previo consenso scritto.</p>
+
+    <h3>Registrazione delle lezioni</h3>
+    <p>Le lezioni non possono essere registrate dallo studente — in audio o video — senza il mio esplicito consenso preventivo. Qualsiasi registrazione non autorizzata costituisce una violazione della mia privacy e dei miei diritti di proprietà intellettuale.</p>
+
+    <h3>Responsabilità dell'utente</h3>
+    <p>Utilizzando questo sito, ti impegni a farlo nel rispetto di tutte le leggi e normative applicabili, incluse quelle che regolano l'uso di internet, la proprietà intellettuale e la protezione dei dati. Non mi assumo alcuna responsabilità per un utilizzo illecito o improprio di questo sito o dei suoi contenuti da parte degli utenti.</p>
+
+    <h3>Rimozione dalla lista d'attesa</h3>
+    <p>Se desideri essere rimosso dalla lista d'attesa, contattami direttamente a <a href="mailto:info@englishwithmarcello.com">info@englishwithmarcello.com</a> e cancellerò i tuoi dati tempestivamente.</p>
+
+    <h3>Diritti sulla privacy degli Stati USA</h3>
+    <p>Se sei residente negli USA e leggi specifiche sulla privacy statale si applicano al trattamento dei tuoi dati, hai determinati diritti in base a tali leggi. Mi impegno a rispettarle in buona fede.</p>
+  </div>
+
+  <!-- CONTACT CTA -->
+  <div class="contact-cta">
+    <div class="contact-cta-text">
+      <h3>Domande?</h3>
+      <p>Contattami per qualsiasi cosa relativa ai tuoi dati.</p>
+    </div>
+    <div class="contact-cta-links">
+      <a class="cta-link-btn" href="mailto:info@englishwithmarcello.com">📧 info@englishwithmarcello.com</a>
+      <a class="cta-link-btn" href="https://wa.me/393387462067" target="_blank">📱 WhatsApp</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://linkedin.com/in/englishwithmarcello" target="_blank">LinkedIn</a>
+    <a href="https://www.instagram.com/englishwithmarcello?igsh=aHppOHNodXR5MGM4" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/@englishwithmarcello" target="_blank">YouTube</a>
+    <a href="https://www.tiktok.com/@englishwithmarcello?_r=1&_t=ZN-96Zcgc1IfLS" target="_blank">TikTok</a>
+    <a href="https://www.facebook.com/share/18917LsM4G/" target="_blank">Facebook</a>
+  </div>
+  <div class="footer-copy"><a href="mailto:info@englishwithmarcello.com" style="color:inherit;text-decoration:none;">info@englishwithmarcello.com</a> · <a href="tel:+393387462067" style="color:inherit;text-decoration:none;">+39 338 746 2067</a></div>
+  <div class="footer-legal"><a href="faq.html" class="faq-link" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">FAQ</a> <span style="color:var(--white);font-size:0.75rem;letter-spacing:1px;opacity:0.7;">·</span> <a href="privacy.html" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;">Privacy Policy</a></div>
+</footer>
+
+<script>
+
+  function toggleMenu() {
+    const nav = document.getElementById("mobileNav");
+    const btn = document.getElementById("hamburger");
+    if (!nav || !btn) return;
+    nav.classList.toggle("open");
+    btn.classList.toggle("open");
+    document.body.style.overflow = nav.classList.contains("open") ? "hidden" : "";
+  }
+</script>
+</body>
+</html>
