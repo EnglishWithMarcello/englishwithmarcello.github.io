@@ -769,5 +769,29 @@
   })();
 </script>
 </script>
+<script>
+/* ── Language-aware nav: keep IT sibling links when Italian is selected ── */
+(function() {
+  var map = {
+    '../index.html':        'index.html',
+    '../about.html':        'about.html',
+    '../lessons.html':      'lessons.html',
+    '../bookings.html':     'bookings.html',
+    '../reviews.html':      'reviews.html',
+    '../content.html':      'content.html',
+    '../faq.html':          'faq.html',
+    '../privacy.html':      'privacy.html',
+    '../waiting-list.html': 'waiting-list.html'
+  };
+  /* If Italian is selected (or no preference set — we're already on an IT page),
+     rewrite ../page.html links to page.html (IT sibling) */
+  var lang = localStorage.getItem('ewm_lang');
+  if (lang === 'en') return; /* English selected — ../page.html links are correct */
+  document.querySelectorAll('nav a, .mobile-menu a').forEach(function(a) {
+    var href = a.getAttribute('href');
+    if (href && map[href]) a.setAttribute('href', map[href]);
+  });
+})();
+</script>
 </body>
 </html>
