@@ -19,6 +19,9 @@
 <meta name="description" content="Access free English learning resources from Marcello — videos, exercises and study materials to help you improve your English at your own pace. No signup required.">
 <meta name="keywords" content="free English learning resources, free English exercises, English study materials, learn English free, English practice online, free English videos, CELPIP">
 <link rel="canonical" href="https://www.englishwithmarcello.com/content.html">
+<link rel="alternate" hreflang="en" href="https://www.englishwithmarcello.com/content.html">
+<link rel="alternate" hreflang="it" href="https://www.englishwithmarcello.com/it/content.html">
+<link rel="alternate" hreflang="x-default" href="https://www.englishwithmarcello.com/content.html">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.englishwithmarcello.com/content.html">
@@ -84,6 +87,8 @@
   .lang-btn { background: transparent; border: none; padding: 0.3rem 0.65rem; font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; cursor: pointer; color: var(--muted); transition: background 0.2s, color 0.2s; }
   .lang-btn.active { background: var(--navy); color: var(--white); }
   .lang-btn:not(.active):hover { background: var(--aqua); color: var(--navy); }
+  .lang-switch a.lang-btn { font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; text-transform: none; line-height: normal; text-decoration: none; }
+  .lang-switch a.lang-btn.active { color: var(--white); }
 
   .nav-cta { background: var(--navy); color: var(--white); border: none; padding: 0.65rem 1.4rem; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: transform 0.15s, background 0.2s; }
   .nav-cta:hover { background: var(--navy-dark); transform: scale(1.03); }
@@ -341,25 +346,25 @@
 <nav>
   <a class="nav-logo" href="index.html"><img src="assets/images/Maple-Leaf-Logo.png" alt="English With Marcello logo">ENGLISH WITH&nbsp;<span>MARCELLO</span></a>
   <ul class="nav-links">
-    <li><a href="index.html" data-en="Home" data-it="Home">Home</a></li>
-    <li><a href="about.html" data-en="About" data-it="Chi sono">About</a></li>
-    <li><a href="lessons.html" data-en="Lessons" data-it="Lezioni">Lessons</a></li>
-    <li><a href="bookings.html" data-en="Bookings" data-it="Prenotazioni">Bookings</a></li>
-    <li><a href="reviews.html" data-en="Reviews" data-it="Recensioni">Reviews</a></li>
-    <li><a href="blog.html" data-en="Blog" data-it="Blog">Blog</a></li>
-    <li><a href="content.html" class="active" data-en="Content" data-it="Contenuti">Content</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="bookings.html">Bookings</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="content.html" class="active">Content</a></li>
     <li>
       <div class="lang-switch">
-        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
-        <button class="lang-btn" id="btn-it" onclick="setLang('it')">IT</button>
+        <a class="lang-btn active" id="btn-en" href="content.html" onclick="localStorage.setItem('ewm_lang','en')">EN</a>
+        <a class="lang-btn" id="btn-it" href="it/content.html" onclick="localStorage.setItem('ewm_lang','it')">IT</a>
       </div>
     </li>
   </ul>
-  <button data-button-click="book-free-trial-lesson" class="nav-cta" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
+  <button data-button-click="book-free-trial-lesson" class="nav-cta" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
   <div class="nav-right">
     <div class="header-lang lang-switch">
-    <button class="lang-btn active" id="mbtn-en" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" id="mbtn-it" onclick="setLang('it')">IT</button>
+    <a class="lang-btn active" id="mbtn-en" href="content.html" onclick="localStorage.setItem('ewm_lang','en')">EN</a>
+    <a class="lang-btn" id="mbtn-it" href="it/content.html" onclick="localStorage.setItem('ewm_lang','it')">IT</a>
   </div>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -367,53 +372,53 @@
 
 <div class="mobile-nav" id="mobileNav">
   <button class="mobile-nav-close" onclick="toggleMenu()" aria-label="Close">×</button>
-  <a href="index.html" data-en="Home" data-it="Home">Home</a>
-  <a href="about.html" data-en="About" data-it="Chi sono">About</a>
-  <a href="lessons.html" data-en="Lessons" data-it="Lezioni">Lessons</a>
-  <a href="bookings.html" data-en="Bookings" data-it="Prenotazioni">Bookings</a>
-  <a href="reviews.html" data-en="Reviews" data-it="Recensioni">Reviews</a>
-  <a href="blog.html" data-en="Blog" data-it="Blog">Blog</a>
-  <a href="content.html" data-en="Content" data-it="Contenuti">Content</a>
-  <button data-button-click="book-free-trial-lesson" class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis">Book Free Lesson</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="lessons.html">Lessons</a>
+  <a href="bookings.html">Bookings</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="blog.html">Blog</a>
+  <a href="content.html">Content</a>
+  <button data-button-click="book-free-trial-lesson" class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
 </div>
 
 <!-- HERO -->
 <div class="content-hero">
-  <p class="section-label" data-en="Free Resources" data-it="Risorse Gratuite">Free Resources</p>
-  <h1 data-en="FREE RESOURCES TO HELP YOU STUDY ENGLISH" data-it="RISORSE GRATUITE PER STUDIARE L'INGLESE">FREE RESOURCES TO HELP YOU STUDY ENGLISH</h1>
-  <p data-en="Welcome to my collection of free resources for learning English! Before becoming a teacher, I was also a student, and because of that, I believe that having access to free resources is an effective and enjoyable way to practice and improve a second language." data-it="Benvenuto nella mia raccolta di risorse gratuite per imparare l'inglese! Prima di diventare insegnante, sono stato anch'io studente, e per questo credo che avere accesso a risorse gratuite sia un modo efficace e piacevole di praticare e migliorare una seconda lingua.">Welcome to my collection of free resources for learning English! Before becoming a teacher, I was also a student, and because of that, I believe that having access to free resources is an effective and enjoyable way to practice and improve a second language.</p>
+  <p class="section-label">Free Resources</p>
+  <h1>FREE RESOURCES TO HELP YOU STUDY ENGLISH</h1>
+  <p>Welcome to my collection of free resources for learning English! Before becoming a teacher, I was also a student, and because of that, I believe that having access to free resources is an effective and enjoyable way to practice and improve a second language.</p>
 </div>
 
 <!-- HOW IT WORKS -->
 <div class="how-it-works">
   <div class="how-it-works-inner">
-    <p class="section-label" data-en="How It Works" data-it="Come Funziona">How It Works</p>
-    <h2 class="section-title" data-en="FOUR SIMPLE STEPS" data-it="QUATTRO SEMPLICI PASSI">FOUR SIMPLE STEPS</h2>
+    <p class="section-label">How It Works</p>
+    <h2 class="section-title">FOUR SIMPLE STEPS</h2>
     <div class="how-steps">
       <div class="how-step">
         <div class="how-step-num">01</div>
         <div class="how-step-divider"></div>
-        <div class="how-step-text" data-en="Discover your English level with the free test." data-it="Scopri il tuo livello di inglese con il test gratuito.">Discover your English level with the free test.</div>
+        <div class="how-step-text">Discover your English level with the free test.</div>
       </div>
       <div class="how-step">
         <div class="how-step-num">02</div>
         <div class="how-step-divider"></div>
-        <div class="how-step-text" data-en="Explore the available resources and download the PDFs suited to your level." data-it="Esplora le risorse disponibili e scarica i PDF adatti al tuo livello.">Explore the available resources and download the PDFs suited to your level.</div>
+        <div class="how-step-text">Explore the available resources and download the PDFs suited to your level.</div>
       </div>
       <div class="how-step">
         <div class="how-step-num">03</div>
         <div class="how-step-divider"></div>
-        <div class="how-step-text" data-en="Practice at your own pace." data-it="Pratica al tuo ritmo.">Practice at your own pace.</div>
+        <div class="how-step-text">Practice at your own pace.</div>
       </div>
       <div class="how-step">
         <div class="how-step-num">04</div>
         <div class="how-step-divider"></div>
-        <div class="how-step-text" data-en="At the end of each document, you'll find the answers to check your work." data-it="Alla fine di ogni documento troverai le risposte per verificare il tuo lavoro.">At the end of each document, you'll find the answers to check your work.</div>
+        <div class="how-step-text">At the end of each document, you'll find the answers to check your work.</div>
       </div>
     </div>
     <div class="level-cta">
-      <p data-en="Before downloading the PDFs, discover your English level first!" data-it="Prima di scaricare i PDF, scopri il tuo livello di inglese!">Before downloading the PDFs, discover your English level first!</p>
-      <button class="btn-aqua-sm" onclick="window.open('https://tally.so/r/3XQ4WY','_blank')" data-en="Take the Free Level Test" data-it="Fai il Test di Livello Gratuito">Take the Free Level Test</button>
+      <p>Before downloading the PDFs, discover your English level first!</p>
+      <button class="btn-aqua-sm" onclick="window.open('https://tally.so/r/3XQ4WY','_blank')">Take the Free Level Test</button>
     </div>
   </div>
 </div>
@@ -425,31 +430,31 @@
   <div class="level-block">
     <div class="level-header">
       <span class="level-badge">A1</span>
-      <span class="level-name" data-en="Beginner" data-it="Principiante">Beginner</span>
+      <span class="level-name">Beginner</span>
     </div>
     <div class="pdf-grid">
       <a class="pdf-card" href="assets/free-exercises/A1.1-Sentence-Structure.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">A1.1</span>
-        <span class="pdf-title" data-en="Sentence structure exercises" data-it="Esercizi sulla struttura della frase">Sentence structure exercises</span>
+        <span class="pdf-title">Sentence structure exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/A1.2-The-Verb-Be.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">A1.2</span>
-        <span class="pdf-title" data-en='The verb "to be" exercises' data-it='Esercizi sul verbo "to be"'>The verb "to be" exercises</span>
+        <span class="pdf-title">The verb "to be" exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/A1.3-Present-Simple.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">A1.3</span>
-        <span class="pdf-title" data-en="Present simple exercises" data-it="Esercizi sul presente semplice">Present simple exercises</span>
+        <span class="pdf-title">Present simple exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/A1.4-Nouns-and-Plurals.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">A1.4</span>
-        <span class="pdf-title" data-en="Nouns &amp; plurals exercises" data-it="Esercizi su sostantivi e plurali">Nouns &amp; plurals exercises</span>
+        <span class="pdf-title">Nouns &amp; plurals exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
     </div>
@@ -459,31 +464,31 @@
   <div class="level-block">
     <div class="level-header">
       <span class="level-badge">A2</span>
-      <span class="level-name" data-en="Elementary" data-it="Elementare">Elementary</span>
+      <span class="level-name">Elementary</span>
     </div>
     <div class="pdf-grid">
       <a class="pdf-card" href="assets/free-exercises/A2.1-Present-Continuous.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">A2.1</span>
-        <span class="pdf-title" data-en="Present continuous exercises" data-it="Esercizi sul presente continuo">Present continuous exercises</span>
+        <span class="pdf-title">Present continuous exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/A2.2-Past-Simple.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">A2.2</span>
-        <span class="pdf-title" data-en="Simple past tense exercises" data-it="Esercizi sul passato semplice">Simple past tense exercises</span>
+        <span class="pdf-title">Simple past tense exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/A2.3-Future-Simple-Forms.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">A2.3</span>
-        <span class="pdf-title" data-en="Future forms exercises" data-it="Esercizi sulle forme future">Future forms exercises</span>
+        <span class="pdf-title">Future forms exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/A2.4-Comparatives-Superlatives.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">A2.4</span>
-        <span class="pdf-title" data-en="Comparative &amp; superlative exercises" data-it="Esercizi su comparativi e superlativi">Comparative &amp; superlative exercises</span>
+        <span class="pdf-title">Comparative &amp; superlative exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
     </div>
@@ -493,31 +498,31 @@
   <div class="level-block">
     <div class="level-header">
       <span class="level-badge">B1</span>
-      <span class="level-name" data-en="Intermediate" data-it="Intermedio">Intermediate</span>
+      <span class="level-name">Intermediate</span>
     </div>
     <div class="pdf-grid">
       <a class="pdf-card" href="assets/free-exercises/B1.1-Present-Perfect.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">B1.1</span>
-        <span class="pdf-title" data-en="Present perfect tense exercises" data-it="Esercizi sul present perfect">Present perfect tense exercises</span>
+        <span class="pdf-title">Present perfect tense exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/B1.2-Past-Continuous-Past-Perfect.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">B1.2</span>
-        <span class="pdf-title" data-en="Past continuous &amp; past perfect exercises" data-it="Esercizi su past continuous e past perfect">Past continuous &amp; past perfect exercises</span>
+        <span class="pdf-title">Past continuous &amp; past perfect exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/B1.3-Modals-1.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">B1.3</span>
-        <span class="pdf-title" data-en="Modals: advice and obligations exercises" data-it="Esercizi sui modali: consigli e obblighi">Modals: advice and obligations exercises</span>
+        <span class="pdf-title">Modals: advice and obligations exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/B1.4-Conditionals-0-1.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">B1.4</span>
-        <span class="pdf-title" data-en="Zero &amp; first conditional exercises" data-it="Esercizi sul zero e primo condizionale">Zero &amp; first conditional exercises</span>
+        <span class="pdf-title">Zero &amp; first conditional exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
     </div>
@@ -527,31 +532,31 @@
   <div class="level-block">
     <div class="level-header">
       <span class="level-badge">B2</span>
-      <span class="level-name" data-en="Upper Intermediate" data-it="Pre-Avanzato">Upper Intermediate</span>
+      <span class="level-name">Upper Intermediate</span>
     </div>
     <div class="pdf-grid">
       <a class="pdf-card" href="assets/free-exercises/B2.1-Present-Perfect-Past-Simple.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">B2.1</span>
-        <span class="pdf-title" data-en="Present perfect vs past simple exercises" data-it="Esercizi: present perfect vs past simple">Present perfect vs past simple exercises</span>
+        <span class="pdf-title">Present perfect vs past simple exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/B2.2-Future-Perfect-Future-Continuous.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">B2.2</span>
-        <span class="pdf-title" data-en="Future perfect vs future continuous exercises" data-it="Esercizi: future perfect vs future continuous">Future perfect vs future continuous exercises</span>
+        <span class="pdf-title">Future perfect vs future continuous exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/B2.3-Conditionals-2-3.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">B2.3</span>
-        <span class="pdf-title" data-en="Second &amp; third conditional exercises" data-it="Esercizi sul secondo e terzo condizionale">Second &amp; third conditional exercises</span>
+        <span class="pdf-title">Second &amp; third conditional exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/B2.4-Modals-2.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">B2.4</span>
-        <span class="pdf-title" data-en="Advanced modal verbs exercises" data-it="Esercizi sui verbi modali avanzati">Advanced modal verbs exercises</span>
+        <span class="pdf-title">Advanced modal verbs exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
     </div>
@@ -561,31 +566,31 @@
   <div class="level-block">
     <div class="level-header">
       <span class="level-badge">C1</span>
-      <span class="level-name" data-en="Advanced" data-it="Avanzato">Advanced</span>
+      <span class="level-name">Advanced</span>
     </div>
     <div class="pdf-grid">
       <a class="pdf-card" href="assets/free-exercises/C1.1-Modals-3.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">C1.1</span>
-        <span class="pdf-title" data-en="Nuances in modal verbs exercises" data-it="Esercizi sulle sfumature dei modali">Nuances in modal verbs exercises</span>
+        <span class="pdf-title">Nuances in modal verbs exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/C1.2-Conditionals-3-Mixed.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">C1.2</span>
-        <span class="pdf-title" data-en="Third &amp; mixed conditional exercises" data-it="Esercizi sul terzo e misto condizionale">Third &amp; mixed conditional exercises</span>
+        <span class="pdf-title">Third &amp; mixed conditional exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/C1.3-Advanced-Structures.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">C1.3</span>
-        <span class="pdf-title" data-en="Advanced structures: inversions &amp; cleft sentences" data-it="Strutture avanzate: inversioni e cleft sentences">Advanced structures: inversions &amp; cleft sentences</span>
+        <span class="pdf-title">Advanced structures: inversions &amp; cleft sentences</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
       <a class="pdf-card" href="assets/free-exercises/C1.4-Relative-Clauses.pdf" target="_blank" rel="noopener">
         <div class="pdf-icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="pdf-code">C1.4</span>
-        <span class="pdf-title" data-en="Relative clauses &amp; participial phrases exercises" data-it="Esercizi su relative clauses e frasi participiali">Relative clauses &amp; participial phrases exercises</span>
+        <span class="pdf-title">Relative clauses &amp; participial phrases exercises</span>
         <svg aria-hidden="true" class="pdf-dl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </a>
     </div>
@@ -595,13 +600,13 @@
 
 <!-- GOOD LUCK BAND -->
 <div class="good-luck-band">
-  <p data-en="📖 Good luck with your studies!" data-it="📖 Buono studio!">📖 Good luck with your studies!</p>
-  <small data-en="This page will be updated frequently with lots of free content." data-it="Questa pagina verrà aggiornata frequentemente con tanti contenuti gratuiti.">This page will be updated frequently with lots of free content.</small>
+  <p>📖 Good luck with your studies!</p>
+  <small>This page will be updated frequently with lots of free content.</small>
 </div>
 <div class="cta-band">
-  <h2 class="cta-title" data-en="READY TO<br><span>START?</span>" data-it="PRONTO A<br><span>INIZIARE?</span>">READY TO<br><span>START?</span></h2>
-  <p class="cta-sub" data-en="Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence." data-it="Prenota oggi la tua lezione di prova gratuita. Nessun impegno — solo tu, Marcello, e il tuo primo passo verso un inglese davvero sicuro.">Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence.</p>
-  <button data-button-click="book-free-trial-lesson" class="btn-aqua" data-en="Book Your Free Lesson Now" data-it="Prenota Ora la Tua Lezione Gratuita" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Your Free Lesson Now</button>
+  <h2 class="cta-title">READY TO<br><span>START?</span></h2>
+  <p class="cta-sub">Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence.</p>
+  <button data-button-click="book-free-trial-lesson" class="btn-aqua" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Your Free Lesson Now</button>
 </div>
 
 <footer>
@@ -613,34 +618,11 @@
     <a href="https://www.facebook.com/share/18917LsM4G/" target="_blank">Facebook</a>
   </div>
   <div class="footer-copy"><a href="mailto:info@englishwithmarcello.com" style="color:inherit;text-decoration:none;">info@englishwithmarcello.com</a> · <a href="tel:+393387462067" style="color:inherit;text-decoration:none;">+39 338 746 2067</a></div>
-  <div class="footer-legal"><a href="faq.html" class="faq-link" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'" data-en="FAQ" data-it="FAQ">FAQ</a> <span style="color:var(--white);font-size:0.75rem;letter-spacing:1px;opacity:0.7;">·</span> <a href="privacy.html" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" data-en="Privacy Policy" data-it="Privacy Policy">Privacy Policy</a></div>
+  <div class="footer-legal"><a href="faq.html" class="faq-link" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">FAQ</a> <span style="color:var(--white);font-size:0.75rem;letter-spacing:1px;opacity:0.7;">·</span> <a href="privacy.html" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;">Privacy Policy</a></div>
 </footer>
 
 <script>
   // Language switcher
-  let currentLang = 'en';
-
-  function setLang(lang) {
-    currentLang = lang;
-    localStorage.setItem('ewm_lang', lang);
-    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-    document.getElementById('btn-it').classList.toggle('active', lang === 'it');
-    const mbtnEn = document.getElementById('mbtn-en');
-    const mbtnIt = document.getElementById('mbtn-it');
-    if (mbtnEn) mbtnEn.classList.toggle('active', lang === 'en');
-    if (mbtnIt) mbtnIt.classList.toggle('active', lang === 'it');
-
-    document.querySelectorAll('[data-en]').forEach(el => {
-      const val = el.getAttribute('data-' + lang);
-      if (val !== null) {
-        if (el.tagName === 'H2' || el.innerHTML.includes('<span>')) {
-          el.innerHTML = val;
-        } else {
-          el.textContent = val;
-        }
-      }
-    });
-  }
 
   // Photo upload
   function loadPhoto(e) {
@@ -669,16 +651,6 @@
     btn.classList.toggle("open");
     document.body.style.overflow = nav.classList.contains("open") ? "hidden" : "";
   }
-
-  // Restore saved language on page load
-  (function(){ var saved = localStorage.getItem('ewm_lang'); var lang = saved || (/^it/i.test(navigator.language||navigator.userLanguage||'en') ? 'it' : 'en'); if(lang === 'it') setLang('it'); })();
-</script>
-<script>
-(function(){
-  function applyFaqLang(){ var lang=localStorage.getItem('ewm_lang')||(/^it/i.test(navigator.language||navigator.userLanguage||'en')?'it':'en'); var href=(lang==='it')?'it/faq.html':'faq.html'; document.querySelectorAll('a.faq-link').forEach(function(a){a.setAttribute('href',href);}); }
-  applyFaqLang();
-  ['btn-en','mbtn-en','btn-it','mbtn-it'].forEach(function(id){var b=document.getElementById(id); if(b) b.addEventListener('click',function(){setTimeout(applyFaqLang,0);});});
-})();
 </script>
 </body>
 </html>

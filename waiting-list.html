@@ -19,6 +19,9 @@
 <meta name="description" content="Lessons with Marcello are currently full. Join the waiting list to be notified as soon as a spot becomes available for online English lessons.">
 <meta name="keywords" content="English lessons waiting list, book English tutor, online English lessons availability, CELPIP">
 <link rel="canonical" href="https://www.englishwithmarcello.com/waiting-list.html">
+<link rel="alternate" hreflang="en" href="https://www.englishwithmarcello.com/waiting-list.html">
+<link rel="alternate" hreflang="it" href="https://www.englishwithmarcello.com/it/waiting-list.html">
+<link rel="alternate" hreflang="x-default" href="https://www.englishwithmarcello.com/waiting-list.html">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.englishwithmarcello.com/waiting-list.html">
@@ -77,6 +80,8 @@
   .lang-btn { background: transparent; border: none; padding: 0.3rem 0.65rem; font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; cursor: pointer; color: var(--muted); transition: background 0.2s, color 0.2s; }
   .lang-btn.active { background: var(--navy); color: var(--white); }
   .lang-btn:not(.active):hover { background: var(--aqua); color: var(--navy); }
+  .lang-switch a.lang-btn { font-size:0.7rem; font-weight:700; letter-spacing:1px; text-transform:none; line-height:normal; text-decoration:none; }
+  .lang-switch a.lang-btn.active { color:var(--white); }
   .nav-cta { background: var(--navy); color: var(--white); border: none; padding: 0.65rem 1.4rem; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: transform 0.15s, background 0.2s; }
   .nav-cta:hover { background: var(--navy-dark); transform: scale(1.03); }
 
@@ -304,25 +309,25 @@
 <nav>
   <a class="nav-logo" href="index.html"><img src="assets/images/Maple-Leaf-Logo.png" alt="English With Marcello logo"> ENGLISH WITH <span>&nbsp;MARCELLO</span></a>
   <ul class="nav-links">
-    <li><a href="index.html" data-en="Home" data-it="Home">Home</a></li>
-    <li><a href="about.html" data-en="About" data-it="Chi sono">About</a></li>
-    <li><a href="lessons.html" data-en="Lessons" data-it="Lezioni">Lessons</a></li>
-    <li><a href="bookings.html" data-en="Bookings" data-it="Prenotazioni">Bookings</a></li>
-    <li><a href="reviews.html" data-en="Reviews" data-it="Recensioni">Reviews</a></li>
-    <li><a href="blog.html" data-en="Blog" data-it="Blog">Blog</a></li>
-    <li><a href="content.html" data-en="Content" data-it="Contenuti">Content</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="bookings.html">Bookings</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="content.html">Content</a></li>
     <li>
       <div class="lang-switch">
-        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
-        <button class="lang-btn" id="btn-it" onclick="setLang('it')">IT</button>
+        <a class="lang-btn active" id="btn-en" href="waiting-list.html" onclick="localStorage.setItem('ewm_lang','en')">EN</a>
+        <a class="lang-btn" id="btn-it" href="it/waiting-list.html" onclick="localStorage.setItem('ewm_lang','it')">IT</a>
       </div>
     </li>
   </ul>
-  <button data-button-click="book-free-trial-lesson" class="nav-cta" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
+  <button data-button-click="book-free-trial-lesson" class="nav-cta" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
   <div class="nav-right">
     <div class="header-lang lang-switch">
-    <button class="lang-btn active" id="mbtn-en" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" id="mbtn-it" onclick="setLang('it')">IT</button>
+    <a class="lang-btn active" id="mbtn-en" href="waiting-list.html" onclick="localStorage.setItem('ewm_lang','en')">EN</a>
+    <a class="lang-btn" id="mbtn-it" href="it/waiting-list.html" onclick="localStorage.setItem('ewm_lang','it')">IT</a>
   </div>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -330,30 +335,22 @@
 
 <div class="mobile-nav" id="mobileNav">
   <button class="mobile-nav-close" onclick="toggleMenu()" aria-label="Close">×</button>
-  <a href="index.html" data-en="Home" data-it="Home">Home</a>
-  <a href="about.html" data-en="About" data-it="Chi sono">About</a>
-  <a href="lessons.html" data-en="Lessons" data-it="Lezioni">Lessons</a>
-  <a href="bookings.html" data-en="Bookings" data-it="Prenotazioni">Bookings</a>
-  <a href="reviews.html" data-en="Reviews" data-it="Recensioni">Reviews</a>
-  <a href="blog.html" data-en="Blog" data-it="Blog">Blog</a>
-  <a href="content.html" data-en="Content" data-it="Contenuti">Content</a>
-  <button data-button-click="book-free-trial-lesson" class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')" data-en="Book Free Lesson" data-it="Prenota Lezione Gratis">Book Free Lesson</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="lessons.html">Lessons</a>
+  <a href="bookings.html">Bookings</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="blog.html">Blog</a>
+  <a href="content.html">Content</a>
+  <button data-button-click="book-free-trial-lesson" class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')">Book Free Lesson</button>
 </div>
 
 <!-- ── HERO ── -->
 <div class="hero-wl">
   <div class="hero-wl-inner animate delay-1">
-    <div class="hero-tag" data-en="Group Lessons" data-it="Lezioni di Gruppo">Group Lessons</div>
-    <h1 class="hero-title"
-        data-en="JOIN THE<span>WAITING LIST.</span>"
-        data-it="ENTRA NELLA<span>LISTA D'ATTESA.</span>">
-      JOIN THE<span>WAITING LIST.</span>
-    </h1>
-    <p class="hero-sub"
-       data-en="Group lessons fill up fast — only 5 to 8 spots per group. Leave your details and I'll contact you as soon as a place opens up."
-       data-it="Le lezioni di gruppo si esauriscono in fretta — solo 5–8 posti per gruppo. Lascia i tuoi dati e ti contatterò non appena si libera un posto.">
-      Group lessons fill up fast — only 5 to 8 spots per group. Leave your details and I'll contact you as soon as a place opens up.
-    </p>
+    <div class="hero-tag">Group Lessons</div>
+    <h1 class="hero-title">JOIN THE<span>WAITING LIST.</span></h1>
+    <p class="hero-sub">Group lessons fill up fast — only 5 to 8 spots per group. Leave your details and I'll contact you as soon as a place opens up.</p>
   </div>
 </div>
 
@@ -377,81 +374,72 @@
 <div class="benefits-band">
   <div class="benefit-item animate">
     <div class="benefit-icon">👥</div>
-    <span class="benefit-label" data-en="Small Groups" data-it="Gruppi Piccoli">Small Groups</span>
-    <span class="benefit-desc" data-en="5–8 people max" data-it="Max 5–8 persone">5–8 people max</span>
+    <span class="benefit-label">Small Groups</span>
+    <span class="benefit-desc">5–8 people max</span>
   </div>
   <div class="benefit-item animate delay-1">
     <div class="benefit-icon">📅</div>
-    <span class="benefit-label" data-en="Weekly Sessions" data-it="Sessioni Settimanali">Weekly Sessions</span>
-    <span class="benefit-desc" data-en="Once a week, online" data-it="Una volta a settimana, online">Once a week, online</span>
+    <span class="benefit-label">Weekly Sessions</span>
+    <span class="benefit-desc">Once a week, online</span>
   </div>
   <div class="benefit-item animate delay-2">
     <div class="benefit-icon">🎯</div>
-    <span class="benefit-label" data-en="All Levels" data-it="Tutti i Livelli">All Levels</span>
-    <span class="benefit-desc" data-en="From A1 to C2" data-it="Da A1 a C2">From A1 to C2</span>
+    <span class="benefit-label">All Levels</span>
+    <span class="benefit-desc">From A1 to C2</span>
   </div>
 
 </div>
 
 <!-- ── FORM SECTION ── -->
 <div class="form-section">
-  <p class="section-label animate" data-en="Reserve Your Spot" data-it="Prenota il Tuo Posto">Reserve Your Spot</p>
-  <h2 class="section-title animate delay-1" data-en="SIGN UP NOW" data-it="ISCRIVITI ORA">SIGN UP NOW</h2>
-  <p class="section-intro animate delay-2"
-     data-en="Fill in the form below and I'll reach out personally as soon as a group spot becomes available."
-     data-it="Compila il modulo qui sotto e ti contatterò personalmente non appena un posto in gruppo si libera.">
-    Fill in the form below and I'll reach out personally as soon as a group spot becomes available.
-  </p>
+  <p class="section-label animate">Reserve Your Spot</p>
+  <h2 class="section-title animate delay-1">SIGN UP NOW</h2>
+  <p class="section-intro animate delay-2">Fill in the form below and I'll reach out personally as soon as a group spot becomes available.</p>
 
   <form class="wl-form animate delay-2" id="waitingListForm" novalidate>
     <div class="form-row">
       <div class="field-group">
-        <label for="wl-name" data-en="Full Name *" data-it="Nome e Cognome *">Full Name *</label>
-        <input type="text" id="wl-name" name="name" data-placeholder-en="Ex. Maria Rossi" data-placeholder-it="Es. Maria Rossi" placeholder="Ex. Maria Rossi" required>
+        <label for="wl-name">Full Name *</label>
+        <input type="text" id="wl-name" name="name" placeholder="Ex. Maria Rossi" required>
       </div>
       <div class="field-group">
-        <label for="wl-email" data-en="Email Address *" data-it="Indirizzo Email *">Email Address *</label>
-        <input type="email" id="wl-email" name="email" data-placeholder-en="email@example.com" data-placeholder-it="email@esempio.it" placeholder="email@example.com" required>
+        <label for="wl-email">Email Address *</label>
+        <input type="email" id="wl-email" name="email" placeholder="email@example.com" required>
       </div>
     </div>
 
     <div class="field-group">
-      <label for="wl-level" data-en="English Level *" data-it="Livello di Inglese *">English Level *</label>
+      <label for="wl-level">English Level *</label>
       <p style="font-size:0.82rem;color:var(--muted);margin-bottom:0.5rem;line-height:1.5;">
-        <span data-en="Not sure of your level?" data-it="Non sei sicuro del tuo livello?">Not sure of your level?</span>
+        <span>Not sure of your level?</span>
         <a href="https://tally.so/r/3XQ4WY" target="_blank" rel="noopener"
-           style="color:var(--aqua-deep);font-weight:700;text-decoration:underline;"
-           data-en="Take the free level test →" data-it="Fai il test di livello gratuito →">Take the free level test →</a>
+           style="color:var(--aqua-deep);font-weight:700;text-decoration:underline;">Take the free level test →</a>
       </p>
       <select id="wl-level" name="level" required>
-        <option value="" disabled selected data-en="Select your level…" data-it="Seleziona il tuo livello…">Select your level…</option>
-        <option value="A1" data-en="A1 – Beginner" data-it="A1 – Principiante">A1 – Beginner</option>
-        <option value="A2" data-en="A2 – Elementary" data-it="A2 – Elementare">A2 – Elementary</option>
-        <option value="B1" data-en="B1 – Intermediate" data-it="B1 – Intermedio">B1 – Intermediate</option>
-        <option value="B2" data-en="B2 – Upper-Intermediate" data-it="B2 – Intermedio Superiore">B2 – Upper-Intermediate</option>
-        <option value="C1" data-en="C1 – Advanced" data-it="C1 – Avanzato">C1 – Advanced</option>
-        <option value="C2" data-en="C2 – Proficiency" data-it="C2 – Madrelingua">C2 – Proficiency</option>
-        <option value="unknown" data-en="I don't know my level" data-it="Non conosco il mio livello">I don't know my level</option>
+        <option value="" disabled selected>Select your level…</option>
+        <option value="A1">A1 – Beginner</option>
+        <option value="A2">A2 – Elementary</option>
+        <option value="B1">B1 – Intermediate</option>
+        <option value="B2">B2 – Upper-Intermediate</option>
+        <option value="C1">C1 – Advanced</option>
+        <option value="C2">C2 – Proficiency</option>
+        <option value="unknown">I don't know my level</option>
       </select>
     </div>
 
     <div class="field-group">
-      <label for="wl-message" data-en="Notes / Questions (optional)" data-it="Note / Domande (opzionale)">Notes / Questions (optional)</label>
-      <textarea id="wl-message" name="message" data-placeholder-en="Tell me about your goals, availability, or any questions you have…" data-placeholder-it="Raccontami i tuoi obiettivi, disponibilità o qualsiasi domanda tu abbia…" placeholder="Tell me about your goals, availability, or any questions you have…"></textarea>
+      <label for="wl-message">Notes / Questions (optional)</label>
+      <textarea id="wl-message" name="message" placeholder="Tell me about your goals, availability, or any questions you have…"></textarea>
     </div>
 
     <div class="checkbox-group">
       <input type="checkbox" id="wl-privacy" name="privacy" required>
       <span>
-        <span data-en="I agree to be contacted by Marcello about group lesson availability. View the " data-it="Acconsento a essere contattato da Marcello riguardo alla disponibilità nelle lezioni di gruppo. Vedi la ">I agree to be contacted by Marcello about group lesson availability. View the </span><a href="privacy.html" data-en="Privacy Policy" data-it="Privacy Policy">Privacy Policy</a>.
+        <span>I agree to be contacted by Marcello about group lesson availability. View the </span><a href="privacy.html">Privacy Policy</a>.
       </span>
     </div>
 
-    <button type="submit" class="btn-submit" id="submitBtn"
-            data-en="Join the Waiting List →"
-            data-it="Unisciti alla Lista d'Attesa →">
-      Join the Waiting List →
-    </button>
+    <button type="submit" class="btn-submit" id="submitBtn">Join the Waiting List →</button>
 
     <div class="form-feedback" id="formFeedback"></div>
   </form>
@@ -460,23 +448,23 @@
 <!-- ── HOW IT WORKS ── -->
 <div class="how-section">
   <div class="how-inner">
-    <p class="section-label animate" data-en="What Happens Next" data-it="Cosa Succede Dopo">What Happens Next</p>
-    <h2 class="section-title animate delay-1" data-en="HOW IT WORKS" data-it="COME FUNZIONA">HOW IT WORKS</h2>
+    <p class="section-label animate">What Happens Next</p>
+    <h2 class="section-title animate delay-1">HOW IT WORKS</h2>
     <div class="steps-grid">
       <div class="step-card animate delay-1">
         <div class="step-num">01</div>
-        <div class="step-title" data-en="YOU SIGN UP" data-it="TI ISCRIVI">YOU SIGN UP</div>
-        <p class="step-desc" data-en="Fill in the form above with your details and English level. It takes less than 2 minutes." data-it="Compila il modulo sopra con i tuoi dati e il tuo livello di inglese. Ci vogliono meno di 2 minuti.">Fill in the form above with your details and English level. It takes less than 2 minutes.</p>
+        <div class="step-title">YOU SIGN UP</div>
+        <p class="step-desc">Fill in the form above with your details and English level. It takes less than 2 minutes.</p>
       </div>
       <div class="step-card animate delay-2">
         <div class="step-num">02</div>
-        <div class="step-title" data-en="I CONTACT YOU" data-it="TI CONTATTO">I CONTACT YOU</div>
-        <p class="step-desc" data-en="When a spot opens in a group that matches your level, I'll personally reach out via email or phone." data-it="Quando si libera un posto in un gruppo adatto al tuo livello, ti contatterò personalmente via email o telefono.">When a spot opens in a group that matches your level, I'll personally reach out via email or phone.</p>
+        <div class="step-title">I CONTACT YOU</div>
+        <p class="step-desc">When a spot opens in a group that matches your level, I'll personally reach out via email or phone.</p>
       </div>
       <div class="step-card animate delay-3">
         <div class="step-num">03</div>
-        <div class="step-title" data-en="YOU START" data-it="INIZI">YOU START</div>
-        <p class="step-desc" data-en="Once a group of at least 5 people is formed — or a spot opens in an existing group — you'll be contacted to start your group lessons." data-it="Una volta formato un gruppo di almeno 5 persone, o non appena si libera un posto in un gruppo esistente, verrai contattato per iniziare le lezioni di gruppo.">Once a group of at least 5 people is formed — or a spot opens in an existing group — you'll be contacted to start your group lessons.</p>
+        <div class="step-title">YOU START</div>
+        <p class="step-desc">Once a group of at least 5 people is formed — or a spot opens in an existing group — you'll be contacted to start your group lessons.</p>
       </div>
     </div>
   </div>
@@ -484,9 +472,9 @@
 
 <!-- ── CTA ── -->
 <div class="cta-band">
-  <h2 class="cta-title" data-en="PREFER AN<br><span>INDIVIDUAL LESSON?</span>" data-it="PREFERISCI UNA<br><span>LEZIONE INDIVIDUALE?</span>">PREFER AN<br><span>INDIVIDUAL LESSON?</span></h2>
-  <p class="cta-sub" data-en="If group lessons aren't for you, I also offer fully personalised 1-on-1 sessions tailored to your goals. Book a free 25-minute trial lesson today." data-it="Se le lezioni di gruppo non fanno per te, offro anche sessioni individuali completamente personalizzate. Prenota oggi la tua lezione di prova gratuita di 25 minuti.">If group lessons aren't for you, I also offer fully personalised 1-on-1 sessions tailored to your goals. Book a free 25-minute trial lesson today.</p>
-  <button data-button-click="book-free-trial-lesson" class="btn-aqua" data-en="Book Your Free Lesson Now" data-it="Prenota Ora la Tua Lezione Gratuita" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Your Free Lesson Now</button>
+  <h2 class="cta-title">PREFER AN<br><span>INDIVIDUAL LESSON?</span></h2>
+  <p class="cta-sub">If group lessons aren't for you, I also offer fully personalised 1-on-1 sessions tailored to your goals. Book a free 25-minute trial lesson today.</p>
+  <button data-button-click="book-free-trial-lesson" class="btn-aqua" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">Book Your Free Lesson Now</button>
 </div>
 
 <footer>
@@ -498,7 +486,7 @@
     <a href="https://www.facebook.com/share/18917LsM4G/" target="_blank">Facebook</a>
   </div>
   <div class="footer-copy"><a href="mailto:info@englishwithmarcello.com" style="color:inherit;text-decoration:none;">info@englishwithmarcello.com</a> · <a href="tel:+393387462067" style="color:inherit;text-decoration:none;">+39 338 746 2067</a></div>
-  <div class="footer-legal"><a href="faq.html" class="faq-link" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'" data-en="FAQ" data-it="FAQ">FAQ</a> <span style="color:var(--white);font-size:0.75rem;letter-spacing:1px;opacity:0.7;">·</span> <a href="privacy.html" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" data-en="Privacy Policy" data-it="Privacy Policy">Privacy Policy</a></div>
+  <div class="footer-legal"><a href="faq.html" class="faq-link" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">FAQ</a> <span style="color:var(--white);font-size:0.75rem;letter-spacing:1px;opacity:0.7;">·</span> <a href="privacy.html" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;transition:opacity 0.2s;">Privacy Policy</a></div>
 </footer>
 
 <!-- ── EmailJS SDK ── -->
@@ -520,49 +508,10 @@
   emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
   /* ─── Language switch ─── */
-  let currentLang = 'en';
 
-  function setLang(lang) {
-    currentLang = lang;
-    localStorage.setItem('ewm_lang', lang);
-    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-    document.getElementById('btn-it').classList.toggle('active', lang === 'it');
-    const mbtnEn = document.getElementById('mbtn-en');
-    const mbtnIt = document.getElementById('mbtn-it');
-    if (mbtnEn) mbtnEn.classList.toggle('active', lang === 'en');
-    if (mbtnIt) mbtnIt.classList.toggle('active', lang === 'it');
+  
 
-    document.querySelectorAll('[data-en]').forEach(el => {
-      const val = el.getAttribute('data-' + lang);
-      if (val !== null) {
-        const tag = el.tagName;
-        if (tag === 'H1' || tag === 'H2' || el.innerHTML.includes('<span>') || el.innerHTML.includes('<br>')) {
-          el.innerHTML = val;
-        } else {
-          el.textContent = val;
-        }
-      }
-    });
-
-    // Textarea placeholder
-    const ta = document.getElementById('wl-message');
-    if (ta) ta.placeholder = ta.getAttribute('data-placeholder-' + lang);
-    // Name and email placeholders
-    ['wl-name', 'wl-email'].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.placeholder = el.getAttribute('data-placeholder-' + lang);
-    });
-
-    // Select placeholder
-    const sel = document.querySelector('#wl-level option[disabled]');
-    if (sel) {
-      sel.textContent = lang === 'it' ? 'Seleziona il tuo livello…' : 'Select your level…';
-    }
-    // Update all level dropdown options
-    document.querySelectorAll('#wl-level option[data-en]').forEach(opt => {
-      opt.textContent = opt.getAttribute('data-' + lang);
-    });
-  }
+  const currentLang = 'en';
 
   /* ─── Form submission ─── */
   document.getElementById('waitingListForm').addEventListener('submit', async function(e) {
@@ -642,7 +591,6 @@
   }
 
   // Restore saved language on page load
-  (function(){ var saved = localStorage.getItem('ewm_lang'); var lang = saved || (/^it/i.test(navigator.language||navigator.userLanguage||'en') ? 'it' : 'en'); if(lang === 'it') setLang('it'); })();
 </script>
 <script>
 (function(){

@@ -30,13 +30,34 @@ Lessons are available one-on-one; group lessons are also offered.
 
 ## Pages
 
+### English
+
 - Homepage: https://www.englishwithmarcello.com/
 - About Marcello: https://www.englishwithmarcello.com/about.html
 - Lessons & Pricing: https://www.englishwithmarcello.com/lessons.html
 - Bookings & Free Trial: https://www.englishwithmarcello.com/bookings.html
 - Reviews: https://www.englishwithmarcello.com/reviews.html
 - Free Content: https://www.englishwithmarcello.com/content.html
+- FAQ: https://www.englishwithmarcello.com/faq.html
+- Waiting List: https://www.englishwithmarcello.com/waiting-list.html
 - Blog: https://www.englishwithmarcello.com/blog.html
+- Privacy Policy: https://www.englishwithmarcello.com/privacy.html
+
+### Italian (Italiano)
+
+- Homepage: https://www.englishwithmarcello.com/it/index.html
+- Chi è Marcello: https://www.englishwithmarcello.com/it/about.html
+- Lezioni e Prezzi: https://www.englishwithmarcello.com/it/lessons.html
+- Prenotazioni e Lezione Gratuita: https://www.englishwithmarcello.com/it/bookings.html
+- Recensioni: https://www.englishwithmarcello.com/it/reviews.html
+- Contenuti Gratuiti: https://www.englishwithmarcello.com/it/content.html
+- FAQ: https://www.englishwithmarcello.com/it/faq.html
+- Lista d'Attesa: https://www.englishwithmarcello.com/it/waiting-list.html
+- Informativa sulla Privacy: https://www.englishwithmarcello.com/it/privacy.html
+
+## Internal Tools
+
+A private teacher dashboard (`teacherapp.html`) exists for internal use and is not publicly linked. It is not indexed, not in the sitemap, and not accessible from any public page.
 
 ## Profiles
 
