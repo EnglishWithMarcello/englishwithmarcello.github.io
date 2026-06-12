@@ -714,5 +714,26 @@
     document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
   }
 </script>
+<script>
+/* ── Language-aware nav: redirect to IT sibling if Italian is selected ── */
+(function() {
+  if (localStorage.getItem('ewm_lang') !== 'it') return;
+  var map = {
+    'index.html':        'it/index.html',
+    'about.html':        'it/about.html',
+    'lessons.html':      'it/lessons.html',
+    'bookings.html':     'it/bookings.html',
+    'reviews.html':      'it/reviews.html',
+    'content.html':      'it/content.html',
+    'faq.html':          'it/faq.html',
+    'privacy.html':      'it/privacy.html',
+    'waiting-list.html': 'it/waiting-list.html'
+  };
+  document.querySelectorAll('nav a, .mobile-menu a').forEach(function(a) {
+    var href = a.getAttribute('href');
+    if (href && map[href]) a.setAttribute('href', map[href]);
+  });
+})();
+</script>
 </body>
 </html>
