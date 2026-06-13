@@ -16,7 +16,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <meta name="facebook-domain-verification" content="fmg7bz8xfhjopul4vxbx7wei5a1qqi">
 <title>Join the Waiting List | English With Marcello</title>
-<meta name="description" content="Lessons with Marcello are currently full. Join the waiting list to be notified as soon as a spot becomes available for online English lessons.">
+<meta name="description" content="Group lessons with Marcello are currently full. Join the waiting list to be notified as soon as a spot becomes available in an online English group lesson.">
 <meta name="keywords" content="English lessons waiting list, book English tutor, online English lessons availability, CELPIP">
 <link rel="canonical" href="https://www.englishwithmarcello.com/waiting-list.html">
 <link rel="alternate" hreflang="en" href="https://www.englishwithmarcello.com/waiting-list.html">
@@ -26,7 +26,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.englishwithmarcello.com/waiting-list.html">
 <meta property="og:title" content="Join the Waiting List | English With Marcello">
-<meta property="og:description" content="Lessons are currently full. Join the waiting list and be the first to know when a spot opens up.">
+<meta property="og:description" content="Group lessons are currently full. Join the waiting list and be the first to know when a spot opens up.">
 <meta property="og:image" content="https://www.englishwithmarcello.com/og-image.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -597,27 +597,6 @@
   function applyFaqLang(){ var lang=localStorage.getItem('ewm_lang')||(/^it/i.test(navigator.language||navigator.userLanguage||'en')?'it':'en'); var href=(lang==='it')?'it/faq.html':'faq.html'; document.querySelectorAll('a.faq-link').forEach(function(a){a.setAttribute('href',href);}); }
   applyFaqLang();
   ['btn-en','mbtn-en','btn-it','mbtn-it'].forEach(function(id){var b=document.getElementById(id); if(b) b.addEventListener('click',function(){setTimeout(applyFaqLang,0);});});
-})();
-</script>
-<script>
-/* ── Language-aware nav: redirect to IT sibling if Italian is selected ── */
-(function() {
-  if (localStorage.getItem('ewm_lang') !== 'it') return;
-  var map = {
-    'index.html':        'it/index.html',
-    'about.html':        'it/about.html',
-    'lessons.html':      'it/lessons.html',
-    'bookings.html':     'it/bookings.html',
-    'reviews.html':      'it/reviews.html',
-    'content.html':      'it/content.html',
-    'faq.html':          'it/faq.html',
-    'privacy.html':      'it/privacy.html',
-    'waiting-list.html': 'it/waiting-list.html'
-  };
-  document.querySelectorAll('nav a, .mobile-menu a').forEach(function(a) {
-    var href = a.getAttribute('href');
-    if (href && map[href]) a.setAttribute('href', map[href]);
-  });
 })();
 </script>
 </body>
