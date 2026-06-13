@@ -239,15 +239,15 @@
   <!-- End Google Tag Manager (noscript) -->
 
 <nav>
-  <a href="../index.html" class="nav-logo"><img src="../assets/images/Maple-Leaf-Logo.png" alt="English With Marcello logo">ENGLISH WITH&nbsp;<span>MARCELLO</span></a>
+  <a href="index" class="nav-logo"><img src="../assets/images/Maple-Leaf-Logo.png" alt="English With Marcello logo">ENGLISH WITH&nbsp;<span>MARCELLO</span></a>
   <ul class="nav-links">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../about.html">Chi sono</a></li>
-    <li><a href="../lessons.html">Lezioni</a></li>
-    <li><a href="../bookings.html">Prenotazioni</a></li>
-    <li><a href="../reviews.html">Recensioni</a></li>
+    <li><a href="index">Home</a></li>
+    <li><a href="about">Chi sono</a></li>
+    <li><a href="lessons">Lezioni</a></li>
+    <li><a href="bookings">Prenotazioni</a></li>
+    <li><a href="reviews">Recensioni</a></li>
     <li><a href="../blog.html">Blog</a></li>
-    <li><a href="../content.html">Contenuti</a></li>
+    <li><a href="content">Contenuti</a></li>
     <li>
       <div class="lang-switch">
         <a class="lang-btn" id="btn-en" href="../privacy.html" onclick="localStorage.setItem('ewm_lang','en')">EN</a>
@@ -267,13 +267,13 @@
 
 <div class="mobile-nav" id="mobileNav">
   <button class="mobile-nav-close" onclick="toggleMenu()" aria-label="Close">×</button>
-  <a href="../index.html">Home</a>
-  <a href="../about.html">Chi sono</a>
-  <a href="../lessons.html">Lezioni</a>
-  <a href="../bookings.html">Prenotazioni</a>
-  <a href="../reviews.html">Recensioni</a>
+  <a href="index">Home</a>
+  <a href="about">Chi sono</a>
+  <a href="lessons">Lezioni</a>
+  <a href="bookings">Prenotazioni</a>
+  <a href="reviews">Recensioni</a>
   <a href="../blog.html">Blog</a>
-  <a href="../content.html">Contenuti</a>
+  <a href="content">Contenuti</a>
   <button data-button-click="book-free-trial-lesson" class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')">Prenota Lezione Gratis</button>
 </div>
 
@@ -740,30 +740,6 @@
     btn.classList.toggle("open");
     document.body.style.overflow = nav.classList.contains("open") ? "hidden" : "";
   }
-</script>
-<script>
-/* ── Language-aware nav: keep IT sibling links when Italian is selected ── */
-(function() {
-  var map = {
-    '../index.html':        'index.html',
-    '../about.html':        'about.html',
-    '../lessons.html':      'lessons.html',
-    '../bookings.html':     'bookings.html',
-    '../reviews.html':      'reviews.html',
-    '../content.html':      'content.html',
-    '../faq.html':          'faq.html',
-    '../privacy.html':      'privacy.html',
-    '../waiting-list.html': 'waiting-list.html'
-  };
-  /* If Italian is selected (or no preference set — we're already on an IT page),
-     rewrite ../page.html links to page.html (IT sibling) */
-  var lang = localStorage.getItem('ewm_lang');
-  if (lang === 'en') return; /* English selected — ../page.html links are correct */
-  document.querySelectorAll('nav a, .mobile-menu a').forEach(function(a) {
-    var href = a.getAttribute('href');
-    if (href && map[href]) a.setAttribute('href', map[href]);
-  });
-})();
 </script>
 </body>
 </html>
