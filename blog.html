@@ -229,7 +229,18 @@
           "name": "Italian"
         }
       ],
-      "hasCredential": [
+      "knowsAbout": [
+        "English as a foreign language",
+        "Conversational English",
+        "English grammar (A1–C2)",
+        "English pronunciation and shadowing",
+        "IELTS exam preparation",
+        "TOEFL exam preparation",
+        "Cambridge exam preparation",
+        "Oxford exam preparation",
+        "CELPIP exam preparation"
+      ],
+            "hasCredential": [
         {
           "@type": "EducationalOccupationalCredential",
           "credentialCategory": "certification",
@@ -928,27 +939,6 @@ buildGrid();
   function applyFaqLang(){ var lang=localStorage.getItem('ewm_lang')||(/^it/i.test(navigator.language||navigator.userLanguage||'en')?'it':'en'); var href=(lang==='it')?'it/faq.html':'faq.html'; document.querySelectorAll('a.faq-link').forEach(function(a){a.setAttribute('href',href);}); }
   applyFaqLang();
   ['btn-en','mbtn-en','btn-it','mbtn-it'].forEach(function(id){var b=document.getElementById(id); if(b) b.addEventListener('click',function(){setTimeout(applyFaqLang,0);});});
-})();
-</script>
-<script>
-/* ── Language-aware nav: redirect to IT sibling if Italian is selected ── */
-(function() {
-  if (localStorage.getItem('ewm_lang') !== 'it') return;
-  var map = {
-    'index.html':        'it/index.html',
-    'about.html':        'it/about.html',
-    'lessons.html':      'it/lessons.html',
-    'bookings.html':     'it/bookings.html',
-    'reviews.html':      'it/reviews.html',
-    'content.html':      'it/content.html',
-    'faq.html':          'it/faq.html',
-    'privacy.html':      'it/privacy.html',
-    'waiting-list.html': 'it/waiting-list.html'
-  };
-  document.querySelectorAll('nav a, .mobile-menu a').forEach(function(a) {
-    var href = a.getAttribute('href');
-    if (href && map[href]) a.setAttribute('href', map[href]);
-  });
 })();
 </script>
 </body>
