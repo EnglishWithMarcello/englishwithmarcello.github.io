@@ -936,9 +936,20 @@ buildGrid();
 </script>
 <script>
 (function(){
-  function applyFaqLang(){ var lang=localStorage.getItem('ewm_lang')||(/^it/i.test(navigator.language||navigator.userLanguage||'en')?'it':'en'); var href=(lang==='it')?'it/faq.html':'faq.html'; document.querySelectorAll('a.faq-link').forEach(function(a){a.setAttribute('href',href);}); }
-  applyFaqLang();
-  ['btn-en','mbtn-en','btn-it','mbtn-it'].forEach(function(id){var b=document.getElementById(id); if(b) b.addEventListener('click',function(){setTimeout(applyFaqLang,0);});});
+  function applyLangLinks(){
+    var lang = localStorage.getItem('ewm_lang') || (/^it/i.test(navigator.language||navigator.userLanguage||'en') ? 'it' : 'en');
+    // Footer FAQ link
+    var faqHref = (lang === 'it') ? 'it/faq.html' : 'faq.html';
+    document.querySelectorAll('a.faq-link').forEach(function(a){ a.setAttribute('href', faqHref); });
+    // Nav + logo links to the dual-URL pages (blog has no Italian version yet, so its own link is left as-is)
+    var rx = /^(?:it\/)?(index|about|lessons|bookings|reviews|content)\.html$/;
+    document.querySelectorAll('.nav-links a[href], .mobile-nav a[href], a.nav-logo[href]').forEach(function(a){
+      var m = (a.getAttribute('href') || '').match(rx);
+      if (m) { a.setAttribute('href', (lang === 'it' ? 'it/' : '') + m[1] + '.html'); }
+    });
+  }
+  applyLangLinks();
+  ['btn-en','mbtn-en','btn-it','mbtn-it'].forEach(function(id){ var b=document.getElementById(id); if(b) b.addEventListener('click', function(){ setTimeout(applyLangLinks, 0); }); });
 })();
 </script>
 </body>
