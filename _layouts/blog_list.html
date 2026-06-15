@@ -15,28 +15,25 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <meta name="facebook-domain-verification" content="fmg7bz8xfhjopul4vxbx7wei5a1qqi">
-<title>{{ page.title | escape }} | English With Marcello</title>
-<meta name="description" content="{{ page.excerpt | strip_html | escape }}">
+<title>{% if page.lang == 'it' %}Blog per Imparare l'Inglese | Consigli, Grammatica e Cultura{% else %}English Learning Blog | Tips, Grammar &amp; Culture{% endif %} – English With Marcello</title>
+<meta name="description" content="{{ page.description | escape }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
-{%- assign sibling = site.blog | where:"ref", page.ref | where_exp:"i","i.lang != page.lang" | first -%}
-{%- if sibling -%}{%- assign alt_url = sibling.url -%}{%- elsif page.lang == 'en' -%}{%- assign alt_url = '/it/blog/' -%}{%- else -%}{%- assign alt_url = '/blog/' -%}{%- endif -%}
-<link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url }}">
-{%- if sibling %}
-<link rel="alternate" hreflang="{{ sibling.lang }}" href="{{ sibling.url | absolute_url }}">
-{%- endif %}
+{%- if page.lang == 'en' -%}{%- assign alt_url = '/it/blog/' -%}{%- else -%}{%- assign alt_url = '/blog/' -%}{%- endif -%}
 {%- if page.lang == 'en' %}
-<link rel="alternate" hreflang="x-default" href="{{ page.url | absolute_url }}">
-{%- elsif sibling %}
-<link rel="alternate" hreflang="x-default" href="{{ sibling.url | absolute_url }}">
+<link rel="alternate" hreflang="en" href="{{ '/blog/' | absolute_url }}">
+<link rel="alternate" hreflang="it" href="{{ '/it/blog/' | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ '/blog/' | absolute_url }}">
+{%- else %}
+<link rel="alternate" hreflang="en" href="{{ '/blog/' | absolute_url }}">
+<link rel="alternate" hreflang="it" href="{{ '/it/blog/' | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ '/blog/' | absolute_url }}">
 {%- endif %}
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:title" content="{{ page.title | escape }}">
-<meta property="og:description" content="{{ page.excerpt | strip_html | escape }}">
+<meta property="og:title" content="{% if page.lang == 'it' %}Blog per Imparare l'Inglese{% else %}English Learning Blog{% endif %} – English With Marcello">
+<meta property="og:description" content="{{ page.description | escape }}">
 <meta property="og:image" content="https://www.englishwithmarcello.com/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ page.title | escape }}">
-<meta name="twitter:description" content="{{ page.excerpt | strip_html | escape }}">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -218,23 +215,6 @@
   .lang-switch a.lang-btn:not(.active):hover { background: var(--aqua); color: var(--navy); }
   a.blog-card { text-decoration: none; color: inherit; }
 </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": {{ page.title | jsonify }},
-  "description": {{ page.excerpt | strip_html | jsonify }},
-  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
-  "dateModified": "{{ page.last_modified_at | default: page.date | date: '%Y-%m-%d' }}",
-  "inLanguage": "{{ page.lang }}",
-  "url": "{{ page.url | absolute_url }}",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
-  "author": { "@type": "Person", "@id": "https://www.englishwithmarcello.com/#marcello", "name": "Marcello" },
-  "publisher": { "@type": ["ProfessionalService","EducationalOrganization"], "@id": "https://www.englishwithmarcello.com/#business", "name": "English With Marcello" },
-  "image": "https://www.englishwithmarcello.com/og-image.jpg",
-  "articleSection": {{ page.category | jsonify }}
-}
-</script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -286,6 +266,16 @@
   <button data-button-click="book-free-trial-lesson" class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')">{% if page.lang == 'it' %}Prenota Lezione Gratis{% else %}Book Free Lesson{% endif %}</button>
 </div>
 
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <div>
+      <div class="blog-hero-flags"><span class="flag-badge">CA</span><span class="flag-vs">VS</span><span class="flag-badge">IT</span></div>
+      <h1 class="blog-hero-title">{% if page.lang == 'it' %}CANADA VS ITALIA<br><span>IL BLOG</span>{% else %}CANADA VS ITALY<br><span>THE BLOG</span>{% endif %}</h1>
+      <p class="blog-hero-sub">{% if page.lang == 'it' %}Esplora le curiosità culturali tra Canada e Italia. Scopri le differenze più interessanti e migliora il tuo inglese attraverso le storie!{% else %}Explore cultural curiosities between Canada and Italy. Discover the most interesting differences and improve your English through stories!{% endif %}</p>
+    </div>
+    <div class="blog-hero-deco">BLOG</div>
+  </div>
+</div>
 <div class="ticker">
   <div class="ticker-inner">
     <span class="ticker-item">A1 TO C2 ALL LEVELS</span><span class="ticker-dot">&middot;</span>
@@ -300,16 +290,23 @@
     <span class="ticker-item">FREE TRIAL LESSON</span><span class="ticker-dot">&middot;</span>
   </div>
 </div>
-<div class="article-page">
-  <a class="back-btn" href="{{ u_blog }}">
-    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
-    {% if page.lang == 'it' %}Torna al Blog{% else %}Back to Blog{% endif %}
-  </a>
-  <span class="article-category">{{ page.category }}</span>
-  <h1 class="article-title">{{ page.title }}</h1>
-  <div class="article-divider"></div>
-  <div class="article-body">
-{{ content }}
+<div class="blog-section">
+  <p class="section-label">{% if page.lang == 'it' %}Ultimi Articoli{% else %}Latest Articles{% endif %}</p>
+  <h2 class="section-title">{% if page.lang == 'it' %}TUTTI GLI ARTICOLI{% else %}ALL POSTS{% endif %}</h2>
+  <div class="blog-grid">
+    {%- assign posts = site.blog | where:"lang", page.lang | sort:"date" | reverse -%}
+    {%- for post in posts %}
+    <a class="blog-card" href="{{ post.url }}">
+      <div class="blog-card-body">
+        <span class="blog-category">{{ post.category }}</span>
+        <h3 class="blog-card-title">{{ post.title }}</h3>
+        <p class="blog-card-excerpt">{{ post.excerpt }}</p>
+      </div>
+      <div class="blog-card-footer">
+        <span class="read-more">{% if page.lang == 'it' %}Leggi di Più{% else %}Read More{% endif %} &rarr;</span>
+      </div>
+    </a>
+    {%- endfor %}
   </div>
 </div>
 <div class="cta-band">
