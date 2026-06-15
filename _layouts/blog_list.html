@@ -293,9 +293,25 @@
 <div class="blog-section">
   <p class="section-label">{% if page.lang == 'it' %}Ultimi Articoli{% else %}Latest Articles{% endif %}</p>
   <h2 class="section-title">{% if page.lang == 'it' %}TUTTI GLI ARTICOLI{% else %}ALL POSTS{% endif %}</h2>
+  {%- assign posts = site.blog | where:"lang", page.lang | sort:"date" | reverse -%}
+  {%- assign flagged = posts | where:"featured", true | first -%}
+  {%- if flagged %}{%- assign featured = flagged -%}{%- else %}{%- assign featured = posts | first -%}{%- endif -%}
+  {%- if featured %}
+  <a class="blog-card featured" href="{{ featured.url }}" style="margin-bottom:2rem;">
+    <div class="featured-accent"><span class="featured-label">{% if page.lang == 'it' %}IN EVIDENZA{% else %}FEATURED POST{% endif %}</span></div>
+    <div class="blog-card-body">
+      <span class="blog-category">{{ featured.category }}</span>
+      <h3 class="blog-card-title">{{ featured.title }}</h3>
+      <p class="blog-card-excerpt">{{ featured.excerpt }}</p>
+    </div>
+    <div class="blog-card-footer">
+      <span class="read-more">{% if page.lang == 'it' %}Leggi di Più{% else %}Read More{% endif %} &rarr;</span>
+    </div>
+  </a>
+  {%- endif %}
   <div class="blog-grid">
-    {%- assign posts = site.blog | where:"lang", page.lang | sort:"date" | reverse -%}
     {%- for post in posts %}
+    {%- unless post.url == featured.url %}
     <a class="blog-card" href="{{ post.url }}">
       <div class="blog-card-body">
         <span class="blog-category">{{ post.category }}</span>
@@ -306,6 +322,7 @@
         <span class="read-more">{% if page.lang == 'it' %}Leggi di Più{% else %}Read More{% endif %} &rarr;</span>
       </div>
     </a>
+    {%- endunless %}
     {%- endfor %}
   </div>
 </div>
