@@ -1,0 +1,11 @@
+# ─── English With Marcello — Jekyll configuration ───
+# This file ONLY adds an isolated blog. Your existing hand-coded pages have no
+# Jekyll "front matter" header, so Jekyll copies them through UNCHANGED.
+# Nothing outside the new /blog/ and /it/blog/ sections is affected.
+
+url: "https://www.englishwithmarcello.com"
+baseurl: ""
+
+collections:
+  blog:
+    output: true
