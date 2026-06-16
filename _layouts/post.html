@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PKKQVTMV');</script>
+  <!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="facebook-domain-verification" content="fmg7bz8xfhjopul4vxbx7wei5a1qqi">
+<title>{{ page.title | escape }} | English With Marcello</title>
+<meta name="description" content="{{ page.excerpt | strip_html | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+{%- assign mykey = page.translationKey | default: page.ref -%}
+{%- assign sibling = nil -%}
+{%- if mykey and mykey != "" -%}
+{%- assign sibling = site.blog | where:"translationKey", mykey | where_exp:"i","i.lang != page.lang" | first -%}
+{%- unless sibling %}{%- assign sibling = site.blog | where:"ref", mykey | where_exp:"i","i.lang != page.lang" | first -%}{%- endunless -%}
+{%- endif -%}
+{%- if sibling -%}{%- assign alt_url = sibling.url -%}{%- elsif page.lang == 'en' -%}{%- assign alt_url = '/it/blog/' -%}{%- else -%}{%- assign alt_url = '/blog/' -%}{%- endif -%}
+<link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url }}">
+{%- if sibling %}
+<link rel="alternate" hreflang="{{ sibling.lang }}" href="{{ sibling.url | absolute_url }}">
+{%- endif %}
+{%- if page.lang == 'en' %}
+<link rel="alternate" hreflang="x-default" href="{{ page.url | absolute_url }}">
+{%- elsif sibling %}
+<link rel="alternate" hreflang="x-default" href="{{ sibling.url | absolute_url }}">
+{%- endif %}
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.excerpt | strip_html | escape }}">
+<meta property="og:image" content="https://www.englishwithmarcello.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title | escape }}">
+<meta name="twitter:description" content="{{ page.excerpt | strip_html | escape }}">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --aqua: #98ccc4; --aqua-dark: #7ab8b0; --aqua-deep: #5a9e96;
+    --navy: #011d7f; --navy-dark: #010f4a; --navy-mid: #0a2a9a;
+    --red: #D2281A; --white: #FFFFFF; --light-bg: #eef6f5; --muted: #5A6A9A;
+    --font-display: 'Bebas Neue', sans-serif; --font-body: 'DM Sans', sans-serif;
+  }
+  body { background: var(--white); color: var(--navy); font-family: var(--font-body); overflow-x: hidden; font-size: 16px; line-height: 1.6; }
+
+  /* NAV */
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 2.5rem; border-bottom: 2px solid var(--aqua); position: sticky; top: 0; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); z-index: 100; }
+  .nav-logo { font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 2px; color: var(--navy); display: flex; align-items: center; text-decoration: none; }
+  .nav-logo img { width: 36px; height: 36px; object-fit: contain; margin-right: 0.6rem; }
+  .logo-marcello { color: var(--aqua-deep); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--navy); }
+  .nav-right { display: none; }
+  .lang-switch { display: flex; border: 1.5px solid var(--aqua-deep); overflow: hidden; }
+  .lang-btn { background: transparent; border: none; padding: 0.3rem 0.65rem; font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; cursor: pointer; color: var(--muted); transition: background 0.2s, color 0.2s; }
+  .lang-btn.active { background: var(--navy); color: var(--white); }
+  .lang-btn:not(.active):hover { background: var(--aqua); color: var(--navy); }
+  .nav-cta { background: var(--navy); color: var(--white); border: none; padding: 0.65rem 1.4rem; font-family: var(--font-body); font-weight: 700; font-size: 0.72rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: transform 0.15s, background 0.2s; white-space: nowrap; }
+  .nav-cta:hover { background: var(--navy-dark); transform: scale(1.03); }
+
+  /* TICKER */
+  .ticker { background: var(--aqua); padding: 0.85rem 0; overflow: hidden; white-space: nowrap; }
+  .ticker-inner { display: inline-flex; animation: ticker 28s linear infinite; }
+  .ticker-item { color: var(--navy); font-family: var(--font-display); font-size: 1.3rem; letter-spacing: 3px; padding-right: 3rem; }
+  .ticker-dot { color: var(--navy); opacity: 0.4; padding-right: 3rem; font-family: var(--font-display); font-size: 1.3rem; }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* PAGES */
+  .page { display: none; }
+  .page.active { display: block; }
+
+  /* BLOG LIST */
+  .blog-hero { background: var(--navy); padding: 5rem 2.5rem 4rem; position: relative; overflow: hidden; }
+  .blog-hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; background: var(--aqua); opacity: 0.06; border-radius: 50%; }
+  .blog-hero-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
+  .blog-hero-flags { display: flex; gap: 0.75rem; margin-bottom: 1.5rem; align-items: center; }
+  .flag-badge { font-family: var(--font-display); font-size: 2.5rem; line-height: 1; letter-spacing: 2px; color: var(--aqua); }
+  .flag-vs { font-family: var(--font-display); font-size: 1.2rem; color: var(--muted); padding: 0 0.5rem; }
+  .blog-hero-title { font-family: var(--font-display); font-size: clamp(3rem, 7vw, 6rem); line-height: 0.92; letter-spacing: 2px; text-transform: uppercase; color: var(--white); margin-bottom: 1.5rem; }
+  .blog-hero-title span { color: var(--aqua); }
+  .blog-hero-sub { color: #8A9FCC; font-size: 1rem; max-width: 520px; line-height: 1.75; }
+  .blog-hero-deco { font-family: var(--font-display); font-size: 9rem; color: var(--white); opacity: 0.04; letter-spacing: 4px; user-select: none; white-space: nowrap; }
+
+  .blog-section { padding: 5rem 2.5rem; max-width: 1200px; margin: 0 auto; }
+  .section-label { font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase; color: var(--aqua-deep); font-weight: 700; margin-bottom: 1rem; }
+  .section-title { font-family: var(--font-display); font-size: clamp(2.8rem, 5vw, 4rem); line-height: 1; text-transform: uppercase; margin-bottom: 3rem; color: var(--navy); letter-spacing: 1px; }
+
+  .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .blog-card { border: 1.5px solid var(--aqua); background: var(--white); display: flex; flex-direction: column; transition: border-color 0.2s, transform 0.2s, background 0.2s; cursor: pointer; position: relative; overflow: hidden; }
+  .blog-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--aqua-deep); transition: height 0.3s ease; }
+  .blog-card:hover { border-color: var(--navy); transform: translateY(-4px); background: var(--light-bg); }
+  .blog-card:hover::before { height: 100%; }
+  .blog-card-body { padding: 2rem; flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+  .blog-category { display: inline-block; font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; color: var(--aqua-deep); background: var(--light-bg); padding: 0.3rem 0.75rem; align-self: flex-start; }
+  .blog-card-title { font-weight: 700; font-size: 1rem; letter-spacing: 0.5px; color: var(--navy); line-height: 1.4; text-transform: uppercase; }
+  .blog-card-excerpt { color: var(--muted); font-size: 0.88rem; line-height: 1.7; flex: 1; }
+  .blog-card-footer { padding: 1rem 2rem; border-top: 1px solid var(--aqua); }
+  .read-more { font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: color 0.2s, gap 0.2s; cursor: pointer; background: none; border: none; font-family: var(--font-body); padding: 0; }
+  .read-more:hover { color: var(--aqua-deep); gap: 0.75rem; }
+  .blog-card.featured { grid-column: span 2; }
+  .blog-card.featured .blog-card-body { padding: 2.5rem; }
+  .blog-card.featured .blog-card-title { font-size: 1.3rem; }
+  .blog-card.featured .blog-card-excerpt { font-size: 0.93rem; }
+  .featured-accent { background: var(--navy); padding: 1rem 2.5rem; }
+  .featured-label { font-family: var(--font-display); font-size: 1rem; letter-spacing: 3px; color: var(--aqua); text-transform: uppercase; }
+
+  /* ARTICLE PAGE */
+  .article-page { max-width: 800px; margin: 0 auto; padding: 4rem 2.5rem 5rem; }
+  .back-btn { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); cursor: pointer; background: none; border: none; font-family: var(--font-body); margin-bottom: 2.5rem; transition: color 0.2s; padding: 0; }
+  .back-btn:hover { color: var(--navy); }
+  .article-category { display: inline-block; font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; color: var(--aqua-deep); background: var(--light-bg); padding: 0.3rem 0.75rem; margin-bottom: 1.5rem; }
+  .article-title { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: 1; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); margin-bottom: 2rem; }
+  .article-divider { width: 60px; height: 3px; background: var(--aqua); margin-bottom: 2.5rem; }
+  .article-body p { color: var(--muted); font-size: 1rem; line-height: var(--body-lh, 1.75); margin-bottom: 1.4rem; }
+  .article-body ul, .article-body ol { color: var(--muted); font-size: 1rem; line-height: var(--body-lh, 1.75); margin-bottom: 1.4rem; padding-left: 1.5rem; }
+  /* word-colour helpers — usage in body: <span class="c-red">word</span> */
+  .article-body .c-aqua { color: #5a9e96; } .article-body .c-navy { color: #011d7f; } .article-body .c-red { color: #cc2b2b; }
+  .article-body .c-orange { color: #d9760f; } .article-body .c-yellow { color: #b8860b; } .article-body .c-green { color: #2e8b3d; }
+  .article-body .c-blue { color: #1f6fd6; } .article-body .c-violet { color: #7a3fb0; } .article-body .c-black { color: #1a1a1a; }
+  .article-body li { margin-bottom: 0.4rem; }
+  .article-body strong { color: var(--navy); font-weight: 700; }
+  .english-corner { background: var(--navy); padding: 2rem 2.5rem; margin-top: 3rem; }
+  .english-corner-label { font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 3px; color: var(--aqua); text-transform: uppercase; margin-bottom: 1rem; }
+  .english-corner ul { list-style: none; padding: 0; }
+  .english-corner li { color: #8A9FCC; font-size: 0.92rem; line-height: 1.7; padding: 0.5rem 0; border-bottom: 1px solid rgba(152,204,196,0.15); }
+  .english-corner li:last-child { border-bottom: none; }
+  .english-corner li strong { color: var(--aqua); }
+
+  /* CTA */
+  .cta-band { background: var(--navy); padding: 5rem 2.5rem; text-align: center; position: relative; overflow: hidden; }
+  .cta-band::before { content: ''; position: absolute; bottom: -100px; left: 50%; transform: translateX(-50%); width: 600px; height: 300px; background: var(--aqua); opacity: 0.05; border-radius: 50%; pointer-events: none; }
+  .cta-title { font-family: var(--font-display); font-size: clamp(4rem, 9vw, 7rem); line-height: 0.9; text-transform: uppercase; color: var(--white); letter-spacing: 3px; margin-bottom: 1.5rem; }
+  .cta-title span { color: var(--aqua); }
+  .cta-sub { color: #8A9FCC; font-size: 1rem; max-width: 520px; margin: 0 auto 2.5rem; line-height: 1.75; }
+  .btn-aqua { background: var(--aqua); color: var(--navy); border: none; padding: 1rem 2.5rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); transition: background 0.2s, transform 0.15s; }
+  .btn-aqua:hover { background: var(--aqua-dark); transform: translateY(-2px); }
+
+  /* FOOTER */
+  footer { background: var(--navy-dark); border-top: 3px solid var(--aqua); padding: 3rem 2.5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1rem; text-align: center; }
+  .footer-links { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; justify-content: center; }
+  .footer-links a { color: var(--white); text-decoration: none; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--aqua); }
+  .footer-copy { color: var(--white); font-size: 0.75rem; }
+
+  @media (max-width: 900px) {
+    .blog-grid { grid-template-columns: 1fr 1fr; }
+    .blog-card.featured { grid-column: span 2; }
+    .blog-hero-inner { grid-template-columns: 1fr; }
+    .blog-hero-deco { display: none; }
+  }
+  @media (max-width: 600px) {
+    nav { padding: 0 1.2rem; }
+    .nav-links { display: none; }
+    .blog-grid { grid-template-columns: 1fr; }
+    .blog-card.featured { grid-column: span 1; }
+    .blog-hero { padding: 3rem 1.5rem; }
+    .blog-section { padding: 3rem 1.5rem; }
+    .cta-band { padding: 3.5rem 1.5rem; }
+    footer { padding: 2rem 1.5rem; }
+    .article-page { padding: 3rem 1.5rem 4rem; }
+  }
+
+  /* HAMBURGER */
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); transition: all 0.3s; }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .mobile-nav { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--white); z-index: 200; flex-direction: column; padding: 5rem 2rem 2rem; overflow-y: auto; }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav-close { position: absolute; top: 1.2rem; right: 1.5rem; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--navy); line-height: 1; }
+  .mobile-nav a { display: block; padding: 1rem 0; font-size: 1.1rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--aqua); }
+  .mobile-nav .mobile-lang { display: none; }
+  .header-lang { display: none; }
+  @media (max-width: 768px) {
+    .nav-right { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+    .header-lang { display: flex; border: 1.5px solid var(--aqua-deep); overflow: hidden; }
+  }
+  .mobile-nav .mobile-cta { margin-top: 1.5rem; background: var(--navy); color: var(--white); border: none; padding: 1rem 2rem; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; font-family: var(--font-body); width: 100%; }
+
+
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.2rem; }
+    .nav-links { display: none; }
+    .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .nav-logo { font-size: clamp(0.85rem, 4.5vw, 1.4rem); letter-spacing: 0; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .nav-logo img { width: clamp(28px, 6.5vw, 34px); height: clamp(28px, 6.5vw, 34px); margin-right: clamp(0.3rem, 1.2vw, 0.5rem); flex-shrink: 0; }
+  }
+  @media (max-width: 480px) {
+    .ticker-item, .ticker-dot { font-size: 1rem; }
+    .section { padding: 2.5rem 1.2rem; }
+  }
+
+
+  /* PAGE-RESPONSIVE-blog_html.html */
+  @media (max-width: 900px) {
+    .blog-grid { grid-template-columns: repeat(2, 1fr); }
+    .featured-post { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    .blog-hero { padding: 2.5rem 1.2rem; }
+    .section { padding: 3rem 1.2rem; }
+    .section-title { font-size: clamp(2.2rem, 8vw, 3rem); }
+    .blog-grid { grid-template-columns: 1fr; }
+    .blog-content { padding: 1.5rem 1.2rem; }
+    .blog-content p { font-size: 0.95rem; }
+    footer { flex-direction: column; align-items: center; text-align: center; gap: 1rem; padding: 2rem 1.2rem; }
+    .footer-links { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+  }
+</style>
+<style>
+  /* dual-URL anchor toggle overrides (blog posts/listing use <a> toggles) */
+  .lang-switch a.lang-btn { font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; padding: 0.3rem 0.65rem; text-transform: none; line-height: normal; text-decoration: none; display: inline-flex; align-items: center; color: var(--muted); }
+  .lang-switch a.lang-btn.active { background: var(--navy); color: var(--white); }
+  .lang-switch a.lang-btn:not(.active):hover { background: var(--aqua); color: var(--navy); }
+  a.blog-card { text-decoration: none; color: inherit; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.excerpt | strip_html | jsonify }},
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date: '%Y-%m-%d' }}",
+  "inLanguage": "{{ page.lang }}",
+  "url": "{{ page.url | absolute_url }}",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
+  "author": { "@type": "Person", "@id": "https://www.englishwithmarcello.com/#marcello", "name": "Marcello" },
+  "publisher": { "@type": ["ProfessionalService","EducationalOrganization"], "@id": "https://www.englishwithmarcello.com/#business", "name": "English With Marcello" },
+  "image": "https://www.englishwithmarcello.com/og-image.jpg",
+  "articleSection": {{ page.category | jsonify }}
+}
+</script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKKQVTMV"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+{%- if page.lang == 'it' -%}
+{%- assign u_home='/it/index.html' -%}{%- assign u_about='/it/about.html' -%}{%- assign u_lessons='/it/lessons.html' -%}{%- assign u_bookings='/it/bookings.html' -%}{%- assign u_reviews='/it/reviews.html' -%}{%- assign u_content='/it/content.html' -%}{%- assign u_blog='/it/blog/' -%}{%- assign u_faq='/it/faq.html' -%}{%- assign u_privacy='/it/privacy.html' -%}
+{%- else -%}
+{%- assign u_home='/index.html' -%}{%- assign u_about='/about.html' -%}{%- assign u_lessons='/lessons.html' -%}{%- assign u_bookings='/bookings.html' -%}{%- assign u_reviews='/reviews.html' -%}{%- assign u_content='/content.html' -%}{%- assign u_blog='/blog/' -%}{%- assign u_faq='/faq.html' -%}{%- assign u_privacy='/privacy.html' -%}
+{%- endif -%}
+<nav>
+  <a class="nav-logo" href="{{ u_home }}">
+    <img src="/assets/images/Maple-Leaf-Logo.png" alt="English With Marcello logo">
+    <span>ENGLISH WITH <span class="logo-marcello">MARCELLO</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="{{ u_home }}">{% if page.lang == 'it' %}Home{% else %}Home{% endif %}</a></li>
+    <li><a href="{{ u_about }}">{% if page.lang == 'it' %}Chi sono{% else %}About{% endif %}</a></li>
+    <li><a href="{{ u_lessons }}">{% if page.lang == 'it' %}Lezioni{% else %}Lessons{% endif %}</a></li>
+    <li><a href="{{ u_bookings }}">{% if page.lang == 'it' %}Prenotazioni{% else %}Bookings{% endif %}</a></li>
+    <li><a href="{{ u_reviews }}">{% if page.lang == 'it' %}Recensioni{% else %}Reviews{% endif %}</a></li>
+    <li><a href="{{ u_blog }}" class="active">Blog</a></li>
+    <li><a href="{{ u_content }}">{% if page.lang == 'it' %}Contenuti{% else %}Content{% endif %}</a></li>
+    <li>
+      <div class="lang-switch">
+        {% if page.lang == 'en' %}<a class="lang-btn active" id="btn-en">EN</a><a class="lang-btn" id="btn-it" href="{{ alt_url }}" onclick="try{localStorage.setItem('ewm_lang','it')}catch(e){}">IT</a>{% else %}<a class="lang-btn" id="btn-en" href="{{ alt_url }}" onclick="try{localStorage.setItem('ewm_lang','en')}catch(e){}">EN</a><a class="lang-btn active" id="btn-it">IT</a>{% endif %}
+      </div>
+    </li>
+  </ul>
+  <button data-button-click="book-free-trial-lesson" class="nav-cta" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">{% if page.lang == 'it' %}Prenota Lezione Gratis{% else %}Book Free Lesson{% endif %}</button>
+  <div class="nav-right">
+    <div class="header-lang lang-switch">
+      {% if page.lang == 'en' %}<a class="lang-btn active" id="mbtn-en">EN</a><a class="lang-btn" id="mbtn-it" href="{{ alt_url }}" onclick="try{localStorage.setItem('ewm_lang','it')}catch(e){}">IT</a>{% else %}<a class="lang-btn" id="mbtn-en" href="{{ alt_url }}" onclick="try{localStorage.setItem('ewm_lang','en')}catch(e){}">EN</a><a class="lang-btn active" id="mbtn-it">IT</a>{% endif %}
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="toggleMenu()" aria-label="Close">&times;</button>
+  <a href="{{ u_home }}">{% if page.lang == 'it' %}Home{% else %}Home{% endif %}</a>
+  <a href="{{ u_about }}">{% if page.lang == 'it' %}Chi sono{% else %}About{% endif %}</a>
+  <a href="{{ u_lessons }}">{% if page.lang == 'it' %}Lezioni{% else %}Lessons{% endif %}</a>
+  <a href="{{ u_bookings }}">{% if page.lang == 'it' %}Prenotazioni{% else %}Bookings{% endif %}</a>
+  <a href="{{ u_reviews }}">{% if page.lang == 'it' %}Recensioni{% else %}Reviews{% endif %}</a>
+  <a href="{{ u_blog }}">Blog</a>
+  <a href="{{ u_content }}">{% if page.lang == 'it' %}Contenuti{% else %}Content{% endif %}</a>
+  <button data-button-click="book-free-trial-lesson" class="mobile-cta" onclick="toggleMenu(); window.open('https://tally.so/r/n0DVE0','_blank')">{% if page.lang == 'it' %}Prenota Lezione Gratis{% else %}Book Free Lesson{% endif %}</button>
+</div>
+
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">A1 TO C2 ALL LEVELS</span><span class="ticker-dot">&middot;</span>
+    <span class="ticker-item">SPEAK WITH CONFIDENCE</span><span class="ticker-dot">&middot;</span>
+    <span class="ticker-item">IELTS &middot; TOEFL &middot; CAMBRIDGE</span><span class="ticker-dot">&middot;</span>
+    <span class="ticker-item">ONLINE</span><span class="ticker-dot">&middot;</span>
+    <span class="ticker-item">FREE TRIAL LESSON</span><span class="ticker-dot">&middot;</span>
+    <span class="ticker-item">A1 TO C2 ALL LEVELS</span><span class="ticker-dot">&middot;</span>
+    <span class="ticker-item">SPEAK WITH CONFIDENCE</span><span class="ticker-dot">&middot;</span>
+    <span class="ticker-item">IELTS &middot; TOEFL &middot; CAMBRIDGE</span><span class="ticker-dot">&middot;</span>
+    <span class="ticker-item">ONLINE</span><span class="ticker-dot">&middot;</span>
+    <span class="ticker-item">FREE TRIAL LESSON</span><span class="ticker-dot">&middot;</span>
+  </div>
+</div>
+<div class="article-page">
+  <a class="back-btn" href="{{ u_blog }}">
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+    {% if page.lang == 'it' %}Torna al Blog{% else %}Back to Blog{% endif %}
+  </a>
+  <span class="article-category">{{ page.category }}</span>
+  <h1 class="article-title">{{ page.title }}</h1>
+  <div class="article-divider"></div>
+  <div class="article-body" style="--body-lh: {{ page.line_spacing | default: 1.75 }};">
+{{ content }}
+  {%- if page.english_corner and page.english_corner != empty %}
+  <div class="english-corner"><div class="english-corner-label">English Corner</div><ul>{% for item in page.english_corner %}<li><strong>{{ item.term }}</strong> = {{ item.definition }}</li>{% endfor %}</ul></div>
+  {%- endif %}
+  </div>
+</div>
+<div class="cta-band">
+  <h2 class="cta-title">{% if page.lang == 'it' %}PRONTO A<br><span>INIZIARE?</span>{% else %}READY TO<br><span>START?</span>{% endif %}</h2>
+  <p class="cta-sub">{% if page.lang == 'it' %}Prenota oggi la tua lezione di prova gratuita. Nessun impegno — solo tu, Marcello, e il tuo primo passo verso un inglese davvero sicuro.{% else %}Book your free trial lesson today. No commitment — just you, Marcello, and your first step toward speaking English with real confidence.{% endif %}</p>
+  <button data-button-click="book-free-trial-lesson" class="btn-aqua" onclick="window.open('https://tally.so/r/n0DVE0','_blank')">{% if page.lang == 'it' %}Prenota Ora la Tua Lezione Gratuita{% else %}Book Your Free Lesson Now{% endif %}</button>
+</div>
+<footer>
+  <div class="footer-links">
+    <a href="https://linkedin.com/in/englishwithmarcello" target="_blank">LinkedIn</a>
+    <a href="https://www.instagram.com/englishwithmarcello" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/@englishwithmarcello" target="_blank">YouTube</a>
+    <a href="https://www.tiktok.com/@englishwithmarcello" target="_blank">TikTok</a>
+    <a href="https://www.facebook.com/share/18917LsM4G/" target="_blank">Facebook</a>
+  </div>
+  <div class="footer-copy"><a href="mailto:info@englishwithmarcello.com" style="color:inherit;text-decoration:none;">info@englishwithmarcello.com</a> &middot; <a href="tel:+393387462067" style="color:inherit;text-decoration:none;">+39 338 746 2067</a></div>
+  <div class="footer-legal"><a href="{{ u_faq }}" class="faq-link" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;">FAQ</a> <span style="color:var(--white);font-size:0.75rem;letter-spacing:1px;opacity:0.7;">&middot;</span> <a href="{{ u_privacy }}" style="color:var(--white);font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:0.7;">{% if page.lang == 'it' %}Privacy Policy{% else %}Privacy Policy{% endif %}</a></div>
+</footer>
+<script>
+  function toggleMenu(){ document.getElementById('mobileNav').classList.toggle('open'); document.getElementById('hamburger').classList.toggle('open'); }
+</script>
+<script>/*ewm-lang-sync*/try{localStorage.setItem('ewm_lang','{{ page.lang }}');}catch(e){}</script>
+</body>
+</html>
