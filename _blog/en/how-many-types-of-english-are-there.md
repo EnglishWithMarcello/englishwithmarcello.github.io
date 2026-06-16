@@ -1,7 +1,7 @@
 ---
 translationKey: how-many-types-of-english-are-there
 featured: false
-title: HOW MANY TYPE OF ENGLISH ARE THERE?
+title: HOW MANY TYPES OF ENGLISH ARE THERE?
 category: English around the world
 excerpt: Did you know there isn't just one type of English? From British and American English to Canadian, Australian, Irish and more, discover how English changes across countries and cultures.
 date: 2026-06-16T16:32
