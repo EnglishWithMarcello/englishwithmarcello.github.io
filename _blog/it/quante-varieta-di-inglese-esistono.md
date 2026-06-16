@@ -1,0 +1,105 @@
+---
+translationKey: how-many-types-of-english-are-there
+featured: false
+title: Quante varietà di inglese esistono?
+category: L'inglese nel mondo
+excerpt: Britannico, americano, canadese o australiano? Scopri come l'inglese cambia da un paese all'altro e quale varietà è più adatta a te.
+date: 2026-06-16T16:32
+---
+
+Quando le persone dicono che stanno imparando l'inglese, viene spontanea una semplice domanda: **quale inglese?**
+
+Molti studenti rimangono sorpresi nello scoprire che non esiste un solo tipo di inglese. Infatti, l'inglese è parlato in decine di Paesi in tutto il mondo e ogni luogo ha sviluppato il proprio accento, vocabolario ed espressioni.
+
+La buona notizia? Chi parla inglese riesce generalmente a capirsi, anche quando gli accenti sono molto diversi.
+
+Facciamo un rapido viaggio tra alcune delle varietà di inglese più conosciute.
+
+**■ INGLESE BRITANNICO**: l'inglese britannico è la varietà parlata in Inghilterra ed è spesso quella insegnata in molte scuole europee.
+
+Alcune parole comuni:
+
+- Flat (appartamento)
+- Holiday (vacanza)
+- Lift (ascensore)
+
+_Frase esempio: I'm taking the lift up to my flat._
+
+**■ INGLESE AMERICANO**: l'inglese americano è probabilmente la varietà più influente grazie a Hollywood, alla televisione, alla musica e ai social media.
+
+Alcune parole comuni:
+
+- Apartment
+- Vacation
+- Elevator
+
+_Frase esempio: I'm taking the elevator up to my apartment._
+
+**■ INGLESE CANADESE:** l'inglese canadese si colloca a metà strada tra quello britannico e quello americano. I canadesi utilizzano spesso il vocabolario americano, ma mantengono alcune grafie britanniche.
+
+Alcune parole comuni:
+
+- Colour
+- Centre
+- Toque
+- Washroom
+
+Una delle parole canadesi più famose è _toque_, che indica un cappello invernale di lana.
+
+_Frase esempio: Don't forget your toque, it's going to be cold today!_
+
+**■ INGLESE AUSTRALIANO**: l'inglese australiano è noto per il suo accento unico e per l'abitudine di abbreviare molte parole.
+
+Alcune parole comuni:
+
+- Arvo (pomeriggio)
+- Barbie (barbecue)
+- Brekkie (colazione)
+
+Frase esempio: _let's have a barbie this arvo._
+
+**■ INGLESE NEOZELANDESE**: l'inglese neozelandese è simile a quello australiano, ma possiede un accento e un vocabolario propri, influenzati dalla lingua Māori.
+
+Alcune parole comuni:
+
+- Kia ora (ciao)
+- Bach (casa per le vacanze)
+
+_Frase esempio: We're spending the weekend at our bach by the beach._
+
+**■ INGLESE IRLANDESE**: l'inglese irlandese ha un ritmo molto caratteristico e include espressioni che difficilmente sentirai altrove.
+
+Alcune parole comuni:
+
+- Craic (divertimento, novità)
+- Grand (bene, tutto a posto)
+- Eejit (sciocco, idiota)
+
+_Frase esempio: Everything's grand. We had great craic at the party._
+
+**■ INGLESE SCOZZESE**: l'inglese scozzese può suonare molto diverso dalle altre varietà.
+
+Alcune parole comuni:
+
+- Wee (piccolo)
+- Bairn (bambino)
+- Aye (sì)
+
+Frase esempio: _It's a wee house._
+
+**■ INGLESE SUDAFRICANO**: l'inglese sudafricano combina influenze dell'inglese britannico e delle lingue locali.
+
+Alcune parole comuni:
+
+- Braai (barbecue)
+- Robot (semaforo)
+
+_Frase esempio: We're having a braai this weekend. It's going to be lekker!_
+
+**Quale inglese dovresti imparare?**
+
+La risposta è semplice: impara la varietà che è più utile per i tuoi obiettivi. Se hai intenzione di trasferirti in Canada, concentrati sull'inglese canadese. Se lavori con aziende americane, l'inglese americano potrebbe essere più utile. Se vivi in Europa, l'inglese britannico è spesso quello più familiare.
+
+La cosa più importante non è scegliere l'inglese "perfetto", ma essere in grado di comunicare con sicurezza con persone provenienti da tutto il mondo.
+
+Dopotutto, l'inglese non è più la lingua di un solo Paese. È una lingua globale, parlata in molti modi diversi.
