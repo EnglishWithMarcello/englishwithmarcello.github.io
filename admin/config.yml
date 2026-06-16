@@ -27,8 +27,6 @@ collections:
     create: true
     i18n: true
     slug: "{{title | localize}}"
-    canonical_slug:
-      key: ref
     summary: "{{title}}"
     fields:
       - name: featured
@@ -80,3 +78,16 @@ collections:
             label: "Meaning / Significato"
             widget: string
             i18n: true
+      - name: line_spacing
+        label: "Line spacing / Interlinea"
+        widget: select
+        required: false
+        i18n: duplicate
+        default: "1.75"
+        options:
+          - { label: "Tight", value: "1.5" }
+          - { label: "Snug", value: "1.65" }
+          - { label: "Normal", value: "1.75" }
+          - { label: "Relaxed", value: "1.9" }
+          - { label: "Spacious", value: "2.1" }
+        hint: "How far apart the lines of body text sit. Normal is the default. / Quanto sono distanziate le righe del testo. Normale è il valore predefinito."
