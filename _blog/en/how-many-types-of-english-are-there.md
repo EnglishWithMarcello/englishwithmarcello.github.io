@@ -30,7 +30,7 @@ _Example sentence: I'm taking the lift up to my flat._
 
 Some common American words include:
 
-- Apartment (instead of flat)
+- <span class="c-red">Apartment</span> (instead of flat)
 - Vacation (instead of holiday)
 - Elevator (instead of lift)
 
