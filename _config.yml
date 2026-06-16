@@ -1,11 +1,17 @@
-# ─── English With Marcello — Jekyll configuration ───
-# This file ONLY adds an isolated blog. Your existing hand-coded pages have no
-# Jekyll "front matter" header, so Jekyll copies them through UNCHANGED.
-# Nothing outside the new /blog/ and /it/blog/ sections is affected.
-
 url: "https://www.englishwithmarcello.com"
 baseurl: ""
+
+# Build posts regardless of their date (so a CMS post never silently fails to appear)
+future: true
 
 collections:
   blog:
     output: true
+
+# Auto-assign layout, language, and URL to blog posts based on their folder.
+# English posts (_blog/en) -> /blog/<slug>/   |   Italian posts (_blog/it) -> /it/blog/<slug>/
+defaults:
+  - scope: { path: "_blog/en", type: "blog" }
+    values: { layout: "post", lang: "en", permalink: "/blog/:name/" }
+  - scope: { path: "_blog/it", type: "blog" }
+    values: { layout: "post", lang: "it", permalink: "/it/blog/:name/" }
