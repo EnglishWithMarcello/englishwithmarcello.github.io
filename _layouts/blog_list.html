@@ -295,7 +295,7 @@
   <h2 class="section-title">{% if page.lang == 'it' %}TUTTI GLI ARTICOLI{% else %}ALL POSTS{% endif %}</h2>
   {%- assign posts = site.blog | where:"lang", page.lang | sort:"date" | reverse -%}
   {%- assign flagged = posts | where:"featured", true | first -%}
-  {%- if flagged %}{%- assign featured = flagged -%}{%- else %}{%- assign featured = posts | first -%}{%- endif -%}
+  {%- assign featured = flagged -%}
   {%- if featured %}
   <a class="blog-card featured" href="{{ featured.url }}" style="margin-bottom:2rem;">
     <div class="featured-accent"><span class="featured-label">{% if page.lang == 'it' %}IN EVIDENZA{% else %}FEATURED POST{% endif %}</span></div>

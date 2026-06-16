@@ -310,6 +310,9 @@
   <div class="article-divider"></div>
   <div class="article-body">
 {{ content }}
+  {%- if page.english_corner and page.english_corner != empty %}
+  <div class="english-corner"><div class="english-corner-label">English Corner</div><ul>{% for item in page.english_corner %}<li><strong>{{ item.term }}</strong> = {{ item.definition }}</li>{% endfor %}</ul></div>
+  {%- endif %}
   </div>
 </div>
 <div class="cta-band">
