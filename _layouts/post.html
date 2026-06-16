@@ -18,7 +18,8 @@
 <title>{{ page.title | escape }} | English With Marcello</title>
 <meta name="description" content="{{ page.excerpt | strip_html | escape }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
-{%- assign sibling = site.blog | where:"ref", page.ref | where_exp:"i","i.lang != page.lang" | first -%}
+{%- assign sibling = nil -%}
+{%- if page.ref and page.ref != "" -%}{%- assign sibling = site.blog | where:"ref", page.ref | where_exp:"i","i.lang != page.lang" | first -%}{%- endif -%}
 {%- if sibling -%}{%- assign alt_url = sibling.url -%}{%- elsif page.lang == 'en' -%}{%- assign alt_url = '/it/blog/' -%}{%- else -%}{%- assign alt_url = '/blog/' -%}{%- endif -%}
 <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url }}">
 {%- if sibling %}
