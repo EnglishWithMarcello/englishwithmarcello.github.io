@@ -18,8 +18,12 @@
 <title>{{ page.title | escape }} | English With Marcello</title>
 <meta name="description" content="{{ page.excerpt | strip_html | escape }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
+{%- assign mykey = page.translationKey | default: page.ref -%}
 {%- assign sibling = nil -%}
-{%- if page.ref and page.ref != "" -%}{%- assign sibling = site.blog | where:"ref", page.ref | where_exp:"i","i.lang != page.lang" | first -%}{%- endif -%}
+{%- if mykey and mykey != "" -%}
+{%- assign sibling = site.blog | where:"translationKey", mykey | where_exp:"i","i.lang != page.lang" | first -%}
+{%- unless sibling %}{%- assign sibling = site.blog | where:"ref", mykey | where_exp:"i","i.lang != page.lang" | first -%}{%- endunless -%}
+{%- endif -%}
 {%- if sibling -%}{%- assign alt_url = sibling.url -%}{%- elsif page.lang == 'en' -%}{%- assign alt_url = '/it/blog/' -%}{%- else -%}{%- assign alt_url = '/blog/' -%}{%- endif -%}
 <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url }}">
 {%- if sibling %}
@@ -118,8 +122,12 @@
   .article-category { display: inline-block; font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; color: var(--aqua-deep); background: var(--light-bg); padding: 0.3rem 0.75rem; margin-bottom: 1.5rem; }
   .article-title { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: 1; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); margin-bottom: 2rem; }
   .article-divider { width: 60px; height: 3px; background: var(--aqua); margin-bottom: 2.5rem; }
-  .article-body p { color: var(--muted); font-size: 1rem; line-height: 1.85; margin-bottom: 1.4rem; }
-  .article-body ul, .article-body ol { color: var(--muted); font-size: 1rem; line-height: 1.85; margin-bottom: 1.4rem; padding-left: 1.5rem; }
+  .article-body p { color: var(--muted); font-size: 1rem; line-height: var(--body-lh, 1.75); margin-bottom: 1.4rem; }
+  .article-body ul, .article-body ol { color: var(--muted); font-size: 1rem; line-height: var(--body-lh, 1.75); margin-bottom: 1.4rem; padding-left: 1.5rem; }
+  /* word-colour helpers — usage in body: <span class="c-red">word</span> */
+  .article-body .c-aqua { color: #5a9e96; } .article-body .c-navy { color: #011d7f; } .article-body .c-red { color: #cc2b2b; }
+  .article-body .c-orange { color: #d9760f; } .article-body .c-yellow { color: #b8860b; } .article-body .c-green { color: #2e8b3d; }
+  .article-body .c-blue { color: #1f6fd6; } .article-body .c-violet { color: #7a3fb0; } .article-body .c-black { color: #1a1a1a; }
   .article-body li { margin-bottom: 0.4rem; }
   .article-body strong { color: var(--navy); font-weight: 700; }
   .english-corner { background: var(--navy); padding: 2rem 2.5rem; margin-top: 3rem; }
@@ -309,7 +317,7 @@
   <span class="article-category">{{ page.category }}</span>
   <h1 class="article-title">{{ page.title }}</h1>
   <div class="article-divider"></div>
-  <div class="article-body">
+  <div class="article-body" style="--body-lh: {{ page.line_spacing | default: 1.75 }};">
 {{ content }}
   {%- if page.english_corner and page.english_corner != empty %}
   <div class="english-corner"><div class="english-corner-label">English Corner</div><ul>{% for item in page.english_corner %}<li><strong>{{ item.term }}</strong> = {{ item.definition }}</li>{% endfor %}</ul></div>
