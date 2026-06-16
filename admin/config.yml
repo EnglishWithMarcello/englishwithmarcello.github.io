@@ -1,0 +1,93 @@
+backend:
+  name: github
+  repo: EnglishWithMarcello/englishwithmarcello.github.io
+  branch: main
+  base_url: https://sveltia-cms-auth.royal-snowflake-0562.workers.dev
+
+media_folder: "assets/images/blog"
+public_folder: "/assets/images/blog"
+
+i18n:
+  structure: multiple_folders
+  locales: [en, it]
+  default_locale: en
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  - name: blog
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    description: "Write a new post in English and Italian, side by side."
+    folder: "_blog"
+    extension: md
+    format: yaml-frontmatter
+    create: true
+    i18n: true
+    slug: "{{title | localize}}"
+    summary: "{{title}}"
+    fields:
+      - name: featured
+        label: "Featured post / In evidenza"
+        widget: boolean
+        default: false
+        required: false
+        i18n: duplicate
+        hint: "Puts this post in the big banner on the blog homepage. Not a ranking field. / Mette questo post nel banner grande della home del blog. Non influisce sul posizionamento."
+      - name: title
+        label: "Title / Titolo"
+        widget: string
+        i18n: true
+        hint: "The blue link in Google + the page heading — put your main search term here. / Il link blu su Google + il titolo della pagina — inserisci qui il termine di ricerca principale."
+      - name: category
+        label: "Category / Categoria"
+        widget: string
+        i18n: true
+        hint: "Groups the post on the blog; minor for ranking. / Raggruppa il post nel blog; poco rilevante per il posizionamento."
+      - name: excerpt
+        label: "Excerpt / Riassunto"
+        widget: text
+        i18n: true
+        hint: "The grey description under your link in Google — include the term naturally. / La descrizione grigia sotto il link su Google — includi il termine in modo naturale."
+      - name: date
+        label: "Date / Data"
+        widget: datetime
+        i18n: duplicate
+        hint: "Publish date. Leave as today's date unless you have a reason to change it. / Data di pubblicazione. Lasciala alla data odierna salvo motivi particolari."
+      - name: body
+        label: "Body / Corpo"
+        widget: markdown
+        i18n: true
+        hint: "The article itself — matters most. Write about the topic; use the term and related words where they fit. / L'articolo vero e proprio — conta di più. Scrivi sull'argomento; usa il termine e le parole correlate dove servono."
+      - name: english_corner
+        label: "English Corner (vocab box) / English Corner (riquadro vocaboli)"
+        widget: list
+        required: false
+        i18n: true
+        label_singular: "term / vocabolo"
+        summary: "{{fields.term}} = {{fields.definition}}"
+        hint: "Optional navy box at the end of the post. Add the words or phrases you want to highlight, each with its meaning. Leave empty for no box. / Riquadro blu opzionale a fine articolo. Aggiungi le parole o frasi da evidenziare, ognuna con il suo significato. Lascia vuoto per non mostrarlo."
+        fields:
+          - name: term
+            label: "Word or phrase / Parola o frase"
+            widget: string
+            i18n: true
+          - name: definition
+            label: "Meaning / Significato"
+            widget: string
+            i18n: true
+      - name: line_spacing
+        label: "Line spacing / Interlinea"
+        widget: select
+        required: false
+        i18n: duplicate
+        default: "1.75"
+        options:
+          - { label: "Tight", value: "1.5" }
+          - { label: "Snug", value: "1.65" }
+          - { label: "Normal", value: "1.75" }
+          - { label: "Relaxed", value: "1.9" }
+          - { label: "Spacious", value: "2.1" }
+        hint: "How far apart the lines of body text sit. Normal is the default. / Quanto sono distanziate le righe del testo. Normale è il valore predefinito."
