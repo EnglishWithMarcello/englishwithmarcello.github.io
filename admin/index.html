@@ -8,5 +8,60 @@
 </head>
 <body>
   <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
+
+  <!-- ===== Word-colour toolbar (custom add-on, not part of Sveltia) ===== -->
+  <style>
+    #ewm-colorbar{position:fixed;left:16px;bottom:16px;z-index:2147483647;background:#fff;border:1px solid #d0d5dd;border-radius:10px;box-shadow:0 4px 16px rgba(0,0,0,.18);padding:8px 10px;font:13px/1.2 system-ui,-apple-system,sans-serif;display:flex;align-items:center;gap:7px;flex-wrap:wrap;max-width:92vw}
+    #ewm-colorbar .lbl{font-weight:600;color:#333;white-space:nowrap}
+    #ewm-colorbar button.sw{width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,.25);cursor:pointer;padding:0}
+    #ewm-colorbar button.sw:hover{transform:scale(1.18)}
+    #ewm-colorbar .clear{border:1px solid #d0d5dd;background:#f5f5f5;border-radius:6px;cursor:pointer;font-size:12px;padding:3px 8px;color:#444}
+    #ewm-colorbar .hide{border:none;background:transparent;cursor:pointer;color:#999;font-size:17px;line-height:1;padding:0 2px}
+    #ewm-hint{position:absolute;bottom:115%;left:0;background:#333;color:#fff;padding:5px 9px;border-radius:6px;font-size:12px;white-space:nowrap;opacity:0;transition:opacity .15s;pointer-events:none}
+    #ewm-hint.show{opacity:1}
+    #ewm-colorbar-reopen{position:fixed;left:16px;bottom:16px;z-index:2147483647;background:#011d7f;color:#fff;border:none;border-radius:50%;width:40px;height:40px;cursor:pointer;font-size:18px;box-shadow:0 4px 16px rgba(0,0,0,.18);display:none}
+  </style>
+  <script>
+  (function(){
+    var COLORS=[['aqua','#5a9e96'],['navy','#011d7f'],['red','#cc2b2b'],['orange','#d9760f'],['yellow','#b8860b'],['green','#2e8b3d'],['blue','#1f6fd6'],['violet','#7a3fb0'],['black','#1a1a1a']];
+    function deepActive(){ var a=document.activeElement; while(a&&a.shadowRoot&&a.shadowRoot.activeElement){a=a.shadowRoot.activeElement;} return a; }
+    function setNativeValue(el,val){ try{ var d=Object.getOwnPropertyDescriptor(Object.getPrototypeOf(el),'value'); if(d&&d.set){d.set.call(el,val);return;} }catch(e){} el.value=val; }
+    function hint(msg){ var h=document.getElementById('ewm-hint'); if(!h)return; h.textContent=msg; h.classList.add('show'); clearTimeout(h._t); h._t=setTimeout(function(){h.classList.remove('show');},2400); }
+    function targetArea(){ var el=deepActive(); return (el&&el.tagName==='TEXTAREA')?el:null; }
+    function apply(cls){
+      var el=targetArea();
+      if(!el){ hint('Click into the body text (Markdown view) first'); return; }
+      var s=el.selectionStart, e=el.selectionEnd;
+      if(s==null||s===e){ hint('Select a word or phrase first, then pick a colour'); return; }
+      var v=el.value, sel=v.slice(s,e), open='<span class="c-'+cls+'">', close='</span>';
+      setNativeValue(el, v.slice(0,s)+open+sel+close+v.slice(e));
+      el.dispatchEvent(new Event('input',{bubbles:true}));
+      var p=s+open.length+sel.length+close.length; try{el.setSelectionRange(p,p);}catch(x){} el.focus();
+    }
+    function strip(){
+      var el=targetArea(); if(!el){ hint('Click into the body text first'); return; }
+      var s=el.selectionStart, e=el.selectionEnd; if(s===e){ hint('Select the coloured text first'); return; }
+      var v=el.value, sel=v.slice(s,e).replace(/<span class="c-[a-z]+">/g,'').replace(/<\/span>/g,'');
+      setNativeValue(el, v.slice(0,s)+sel+v.slice(e)); el.dispatchEvent(new Event('input',{bubbles:true}));
+      try{el.setSelectionRange(s,s+sel.length);}catch(x){} el.focus();
+    }
+    function build(){
+      if(document.getElementById('ewm-colorbar'))return;
+      var bar=document.createElement('div'); bar.id='ewm-colorbar';
+      var h=document.createElement('div'); h.id='ewm-hint'; bar.appendChild(h);
+      var l=document.createElement('span'); l.className='lbl'; l.textContent='Colour text:'; bar.appendChild(l);
+      COLORS.forEach(function(c){ var b=document.createElement('button'); b.className='sw'; b.style.background=c[1]; b.title=c[0];
+        b.addEventListener('mousedown',function(ev){ev.preventDefault();}); b.addEventListener('click',function(){apply(c[0]);}); bar.appendChild(b); });
+      var rm=document.createElement('button'); rm.className='clear'; rm.textContent='Remove'; rm.title='Strip colour from selection';
+      rm.addEventListener('mousedown',function(ev){ev.preventDefault();}); rm.addEventListener('click',strip); bar.appendChild(rm);
+      var x=document.createElement('button'); x.className='hide'; x.textContent='\u00d7'; x.title='Hide';
+      x.addEventListener('click',function(){ bar.style.display='none'; document.getElementById('ewm-colorbar-reopen').style.display='block'; }); bar.appendChild(x);
+      document.body.appendChild(bar);
+      var re=document.createElement('button'); re.id='ewm-colorbar-reopen'; re.textContent='\ud83c\udfa8'; re.title='Show colour toolbar';
+      re.addEventListener('click',function(){ bar.style.display='flex'; re.style.display='none'; }); document.body.appendChild(re);
+    }
+    if(document.readyState!=='loading'){build();}else{document.addEventListener('DOMContentLoaded',build);}
+  })();
+  </script>
 </body>
 </html>
