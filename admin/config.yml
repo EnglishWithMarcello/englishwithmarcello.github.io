@@ -63,3 +63,20 @@ collections:
         widget: markdown
         i18n: true
         hint: "The article itself — matters most. Write about the topic; use the term and related words where they fit. / L'articolo vero e proprio — conta di più. Scrivi sull'argomento; usa il termine e le parole correlate dove servono."
+      - name: english_corner
+        label: "English Corner (vocab box) / English Corner (riquadro vocaboli)"
+        widget: list
+        required: false
+        i18n: true
+        label_singular: "term / vocabolo"
+        summary: "{{fields.term}} = {{fields.definition}}"
+        hint: "Optional navy box at the end of the post. Add the words or phrases you want to highlight, each with its meaning. Leave empty for no box. / Riquadro blu opzionale a fine articolo. Aggiungi le parole o frasi da evidenziare, ognuna con il suo significato. Lascia vuoto per non mostrarlo."
+        fields:
+          - name: term
+            label: "Word or phrase / Parola o frase"
+            widget: string
+            i18n: true
+          - name: definition
+            label: "Meaning / Significato"
+            widget: string
+            i18n: true
