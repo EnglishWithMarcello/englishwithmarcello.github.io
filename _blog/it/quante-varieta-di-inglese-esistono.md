@@ -1,6 +1,6 @@
 ---
 translationKey: how-many-types-of-english-are-there
-featured: false
+featured: true
 title: QUANTI TIPI DI INGLESE ESISTONO?
 category: L'inglese nel mondo
 excerpt: Lo sapevi che non esiste un solo tipo di inglese? Dall'inglese britannico e americano a quello canadese, australiano, irlandese e molti altri, scopri come la lingua inglese cambia da un Paese all'altro e si adatta a culture diverse.
