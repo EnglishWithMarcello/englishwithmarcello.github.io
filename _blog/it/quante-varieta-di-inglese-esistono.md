@@ -1,7 +1,7 @@
 ---
 translationKey: how-many-types-of-english-are-there
 featured: false
-title: Quante varietà di inglese esistono?
+title: QUANTI TIPI DI INGLESE ESISTONO?
 category: L'inglese nel mondo
 excerpt: Britannico, americano, canadese o australiano? Scopri come l'inglese cambia da un paese all'altro e quale varietà è più adatta a te.
 date: 2026-06-16T16:32
@@ -29,9 +29,9 @@ _Frase esempio: I'm taking the lift up to my flat._
 
 Alcune parole comuni:
 
-- Apartment
-- Vacation
-- Elevator
+- Apartment (appartamento)
+- Vacation (vacanza)
+- Elevator (ascensore)
 
 _Frase esempio: I'm taking the elevator up to my apartment._
 
@@ -41,10 +41,8 @@ Alcune parole comuni:
 
 - Colour
 - Centre
-- Toque
+- Toque (cappello invernale)
 - Washroom
-
-Una delle parole canadesi più famose è _toque_, che indica un cappello invernale di lana.
 
 _Frase esempio: Don't forget your toque, it's going to be cold today!_
 

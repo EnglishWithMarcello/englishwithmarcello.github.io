@@ -1,13 +1,13 @@
 ---
 translationKey: how-many-types-of-english-are-there
 featured: false
-title: How many types of English are there?
+title: HOW MANY TYPE OF ENGLISH ARE THERE?
 category: English around the world
 excerpt: British, American, Canadian or Australian? Learn how English changes across countries and which variety is right for you.
 date: 2026-06-16T16:32
 ---
 
-When people say they are learning English, a simple question comes to mind: **Which English?**
+When people say they are learning English, a simple question comes to mind: **which English?**
 
 Many learners are surprised to discover that there isn't just one type of English. In fact, English is spoken in dozens of countries around the world, and each place has developed its own accent, vocabulary, and expressions.
 
@@ -29,9 +29,9 @@ _Example sentence: I'm taking the lift up to my flat._
 
 Some common American words include:
 
-- Apartment
-- Vacation
-- Elevator
+- Apartment (instead of flat)
+- Vacation (instead of holiday)
+- Elevator (instead of lift)
 
 _Example sentence: I'm taking the elevator up to my apartment._
 
@@ -41,10 +41,8 @@ Some common Canadian words include:
 
 - Colour
 - Centre
-- Toque
+- Toque (hat)
 - Washroom
-
-One of the most famous Canadian words is toque, which means a winter hat.
 
 _Example sentence: Don't forget your toque, it's going to be cold today!_
 
