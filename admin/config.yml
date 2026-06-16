@@ -1,0 +1,65 @@
+backend:
+  name: github
+  repo: EnglishWithMarcello/englishwithmarcello.github.io
+  branch: main
+  base_url: https://sveltia-cms-auth.royal-snowflake-0562.workers.dev
+
+media_folder: "assets/images/blog"
+public_folder: "/assets/images/blog"
+
+i18n:
+  structure: multiple_folders
+  locales: [en, it]
+  default_locale: en
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  - name: blog
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    description: "Write a new post in English and Italian, side by side."
+    folder: "_blog"
+    extension: md
+    format: yaml-frontmatter
+    create: true
+    i18n: true
+    slug: "{{title | localize}}"
+    canonical_slug:
+      key: ref
+    summary: "{{title}}"
+    fields:
+      - name: featured
+        label: "Featured post / In evidenza"
+        widget: boolean
+        default: false
+        required: false
+        i18n: duplicate
+        hint: "Puts this post in the big banner on the blog homepage. Not a ranking field. / Mette questo post nel banner grande della home del blog. Non influisce sul posizionamento."
+      - name: title
+        label: "Title / Titolo"
+        widget: string
+        i18n: true
+        hint: "The blue link in Google + the page heading — put your main search term here. / Il link blu su Google + il titolo della pagina — inserisci qui il termine di ricerca principale."
+      - name: category
+        label: "Category / Categoria"
+        widget: string
+        i18n: true
+        hint: "Groups the post on the blog; minor for ranking. / Raggruppa il post nel blog; poco rilevante per il posizionamento."
+      - name: excerpt
+        label: "Excerpt / Riassunto"
+        widget: text
+        i18n: true
+        hint: "The grey description under your link in Google — include the term naturally. / La descrizione grigia sotto il link su Google — includi il termine in modo naturale."
+      - name: date
+        label: "Date / Data"
+        widget: datetime
+        i18n: duplicate
+        hint: "Publish date. Leave as today's date unless you have a reason to change it. / Data di pubblicazione. Lasciala alla data odierna salvo motivi particolari."
+      - name: body
+        label: "Body / Corpo"
+        widget: markdown
+        i18n: true
+        hint: "The article itself — matters most. Write about the topic; use the term and related words where they fit. / L'articolo vero e proprio — conta di più. Scrivi sull'argomento; usa il termine e le parole correlate dove servono."
