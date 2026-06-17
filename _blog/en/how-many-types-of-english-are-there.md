@@ -9,7 +9,7 @@ date: 2026-06-16T16:32
 line_spacing: '1.5'
 ---
 
-When people say they are learning English, a simple question comes to mind: **which English?**
+When people say they are learning English, a simple question comes to mind: **<span class="c-red">which English?</span>**
 
 Many learners are surprised to discover that there isn't just one type of English. In fact, English is spoken in dozens of countries around the world, and each place has developed its own accent, vocabulary, and expressions.
 
@@ -17,7 +17,7 @@ The good news? English speakers can usually understand each other, even when the
 
 Let's take a quick tour of some of the most well-known varieties of English.
 
-<span class="c-orange">■ **BRITISH ENGLISH:** British English is the variety spoken in the United Kingdom and is often the version taught in many European schools.</span>
+■ **BRITISH ENGLISH:** British English is the variety spoken in the United Kingdom and is often the version taught in many European schools.
 
 Some common British words include:
 
@@ -97,7 +97,7 @@ Some common South African words include:
 
 _Example sentence: We're having a braai this weekend. It’s going to be lekker!_
 
-**So which English should you learn?**
+<span class="c-red">**So which English should you learn?**</span>
 
 The answer is simple: learn the variety that is most useful for your goals.
 
