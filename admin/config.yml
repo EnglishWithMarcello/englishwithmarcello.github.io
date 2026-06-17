@@ -102,3 +102,16 @@ collections:
           - { label: "Relaxed", value: "1.9" }
           - { label: "Spacious", value: "2.1" }
         hint: "How far apart the lines of body text sit. Normal is the default. / Quanto sono distanziate le righe del testo. Normale è il valore predefinito."
+
+  - name: settings
+    label: "Site Settings"
+    files:
+      - name: pricing
+        label: "Lesson Pricing"
+        file: "_data/pricing.yml"
+        description: "The 'from' price for each lesson type (euros). Updates the Lessons page (English + Italian), the SEO data Google reads, and the AI/llms file — automatically on save."
+        fields:
+          - { name: conversation, label: "Conversation — from (€)", widget: number, value_type: int, min: 0, default: 24 }
+          - { name: standard, label: "Standard: Beginner / Intermediate / Advanced — from (€)", widget: number, value_type: int, min: 0, default: 24 }
+          - { name: exam_prep, label: "Exam Preparation — from (€)", widget: number, value_type: int, min: 0, default: 25 }
+          - { name: shadowing, label: "Shadowing & Pronunciation — from (€)", widget: number, value_type: int, min: 0, default: 25 }
