@@ -17,7 +17,7 @@ The good news? English speakers can usually understand each other, even when the
 
 Let's take a quick tour of some of the most well-known varieties of English.
 
-■ **BRITISH ENGLISH:** British English is the variety spoken in the United Kingdom and is often the version taught in many European schools.
+<span class="c-orange">■ **BRITISH ENGLISH:** British English is the variety spoken in the United Kingdom and is often the version taught in many European schools.</span>
 
 Some common British words include:
 
