@@ -16,7 +16,7 @@ La buona notizia? Chi parla inglese riesce generalmente a capirsi, anche quando 
 
 Facciamo un rapido viaggio tra alcune delle varietà di inglese più conosciute.
 
-**■ INGLESE BRITANNICO**: l'inglese britannico è la varietà parlata in Inghilterra ed è spesso quella insegnata in molte scuole europee.
+**■ INGLESE BRITANNICO**: l'inglese britannico è la varietà parlata nel Regno Unito ed è spesso quella insegnata in molte scuole europee.
 
 Alcune parole comuni:
 
@@ -45,7 +45,7 @@ Alcune parole comuni:
 - Toque (cappello invernale)
 - Washroom
 
-_Frase esempio: Don't forget your toque, it's going to be cold today!_
+_Frase esempio: Don't forget your toque. It's going to be cold today!_
 
 **■ INGLESE AUSTRALIANO**: l'inglese australiano è noto per il suo accento unico e per l'abitudine di abbreviare molte parole.
 
@@ -92,6 +92,7 @@ Alcune parole comuni:
 
 - Braai (barbecue)
 - Robot (semaforo)
+- Lekker (grande, fantastico)
 
 _Frase esempio: We're having a braai this weekend. It's going to be lekker!_
 

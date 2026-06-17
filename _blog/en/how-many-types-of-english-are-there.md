@@ -16,7 +16,7 @@ The good news? English speakers can usually understand each other, even when the
 
 Let's take a quick tour of some of the most well-known varieties of English.
 
-■ **BRITISH ENGLISH:** British English is the variety spoken in England and is often the version taught in many European schools.
+■ **BRITISH ENGLISH:** British English is the variety spoken in the United Kingdom and is often the version taught in many European schools.
 
 Some common British words include:
 
@@ -36,7 +36,7 @@ Some common American words include:
 
 _Example sentence: I'm taking the elevator up to my apartment._
 
-■ **CANADIAN ENGLISH**: Canadian English sits somewhere between British and American English. Canadians often use American vocabulary but keep some British spellings.
+■ **CANADIAN ENGLISH**: Canadian English sits somewhere between British and American English. Canadians often use a mix of American and British vocabulary spelling conventions.
 
 Some common Canadian words include:
 
@@ -45,7 +45,7 @@ Some common Canadian words include:
 - Toque (hat)
 - Washroom
 
-_Example sentence: Don't forget your toque, it's going to be cold today!_
+_Example sentence: Don't forget your toque. It's going to be cold today!_
 
 ■ **AUSTRALIAN ENGLISH**: Australian English is known for its unique accent and love of abbreviations.
 
@@ -84,7 +84,7 @@ Some common Scottish words include:
 - Bairn (child)
 - Aye (yes)
 
-_Example: It's a wee house._
+_Example sentence: It's a wee house._
 
 ■ **SOUTH AFRICAN ENGLISH**: South African English combines influences from British English and local languages.
 
@@ -92,8 +92,9 @@ Some common South African words include:
 
 - Braai (barbecue)
 - Robot (traffic light)
+- Lekker (great, enjoyable, nice)
 
-_Example: We're having a braai this weekend. It’s going to be lekker!_
+_Example sentence: We're having a braai this weekend. It’s going to be lekker!_
 
 ##### **So which English should you learn?**
 
