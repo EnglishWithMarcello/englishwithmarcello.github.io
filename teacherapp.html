@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English With Marcello – Insegnante</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f5f6fa; color: #1a1a2e; }
+#loginWrap { display:flex; align-items:center; justify-content:center; min-height:100vh; }
+#loginBox { background:#fff; border:1px solid #ddd; border-radius:14px; padding:40px 36px; width:340px; text-align:center; box-shadow:0 4px 20px rgba(0,0,0,0.08); }
+#loginBox img { height:60px; margin-bottom:16px; }
+#loginBox h2 { font-size:1rem; font-weight:800; color:#1a2357; text-transform:uppercase; letter-spacing:2px; margin-bottom:6px; }
+#loginBox p { font-size:0.8rem; color:#888; margin-bottom:24px; }
+#loginBox input { width:100%; padding:11px 13px; border:1.5px solid #ddd; border-radius:8px; font-size:1rem; margin-bottom:14px; font-family:inherit; color:#1a1a2e; }
+#loginBox input:focus { outline:none; border-color:#1a2357; }
+#loginBox button { width:100%; padding:13px; background:#1a2357; color:#fff; border:none; border-radius:8px; font-size:0.88rem; font-weight:800; cursor:pointer; text-transform:uppercase; letter-spacing:2px; font-family:inherit; }
+#loginBox button:hover { background:#222e7a; }
+#loginErr { color:#cc2222; font-size:0.82rem; margin-top:10px; display:none; }
+#appWrap { display:none; }
+.hdr { background:rgba(255,255,255,0.97); border-bottom:2px solid #98ccc4; padding:1.2rem 2.5rem; display:flex; align-items:center; gap:0.6rem; }
+.hdr img { width:36px; height:36px; object-fit:contain; }
+.hdr-brand { font-family:'Bebas Neue', sans-serif; font-size:1.5rem; letter-spacing:2px; text-transform:uppercase; color:#011d7f; text-decoration:none; }
+.hdr-brand span { color:#5a9e96; }
+.hdr-right { margin-left:auto; display:flex; gap:10px; align-items:center; }
+.badge { background:#cc2222; color:#fff; font-size:0.65rem; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase; }
+.btn-exit { padding:7px 14px; border:1.5px solid #ddd; border-radius:7px; background:#fff; color:#888; font-size:0.78rem; font-weight:600; cursor:pointer; font-family:inherit; }
+.btn-exit:hover { border-color:#1a2357; color:#1a2357; }
+.wrap { max-width:1000px; margin:0 auto; padding:30px 20px 60px; }
+.row-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; }
+.lbl { font-size:0.7rem; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:2px; }
+.btn-add { display:flex; align-items:center; gap:8px; padding:10px 20px; background:#4a9b8e; color:#fff; border:none; border-radius:9px; font-size:0.82rem; font-weight:800; cursor:pointer; font-family:inherit; text-transform:uppercase; letter-spacing:1px; }
+.btn-add:hover { background:#3a8070; }
+.overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.45); z-index:999; align-items:center; justify-content:center; }
+.modal { background:#fff; border-radius:14px; padding:36px 30px; width:380px; max-width:94vw; }
+.modal h3 { font-size:1rem; font-weight:800; color:#1a2357; text-transform:uppercase; letter-spacing:2px; margin-bottom:6px; }
+.modal p { font-size:0.8rem; color:#888; margin-bottom:22px; }
+.modal label { display:block; font-size:0.7rem; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:7px; }
+.modal input { width:100%; padding:11px 13px; border:1.5px solid #ddd; border-radius:8px; font-size:0.95rem; margin-bottom:16px; font-family:inherit; color:#1a1a2e; }
+.modal input:focus { outline:none; border-color:#1a2357; }
+.modal-btns { display:flex; gap:10px; }
+.btn-ok { flex:1; padding:12px; background:#1a2357; color:#fff; border:none; border-radius:8px; font-size:0.85rem; font-weight:800; cursor:pointer; font-family:inherit; }
+.btn-ok:hover { background:#222e7a; }
+.btn-no { flex:1; padding:12px; background:#f5f6fa; color:#666; border:1.5px solid #ddd; border-radius:8px; font-size:0.85rem; font-weight:700; cursor:pointer; font-family:inherit; }
+.btn-no:hover { border-color:#1a2357; color:#1a2357; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:14px; margin-bottom:28px; }
+.scard { background:#fff; border:1.5px solid #e8e8e8; border-radius:13px; padding:20px; cursor:pointer; position:relative; transition:all 0.15s; }
+.scard:hover { border-color:#1a2357; box-shadow:0 4px 16px rgba(26,35,87,0.1); transform:translateY(-2px); }
+.scard.on { border-color:#1a2357; box-shadow:0 4px 16px rgba(26,35,87,0.12); }
+.scard-name { font-size:1rem; font-weight:800; color:#1a2357; margin-bottom:3px; }
+.scard-email { font-size:0.78rem; color:#888; margin-bottom:12px; }
+.scard-stats { display:flex; gap:8px; }
+.stat { flex:1; border-radius:8px; padding:9px 6px; text-align:center; }
+.stat .n { font-size:1.3rem; font-weight:900; color:#fff; line-height:1; }
+.stat .l { font-size:0.6rem; color:rgba(255,255,255,0.7); text-transform:uppercase; letter-spacing:0.8px; margin-top:3px; }
+.stat.teal { background:#4a9b8e; }
+.stat.navy { background:#1a2357; }
+.stat.red { background:#cc2222; }
+.scard-del { position:absolute; top:12px; right:12px; background:none; border:none; color:#ccc; font-size:1rem; cursor:pointer; padding:2px 6px; border-radius:5px; line-height:1; }
+.scard-del:hover { color:#cc2222; background:#fff0f0; }
+.editor { background:#fff; border:1.5px solid #e8e8e8; border-radius:14px; padding:28px; }
+.ed-hdr { display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:22px; padding-bottom:16px; border-bottom:1px solid #f0f0f0; }
+.ed-title { font-size:0.95rem; font-weight:800; color:#1a2357; text-transform:uppercase; letter-spacing:2px; }
+.ed-sub { font-size:0.78rem; color:#888; margin-top:3px; }
+.fgrid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:18px; }
+.field label { display:block; font-size:0.7rem; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:7px; }
+.field input { width:100%; padding:10px 12px; border:1.5px solid #ddd; border-radius:8px; font-size:0.95rem; color:#1a1a2e; font-family:inherit; }
+.field input:focus { outline:none; border-color:#1a2357; }
+.ctrs { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:18px; }
+.ctr { border-radius:12px; padding:20px; text-align:center; }
+.ctr.teal { background:#4a9b8e; }
+.ctr.red { background:#cc2222; }
+.ctr-lbl { font-size:0.62rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:8px; color:rgba(255,255,255,0.7); }
+.ctr-val { font-size:2.8rem; font-weight:900; color:#fff; line-height:1; }
+.ctr input { font-size:2.2rem; font-weight:900; color:#fff; border:2px solid rgba(255,255,255,0.4); border-radius:8px; width:110px; text-align:center; padding:4px 8px; background:rgba(255,255,255,0.15); font-family:inherit; }
+.ctr input:focus { outline:none; border-color:rgba(255,255,255,0.8); }
+table { width:100%; border-collapse:collapse; margin-bottom:6px; }
+thead tr { background:#f5f6fa; }
+th { font-size:0.67rem; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1.5px; padding:10px 13px; text-align:left; }
+th:first-child { border-radius:8px 0 0 8px; }
+th:last-child { border-radius:0 8px 8px 0; }
+td { padding:9px 13px; font-size:0.9rem; border-bottom:1px solid #f0f0f0; color:#444; }
+tr:last-child td { border-bottom:none; }
+tr.done td { background:#f0faf8; }
+tr.done td:first-child strong { color:#4a9b8e; }
+input[type=date] { border:1.5px solid #ddd; border-radius:7px; padding:6px 9px; font-size:0.87rem; color:#1a1a2e; font-family:inherit; cursor:pointer; background:#fff; }
+input[type=date]:focus { outline:none; border-color:#1a2357; }
+.chk-wrap { display:flex; align-items:center; justify-content:center; }
+.chk-done { width:20px; height:20px; cursor:pointer; accent-color:#4a9b8e; flex-shrink:0; }
+td.chk-cell { text-align:center; vertical-align:middle; padding:6px 13px; }
+.act { display:flex; align-items:center; gap:12px; margin-top:16px; flex-wrap:wrap; }
+.btn-save { padding:11px 26px; background:#1a2357; color:#fff; border:none; border-radius:8px; font-size:0.82rem; font-weight:800; cursor:pointer; text-transform:uppercase; letter-spacing:2px; font-family:inherit; }
+.btn-save:hover { background:#222e7a; }
+.btn-export { padding:11px 26px; background:#4a9b8e; color:#fff; border:none; border-radius:8px; font-size:0.82rem; font-weight:800; cursor:pointer; text-transform:uppercase; letter-spacing:1px; font-family:inherit; }
+.btn-export:hover { background:#3a8070; }
+.btn-del-stu { padding:11px 20px; background:#fff; color:#cc2222; border:1.5px solid #cc2222; border-radius:8px; font-size:0.82rem; font-weight:800; cursor:pointer; text-transform:uppercase; letter-spacing:1px; font-family:inherit; }
+.btn-del-stu:hover { background:#fff0f0; }
+.ok-msg { color:#4a9b8e; font-size:0.82rem; font-weight:600; opacity:0; transition:opacity 0.4s; }
+.link-box { margin-top:18px; padding:18px; background:#f0faf8; border:1.5px solid #4a9b8e; border-radius:10px; }
+.link-box-lbl { font-size:0.68rem; font-weight:700; color:#4a9b8e; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:10px; }
+.link-box-url { display:flex; align-items:center; gap:10px; }
+.link-box-url input { flex:1; padding:9px 12px; border:1.5px solid #c5e8e2; border-radius:7px; font-size:0.82rem; color:#1a2357; font-family:inherit; background:#fff; }
+.btn-copy { padding:9px 16px; background:#1a2357; color:#fff; border:none; border-radius:7px; font-size:0.78rem; font-weight:800; cursor:pointer; font-family:inherit; white-space:nowrap; }
+.btn-copy:hover { background:#222e7a; }
+.copy-ok { font-size:0.75rem; color:#4a9b8e; font-weight:600; opacity:0; transition:opacity 0.3s; margin-top:6px; }
+.pkgs { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:12px; }
+.pkg { flex:1; min-width:120px; border:1.5px solid #ddd; border-radius:10px; padding:14px; text-align:center; cursor:pointer; transition:all 0.15s; text-decoration:none; display:block; }
+.pkg:hover { border-color:#1a2357; }
+.pkg.sel { border-color:#1a2357; background:#f0f2ff; }
+.pkg-n { font-size:1rem; font-weight:800; color:#1a2357; }
+.pkg-p { font-size:0.9rem; color:#4a9b8e; font-weight:700; margin-top:3px; }
+.footer { text-align:center; margin-top:28px; }
+.footer a { color:#1a2357; font-weight:800; text-decoration:none; font-size:0.85rem; }
+.footer a:hover { color:#4a9b8e; }
+</style>
+</head>
+<body>
+
+<div id="loginWrap">
+  <div id="loginBox">
+    <img src="assets/images/Marcello-Larosa-Logo.png" alt="English With Marcello logo">
+    <h2>Teacher Area</h2>
+    <p>Manage your student records</p>
+    <label style="text-align:left;display:block;font-size:.7rem;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Email</label>
+    <input type="email" id="email" placeholder="you@email.com" onkeydown="if(event.key==='Enter')doLogin()">
+    <label style="text-align:left;display:block;font-size:.7rem;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Password</label>
+    <input type="password" id="psw" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" onkeydown="if(event.key==='Enter')doLogin()">
+    <button id="loginBtn" onclick="doLogin()">Log in</button>
+    <div id="loginErr">Incorrect password.</div>
+  </div>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <h3>New Student</h3>
+    <p>Enter the new student's details</p>
+    <label>Name *</label>
+    <input type="text" id="nName" placeholder="e.g. John Smith">
+    <label>Email</label>
+    <input type="text" id="nEmail" placeholder="marco@email.com">
+    <div class="modal-btns">
+      <button class="btn-no" onclick="chiudiModal()">Cancel</button>
+      <button class="btn-ok" onclick="aggiungiStudente()">Add</button>
+    </div>
+  </div>
+</div>
+
+<div id="appWrap">
+  <div class="hdr">
+    <img src="assets/images/Maple-Leaf-Logo.png" alt="English With Marcello logo">
+    <div class="hdr-brand">English With <span>Marcello</span></div>
+    <div class="hdr-right">
+      <span class="badge">Teacher</span>
+      <button class="btn-exit" onclick="doLogout()">Log out</button>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="row-top">
+      <div class="lbl">Your students</div>
+      <button class="btn-add" onclick="apriModal()">&#43; Add student</button>
+    </div>
+    <div class="grid" id="grid"></div>
+
+    <div class="editor" id="editor" style="display:none">
+      <div class="ed-hdr">
+        <div>
+          <div class="ed-title" id="edTitle">&#8212;</div>
+          <div class="ed-sub" id="edSub">&#8212;</div>
+        </div>
+        
+      </div>
+      <div class="fgrid">
+        <div class="field"><label>Name</label><input type="text" id="eNome" placeholder="Name"></div>
+        <div class="field"><label>Email</label><input type="text" id="eEmail" placeholder="Email"></div>
+      </div>
+      <div class="ctrs">
+        <div class="ctr teal">
+          <div class="ctr-lbl">Paid Lessons</div>
+          <input type="number" id="ePaid" min="0" value="0" oninput="calcRim()">
+        </div>
+        <div class="ctr red">
+          <div class="ctr-lbl">Remaining Lessons</div>
+          <div class="ctr-val" id="eRim">0</div>
+        </div>
+      </div>
+      <table>
+        <thead><tr>
+          <th style="width:42px">#</th>
+          <th>Date</th>
+          <th style="width:160px;text-align:center">Lesson Completed</th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div class="act">
+        <button class="btn-save" onclick="salva()">Save changes</button>
+        <button class="btn-export" onclick="studentLink()">&#128279; Student link</button>
+        <button class="btn-del-stu" onclick="eliminaCorrente()">&#10005; Delete student</button>
+        <span class="ok-msg" id="okMsg">&#10003; Saved!</span>
+      </div>
+      <div id="linkBox" class="link-box" style="display:none">
+        <div class="link-box-lbl">&#10003; Card downloaded &mdash; Link to send to the student#10003; Live link &#10003; Card downloaded &mdash; Link to send to the studentmdash; send this to the student</div>
+        <div class="link-box-url">
+          <input type="text" id="linkUrl" readonly>
+          <button class="btn-copy" onclick="copiaLink()">Copy link</button>
+        </div>
+        <div class="copy-ok" id="copyOk">&#10003; Link copied!</div>
+      </div>
+      <div class="pkgs" style="margin-top:22px; padding-top:18px; border-top:1px solid #f0f0f0;">
+        <a class="pkg" id="pk5" href="https://calendly.com/english-with-marcello/packages/d275d587-bdc9-4f2d-82cd-af4beec298bb" target="_blank" onclick="selPkg(5)"><div class="pkg-n">5 Lessons</div><div class="pkg-p">&#8364; 120</div></a>
+        <a class="pkg" id="pk10" href="https://calendly.com/english-with-marcello/packages/2a94437f-6c32-440b-8466-5dbeacef2b57" target="_blank" onclick="selPkg(10)"><div class="pkg-n">10 Lessons</div><div class="pkg-p">&#8364; 230</div></a>
+        <a class="pkg" id="pk20" href="https://calendly.com/english-with-marcello/packages/a92868c4-8078-4556-8ae3-2794aba81258" target="_blank" onclick="selPkg(20)"><div class="pkg-n">20 Lessons</div><div class="pkg-p">&#8364; 440</div></a>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="https://www.englishwithmarcello.com" target="_blank">www.englishwithmarcello.com</a>
+    </div>
+  </div>
+</div>
+
+<script>
+const SUPABASE_URL = 'https://vtvreizedxkppvhllyqx.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_8IXT4zxCGSCOpYiK8XdP3g_1pYcfWLB';
+const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+var CUR = '';
+var STUDENTS = [];
+var D = null;
+
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+function normalizeLessons(lessons){
+  var L = Array.isArray(lessons) ? lessons.slice() : [];
+  for(var i=0;i<L.length;i++){ if(!L[i]||typeof L[i]!=='object') L[i]={date:'',done:false}; }
+  while(L.length<20) L.push({date:'',done:false});
+  return L;
+}
+function findStudent(id){ for(var i=0;i<STUDENTS.length;i++){ if(STUDENTS[i].id===id) return STUDENTS[i]; } return null; }
+
+/* ---------- Auth ---------- */
+async function doLogin(){
+  var email=document.getElementById('email').value.trim();
+  var pw=document.getElementById('psw').value;
+  var err=document.getElementById('loginErr');
+  err.style.display='none';
+  var btn=document.getElementById('loginBtn'); btn.disabled=true; btn.textContent='Logging in...';
+  var res=await sb.auth.signInWithPassword({email:email,password:pw});
+  btn.disabled=false; btn.textContent='Log in';
+  if(res.error){ err.textContent='Incorrect email or password.'; err.style.display='block'; return; }
+  await showApp();
+}
+async function showApp(){
+  document.getElementById('loginWrap').style.display='none';
+  document.getElementById('appWrap').style.display='block';
+  await loadStudents();
+  renderGrid();
+}
+async function doLogout(){ await sb.auth.signOut(); location.reload(); }
+
+/* ---------- Data ---------- */
+async function loadStudents(){
+  var res=await sb.from('students').select('*').order('created_at',{ascending:true});
+  if(res.error){ alert('Could not load students: '+res.error.message); STUDENTS=[]; return; }
+  STUDENTS=(res.data||[]).map(function(s){ s.lessons=normalizeLessons(s.lessons); return s; });
+}
+
+/* ---------- Add / modal ---------- */
+function apriModal(){
+  document.getElementById('nName').value='';
+  document.getElementById('nEmail').value='';
+  document.getElementById('overlay').style.display='flex';
+  setTimeout(function(){document.getElementById('nName').focus();},100);
+}
+function chiudiModal(){document.getElementById('overlay').style.display='none';}
+document.addEventListener('click',function(e){if(e.target===document.getElementById('overlay'))chiudiModal();});
+
+async function aggiungiStudente(){
+  var nome=document.getElementById('nName').value.trim();
+  if(!nome){document.getElementById('nName').style.borderColor='#cc2222';return;}
+  document.getElementById('nName').style.borderColor='';
+  var email=document.getElementById('nEmail').value.trim();
+  var lessons=[]; for(var i=0;i<20;i++) lessons.push({date:'',done:false});
+  var res=await sb.from('students').insert([{name:nome,email:email,lessons:lessons}]).select();
+  if(res.error){ alert('Could not add student: '+res.error.message); return; }
+  var row=res.data[0]; row.lessons=normalizeLessons(row.lessons);
+  STUDENTS.push(row);
+  chiudiModal(); renderGrid(); apriEditor(row.id);
+}
+
+/* ---------- Grid ---------- */
+function renderGrid(){
+  var grid=document.getElementById('grid');
+  grid.innerHTML='';
+  if(!STUDENTS.length){grid.innerHTML='<p style="color:#aaa;font-size:.85rem;padding:10px 0;">No students yet. Click &ldquo;Add student&rdquo; to begin.</p>';return;}
+  STUDENTS.forEach(function(d){
+    var sid=d.id;
+    var done=normalizeLessons(d.lessons).filter(function(l){return l.done;}).length;
+    var rim=Math.max(0,(d.paid||0)-done);
+    var card=document.createElement('div');
+    card.className='scard'+(CUR===sid?' on':'');
+    card.onclick=function(){apriEditor(sid);};
+    card.innerHTML=
+      '<button class="scard-del" title="Delete">&#10005;</button>'+
+      '<div class="scard-name">'+esc(d.name)+'</div>'+
+      '<div class="scard-email">'+esc(d.email||'No email')+'</div>'+
+      '<div class="scard-stats">'+
+        '<div class="stat teal"><div class="n">'+(d.paid||0)+'</div><div class="l">Paid</div></div>'+
+        '<div class="stat navy"><div class="n">'+done+'</div><div class="l">Done</div></div>'+
+        '<div class="stat red"><div class="n">'+rim+'</div><div class="l">Left</div></div>'+
+      '</div>';
+    card.querySelector('.scard-del').addEventListener('click',function(e){e.stopPropagation();elimina(sid);});
+    grid.appendChild(card);
+  });
+}
+
+/* ---------- Editor ---------- */
+function apriEditor(sid){
+  CUR=sid; D=findStudent(sid); if(!D)return;
+  D.lessons=normalizeLessons(D.lessons);
+  document.getElementById('linkBox').style.display='none';
+  var ed=document.getElementById('editor'); ed.style.display='block';
+  setTimeout(function(){ed.scrollIntoView({behavior:'smooth',block:'start'});},60);
+  document.getElementById('edTitle').textContent=D.name;
+  document.getElementById('edSub').textContent=D.email||'No email';
+  document.getElementById('eNome').value=D.name;
+  document.getElementById('eEmail').value=D.email||'';
+  document.getElementById('ePaid').value=D.paid||0;
+  calcRim();
+  var tb=document.getElementById('tbody'); tb.innerHTML='';
+  for(var i=0;i<D.lessons.length;i++){
+    var l=D.lessons[i];
+    var isDone=l.done?true:false;
+    var tr=document.createElement('tr');
+    if(isDone)tr.className='done';
+    tr.innerHTML=
+      '<td><strong>'+(i+1)+'</strong></td>'+
+      '<td><input type="date" id="dt'+i+'" value="'+(l.date||'')+'" onchange="chgDate('+i+')"></td>'+
+      '<td class="chk-cell"><input class="chk-done" type="checkbox" id="ck'+i+'"'+(isDone?' checked':'')+' onchange="chkDone('+i+')"></td>';
+    tb.appendChild(tr);
+  }
+  ['pk5','pk10','pk20'].forEach(function(id){var el=document.getElementById(id);if(el)el.classList.remove('sel');});
+  renderGrid();
+}
+function calcRim(){
+  var done=0;
+  for(var i=0;i<20;i++){var ck=document.getElementById('ck'+i);if(ck&&ck.checked)done++;}
+  var paid=parseInt(document.getElementById('ePaid').value)||0;
+  document.getElementById('eRim').textContent=Math.max(0,paid-done);
+}
+function chgDate(i){calcRim();}
+function chkDone(i){
+  var rows=document.getElementById('tbody').querySelectorAll('tr');
+  var ck=document.getElementById('ck'+i);
+  if(ck&&ck.checked)rows[i].className='done'; else rows[i].className='';
+  calcRim();
+}
+
+/* ---------- Save ---------- */
+async function salva(){
+  if(!D)return;
+  D.name=document.getElementById('eNome').value.trim();
+  D.email=document.getElementById('eEmail').value.trim();
+  D.paid=parseInt(document.getElementById('ePaid').value)||0;
+  for(var i=0;i<20;i++){
+    if(!D.lessons[i])D.lessons[i]={date:'',done:false};
+    var dt=document.getElementById('dt'+i); var ck=document.getElementById('ck'+i);
+    D.lessons[i].date=dt?dt.value:'';
+    D.lessons[i].done=ck?ck.checked:false;
+  }
+  var res=await sb.from('students').update({name:D.name,email:D.email,paid:D.paid,lessons:D.lessons}).eq('id',CUR);
+  if(res.error){ alert('Could not save: '+res.error.message); return; }
+  document.getElementById('edTitle').textContent=D.name;
+  document.getElementById('edSub').textContent=D.email||'No email';
+  var ok=document.getElementById('okMsg'); ok.style.opacity='1';
+  setTimeout(function(){ok.style.opacity='0';},2200);
+  calcRim(); renderGrid();
+}
+
+/* ---------- Delete ---------- */
+async function elimina(sid){
+  if(!confirm('Delete this student? This cannot be undone.'))return;
+  var res=await sb.from('students').delete().eq('id',sid);
+  if(res.error){ alert('Could not delete: '+res.error.message); return; }
+  STUDENTS=STUDENTS.filter(function(x){return x.id!==sid;});
+  if(CUR===sid){document.getElementById('editor').style.display='none';CUR='';}
+  renderGrid();
+}
+function eliminaCorrente(){ if(CUR)elimina(CUR); }
+
+/* ---------- Packages + student link ---------- */
+function selPkg(n){
+  ['pk5','pk10','pk20'].forEach(function(id){var el=document.getElementById(id);if(el)el.classList.remove('sel');});
+  var t=document.getElementById('pk'+n);if(t)t.classList.add('sel');
+}
+async function studentLink(){
+  await salva();
+  if(!D||!D.share_token){ alert('Could not build the link. Try saving again.'); return; }
+  var path=location.pathname; path=path.substring(0,path.lastIndexOf('/')+1)+'student.html';
+  var url=location.origin+path+'?s='+encodeURIComponent(D.share_token);
+  document.getElementById('linkUrl').value=url;
+  document.getElementById('linkBox').style.display='block';
+  window.open(url,'_blank');
+}
+function copiaLink(){
+  var inp=document.getElementById('linkUrl');
+  inp.select(); inp.setSelectionRange(0,99999);
+  navigator.clipboard.writeText(inp.value).then(function(){
+    var ok=document.getElementById('copyOk');ok.style.opacity='1';setTimeout(function(){ok.style.opacity='0';},2000);
+  }).catch(function(){
+    document.execCommand('copy');
+    var ok=document.getElementById('copyOk');ok.style.opacity='1';setTimeout(function(){ok.style.opacity='0';},2000);
+  });
+}
+
+/* ---------- Init: keep the teacher logged in across visits ---------- */
+(async function init(){
+  try{
+    var res=await sb.auth.getSession();
+    if(res.data&&res.data.session){ await showApp(); }
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
