@@ -29,6 +29,13 @@ collections:
     slug: "{{title | localize}}"
     summary: "{{title}}"
     fields:
+      - name: published
+        label: "Publish live on site / Pubblica sul sito"
+        widget: boolean
+        default: false
+        required: false
+        i18n: duplicate
+        hint: "OFF = saved as a private draft (not on the website). ON = goes live on the next update. Flip back to OFF anytime to take it down. / SPENTO = bozza privata (non sul sito). ACCESO = online al prossimo aggiornamento. Rimettilo su SPENTO per ritirarlo."
       - name: featured
         label: "Featured post / In evidenza"
         widget: boolean
@@ -44,21 +51,25 @@ collections:
       - name: category
         label: "Category / Categoria"
         widget: string
+        required: false
         i18n: true
         hint: "Groups the post on the blog; minor for ranking. / Raggruppa il post nel blog; poco rilevante per il posizionamento."
       - name: excerpt
         label: "Excerpt / Riassunto"
         widget: text
+        required: false
         i18n: true
         hint: "The grey description under your link in Google — include the term naturally. / La descrizione grigia sotto il link su Google — includi il termine in modo naturale."
       - name: date
         label: "Date / Data"
         widget: datetime
+        required: false
         i18n: duplicate
         hint: "Publish date. Leave as today's date unless you have a reason to change it. / Data di pubblicazione. Lasciala alla data odierna salvo motivi particolari."
       - name: body
         label: "Body / Corpo"
         widget: markdown
+        required: false
         i18n: true
         hint: "The article itself — matters most. Write about the topic; use the term and related words where they fit. / L'articolo vero e proprio — conta di più. Scrivi sull'argomento; usa il termine e le parole correlate dove servono."
       - name: english_corner
