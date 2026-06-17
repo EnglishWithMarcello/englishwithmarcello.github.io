@@ -5,26 +5,34 @@ Disallow: /admin/
 # AI Crawlers - explicitly allowed
 User-agent: GPTBot
 Allow: /
+Disallow: /admin/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /admin/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /admin/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /admin/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /admin/
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /admin/
 
 User-agent: cohere-ai
 Allow: /
+Disallow: /admin/
 
 User-agent: Meta-ExternalAgent
 Allow: /
+Disallow: /admin/
 
 Sitemap: https://www.englishwithmarcello.com/sitemap.xml
