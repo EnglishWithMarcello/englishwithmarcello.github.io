@@ -2,7 +2,7 @@
 translationKey: test-article
 published: false
 featured: false
-title: Test Article
+title: HI AMORE :)
 category: TESTS
 excerpt: This article is just a test.
 date: 2026-06-17T12:02
