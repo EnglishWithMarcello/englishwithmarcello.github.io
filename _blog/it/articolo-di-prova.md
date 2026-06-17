@@ -1,6 +1,6 @@
 ---
 translationKey: test-article
-published: false
+published: true
 featured: false
 title: Articolo di Prova
 category: TEST
