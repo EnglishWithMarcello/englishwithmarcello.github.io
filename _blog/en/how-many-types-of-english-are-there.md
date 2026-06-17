@@ -18,7 +18,7 @@ Let's take a quick tour of some of the most well-known varieties of English.
 
 ■ **BRITISH ENGLISH:** British English is the variety spoken in England and is often the version taught in many European schools.
 
-Some common Brittish words include:
+Some common British words include:
 
 - Flat (instead of apartment)
 - Holiday (instead of vacation)
