@@ -99,6 +99,8 @@ _Example sentence: We're having a braai this weekend. It’s going to be lekker!
 
 ##### **So which English should you learn?**
 
+**So which English should you learn?**
+
 The answer is simple: learn the variety that is most useful for your goals.
 
 If you plan to move to Canada, focus on Canadian English. If you work with American companies, American English may be more useful. If you live in Europe, British English is often the most familiar option.
