@@ -1,7 +1,7 @@
 ---
 translationKey: test-article
-published: true
-featured: true
+published: false
+featured: false
 title: Articolo di Prova
 category: TEST
 excerpt: Questo articolo è solo una prova.
