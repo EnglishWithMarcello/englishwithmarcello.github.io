@@ -40,7 +40,7 @@ Lessons are available one-on-one; group lessons are also offered.
 - Free Content: https://www.englishwithmarcello.com/content.html
 - FAQ: https://www.englishwithmarcello.com/faq.html
 - Waiting List: https://www.englishwithmarcello.com/waiting-list.html
-- Blog: https://www.englishwithmarcello.com/blog.html
+- Blog — The Language Learning Lab (free articles on learning and teaching English, tips, grammar, and culture): https://www.englishwithmarcello.com/blog/
 - Privacy Policy: https://www.englishwithmarcello.com/privacy.html
 
 ### Italian (Italiano)
@@ -53,11 +53,8 @@ Lessons are available one-on-one; group lessons are also offered.
 - Contenuti Gratuiti: https://www.englishwithmarcello.com/it/content.html
 - FAQ: https://www.englishwithmarcello.com/it/faq.html
 - Lista d'Attesa: https://www.englishwithmarcello.com/it/waiting-list.html
+- Blog — The Language Learning Lab (articoli gratuiti su come imparare e insegnare l'inglese): https://www.englishwithmarcello.com/it/blog/
 - Informativa sulla Privacy: https://www.englishwithmarcello.com/it/privacy.html
-
-## Internal Tools
-
-A private teacher dashboard (`teacherapp.html`) exists for internal use and is not publicly linked. It is not indexed, not in the sitemap, and not accessible from any public page.
 
 ## Profiles
 
