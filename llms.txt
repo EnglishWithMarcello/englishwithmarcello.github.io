@@ -1,3 +1,5 @@
+---
+---
 # English With Marcello
 
 > Online English lessons with Marcello, a native English-speaking teacher from Toronto, Canada, based in Milan, Italy. Lessons are conducted entirely online in 50-minute sessions and are available to students worldwide at all levels, from true beginner (A1) to advanced (C2).
@@ -12,10 +14,10 @@ Certifications: TESOL, TEFL, and TESL certified; IELTS and TOEFL exam-preparatio
 
 Lessons fall under four umbrellas:
 
-- **Conversation** (levels B1–C2) — Spoken English with little focus on grammar itself. Covers casual everyday conversation as well as business and professional English (for example, meetings, presentations, job interviews, and speaking with clients). From €24 per 50-minute lesson.
-- **Standard** (levels A1–C2) — Structured teaching of English grammar and vocabulary across the whole language, from the basics to the most advanced uses, broken into Beginner, Intermediate, and Advanced. From €24 per 50-minute lesson.
-- **Exam Preparation** — Focused preparation for a specific exam. Specialised in IELTS and TOEFL; also experienced with Cambridge, Oxford, and CELPIP. Develops all four skills with strategies, practice tests, and personalised feedback. From €25 per 50-minute lesson.
-- **Shadowing & Pronunciation** (levels B1–C2) — A distinct activity focused specifically on the shadowing technique and pronunciation, to improve accent, rhythm, and fluency. From €25 per 50-minute lesson.
+- **Conversation** (levels B1–C2) — Spoken English with little focus on grammar itself. Covers casual everyday conversation as well as business and professional English (for example, meetings, presentations, job interviews, and speaking with clients). From €{{ site.data.pricing.conversation }} per 50-minute lesson.
+- **Standard** (levels A1–C2) — Structured teaching of English grammar and vocabulary across the whole language, from the basics to the most advanced uses, broken into Beginner, Intermediate, and Advanced. From €{{ site.data.pricing.standard }} per 50-minute lesson.
+- **Exam Preparation** — Focused preparation for a specific exam. Specialised in IELTS and TOEFL; also experienced with Cambridge, Oxford, and CELPIP. Develops all four skills with strategies, practice tests, and personalised feedback. From €{{ site.data.pricing.exam_prep }} per 50-minute lesson.
+- **Shadowing & Pronunciation** (levels B1–C2) — A distinct activity focused specifically on the shadowing technique and pronunciation, to improve accent, rhythm, and fluency. From €{{ site.data.pricing.shadowing }} per 50-minute lesson.
 
 Lessons are available one-on-one; group lessons are also offered.
 
@@ -24,7 +26,7 @@ Lessons are available one-on-one; group lessons are also offered.
 - **Format**: Online only (video lessons), 50 minutes per lesson
 - **Levels**: All levels welcome — true beginner (A1) to advanced (C2)
 - **Languages**: Teaches in English; also speaks Italian and can support beginners in Italian
-- **Price**: From €24 per 50-minute lesson (specialised Exam Preparation and Shadowing & Pronunciation from €25)
+- **Price**: From €{{ site.data.pricing.standard }} per 50-minute lesson (specialised Exam Preparation and Shadowing & Pronunciation from €{{ site.data.pricing.exam_prep }})
 - **Location**: Based in Milan, Italy; teaches students worldwide
 - **Booking**: Free trial lesson available at https://www.englishwithmarcello.com/bookings.html
 
@@ -40,7 +42,7 @@ Lessons are available one-on-one; group lessons are also offered.
 - Free Content: https://www.englishwithmarcello.com/content.html
 - FAQ: https://www.englishwithmarcello.com/faq.html
 - Waiting List: https://www.englishwithmarcello.com/waiting-list.html
-- Blog — The Language Learning Lab (free articles on learning and teaching English, tips, grammar, and culture): https://www.englishwithmarcello.com/blog/
+- Blog: https://www.englishwithmarcello.com/blog.html
 - Privacy Policy: https://www.englishwithmarcello.com/privacy.html
 
 ### Italian (Italiano)
@@ -53,8 +55,11 @@ Lessons are available one-on-one; group lessons are also offered.
 - Contenuti Gratuiti: https://www.englishwithmarcello.com/it/content.html
 - FAQ: https://www.englishwithmarcello.com/it/faq.html
 - Lista d'Attesa: https://www.englishwithmarcello.com/it/waiting-list.html
-- Blog — The Language Learning Lab (articoli gratuiti su come imparare e insegnare l'inglese): https://www.englishwithmarcello.com/it/blog/
 - Informativa sulla Privacy: https://www.englishwithmarcello.com/it/privacy.html
+
+## Internal Tools
+
+A private teacher dashboard (`teacherapp.html`) exists for internal use and is not publicly linked. It is not indexed, not in the sitemap, and not accessible from any public page.
 
 ## Profiles
 
