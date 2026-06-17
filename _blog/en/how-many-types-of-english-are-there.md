@@ -97,8 +97,6 @@ Some common South African words include:
 
 _Example sentence: We're having a braai this weekend. It’s going to be lekker!_
 
-##### **So which English should you learn?**
-
 **So which English should you learn?**
 
 The answer is simple: learn the variety that is most useful for your goals.
