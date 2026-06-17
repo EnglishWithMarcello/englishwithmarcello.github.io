@@ -1,6 +1,6 @@
 ---
 translationKey: test-article
-published: false
+published: true
 featured: false
 title: Test Article
 category: TESTS
@@ -18,4 +18,4 @@ line_spacing: '1.5'
 
 It is being used to confirm that all new features added to the CMS interface are online and functioning correctly, as intended.
 
-Updates include colour choices, the save vs. publish feature, the English corner, the featured post toggle, and line spacing.
+<span class="c-violet">Updates</span> include colour choices, the save vs. publish feature, the English corner, the featured post toggle, and line spacing.
