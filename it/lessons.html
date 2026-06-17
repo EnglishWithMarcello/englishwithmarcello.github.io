@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -54,7 +56,7 @@
       "provider": { "@id": "https://www.englishwithmarcello.com/#business" },
       "offers": {
         "@type": "Offer",
-        "price": "24",
+        "price": "{{ site.data.pricing.conversation }}",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "category": "Prezzo di partenza (per lezione)"
@@ -76,7 +78,7 @@
       "provider": { "@id": "https://www.englishwithmarcello.com/#business" },
       "offers": {
         "@type": "Offer",
-        "price": "24",
+        "price": "{{ site.data.pricing.standard }}",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "category": "Prezzo di partenza (per lezione)"
@@ -98,7 +100,7 @@
       "provider": { "@id": "https://www.englishwithmarcello.com/#business" },
       "offers": {
         "@type": "Offer",
-        "price": "24",
+        "price": "{{ site.data.pricing.standard }}",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "category": "Prezzo di partenza (per lezione)"
@@ -120,7 +122,7 @@
       "provider": { "@id": "https://www.englishwithmarcello.com/#business" },
       "offers": {
         "@type": "Offer",
-        "price": "24",
+        "price": "{{ site.data.pricing.standard }}",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "category": "Prezzo di partenza (per lezione)"
@@ -141,7 +143,7 @@
       "provider": { "@id": "https://www.englishwithmarcello.com/#business" },
       "offers": {
         "@type": "Offer",
-        "price": "25",
+        "price": "{{ site.data.pricing.exam_prep }}",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "category": "Prezzo di partenza (per lezione)"
@@ -163,7 +165,7 @@
       "provider": { "@id": "https://www.englishwithmarcello.com/#business" },
       "offers": {
         "@type": "Offer",
-        "price": "25",
+        "price": "{{ site.data.pricing.shadowing }}",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "category": "Prezzo di partenza (per lezione)"
@@ -533,7 +535,7 @@
         <div class="lesson-card">
           <div class="lesson-card-head">
             <div class="lesson-card-name">Conversazione</div>
-            <span class="lesson-card-price">da €24</span>
+            <span class="lesson-card-price">da €{{ site.data.pricing.conversation }}</span>
           </div>
           <div class="lesson-card-level">Adatto ai livelli B1–C2</div>
           <p class="lesson-card-desc">Sviluppa fluidità, sicurezza e capacità di parlare in modo naturale con lezioni di conversazione coinvolgenti, oppure porta il tuo inglese professionale (your Business English) a un livello superiore con esercitazioni mirate sulla comunicazione lavorativa, riunioni, presentazioni e linguaggio avanzato.</p>
@@ -551,7 +553,7 @@
         <div class="lesson-card">
           <div class="lesson-card-head">
             <div class="lesson-card-name">Inglese per Principianti</div>
-            <span class="lesson-card-price">da €24</span>
+            <span class="lesson-card-price">da €{{ site.data.pricing.standard }}</span>
           </div>
           <div class="lesson-card-level">Adatto ai livelli A1–A2</div>
           <p class="lesson-card-desc">Sviluppa le competenze di base in inglese per comunicare con sicurezza nelle situazioni quotidiane.</p>
@@ -559,7 +561,7 @@
         <div class="lesson-card">
           <div class="lesson-card-head">
             <div class="lesson-card-name">Inglese Intermedio</div>
-            <span class="lesson-card-price">da €24</span>
+            <span class="lesson-card-price">da €{{ site.data.pricing.standard }}</span>
           </div>
           <div class="lesson-card-level">Adatto ai livelli B1–B2</div>
           <p class="lesson-card-desc">Migliora le tue competenze generali con un vocabolario ampliato, una comprensione migliorata e una comunicazione efficace.</p>
@@ -567,7 +569,7 @@
         <div class="lesson-card">
           <div class="lesson-card-head">
             <div class="lesson-card-name">Inglese Avanzato</div>
-            <span class="lesson-card-price">da €24</span>
+            <span class="lesson-card-price">da €{{ site.data.pricing.standard }}</span>
           </div>
           <div class="lesson-card-level">Adatto ai livelli C1–C2</div>
           <p class="lesson-card-desc">Affina le tue competenze avanzate per raggiungere una comunicazione fluente, accurata e ricca di sfumature.</p>
@@ -585,7 +587,7 @@
           <div class="lesson-card-tag">Cambridge · IELTS · TOEFL · CELPIP · Oxford</div>
           <div class="lesson-card-head">
             <div class="lesson-card-name">Preparazione agli Esami</div>
-            <span class="lesson-card-price">da €25</span>
+            <span class="lesson-card-price">da €{{ site.data.pricing.exam_prep }}</span>
           </div>
           <p class="lesson-card-desc">Corsi di preparazione specializzati per IELTS, TOEFL, Cambridge, Oxford e CELPIP che sviluppano le quattro abilità con strategie, test pratici e feedback personalizzato per migliorare il punteggio.</p>
         </div>
@@ -607,7 +609,7 @@
                 </g>
               </svg>
             </div>
-            <span class="lesson-card-price">da €25</span>
+            <span class="lesson-card-price">da €{{ site.data.pricing.shadowing }}</span>
           </div>
           <div class="lesson-card-level">Adatto ai livelli B1–C2</div>
           <p class="lesson-card-desc">Migliora la tua pronuncia, il ritmo e la fluidità con la tecnica del shadowing: ripeti in tempo reale il parlato di un madrelingua per rendere il tuo inglese più chiaro, naturale e scorrevole.</p>
