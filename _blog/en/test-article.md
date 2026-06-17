@@ -1,7 +1,7 @@
 ---
 translationKey: test-article
 published: true
-featured: false
+featured: true
 title: Test Article
 category: TESTS
 excerpt: This article is just a test.
