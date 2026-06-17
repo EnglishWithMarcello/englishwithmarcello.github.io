@@ -9,7 +9,7 @@ date: 2026-06-16T16:32
 line_spacing: '1.5'
 ---
 
-Quando le persone dicono che stanno imparando l'inglese, viene spontanea una semplice domanda: **quale inglese?**
+Quando le persone dicono che stanno imparando l'inglese, viene spontanea una semplice domanda: **<span class="c-red">quale inglese?</span>**
 
 Molti studenti rimangono sorpresi nello scoprire che non esiste un solo tipo di inglese. Infatti, l'inglese è parlato in decine di Paesi in tutto il mondo e ogni luogo ha sviluppato il proprio accento, vocabolario ed espressioni.
 
@@ -97,7 +97,7 @@ Alcune parole comuni:
 
 _Frase esempio: We're having a braai this weekend. It's going to be lekker!_
 
-**Quale inglese dovresti imparare?**
+<span class="c-red">**Quale inglese dovresti imparare?**</span>
 
 La risposta è semplice: impara la varietà che è più utile per i tuoi obiettivi. Se hai intenzione di trasferirti in Canada, concentrati sull'inglese canadese. Se lavori con aziende americane, l'inglese americano potrebbe essere più utile. Se vivi in Europa, l'inglese britannico è spesso quello più familiare.
 
