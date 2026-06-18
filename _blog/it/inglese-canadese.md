@@ -1,10 +1,10 @@
 ---
 translationKey: canadian-english-everything-you-need-to-know-before-visiting-or-living-in-canada
-published: false
-featured: false
-title: INGLESE CANADESE
+published: true
+featured: true
+title: 'INGLESE CANADESE: TUTTO QUELLO CHE DEVI SAPERE PRIMA DI VISITARE O VIVERE IN CANADA'
 category: GEOGRAFIA
-excerpt: 'Scopri le caratteristiche del Canadian English: pronuncia, ortografia, vocaboli tipici e influenze culturali. Una guida completa per chi viaggia, studia o vive in Canada.'
+excerpt: 'Scopri le caratteristiche del canadese: pronuncia, ortografia, vocaboli tipici e influenze culturali. Una guida completa per chi viaggia, studia o vive in Canada.'
 date: 2026-06-18T07:00
 english_corner: []
 line_spacing: '1.75'
@@ -26,7 +26,7 @@ Esistono però alcune particolarità che caratterizzano l'accento canadese. Una 
 
 Nel complesso, il canadese è considerato chiaro e relativamente semplice da comprendere per chi sta imparando la lingua.
 
-**<span class="c-aqua">L'ortografia canadese</span>** Uno degli aspetti più interessanti del Canadian English riguarda la scrittura di alcune parole.
+**<span class="c-aqua">L'ortografia canadese</span>** Uno degli aspetti più interessanti del canadese riguarda la scrittura di alcune parole.
 
 I canadesi utilizzano spesso grafie più vicine all'inglese britannico che a quello americano.
 
@@ -40,7 +40,7 @@ I canadesi utilizzano spesso grafie più vicine all'inglese britannico che a que
 
 Se hai studiato l'inglese britannico, queste forme ti sembreranno sicuramente familiari.
 
-**<span class="c-aqua">Parole ed espressioni tipiche del Canada</span>** Come ogni varietà linguistica, anche il Canadian English possiede parole ed espressioni caratteristiche.
+**<span class="c-aqua">Parole ed espressioni tipiche del Canada</span>** Come ogni varietà linguistica, anche il canadese possiede parole ed espressioni caratteristiche.
 
 - Washroom 
 Mentre negli Stati Uniti si usa spesso _restroom_ e nel Regno Unito _toilet_, in Canada è molto comune la parola _washroom_.
@@ -57,11 +57,11 @@ Il Canada ha infatti due lingue ufficiali: inglese e francese. In province come 
 
 Anche se non parli francese, noterai facilmente la sua influenza nella cultura canadese, nei nomi delle città e nella vita di tutti i giorni.
 
-Questa diversità linguistica è uno degli elementi che rendono il Canada un Paese così interessante da visitare.
+Questa diversità linguistica è uno degli elementi che rendono il Canada un paese così interessante da visitare.
 
-**<span class="c-aqua">È difficile capire l'inglese canadese?</span>** Assolutamente no.
+**<span class="c-aqua">È difficile capire il canadese?</span>** Assolutamente no.
 
-Molti studenti trovano il Canadian English piuttosto facile da comprendere grazie alla sua pronuncia chiara e al vocabolario familiare.
+Molti studenti trovano il canadese piuttosto facile da comprendere grazie alla sua pronuncia chiara e al vocabolario familiare.
 
 Dopo un po' di esposizione all'accento canadese, la maggior parte delle persone riesce ad abituarsi rapidamente e a comprendere senza particolari difficoltà le conversazioni quotidiane.
 

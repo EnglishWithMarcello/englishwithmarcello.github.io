@@ -1,7 +1,7 @@
 ---
 translationKey: canadian-english-everything-you-need-to-know-before-visiting-or-living-in-canada
-published: false
-featured: false
+published: true
+featured: true
 title: 'CANADIAN ENGLISH: EVERYTHING YOU NEED TO KNOW BEFORE VISITING OR LIVING IN CANADA'
 category: Geography
 excerpt: Discover the main features of Canadian English, including pronunciation, spelling, vocabulary, and cultural influences. A practical guide for travelers and English learners.
