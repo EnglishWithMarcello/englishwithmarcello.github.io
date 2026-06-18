@@ -48,6 +48,24 @@ collections:
         widget: string
         i18n: true
         hint: "The blue link in Google + the page heading — put your main search term here. / Il link blu su Google + il titolo della pagina — inserisci qui il termine di ricerca principale."
+      - name: title_color
+        label: "Title colour / Colore del titolo"
+        widget: select
+        required: false
+        i18n: duplicate
+        default: ""
+        options:
+          - { label: "Default (navy)", value: "" }
+          - { label: "Navy", value: "navy" }
+          - { label: "Aqua", value: "aqua" }
+          - { label: "Red", value: "red" }
+        hint: "Colour of the whole post title. Default suits most posts. / Colore dell'intero titolo del post. Per la maggior parte dei post va bene Predefinito."
+      - name: featured_image
+        label: "Featured image (top of post) / Immagine in evidenza (inizio post)"
+        widget: image
+        required: false
+        i18n: duplicate
+        hint: "Optional. Shows large at the top of the article. Upload once — used for both languages. / Opzionale. Appare grande all'inizio dell'articolo. Caricala una volta — vale per entrambe le lingue." 
       - name: category
         label: "Category / Categoria"
         widget: string
@@ -72,6 +90,39 @@ collections:
         required: false
         i18n: true
         hint: "The article itself — matters most. Write about the topic; use the term and related words where they fit. / L'articolo vero e proprio — conta di più. Scrivi sull'argomento; usa il termine e le parole correlate dove servono."
+      - name: images
+        label: "In-post images / Immagini nell'articolo"
+        widget: list
+        required: false
+        i18n: duplicate
+        label_singular: "image / immagine"
+        summary: "{{fields.image}}"
+        hint: "Add pictures to place inside the article. After adding one here, type a marker like [[img:1]] on its own line in the Body where you want the FIRST picture ([[img:2]] for the second, and so on). Upload once — used for both languages. / Aggiungi immagini da inserire nell'articolo. Dopo averne aggiunta una qui, scrivi un segnaposto come [[img:1]] su una riga a parte nel Corpo dove vuoi la PRIMA immagine ([[img:2]] per la seconda, ecc.). Caricale una volta — valgono per entrambe le lingue."
+        fields:
+          - name: image
+            label: "Picture / Immagine"
+            widget: image
+          - name: size
+            label: "Size / Dimensione"
+            widget: select
+            default: "medium"
+            options:
+              - { label: "Small", value: "small" }
+              - { label: "Medium", value: "medium" }
+              - { label: "Large", value: "large" }
+              - { label: "Full width", value: "full" }
+          - name: align
+            label: "Position / Posizione"
+            widget: select
+            default: "center"
+            options:
+              - { label: "Centered", value: "center" }
+              - { label: "Left (text wraps to the right)", value: "left" }
+              - { label: "Right (text wraps to the left)", value: "right" }
+          - name: caption
+            label: "Caption (optional) / Didascalia (opzionale)"
+            widget: string
+            required: false
       - name: english_corner
         label: "English Corner (vocab box) / English Corner (riquadro vocaboli)"
         widget: list
