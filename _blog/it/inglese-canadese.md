@@ -10,7 +10,7 @@ english_corner: []
 line_spacing: '1.75'
 ---
 
-Quando si parla di inglese, la maggior parte delle persone pensa subito all'inglese britannico o a quello americano. Tuttavia, esiste un'altra importante varietà che merita attenzione: <span class="c-red">l'inglese canadese.</span>
+Quando si parla di inglese, la maggior parte delle persone pensa subito all'inglese britannico o a quello americano. Tuttavia, esiste un'altra importante varietà che merita attenzione: <span class="c-aqua">l'inglese canadese.</span>
 Se stai programmando un viaggio in Canada, hai amici o familiari canadesi oppure sogni di trasferirti lì un giorno, conoscere alcune caratteristiche dell'inglese canadese può aiutarti a comunicare con maggiore sicurezza e a comprendere meglio la cultura locale.
 
 **<span class="c-aqua">Che cos'è il canadese?</span>** Il canedese è la varietà di inglese parlata in Canada. Nel corso degli anni ha ricevuto influenze sia dall'inglese britannico sia da quello americano, creando una combinazione unica delle due varianti. 
