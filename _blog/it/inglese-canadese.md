@@ -34,10 +34,10 @@ Se hai studiato l'inglese britannico, queste forme ti sembreranno sicuramente fa
 
 **<span class="c-aqua">Parole ed espressioni tipiche del Canada</span>** Come ogni varietà linguistica, anche il canadese possiede parole ed espressioni caratteristiche.
 
-- Washroom [→](https://acrossthenorthca.wixsite.com/across-the-north/canada-travel-resources) mentre negli Stati Uniti si usa spesso _restroom_ e nel Regno Unito _toilet_, in Canada è molto comune la parola _washroom_.
-- Loonie [→](https://acrossthenorthca.wixsite.com/across-the-north/canada-travel-resources) _Loonie_ è il nome informale della moneta canadese da un dollaro.
-- Toonie [→](https://acrossthenorthca.wixsite.com/across-the-north/canada-travel-resources) _Toonie_ è il nome della moneta canadese da due dollari.
-- Double-double [→](https://acrossthenorthca.wixsite.com/across-the-north/canada-travel-resources) questa famosa espressione canadese indica un caffè con due dosi di zucchero e due di panna.
+- Washroom → mentre negli Stati Uniti si usa spesso _restroom_ e nel Regno Unito _toilet_, in Canada è molto comune la parola _washroom_.
+- Loonie → _Loonie_ è il nome informale della moneta canadese da un dollaro.
+- Toonie → _Toonie_ è il nome della moneta canadese da due dollari.
+- Double-double → questa famosa espressione canadese indica un caffè con due dosi di zucchero e due di panna.
 
 **<span class="c-aqua">L'influenza del francese</span>** Uno degli aspetti che rende il Canada unico è il suo patrimonio bilingue.
 Il Canada ha infatti due lingue ufficiali: inglese e francese. In province come il Québec, il francese è parte integrante della vita quotidiana e i cartelli bilingui sono estremamente comuni.

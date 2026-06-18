@@ -33,10 +33,10 @@ If you have studied British English, these spellings will probably look familiar
 
 <span class="c-aqua">**Common Canadian words and expressions**</span> Like every variety of English, Canadian English has its own unique vocabulary.
 
-- Washroom [→](https://acrossthenorthca.wixsite.com/across-the-north/canada-travel-resources) while Americans often say _restroom_ and British people commonly say _toilet_, Canadians frequently use the word _washroom_.
-- Loonie [→](https://acrossthenorthca.wixsite.com/across-the-north/canada-travel-resources) a _loonie_ is the informal name for the Canadian one-dollar coin.
-- Toonie [→](https://acrossthenorthca.wixsite.com/across-the-north/canada-travel-resources) a _toonie_ is the Canadian two-dollar coin.
-- Double-double [→](https://acrossthenorthca.wixsite.com/across-the-north/canada-travel-resources) this popular Canadian expression refers to a coffee with two creams and two sugars.
+- Washroom → while Americans often say _restroom_ and British people commonly say _toilet_, Canadians frequently use the word _washroom_.
+- Loonie → a _loonie_ is the informal name for the Canadian one-dollar coin.
+- Toonie → a _toonie_ is the Canadian two-dollar coin.
+- Double-double → this popular Canadian expression refers to a coffee with two creams and two sugars.
 
 <span class="c-aqua">**The influence of French**</span> One of the things that makes Canada unique is its bilingual heritage.
 Canada has two official languages: English and French. In provinces such as Quebec, French plays a major role in everyday life, and bilingual signs are very common.
@@ -50,5 +50,3 @@ After spending some time listening to Canadian speakers, most learners quickly b
 **<span class="c-aqua">Final thoughts</span>** Canadian English is a fascinating variety of English that combines elements of both British and American English while maintaining its own unique identity.
 Understanding a few common expressions, spelling differences, and pronunciation features can make your experience in Canada more enjoyable and help you communicate with greater confidence.
 The next time you visit Canada, pay attention to the language around you. You may discover that Canadian English is much more interesting than you expected.
-
-![](/assets/images/blog/ling-app-5pYT4Om_LJI-unsplash.jpg)
