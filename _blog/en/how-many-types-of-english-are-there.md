@@ -106,4 +106,4 @@ The most important thing is not choosing the "perfect" English. It's being able 
 
 After all, English is no longer the language of just one country. It's a global language spoken in many different ways.
 
-                             ![](/assets/images/blog/Immagine%202026-06-18%20095631.png)
+![](/assets/images/blog/Immagine%202026-06-18%20095631.png)
