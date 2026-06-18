@@ -50,4 +50,4 @@ Dopo un po' di esposizione all'accento canadese, la maggior parte delle persone 
 
 **<span class="c-aqua">Conclusione</span>** Il canadese è una varietà affascinante della lingua inglese che combina elementi dell'inglese britannico e di quello americano, mantenendo al tempo stesso una propria identità. 
 Conoscere alcune espressioni tipiche, le principali differenze ortografiche e alcune caratteristiche della pronuncia può rendere la tua esperienza in Canada più semplice e piacevole.
-La prossima volta che visiterai il Canada, presta attenzione alle parole che sentirai intorno a te: potresti scoprire che l'inglese canadese è molto più interessante di quanto immagini.
+La prossima volta che visiterai il Canada, presta attenzione alle parole che sentirai intorno a te: potresti scoprire che l'inglese canadese è molto più interessante di quanto immagini.![](/assets/images/blog/ling-app-5pYT4Om_LJI-unsplash.jpg)

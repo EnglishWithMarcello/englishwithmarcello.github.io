@@ -50,3 +50,5 @@ After spending some time listening to Canadian speakers, most learners quickly b
 **<span class="c-aqua">Final thoughts</span>** Canadian English is a fascinating variety of English that combines elements of both British and American English while maintaining its own unique identity.
 Understanding a few common expressions, spelling differences, and pronunciation features can make your experience in Canada more enjoyable and help you communicate with greater confidence.
 The next time you visit Canada, pay attention to the language around you. You may discover that Canadian English is much more interesting than you expected.
+
+![](/assets/images/blog/ling-app-5pYT4Om_LJI-unsplash.jpg)
