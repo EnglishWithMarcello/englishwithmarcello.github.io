@@ -10,7 +10,7 @@ english_corner: []
 line_spacing: '1.75'
 ---
 
-When people think about English, they usually think of British English or American English. However, there is another important variety that deserves attention: <span class="c-red">Canadian English</span>.
+When people think about English, they usually think of British English or American English. However, there is another important variety that deserves attention: <span class="c-aqua">Canadian English.</span>
 If you are planning a trip to Canada, have Canadian friends or family members, or dream of living there one day, learning about Canadian English can help you communicate more confidently and better understand the local culture.
 
 **<span class="c-aqua">What is Canadian English?</span>** Canadian English is the variety of English spoken in Canada. Over the years, it has been influenced by both British and American English, creating a unique blend of the two.
@@ -33,22 +33,17 @@ If you have studied British English, these spellings will probably look familiar
 
 <span class="c-aqua">**Common Canadian words and expressions**</span> Like every variety of English, Canadian English has its own unique vocabulary.
 
-- Washroom 
-While Americans often say _restroom_ and British people commonly say _toilet_, Canadians frequently use the word _washroom_.
-- Loonie
-A _loonie_ is the informal name for the Canadian one-dollar coin.
-- Toonie
-A _toonie_ is the Canadian two-dollar coin.
-- Double-double
-This popular Canadian expression refers to a coffee with two creams and two sugars.
+- Washroom [→](https://acrossthenorthca.wixsite.com/across-the-north/canada-travel-resources) while Americans often say _restroom_ and British people commonly say _toilet_, Canadians frequently use the word _washroom_.
+- Loonie [→](https://acrossthenorthca.wixsite.com/across-the-north/canada-travel-resources) a _loonie_ is the informal name for the Canadian one-dollar coin.
+- Toonie [→](https://acrossthenorthca.wixsite.com/across-the-north/canada-travel-resources) a _toonie_ is the Canadian two-dollar coin.
+- Double-double [→](https://acrossthenorthca.wixsite.com/across-the-north/canada-travel-resources) this popular Canadian expression refers to a coffee with two creams and two sugars.
 
 <span class="c-aqua">**The influence of French**</span> One of the things that makes Canada unique is its bilingual heritage.
 Canada has two official languages: English and French. In provinces such as Quebec, French plays a major role in everyday life, and bilingual signs are very common.
 Even if you do not speak French, you will notice its influence on Canadian culture, place names, and daily life.
 This linguistic diversity is one of the features that makes Canada such an interesting country to visit.
 
-**<span class="c-aqua">Is Canadian English difficult to understand?</span>** Not at all.
-
+**<span class="c-aqua">Is Canadian English difficult to understand?</span>** Not at all. 
 Many English learners find Canadian English easy to understand because of its clear pronunciation and familiar vocabulary.
 After spending some time listening to Canadian speakers, most learners quickly become comfortable with the accent and common expressions.
 
