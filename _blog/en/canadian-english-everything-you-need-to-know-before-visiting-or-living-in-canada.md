@@ -17,11 +17,11 @@ If you are planning a trip to Canada, have Canadian friends or family members, o
 This is why Canadian English is often described as a bridge between British and American English. While it shares many similarities with both, it also has its own distinctive features.
 The good news for English learners is that Canadian English is generally easy to understand because the grammar and vocabulary are largely the same as other major varieties of English.
 
-<span class="c-aqua">**How is Canadian English pronounced?**</span> Canadian pronunciation is very similar to American pronunciation. In fact, many people find it difficult to tell the difference between a Canadian and an American speaker.
+**<span class="c-aqua">How is Canadian English pronounced?</span>** Canadian pronunciation is very similar to American pronunciation. In fact, many people find it difficult to tell the difference between a Canadian and an American speaker.
 However, there are some unique pronunciation patterns. One of the most famous involves words such as _about_, _house_, and _out_, which may sound slightly different from their American counterparts.
 Overall, Canadian English is known for being clear and relatively easy for learners to understand.
 
-<span class="c-aqua">**Canadian spelling** </span> One of the most interesting aspects of Canadian English is its spelling. Canadians often use spellings that are closer to British English than American English.
+**<span class="c-aqua">Canadian spelling</span>** One of the most interesting aspects of Canadian English is its spelling. Canadians often use spellings that are closer to British English than American English.
 
 - 🇨🇦 colour 🇺🇸 color
 - 🇨🇦 favourite 🇺🇸 color
@@ -31,14 +31,14 @@ Overall, Canadian English is known for being clear and relatively easy for learn
 
 If you have studied British English, these spellings will probably look familiar.
 
-<span class="c-aqua">**Common Canadian words and expressions**</span> Like every variety of English, Canadian English has its own unique vocabulary.
+**<span class="c-aqua">Common Canadian words and expressions</span>** Like every variety of English, Canadian English has its own unique vocabulary.
 
 - Washroom → while Americans often say _restroom_ and British people commonly say _toilet_, Canadians frequently use the word _washroom_.
 - Loonie → a _loonie_ is the informal name for the Canadian one-dollar coin.
 - Toonie → a _toonie_ is the Canadian two-dollar coin.
 - Double-double → this popular Canadian expression refers to a coffee with two creams and two sugars.
 
-<span class="c-aqua">**The influence of French**</span> One of the things that makes Canada unique is its bilingual heritage.
+**<span class="c-aqua">The influence of French</span>** One of the things that makes Canada unique is its bilingual heritage.
 Canada has two official languages: English and French. In provinces such as Quebec, French plays a major role in everyday life, and bilingual signs are very common.
 Even if you do not speak French, you will notice its influence on Canadian culture, place names, and daily life.
 This linguistic diversity is one of the features that makes Canada such an interesting country to visit.
