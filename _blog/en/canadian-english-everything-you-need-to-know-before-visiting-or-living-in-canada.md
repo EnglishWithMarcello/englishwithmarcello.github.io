@@ -26,7 +26,7 @@ However, there are some unique pronunciation patterns. One of the most famous in
 
 Overall, Canadian English is known for being clear and relatively easy for learners to understand.
 
-<span class="c-aqua">**Canadian spelling**</span> One of the most interesting aspects of Canadian English is its spelling. Canadians often use spellings that are closer to British English than American English.
+<span class="c-aqua">**Canadian spelling** </span> One of the most interesting aspects of Canadian English is its spelling. Canadians often use spellings that are closer to British English than American English.
 
 ```plain
 🇨🇦 colour 🇺🇸 color
