@@ -20,6 +20,7 @@ Facciamo un rapido viaggio tra alcune delle varietà di inglese più conosciute.
 **■ INGLESE BRITANNICO**: l'inglese britannico è la varietà parlata nel Regno Unito ed è spesso quella insegnata in molte scuole europee.
 
 Alcune parole comuni:
+
 - Flat (appartamento)
 - Holiday (vacanza)
 - Lift (ascensore)
@@ -29,6 +30,7 @@ _Frase esempio: I'm taking the lift up to my flat._
 **■ INGLESE AMERICANO**: l'inglese americano è probabilmente la varietà più influente grazie a Hollywood, alla televisione, alla musica e ai social media.
 
 Alcune parole comuni:
+
 - Apartment (appartamento)
 - Vacation (vacanza)
 - Elevator (ascensore)
@@ -38,6 +40,7 @@ _Frase esempio: I'm taking the elevator up to my apartment._
 **■ INGLESE CANADESE:** l'inglese canadese si colloca a metà strada tra quello britannico e quello americano. I canadesi utilizzano spesso il vocabolario americano, ma mantengono alcune grafie britanniche.
 
 Alcune parole comuni:
+
 - Colour
 - Centre
 - Toque (cappello invernale)
@@ -48,6 +51,7 @@ _Frase esempio: Don't forget your toque. It's going to be cold today!_
 **■ INGLESE AUSTRALIANO**: l'inglese australiano è noto per il suo accento unico e per l'abitudine di abbreviare molte parole.
 
 Alcune parole comuni:
+
 - Arvo (pomeriggio)
 - Barbie (barbecue)
 - Brekkie (colazione)
@@ -57,6 +61,7 @@ Frase esempio: _let's have a barbie this arvo._
 **■ INGLESE NEOZELANDESE**: l'inglese neozelandese è simile a quello australiano, ma possiede un accento e un vocabolario propri, influenzati dalla lingua Māori.
 
 Alcune parole comuni:
+
 - Kia ora (ciao)
 - Bach (casa per le vacanze)
 
@@ -65,6 +70,7 @@ _Frase esempio: We're spending the weekend at our bach by the beach._
 **■ INGLESE IRLANDESE**: l'inglese irlandese ha un ritmo molto caratteristico e include espressioni che difficilmente sentirai altrove.
 
 Alcune parole comuni:
+
 - Craic (divertimento, novità)
 - Grand (bene, tutto a posto)
 - Eejit (sciocco, idiota)
@@ -74,6 +80,7 @@ _Frase esempio: Everything's grand. We had great craic at the party._
 **■ INGLESE SCOZZESE**: l'inglese scozzese può suonare molto diverso dalle altre varietà.
 
 Alcune parole comuni:
+
 - Wee (piccolo)
 - Bairn (bambino)
 - Aye (sì)
@@ -83,6 +90,7 @@ Frase esempio: _It's a wee house._
 **■ INGLESE SUDAFRICANO**: l'inglese sudafricano combina influenze dell'inglese britannico e delle lingue locali.
 
 Alcune parole comuni:
+
 - Braai (barbecue)
 - Robot (semaforo)
 - Lekker (grande, fantastico)
@@ -95,4 +103,4 @@ _Frase esempio: We're having a braai this weekend. It's going to be lekker!_
 
 La cosa più importante non è scegliere l'inglese "perfetto", ma essere in grado di comunicare con sicurezza con persone provenienti da tutto il mondo.
 
-Dopotutto, l'inglese non è più la lingua di un solo paese. È una lingua globale, parlata in molti modi diversi.
+Dopotutto, l'inglese non è più la lingua di un solo paese. È una lingua globale, parlata in molti modi diversi.![](/assets/images/blog/Immagine%202026-06-18%20095631.png)
