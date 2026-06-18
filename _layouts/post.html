@@ -136,6 +136,29 @@
   .english-corner li { color: #8A9FCC; font-size: 0.92rem; line-height: 1.7; padding: 0.5rem 0; border-bottom: 1px solid rgba(152,204,196,0.15); }
   .english-corner li:last-child { border-bottom: none; }
   .english-corner li strong { color: var(--aqua); }
+  /* --- title colour (set per post via the Title colour dropdown) --- */
+  .article-title.tc-navy { color: var(--navy); }
+  .article-title.tc-aqua { color: #5a9e96; }
+  .article-title.tc-red  { color: #cc2b2b; }
+  /* --- featured image (top of post) --- */
+  .featured-image { margin: 0 0 2rem; border-radius: 14px; overflow: hidden; }
+  .featured-image img { display: block; width: 100%; height: auto; }
+  .featured-image figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem; text-align: center; }
+  /* --- in-post images (size + position set per image via dropdowns) --- */
+  .article-body::after { content: ""; display: table; clear: both; }
+  .post-figure { margin: 1.6rem 0; }
+  .post-figure img { display: block; width: 100%; height: auto; border-radius: 10px; }
+  .post-figure figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem; text-align: center; }
+  .post-figure.size-small  { max-width: 240px; }
+  .post-figure.size-medium { max-width: 380px; }
+  .post-figure.size-large  { max-width: 560px; }
+  .post-figure.size-full   { max-width: 100%; }
+  .post-figure.align-center { margin-left: auto; margin-right: auto; }
+  .post-figure.align-left  { float: left;  margin: 0.4rem 1.6rem 1rem 0; }
+  .post-figure.align-right { float: right; margin: 0.4rem 0 1rem 1.6rem; }
+  @media (max-width: 600px) {
+    .post-figure.align-left, .post-figure.align-right { float: none; margin: 1.6rem auto; max-width: 100%; }
+  }
 
   /* CTA */
   .cta-band { background: var(--navy); padding: 5rem 2.5rem; text-align: center; position: relative; overflow: hidden; }
@@ -315,10 +338,28 @@
     {% if page.lang == 'it' %}Torna al Blog{% else %}Back to Blog{% endif %}
   </a>
   <span class="article-category">{{ page.category }}</span>
-  <h1 class="article-title">{{ page.title }}</h1>
+  <h1 class="article-title{% if page.title_color and page.title_color != '' %} tc-{{ page.title_color }}{% endif %}">{{ page.title }}</h1>
   <div class="article-divider"></div>
+  {%- if page.featured_image and page.featured_image != '' %}
+  <figure class="featured-image"><img src="{{ page.featured_image | relative_url }}" alt="{{ page.title | escape }}"></figure>
+  {%- endif %}
   <div class="article-body" style="--body-lh: {{ page.line_spacing | default: 1.75 }};">
-{{ content }}
+{%- capture body %}{{ content }}{% endcapture -%}
+{%- if page.images and page.images != empty -%}
+{%- for img in page.images -%}
+{%- assign n = forloop.index -%}
+{%- capture fig -%}<figure class="post-figure size-{{ img.size | default: 'medium' }} align-{{ img.align | default: 'center' }}"><img src="{{ img.image | relative_url }}" alt="{{ img.caption | default: page.title | escape }}">{%- if img.caption and img.caption != '' %}<figcaption>{{ img.caption }}</figcaption>{% endif -%}</figure>{%- endcapture -%}
+{%- assign mp = '<p>[[img:' | append: n | append: ']]</p>' -%}
+{%- assign mb = '[[img:' | append: n | append: ']]' -%}
+{%- assign body = body | replace: mp, fig | replace: mb, fig -%}
+{%- endfor -%}
+{%- endif -%}
+{%- for i in (1..25) -%}
+{%- assign lp = '<p>[[img:' | append: i | append: ']]</p>' -%}
+{%- assign lb = '[[img:' | append: i | append: ']]' -%}
+{%- assign body = body | replace: lp, '' | replace: lb, '' -%}
+{%- endfor -%}
+{{ body }}
   {%- if page.english_corner and page.english_corner != empty %}
   <div class="english-corner"><div class="english-corner-label">English Corner</div><ul>{% for item in page.english_corner %}<li><strong>{{ item.term }}</strong> = {{ item.definition }}</li>{% endfor %}</ul></div>
   {%- endif %}
