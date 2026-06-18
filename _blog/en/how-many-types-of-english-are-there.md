@@ -104,4 +104,6 @@ If you plan to move to Canada, focus on Canadian English. If you work with Ameri
 
 The most important thing is not choosing the "perfect" English. It's being able to communicate confidently with people from around the world.
 
-After all, English is no longer the language of just one country. It's a global language spoken in many different ways.![](/assets/images/blog/Immagine%202026-06-18%20095631.png)
+After all, English is no longer the language of just one country. It's a global language spoken in many different ways.
+
+![](/assets/images/blog/Immagine%202026-06-18%20095631.png)
