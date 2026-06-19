@@ -6,6 +6,11 @@ title: HOW MANY TYPES OF ENGLISH ARE THERE?
 category: GEOGRAPHY
 excerpt: Did you know there isn't just one type of English? From British and American English to Canadian, Australian, Irish and more, discover how English changes across countries and cultures.
 date: 2026-06-16T16:32
+images:
+  - image: /assets/images/blog/Immagine 2026-06-18 095631.png
+    size: small
+    align: center
+    caption: ''
 line_spacing: '1.5'
 ---
 
@@ -105,5 +110,3 @@ If you plan to move to Canada, focus on Canadian English. If you work with Ameri
 The most important thing is not choosing the "perfect" English. It's being able to communicate confidently with people from around the world.
 
 After all, English is no longer the language of just one country. It's a global language spoken in many different ways.
-
-![](/assets/images/blog/Immagine%202026-06-18%20095631.png)

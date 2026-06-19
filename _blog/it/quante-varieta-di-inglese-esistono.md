@@ -6,6 +6,11 @@ title: QUANTI TIPI DI INGLESE ESISTONO?
 category: GEOGRAFIA
 excerpt: Lo sapevi che non esiste un solo tipo di inglese? Dall'inglese britannico e americano a quello canadese, australiano, irlandese e molti altri, scopri come la lingua inglese cambia da un Paese all'altro e si adatta a culture diverse.
 date: 2026-06-16T16:32
+images:
+  - image: ''
+    size: medium
+    align: center
+    caption: ''
 line_spacing: '1.5'
 ---
 
@@ -103,4 +108,4 @@ _Frase esempio: We're having a braai this weekend. It's going to be lekker!_
 
 La cosa più importante non è scegliere l'inglese "perfetto", ma essere in grado di comunicare con sicurezza con persone provenienti da tutto il mondo.
 
-Dopotutto, l'inglese non è più la lingua di un solo paese. È una lingua globale, parlata in molti modi diversi.![](/assets/images/blog/Immagine%202026-06-18%20095631.png)
+Dopotutto, l'inglese non è più la lingua di un solo paese. È una lingua globale, parlata in molti modi diversi.
