@@ -36,7 +36,7 @@ _Example sentence: I’m taking the elevator up to my apartment._
 
 **<span class="c-aqua">CANADIAN ENGLISH</span>**: Canadian English sits somewhere between British and American English. Canadians often use a mix of American and British vocabulary spelling conventions.
 
-_Some common Canadian words include: Colour ● Centre | Toque (hat) ● Washroom_
+_Some common Canadian words include: Colour ● Centre ● Toque (hat) ● Washroom_
 
 _Example sentence: Don’t forget your toque. It’s going to be cold today!_
 
