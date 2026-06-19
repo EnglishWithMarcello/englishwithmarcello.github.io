@@ -4,7 +4,7 @@ published: true
 featured: false
 title: HOW MANY TYPES OF ENGLISH ARE THERE?
 title_color: ''
-featured_image: ''
+featured_image: /assets/images/blog/Immagine 2026-06-18 095631.png
 category: Geography
 excerpt: Is there really just one English? Not at all. English is spoken in many countries, and each variety has its own accent, vocabulary, and expressions. From British and American English to Canadian, Australian, and South African English, the key is not choosing the “perfect” English, but learning to communicate confidently in a global world.
 date: 2026-06-19T16:00

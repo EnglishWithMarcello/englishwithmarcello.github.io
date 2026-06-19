@@ -4,7 +4,7 @@ published: true
 featured: false
 title: QUANTI TIPI DI INGLESE ESISTONO?
 title_color: ''
-featured_image: ''
+featured_image: /assets/images/blog/Immagine 2026-06-18 095631.png
 category: GEOGRAFIA
 excerpt: 'Esiste davvero un solo inglese? In realtà no: l’inglese viene parlato in molti Paesi e ogni varietà ha accenti, parole ed espressioni proprie. Dall’inglese britannico a quello canadese, australiano o sudafricano, l’importante non è scegliere quello “perfetto”, ma imparare a comunicare con sicurezza in un mondo sempre più globale.'
 date: 2026-06-19T16:00
