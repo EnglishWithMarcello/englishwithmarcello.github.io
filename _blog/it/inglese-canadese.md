@@ -3,6 +3,7 @@ translationKey: canadian-english-everything-you-need-to-know-before-visiting-or-
 published: true
 featured: true
 title: 'INGLESE CANADESE: TUTTO QUELLO CHE DEVI SAPERE PRIMA DI VISITARE O VIVERE IN CANADA'
+featured_image: /assets/images/blog/ling-app-5pYT4Om_LJI-unsplash.jpg
 category: GEOGRAFIA
 excerpt: 'Scopri le caratteristiche del canadese: pronuncia, ortografia, vocaboli tipici e influenze culturali. Una guida completa per chi viaggia, studia o vive in Canada.'
 date: 2026-06-18T07:00
