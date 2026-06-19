@@ -17,12 +17,6 @@ english_corner: []
 line_spacing: '1.75'
 ---
 
-**<span class="c-red">Which English</span>**
-
-<span class="c-red">**Which English**</span>
-
-<span class="c-red">Which English</span>
-
 When people say they are learning English, a simple question comes to mind: <span class="c-aqua">which English</span>?
 Many learners are surprised to discover that there isn’t just one type of English. In fact, English is spoken in dozens of countries around the world, and each place has developed its own accent, vocabulary, and expressions.
 The good news? English speakers can usually understand each other, even when they sound very different.
