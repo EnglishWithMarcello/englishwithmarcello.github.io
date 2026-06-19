@@ -6,8 +6,13 @@ title: 'INGLESE CANADESE: TUTTO QUELLO CHE DEVI SAPERE PRIMA DI VISITARE O VIVER
 category: GEOGRAFIA
 excerpt: 'Scopri le caratteristiche del canadese: pronuncia, ortografia, vocaboli tipici e influenze culturali. Una guida completa per chi viaggia, studia o vive in Canada.'
 date: 2026-06-18T07:00
+images:
+  - image: ''
+    size: medium
+    align: center
+    caption: ''
 english_corner: []
-line_spacing: '1.75'
+line_spacing: '1.5'
 ---
 
 Quando si parla di inglese, la maggior parte delle persone pensa subito all'inglese britannico o a quello americano. Tuttavia, esiste un'altra importante varietà che merita attenzione: <span class="c-aqua">l'inglese canadese.</span>
@@ -50,4 +55,6 @@ Dopo un po' di esposizione all'accento canadese, la maggior parte delle persone 
 
 **<span class="c-aqua">Conclusione</span>** Il canadese è una varietà affascinante della lingua inglese che combina elementi dell'inglese britannico e di quello americano, mantenendo al tempo stesso una propria identità. 
 Conoscere alcune espressioni tipiche, le principali differenze ortografiche e alcune caratteristiche della pronuncia può rendere la tua esperienza in Canada più semplice e piacevole.
-La prossima volta che visiterai il Canada, presta attenzione alle parole che sentirai intorno a te: potresti scoprire che l'inglese canadese è molto più interessante di quanto immagini.![](/assets/images/blog/ling-app-5pYT4Om_LJI-unsplash.jpg)
+La prossima volta che visiterai il Canada, presta attenzione alle parole che sentirai intorno a te: potresti scoprire che l'inglese canadese è molto più interessante di quanto immagini.
+
+[[img:1]]

@@ -6,8 +6,13 @@ title: 'CANADIAN ENGLISH: EVERYTHING YOU NEED TO KNOW BEFORE VISITING OR LIVING 
 category: Geography
 excerpt: Discover the main features of Canadian English, including pronunciation, spelling, vocabulary, and cultural influences. A practical guide for travelers and English learners.
 date: 2026-06-18T07:00
+images:
+  - image: /assets/images/blog/ling-app-5pYT4Om_LJI-unsplash.jpg
+    size: small
+    align: center
+    caption: ''
 english_corner: []
-line_spacing: '1.75'
+line_spacing: '1.5'
 ---
 
 When people think about English, they usually think of British English or American English. However, there is another important variety that deserves attention: <span class="c-aqua">Canadian English.</span>
@@ -50,3 +55,5 @@ After spending some time listening to Canadian speakers, most learners quickly b
 **<span class="c-aqua">Final thoughts</span>** Canadian English is a fascinating variety of English that combines elements of both British and American English while maintaining its own unique identity.
 Understanding a few common expressions, spelling differences, and pronunciation features can make your experience in Canada more enjoyable and help you communicate with greater confidence.
 The next time you visit Canada, pay attention to the language around you. You may discover that Canadian English is much more interesting than you expected.
+
+[[img:1]]
