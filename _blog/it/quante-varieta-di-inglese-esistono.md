@@ -3,6 +3,7 @@ translationKey: how-many-types-of-english-are-there
 published: true
 featured: true
 title: QUANTI TIPI DI INGLESE ESISTONO?
+title_color: aqua
 category: GEOGRAFIA
 excerpt: Lo sapevi che non esiste un solo tipo di inglese? Dall'inglese britannico e americano a quello canadese, australiano, irlandese e molti altri, scopri come la lingua inglese cambia da un Paese all'altro e si adatta a culture diverse.
 date: 2026-06-16T16:32
@@ -14,15 +15,12 @@ images:
 line_spacing: '1.5'
 ---
 
-Quando le persone dicono che stanno imparando l'inglese, viene spontanea una semplice domanda: **<span class="c-red">quale inglese?</span>**
-
+Quando le persone dicono che stanno imparando l'inglese, viene spontanea una semplice domanda: <span class="c-aqua">**quale inglese?**</span>
 Molti studenti rimangono sorpresi nello scoprire che non esiste un solo tipo di inglese. Infatti, l'inglese è parlato in decine di paesi in tutto il mondo e ogni luogo ha sviluppato il proprio accento, vocabolario ed espressioni.
-
 La buona notizia? Chi parla inglese riesce generalmente a capirsi, anche quando gli accenti sono molto diversi.
-
 Facciamo un rapido viaggio tra alcune delle varietà di inglese più conosciute.
 
-**■ INGLESE BRITANNICO**: l'inglese britannico è la varietà parlata nel Regno Unito ed è spesso quella insegnata in molte scuole europee.
+**■ <span class="c-aqua">INGLESE BRITANNICO**</span>: l'inglese britannico è la varietà parlata nel Regno Unito ed è spesso quella insegnata in molte scuole europee.
 
 Alcune parole comuni:
 
@@ -32,7 +30,7 @@ Alcune parole comuni:
 
 _Frase esempio: I'm taking the lift up to my flat._
 
-**■ INGLESE AMERICANO**: l'inglese americano è probabilmente la varietà più influente grazie a Hollywood, alla televisione, alla musica e ai social media.
+**■ <span class="c-aqua">INGLESE AMERICANO**</span>: l'inglese americano è probabilmente la varietà più influente grazie a Hollywood, alla televisione, alla musica e ai social media.
 
 Alcune parole comuni:
 
@@ -42,7 +40,7 @@ Alcune parole comuni:
 
 _Frase esempio: I'm taking the elevator up to my apartment._
 
-**■ INGLESE CANADESE:** l'inglese canadese si colloca a metà strada tra quello britannico e quello americano. I canadesi utilizzano spesso il vocabolario americano, ma mantengono alcune grafie britanniche.
+**■ <span class="c-aqua">INGLESE CANADESE:**</span> l'inglese canadese si colloca a metà strada tra quello britannico e quello americano. I canadesi utilizzano spesso il vocabolario americano, ma mantengono alcune grafie britanniche.
 
 Alcune parole comuni:
 
@@ -53,7 +51,7 @@ Alcune parole comuni:
 
 _Frase esempio: Don't forget your toque. It's going to be cold today!_
 
-**■ INGLESE AUSTRALIANO**: l'inglese australiano è noto per il suo accento unico e per l'abitudine di abbreviare molte parole.
+**■ <span class="c-aqua">INGLESE AUSTRALIANO**</span>: l'inglese australiano è noto per il suo accento unico e per l'abitudine di abbreviare molte parole.
 
 Alcune parole comuni:
 
@@ -63,7 +61,7 @@ Alcune parole comuni:
 
 Frase esempio: _let's have a barbie this arvo._
 
-**■ INGLESE NEOZELANDESE**: l'inglese neozelandese è simile a quello australiano, ma possiede un accento e un vocabolario propri, influenzati dalla lingua Māori.
+**■ <span class="c-aqua">INGLESE NEOZELANDESE**</span>: l'inglese neozelandese è simile a quello australiano, ma possiede un accento e un vocabolario propri, influenzati dalla lingua Māori.
 
 Alcune parole comuni:
 
@@ -72,7 +70,7 @@ Alcune parole comuni:
 
 _Frase esempio: We're spending the weekend at our bach by the beach._
 
-**■ INGLESE IRLANDESE**: l'inglese irlandese ha un ritmo molto caratteristico e include espressioni che difficilmente sentirai altrove.
+**■ <span class="c-aqua">INGLESE IRLANDESE**</span>: l'inglese irlandese ha un ritmo molto caratteristico e include espressioni che difficilmente sentirai altrove.
 
 Alcune parole comuni:
 
@@ -82,7 +80,7 @@ Alcune parole comuni:
 
 _Frase esempio: Everything's grand. We had great craic at the party._
 
-**■ INGLESE SCOZZESE**: l'inglese scozzese può suonare molto diverso dalle altre varietà.
+**■ <span class="c-aqua">INGLESE SCOZZESE**</span>: l'inglese scozzese può suonare molto diverso dalle altre varietà.
 
 Alcune parole comuni:
 
@@ -92,8 +90,7 @@ Alcune parole comuni:
 
 Frase esempio: _It's a wee house._
 
-**■ INGLESE SUDAFRICANO**: l'inglese sudafricano combina influenze dell'inglese britannico e delle lingue locali.
-
+**■ <span class="c-aqua">INGLESE SUDAFRICANO**</span>: l'inglese sudafricano combina influenze dell'inglese britannico e delle lingue locali.
 Alcune parole comuni:
 
 - Braai (barbecue)
@@ -102,12 +99,10 @@ Alcune parole comuni:
 
 _Frase esempio: We're having a braai this weekend. It's going to be lekker!_
 
-<span class="c-red">**Quale inglese dovresti imparare?**</span>
+<span class="c-aqua">**Quale inglese dovresti imparare?**</span>
 
-<span class="c-aqua">La risposta è semplice: impara la varietà che è più utile per i tuoi obiettivi. Se hai intenzione di trasferirti in Canada, concentrati sull'inglese canadese. Se lavori con aziende americane, l'inglese americano potrebbe essere più utile. Se vivi in Europa, l'inglese britannico è spesso quello più familiare.</span>
-
+La risposta è semplice: impara la varietà che è più utile per i tuoi obiettivi. Se hai intenzione di trasferirti in Canada, concentrati sull'inglese canadese. Se lavori con aziende americane, l'inglese americano potrebbe essere più utile. Se vivi in Europa, l'inglese britannico è spesso quello più familiare.
 La cosa più importante non è scegliere l'inglese "perfetto", ma essere in grado di comunicare con sicurezza con persone provenienti da tutto il mondo.
-
 Dopotutto, l'inglese non è più la lingua di un solo paese. È una lingua globale, parlata in molti modi diversi.
 
 [[img:1]]
