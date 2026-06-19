@@ -1,7 +1,7 @@
 ---
 translationKey: how-many-types-of-english-are-there
 published: false
-featured: true
+featured: false
 title: HOW MANY TYPES OF ENGLISH ARE THERE?
 title_color: ''
 featured_image: ''
