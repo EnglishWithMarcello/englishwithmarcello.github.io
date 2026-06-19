@@ -24,15 +24,21 @@ Let’s take a quick tour of some of the most well-known varieties of English.
 
 **<span class="c-aqua">BRITISH ENGLISH</span>**: British English is the variety spoken in the United Kingdom and is often the version taught in many European schools. 
 
-- _Some common British words include: Flat (instead of apartment) / Holiday (instead of vacation) / Lift (instead of elevator)_
-- _Example sentence: I’m taking the lift up to my flat._
+Some common British words:
+
+- _Flat (instead of apartment)_
+- _Holiday (instead of vacation)_
+- _Lift (instead of elevator)_
+_Example sentence: I’m taking the lift up to my flat._
 
 **<span class="c-aqua">AMERICAN ENGLISH</span>**: American English is probably the most influential variety thanks to Hollywood, television, music, and social media.
 
-_Some common American words include:_ 
+Some common American words include: 
 
-- _Apartment (instead of flat) / Vacation (instead of holiday) / Elevator (instead of lift)_
-- _Example sentence: I’m taking the elevator up to my apartment._
+- _Apartment (instead of flat)_
+- _Vacation (instead of holiday)_
+- _Elevator (instead of lift)_
+_Example sentence: I’m taking the elevator up to my apartment._
 
 **<span class="c-aqua">CANADIAN ENGLISH</span>**: Canadian English sits somewhere between British and American English. Canadians often use a mix of American and British vocabulary spelling conventions.
 
