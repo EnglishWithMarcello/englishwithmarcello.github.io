@@ -26,9 +26,9 @@ Let’s take a quick tour of some of the most well-known varieties of English.
 
 Some common British words:
 
-- _Flat (instead of apartment)_
-- _Holiday (instead of vacation)_
-- _Lift (instead of elevator)_
+- Flat (instead of apartment)
+- Holiday (instead of vacation)
+- Lift (instead of elevator)
 
 _Example sentence: I’m taking the lift up to my flat._
 
@@ -36,19 +36,20 @@ _Example sentence: I’m taking the lift up to my flat._
 
 Some common American words include: 
 
-- _Apartment (instead of flat)_
-- _Vacation (instead of holiday)_
-- _Elevator (instead of lift)_
+- Apartment (instead of flat)
+- Vacation (instead of holiday)
+- Elevator (instead of lift)
+
 _Example sentence: I’m taking the elevator up to my apartment._
 
 **<span class="c-aqua">CANADIAN ENGLISH</span>**: Canadian English sits somewhere between British and American English. Canadians often use a mix of American and British vocabulary spelling conventions.
 
 Some common Canadian words include: 
 
-- _Colour_ 
-- _Centre_
-- _Toque (hat)_
-- _Washroom_
+- Colour 
+- Centre
+- Toque (hat)
+- Washroom
 
 _Example sentence: Don’t forget your toque. It’s going to be cold today!_
 
@@ -56,9 +57,9 @@ _Example sentence: Don’t forget your toque. It’s going to be cold today!_
 
 Some common Australian words include: 
 
-- _Arvo (afternoon)_ 
-- _Barbie (barbecue)_ 
-- _Brekkie (breakfast)_
+- Arvo (afternoon) 
+- Barbie (barbecue) 
+- Brekkie (breakfast)
 
 _Example sentence: Let’s have a barbie this arvo._
 
@@ -66,8 +67,8 @@ _Example sentence: Let’s have a barbie this arvo._
 
 Some common New Zealand words include: 
 
-- _Kia ora (hello)_ 
-- _Bach (a holiday home)_
+- Kia ora (hello) 
+- Bach (a holiday home)
 
 _Example sentence: We’re spending the weekend at our bach by the beach._
 
@@ -75,9 +76,9 @@ _Example sentence: We’re spending the weekend at our bach by the beach._
 
 Some common Irish words include: 
 
-- _Craic (fun, news)_
-- _Grand (fine)_
-- _Eejit (idiot)_
+- Craic (fun, news)
+- Grand (fine)
+- Eejit (idiot)
 
 _Example sentence: Everything’s grand. We had great craic at the party._
 
@@ -85,9 +86,9 @@ _Example sentence: Everything’s grand. We had great craic at the party._
 
 Some common Scottish words include: 
 
-- _Wee (small)_
-- _Bairn (child)_
-- _Aye (yes)_
+- Wee (small)
+- Bairn (child)
+- Aye (yes)
 
 _Example sentence: It’s a wee house._
 
@@ -95,9 +96,9 @@ _Example sentence: It’s a wee house._
 
 Some common South African words include: 
 
-- _Braai (barbecue)_
-- _Robot (traffic light)_
-- _Lekker (great, enjoyable, nice)_
+- Braai (barbecue)
+- Robot (traffic light)
+- Lekker (great, enjoyable, nice)
 
 _Example sentence: We’re having a braai this weekend. It’s going to be lekker!_
 
