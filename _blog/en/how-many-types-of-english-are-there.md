@@ -29,6 +29,7 @@ Some common British words:
 - _Flat (instead of apartment)_
 - _Holiday (instead of vacation)_
 - _Lift (instead of elevator)_
+
 _Example sentence: I’m taking the lift up to my flat._
 
 **<span class="c-aqua">AMERICAN ENGLISH</span>**: American English is probably the most influential variety thanks to Hollywood, television, music, and social media.
