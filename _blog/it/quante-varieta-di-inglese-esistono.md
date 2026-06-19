@@ -109,3 +109,5 @@ _Frase esempio: We're having a braai this weekend. It's going to be lekker!_
 La cosa più importante non è scegliere l'inglese "perfetto", ma essere in grado di comunicare con sicurezza con persone provenienti da tutto il mondo.
 
 Dopotutto, l'inglese non è più la lingua di un solo paese. È una lingua globale, parlata in molti modi diversi.
+
+[[img:1]]
