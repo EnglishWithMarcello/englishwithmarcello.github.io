@@ -157,7 +157,11 @@
   .post-figure.align-left  { float: left;  margin: 0.4rem 1.6rem 1rem 0; }
   .post-figure.align-right { float: right; margin: 0.4rem 0 1rem 1.6rem; }
   @media (max-width: 600px) {
-    .post-figure.align-left, .post-figure.align-right { float: none; margin: 1.6rem auto; max-width: 100%; }
+    /* phones: un-float and center every in-post image; medium/large/full fill the width, small stays compact */
+    .post-figure { float: none; margin-left: auto; margin-right: auto; }
+    .post-figure.align-left, .post-figure.align-right { margin: 1.6rem auto; }
+    .post-figure.size-medium, .post-figure.size-large, .post-figure.size-full { max-width: 100%; }
+    .post-figure.size-small { max-width: 220px; }
   }
 
   /* CTA */
