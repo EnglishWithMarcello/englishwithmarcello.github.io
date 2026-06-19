@@ -357,12 +357,15 @@
 {%- if imglist and imglist != empty -%}
 {%- for img in imglist -%}
 {%- assign n = forloop.index -%}
-{%- assign isrc = img.image -%}
-{%- assign icap = img.caption -%}
-{%- if isrc == nil or isrc == '' -%}{%- if sibling and sibling.images -%}{%- assign sib = sibling.images[forloop.index0] -%}{%- if sib -%}{%- assign isrc = sib.image -%}{%- if icap == nil or icap == '' -%}{%- assign icap = sib.caption -%}{%- endif -%}{%- endif -%}{%- endif -%}{%- endif -%}
+{%- assign useimg = img -%}
+{%- if img.image == nil or img.image == '' -%}{%- if sibling and sibling.images -%}{%- assign sib = sibling.images[forloop.index0] -%}{%- if sib -%}{%- assign useimg = sib -%}{%- endif -%}{%- endif -%}{%- endif -%}
+{%- assign isrc = useimg.image -%}
+{%- assign isize = useimg.size | default: 'medium' -%}
+{%- assign ialign = useimg.align | default: 'center' -%}
+{%- assign icap = useimg.caption -%}
 {%- if isrc and isrc != '' -%}
 {%- unless isrc contains '://' -%}{%- assign ic = isrc | slice: 0 -%}{%- if ic != '/' -%}{%- assign isrc = isrc | prepend: '/' -%}{%- endif -%}{%- assign isrc = isrc | relative_url -%}{%- endunless -%}
-{%- capture fig -%}<figure class="post-figure size-{{ img.size | default: 'medium' }} align-{{ img.align | default: 'center' }}"><img src="{{ isrc }}" alt="{{ icap | default: page.title | escape }}">{%- if icap and icap != '' %}<figcaption>{{ icap }}</figcaption>{% endif -%}</figure>{%- endcapture -%}
+{%- capture fig -%}<figure class="post-figure size-{{ isize }} align-{{ ialign }}"><img src="{{ isrc }}" alt="{{ icap | default: page.title | escape }}">{%- if icap and icap != '' %}<figcaption>{{ icap }}</figcaption>{% endif -%}</figure>{%- endcapture -%}
 {%- assign mp = '<p>[[img:' | append: n | append: ']]</p>' -%}
 {%- assign mb = '[[img:' | append: n | append: ']]' -%}
 {%- assign body = body | replace: mp, fig | replace: mb, fig -%}
