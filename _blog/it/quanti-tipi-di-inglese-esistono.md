@@ -22,7 +22,7 @@ Molti studenti rimangono sorpresi nello scoprire che non esiste un solo tipo di 
 La buona notizia? Chi parla inglese riesce generalmente a capirsi, anche quando gli accenti sono molto diversi.
 Facciamo un rapido viaggio tra alcune delle varietà di inglese più conosciute.
 
-**<span class="c-aqua">INGLESE BRITANNICO</span>**: l’inglese britannico è la varietà parlata nel Regno Unito ed è spesso quella insegnata in molte scuole europee.
+**<span class="c-aqua">INGLESE BRITANNICO</span>** l’inglese britannico è la varietà parlata nel Regno Unito ed è spesso quella insegnata in molte scuole europee.
 
 Alcune parole comuni: 
 
@@ -32,7 +32,7 @@ Alcune parole comuni:
 
 _Frase esempio: I’m taking the lift up to my flat._
 
-**<span class="c-aqua">INGLESE AMERICANO</span>**: l’inglese americano è probabilmente la varietà più influente grazie a Hollywood, alla televisione, alla musica e ai social media.
+**<span class="c-aqua">INGLESE AMERICANO</span>** l’inglese americano è probabilmente la varietà più influente grazie a Hollywood, alla televisione, alla musica e ai social media.
 
 Alcune parole comuni: 
 
@@ -42,7 +42,7 @@ Alcune parole comuni:
 
 _Frase esempio: I’m taking the elevator up to my apartment._
 
-**<span class="c-aqua">INGLESE CANADESE</span>**: l’inglese canadese si colloca a metà strada tra quello britannico e quello americano. I canadesi utilizzano spesso il vocabolario americano, ma mantengono alcune grafie britanniche.
+**<span class="c-aqua">INGLESE CANADESE</span>** l’inglese canadese si colloca a metà strada tra quello britannico e quello americano. I canadesi utilizzano spesso il vocabolario americano, ma mantengono alcune grafie britanniche.
 
 Alcune parole comuni: 
 
@@ -53,7 +53,7 @@ Alcune parole comuni:
 
 _Frase esempio: Don’t forget your toque. It’s going to be cold today!_
 
-**<span class="c-aqua">INGLESE AUSTRALIANO</span>**: l’inglese australiano è noto per il suo accento unico e per l’abitudine di abbreviare molte parole.
+**<span class="c-aqua">INGLESE AUSTRALIANO</span>** l’inglese australiano è noto per il suo accento unico e per l’abitudine di abbreviare molte parole.
 
 Alcune parole comuni: 
 
@@ -63,7 +63,7 @@ Alcune parole comuni:
 
 _Frase esempio: let’s have a barbie this arvo._
 
-**<span class="c-aqua">INGLESE NEOZELANDESE</span>**: l’inglese neozelandese è simile a quello australiano, ma possiede un accento e un vocabolario propri, influenzati dalla lingua Māori.
+**<span class="c-aqua">INGLESE NEOZELANDESE</span>** l’inglese neozelandese è simile a quello australiano, ma possiede un accento e un vocabolario propri, influenzati dalla lingua Māori.
 
 Alcune parole comuni: 
 
@@ -72,7 +72,7 @@ Alcune parole comuni:
 
 _Frase esempio: We’re spending the weekend at our bach by the beach._
 
-**<span class="c-aqua">INGLESE IRLANDESE</span>**: l’inglese irlandese ha un ritmo molto caratteristico e include espressioni che difficilmente sentirai altrove.
+**<span class="c-aqua">INGLESE IRLANDESE</span>** l’inglese irlandese ha un ritmo molto caratteristico e include espressioni che difficilmente sentirai altrove.
 
 Alcune parole comuni:
 
@@ -82,7 +82,7 @@ Alcune parole comuni:
 
 _Frase esempio: Everything’s grand. We had great craic at the party._
 
-**<span class="c-aqua">INGLESE SCOZZESE</span>**: l’inglese scozzese può suonare molto diverso dalle altre varietà.
+**<span class="c-aqua">INGLESE SCOZZESE</span>** l’inglese scozzese può suonare molto diverso dalle altre varietà.
 
 Alcune parole comuni: 
 
@@ -92,7 +92,7 @@ Alcune parole comuni:
 
 _Frase esempio: It’s a wee house._
 
-**<span class="c-aqua">INGLESE SUDAFRICANO</span>**: l’inglese sudafricano combina influenze dell’inglese britannico e delle lingue locali.
+**<span class="c-aqua">INGLESE SUDAFRICANO</span>** l’inglese sudafricano combina influenze dell’inglese britannico e delle lingue locali.
 
 Alcune parole comuni: 
 

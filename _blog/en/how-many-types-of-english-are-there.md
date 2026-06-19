@@ -22,7 +22,7 @@ Many learners are surprised to discover that there isn’t just one type of Engl
 The good news? English speakers can usually understand each other, even when they sound very different.
 Let’s take a quick tour of some of the most well-known varieties of English.
 
-**<span class="c-aqua">BRITISH ENGLISH</span>**: British English is the variety spoken in the United Kingdom and is often the version taught in many European schools. 
+**<span class="c-aqua">BRITISH ENGLISH</span>** British English is the variety spoken in the United Kingdom and is often the version taught in many European schools. 
 
 Some common British words:
 
@@ -32,7 +32,7 @@ Some common British words:
 
 _Example sentence: I’m taking the lift up to my flat._
 
-**<span class="c-aqua">AMERICAN ENGLISH</span>**: American English is probably the most influential variety thanks to Hollywood, television, music, and social media.
+**<span class="c-aqua">AMERICAN ENGLISH</span>** American English is probably the most influential variety thanks to Hollywood, television, music, and social media.
 
 Some common American words include: 
 
@@ -42,7 +42,7 @@ Some common American words include:
 
 _Example sentence: I’m taking the elevator up to my apartment._
 
-**<span class="c-aqua">CANADIAN ENGLISH</span>**: Canadian English sits somewhere between British and American English. Canadians often use a mix of American and British vocabulary spelling conventions.
+**<span class="c-aqua">CANADIAN ENGLISH</span>** Canadian English sits somewhere between British and American English. Canadians often use a mix of American and British vocabulary spelling conventions.
 
 Some common Canadian words include: 
 
@@ -53,7 +53,7 @@ Some common Canadian words include:
 
 _Example sentence: Don’t forget your toque. It’s going to be cold today!_
 
-**<span class="c-aqua">AUSTRALIAN ENGLISH</span>**: Australian English is known for its unique accent and love of abbreviations.
+**<span class="c-aqua">AUSTRALIAN ENGLISH</span>** Australian English is known for its unique accent and love of abbreviations.
 
 Some common Australian words include: 
 
@@ -63,7 +63,7 @@ Some common Australian words include:
 
 _Example sentence: Let’s have a barbie this arvo._
 
-**<span class="c-aqua">NEW ZEALAND ENGLISH</span>**: New Zealand English is similar to Australian English but has its own accent and vocabulary influenced by the Māori language.
+**<span class="c-aqua">NEW ZEALAND ENGLISH</span>** New Zealand English is similar to Australian English but has its own accent and vocabulary influenced by the Māori language.
 
 Some common New Zealand words include: 
 
@@ -72,7 +72,7 @@ Some common New Zealand words include:
 
 _Example sentence: We’re spending the weekend at our bach by the beach._
 
-**<span class="c-aqua">IRISH ENGLISH</span>**: Irish English has a distinctive rhythm and includes many expressions that you won’t hear elsewhere.
+**<span class="c-aqua">IRISH ENGLISH</span>** Irish English has a distinctive rhythm and includes many expressions that you won’t hear elsewhere.
 
 Some common Irish words include: 
 
@@ -82,7 +82,7 @@ Some common Irish words include:
 
 _Example sentence: Everything’s grand. We had great craic at the party._
 
-**<span class="c-aqua">SCOTTISH ENGLISH</span>**: Scottish English can sound very different from other varieties.
+**<span class="c-aqua">SCOTTISH ENGLISH</span>** Scottish English can sound very different from other varieties.
 
 Some common Scottish words include: 
 
@@ -92,7 +92,7 @@ Some common Scottish words include:
 
 _Example sentence: It’s a wee house._
 
-**<span class="c-aqua">SOUTH AFRICAN ENGLISH</span>:** South African English combines influences from British English and local languages.
+**<span class="c-aqua">SOUTH AFRICAN ENGLISH</span>** South African English combines influences from British English and local languages.
 
 Some common South African words include: 
 
