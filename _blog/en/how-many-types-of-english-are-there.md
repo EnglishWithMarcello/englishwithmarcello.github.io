@@ -8,7 +8,7 @@ excerpt: Did you know there isn't just one type of English? From British and Ame
 date: 2026-06-16T16:32
 images:
   - image: /assets/images/blog/Immagine 2026-06-18 095631.png
-    size: small
+    size: medium
     align: center
     caption: ''
 line_spacing: '1.5'
