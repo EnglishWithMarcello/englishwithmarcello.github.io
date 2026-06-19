@@ -8,7 +8,7 @@ excerpt: Discover the main features of Canadian English, including pronunciation
 date: 2026-06-18T07:00
 images:
   - image: /assets/images/blog/ling-app-5pYT4Om_LJI-unsplash.jpg
-    size: medium
+    size: large
     align: center
     caption: ''
 english_corner: []
