@@ -340,15 +340,21 @@
   <span class="article-category">{{ page.category }}</span>
   <h1 class="article-title{% if page.title_color and page.title_color != '' %} tc-{{ page.title_color }}{% endif %}">{{ page.title }}</h1>
   <div class="article-divider"></div>
-  {%- if page.featured_image and page.featured_image != '' %}
-  <figure class="featured-image"><img src="{{ page.featured_image | relative_url }}" alt="{{ page.title | escape }}"></figure>
+  {%- if page.featured_image and page.featured_image != '' -%}
+  {%- assign fsrc = page.featured_image -%}
+  {%- unless fsrc contains '://' -%}{%- assign fc = fsrc | slice: 0 -%}{%- if fc != '/' -%}{%- assign fsrc = fsrc | prepend: '/' -%}{%- endif -%}{%- assign fsrc = fsrc | relative_url -%}{%- endunless %}
+  <figure class="featured-image"><img src="{{ fsrc }}" alt="{{ page.title | escape }}"></figure>
   {%- endif %}
   <div class="article-body" style="--body-lh: {{ page.line_spacing | default: 1.75 }};">
 {%- capture body %}{{ content }}{% endcapture -%}
+{%- comment %} make any relative body-image paths root-absolute so they work under /it/ too {% endcomment -%}
+{%- assign body = body | replace: 'src="assets/', 'src="/assets/' | replace: "src='assets/", "src='/assets/" -%}
 {%- if page.images and page.images != empty -%}
 {%- for img in page.images -%}
 {%- assign n = forloop.index -%}
-{%- capture fig -%}<figure class="post-figure size-{{ img.size | default: 'medium' }} align-{{ img.align | default: 'center' }}"><img src="{{ img.image | relative_url }}" alt="{{ img.caption | default: page.title | escape }}">{%- if img.caption and img.caption != '' %}<figcaption>{{ img.caption }}</figcaption>{% endif -%}</figure>{%- endcapture -%}
+{%- assign isrc = img.image -%}
+{%- unless isrc contains '://' -%}{%- assign ic = isrc | slice: 0 -%}{%- if ic != '/' -%}{%- assign isrc = isrc | prepend: '/' -%}{%- endif -%}{%- assign isrc = isrc | relative_url -%}{%- endunless -%}
+{%- capture fig -%}<figure class="post-figure size-{{ img.size | default: 'medium' }} align-{{ img.align | default: 'center' }}"><img src="{{ isrc }}" alt="{{ img.caption | default: page.title | escape }}">{%- if img.caption and img.caption != '' %}<figcaption>{{ img.caption }}</figcaption>{% endif -%}</figure>{%- endcapture -%}
 {%- assign mp = '<p>[[img:' | append: n | append: ']]</p>' -%}
 {%- assign mb = '[[img:' | append: n | append: ']]' -%}
 {%- assign body = body | replace: mp, fig | replace: mb, fig -%}
