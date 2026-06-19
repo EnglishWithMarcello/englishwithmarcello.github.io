@@ -60,9 +60,9 @@ _Example sentence: Everything’s grand. We had great craic at the party._
 
 <span class="c-aqua">**SCOTTISH ENGLISH**</span>: Scottish English can sound very different from other varieties.
 
-_Some common Scottish words include: Wee (small) | Bairn (child) | Aye (yes)_
+Some common Scottish words include: Wee (small) | Bairn (child) | Aye (yes)_
 
-_Example sentence: It’s a wee house._
+Example sentence: It’s a wee house._
 
 **<span class="c-aqua">SOUTH AFRICAN ENGLISH</span>:** South African English combines influences from British English and local languages.
 
