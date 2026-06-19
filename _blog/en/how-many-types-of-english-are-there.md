@@ -62,6 +62,6 @@ _Example sentence: It’s a wee house._
 _Some common South African words include: Braai (barbecue) / Robot (traffic light) / Lekker (great, enjoyable, nice)_
 _Example sentence: We’re having a braai this weekend. It’s going to be lekker!_
 
-<span class="c-aqua">**So which English should you learn?**</span> The answer is simple: learn the variety that is most useful for your goals. If you plan to move to Canada, focus on Canadian English. If you work with American companies, American English may be more useful. If you live in Europe, British English is often the most familiar option. 
+**<span class="c-aqua">So which English should you learn?</span>** The answer is simple: learn the variety that is most useful for your goals. If you plan to move to Canada, focus on Canadian English. If you work with American companies, American English may be more useful. If you live in Europe, British English is often the most familiar option. 
 The most important thing is not choosing the “perfect” English. It’s being able to communicate confidently with people from around the world.
 After all, English is no longer the language of just one country. It’s a global language spoken in many different ways.
