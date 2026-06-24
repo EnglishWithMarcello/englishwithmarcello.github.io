@@ -18,9 +18,9 @@ english_corner:
     definition: i luoghi in cui si trova qualcosa o qualcuno
 line_spacing: '1.5'
 layout: post
-lang: en
+lang: it
 ref: canada-italy-distance
-permalink: /blog/canada-italy-distance/
+permalink: it/blog/canada-italia-distanza/
 ---
 
 Benvenuti nel mio blog! Oggi parliamo di distanze. E di come ho dovuto ricalibrare completamente la mia idea di “vicino” e “lontano.”
