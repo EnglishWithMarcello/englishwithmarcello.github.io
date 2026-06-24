@@ -8,6 +8,13 @@ category: Clima
 excerpt: In Canada l'inverno ti costringe a stare in casa per mesi, mentre in Italia sei ancora fuori a bere lo spritz!
 date: 2026-05-27
 images: []
+english_corner:
+  - term: Frostbite
+    definition: congelamento della pelle
+  - term: Netflix and chill
+    definition: rilassarsi a casa guardando serie TV
+  - term: Movie nights
+    definition: serate dedicate a guardare film insieme
 line_spacing: '1.5'
 ---
 
