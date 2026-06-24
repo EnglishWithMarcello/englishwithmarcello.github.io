@@ -4,9 +4,11 @@ published: true
 featured: false
 title: 'Canada vs Italy: How Distance Feels Different'
 title_color: ''
+featured_image: ''
 category: Geography
 excerpt: A three-hour drive takes you to the next city in Canada — but in Italy, a different world.
 date: 2026-05-03
+images: []
 english_corner:
   - term: Mindset
     definition: the way you think and see the world
