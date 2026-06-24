@@ -18,8 +18,9 @@ english_corner:
     definition: i luoghi in cui si trova qualcosa o qualcuno
 line_spacing: '1.5'
 layout: post
-lang: it
-permalink: it/blog/canada-italia-distanza/
+lang: en
+ref: canada-italy-distance
+permalink: /blog/canada-italy-distance/
 ---
 
 Benvenuti nel mio blog! Oggi parliamo di distanze. E di come ho dovuto ricalibrare completamente la mia idea di “vicino” e “lontano.”
@@ -46,4 +47,4 @@ Questo influisce sul **lifestyle** — in Canada i lunghi spostamenti sono nor
 Un’altra grande differenza è la distanza tra le **locations** europee.
 
 - In Europa con due ore di volo puoi andare ovunque: Londra, Parigi, Madrid, Amsterdam.
-- In Canada con due ore di volo sei ancora nella stessa provincia — se sei fortunato, forse raggiungi Ottawa.
+- In Canada con due ore di volo sei ancora nella stessa provincia — se sei fortunato, forse raggiungi Ottawa. Ciao!
