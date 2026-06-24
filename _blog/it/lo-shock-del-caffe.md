@@ -8,6 +8,13 @@ category: Vita Quotidiana
 excerpt: Dalle grandi tazze di Tim Hortons all'espresso bevuto in piedi al bar. Lezioni di vita che impari lì, sul momento.
 date: 2026-06-08
 images: []
+english_corner:
+  - term: Coffee to go
+    definition: caffè da asporto
+  - term: Double-double
+    definition: caffè canadese con doppia panna e doppio zucchero
+  - term: Hub
+    definition: centro, punto di riferimento
 line_spacing: '1.5'
 ---
 
