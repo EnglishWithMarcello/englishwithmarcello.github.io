@@ -7,8 +7,15 @@ featured_image: ''
 category: Myths
 excerpt: Cabins in the woods? Bears in the city? And other myths about Canada that we tell ourselves in Italy.
 date: 2026-05-15
+images: []
+english_corner:
+  - term: Myths
+    definition: false or exaggerated beliefs
+  - term: First Nations
+    definition: Indigenous peoples of Canada
+  - term: Cottage
+    definition: lake house / country house
 line_spacing: '1.5'
-layout: post
 ---
 
 Hey, there! Today, let's bust some **myths** about Canada that I often hear in Italy.
