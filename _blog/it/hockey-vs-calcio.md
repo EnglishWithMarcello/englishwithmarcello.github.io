@@ -8,6 +8,13 @@ category: Sport
 excerpt: 'Hockey in Canada, calcio in Italia: due modi di vivere lo sport, tra rituali, passione e identità.'
 date: 2026-04-21
 images: []
+english_corner:
+  - term: NHL
+    definition: Lega Nazionale di Hockey
+  - term: Body checking
+    definition: contatto fisico legale nell'hockey 
+  - term: Bandwagon
+    definition: tifare per una squadra vincente anche se non la seguivi prima
 line_spacing: '1.5'
 ---
 
