@@ -8,6 +8,13 @@ category: Daily Life
 excerpt: From giant Tim Hortons cups to espresso sipped standing at the bar. Life lessons you learn right there, on the spot.
 date: 2026-06-08
 images: []
+english_corner:
+  - term: Coffee to go
+    definition: takeaway coffee
+  - term: Double-double
+    definition: Canadian coffee with double cream and double sugar 
+  - term: Hub
+    definition: center, point of reference
 line_spacing: '1.5'
 ---
 
