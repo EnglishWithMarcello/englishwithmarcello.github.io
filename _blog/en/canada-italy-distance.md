@@ -15,8 +15,6 @@ english_corner:
 line_spacing: '1.5'
 layout: post
 lang: en
-ref: canada-italy-distance
-permalink: /blog/canada-italy-distance/
 ---
 
 Welcome to my blog! Today let's talk about distances. And about how I had to completely recalibrate my idea of "near" and "far."
