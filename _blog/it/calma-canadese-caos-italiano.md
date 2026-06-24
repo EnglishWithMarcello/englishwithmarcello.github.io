@@ -12,6 +12,7 @@ english_corner:
     definition: messaggi vocali
   - term: Group chat
     definition: una chat condivisa con più persone
+line_spacing: '1.5'
 layout: post
 ---
 

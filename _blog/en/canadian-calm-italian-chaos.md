@@ -12,6 +12,7 @@ english_corner:
     definition: audio messages
   - term: Group chat
     definition: a shared messaging thread with multiple people
+line_spacing: '1.5'
 layout: post
 ---
 
