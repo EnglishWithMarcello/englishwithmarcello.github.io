@@ -14,7 +14,7 @@ images:
     align: center
     caption: ''
 english_corner: []
-line_spacing: '1.75'
+line_spacing: '1.5'
 ---
 
 When people say they are learning English, a simple question comes to mind: <span class="c-aqua">which English</span>?

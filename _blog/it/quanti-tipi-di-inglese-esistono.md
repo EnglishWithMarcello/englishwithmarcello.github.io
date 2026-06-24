@@ -14,7 +14,7 @@ images:
     align: center
     caption: ''
 english_corner: []
-line_spacing: '1.75'
+line_spacing: '1.5'
 ---
 
 Quando le persone dicono che stanno imparando l’inglese, viene spontanea una semplice domanda: <span class="c-aqua">quale inglese?</span>
