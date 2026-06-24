@@ -4,9 +4,11 @@ published: true
 featured: false
 title: 'From Canadian Calm to Italian Chaos: How Communication Changes'
 title_color: ''
+featured_image: ''
 category: Communication
 excerpt: Discover how Canadians stay calm and quiet while Italians turn every WhatsApp into endless chaos!
 date: 2026-03-16
+images: []
 english_corner:
   - term: Business meetings
     definition: scheduled meetings to discuss work topics
