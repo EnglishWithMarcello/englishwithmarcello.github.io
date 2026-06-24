@@ -1,6 +1,6 @@
 ---
 translationKey: canada-italy-distance
-published: false
+published: true
 featured: false
 title: 'Canada vs Italia: Come la Distanza si Percepisce Diversamente'
 title_color: ''
@@ -20,7 +20,7 @@ line_spacing: '1.5'
 layout: post
 lang: en
 ref: canada-italy-distance
-permalink: /blog/canada-italy-distance/
+permalink: /it/blog/due-paesi-due-estati/
 ---
 
 Benvenuti nel mio blog! Oggi parliamo di distanze. E di come ho dovuto ricalibrare completamente la mia idea di "vicino" e "lontano."
