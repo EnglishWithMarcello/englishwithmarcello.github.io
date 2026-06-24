@@ -8,6 +8,13 @@ category: Climate
 excerpt: In Canada, winter forces you to stay inside for months, while in Italy you're still out drinking spritz!
 date: 2026-05-27
 images: []
+english_corner:
+  - term: Frostbite
+    definition: when your skin freezes
+  - term: Netflix and chill
+    definition: relaxing at home watching TV shows
+  - term: Movie nights
+    definition: evenings dedicated to watching movies together
 line_spacing: '1.5'
 ---
 
