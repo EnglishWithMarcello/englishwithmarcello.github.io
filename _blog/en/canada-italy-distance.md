@@ -18,7 +18,7 @@ layout: post
 
 Welcome to my blog! Today let's talk about distances. And about how I had to completely recalibrate my idea of "near" and "far."
 
-**Canada is big, really BIG.** To go from Toronto to Vancouver, you have to drive about 4,400 km. That's 44 hours of driving. To give you an idea: it's like driving from Milan to… Jerusalem.
+**Canada is big, really BIG.** To go from Toronto to Vancouver, you have to drive about 4,400 km. That's 44 hours of driving. To give you an idea: it's like driving from Milan to… Jerusalem. 
 
 **My first Italian shock:**
 
