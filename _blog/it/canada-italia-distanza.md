@@ -13,7 +13,7 @@ english_corner:
   - term: Mindset
     definition: il modo in cui pensi e vedi il mondo
   - term: Lifestyle
-    definition: come vivi ogni giorno
+    definition: stile di vita
   - term: Locations
     definition: i luoghi in cui si trova qualcosa o qualcuno
 line_spacing: '1.5'
