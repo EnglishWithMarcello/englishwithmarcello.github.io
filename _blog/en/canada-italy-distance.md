@@ -14,7 +14,6 @@ english_corner:
     definition: the places where something or someone is
 line_spacing: '1.5'
 layout: post
-lang: en
 ---
 
 Welcome to my blog! Today let's talk about distances. And about how I had to completely recalibrate my idea of "near" and "far."
