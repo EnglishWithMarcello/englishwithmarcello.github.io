@@ -19,7 +19,6 @@ english_corner:
 line_spacing: '1.5'
 layout: post
 lang: it
-ref: canada-italy-distance
 permalink: it/blog/canada-italia-distanza/
 ---
 
