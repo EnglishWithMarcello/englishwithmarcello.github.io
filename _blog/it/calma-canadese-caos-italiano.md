@@ -4,9 +4,15 @@ published: true
 featured: false
 title: 'Dalla Calma Canadese al Caos Italiano: Come Cambia la Comunicazione'
 title_color: ''
+featured_image: ''
 category: Comunicazione
 excerpt: Scopri come i canadesi restano calmi mentre gli italiani trasformano ogni WhatsApp in un caos infinito!
 date: 2026-03-16
+images:
+  - image: ''
+    size: medium
+    align: center
+    caption: ''
 english_corner:
   - term: Business meetings
     definition: riunioni di lavoro programmate
