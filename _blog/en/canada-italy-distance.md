@@ -1,5 +1,6 @@
 ---
 translationKey: canada-italy-distance
+published: true
 title: 'Canada vs Italy: How Distance Feels Different'
 category: Geography
 excerpt: A three-hour drive takes you to the next city in Canada — but in Italy, a different world.
