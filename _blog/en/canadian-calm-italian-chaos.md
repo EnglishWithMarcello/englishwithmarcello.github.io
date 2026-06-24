@@ -1,7 +1,9 @@
 ---
 translationKey: canadian-calm-italian-chaos
 published: true
+featured: false
 title: 'From Canadian Calm to Italian Chaos: How Communication Changes'
+title_color: ''
 category: Communication
 excerpt: Discover how Canadians stay calm and quiet while Italians turn every WhatsApp into endless chaos!
 date: 2026-03-16
@@ -13,7 +15,6 @@ english_corner:
   - term: Group chat
     definition: a shared messaging thread with multiple people
 line_spacing: '1.5'
-layout: post
 ---
 
 Glad you're here! Today, I'll talk about the funny differences in how Italians and Canadians use WhatsApp.
