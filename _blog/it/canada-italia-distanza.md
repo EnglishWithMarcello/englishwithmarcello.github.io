@@ -25,7 +25,7 @@ permalink: /it/blog/due-paesi-due-estati/
 
 Benvenuti nel mio blog! Oggi parliamo di distanze. E di come ho dovuto ricalibrare completamente la mia idea di "vicino" e "lontano."
 
-**Il Canada è grande, davvero GRANDE.** Per andare da Toronto a Vancouver bisogna percorrere circa 4.400 km. Sono 44 ore di guida. Per darvi un'idea: è come guidare da Milano a… Gerusalemme.
+**Il Canada è grande, davvero GRANDE.** Per andare da Toronto a Vancouver bisogna percorrere circa 4.400 km. Sono 44 ore di guida. Per darvi un'idea: è come guidare da Milano a… Gerusalemme. 
 
 **Il mio primo shock italiano:**
 
