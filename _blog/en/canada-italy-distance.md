@@ -1,7 +1,9 @@
 ---
 translationKey: canada-italy-distance
 published: true
+featured: false
 title: 'Canada vs Italy: How Distance Feels Different'
+title_color: ''
 category: Geography
 excerpt: A three-hour drive takes you to the next city in Canada — but in Italy, a different world.
 date: 2026-05-03
@@ -13,7 +15,6 @@ english_corner:
   - term: Locations
     definition: the places where something or someone is
 line_spacing: '1.5'
-layout: post
 ---
 
 Welcome to my blog! Today let's talk about distances. And about how I had to completely recalibrate my idea of "near" and "far."
