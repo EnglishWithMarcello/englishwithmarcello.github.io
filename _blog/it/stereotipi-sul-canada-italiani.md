@@ -1,8 +1,6 @@
 ---
 layout: post
-lang: it
-ref: canadian-stereotypes-italians-believe
-permalink: /it/blog/stereotipi-sul-canada-italiani/
+translationKey: canadian-stereotypes-italians-believe
 date: 2026-05-15
 category: "Miti"
 title: "Gli Stereotipi sul Canada che gli Italiani Credono Siano Veri"
