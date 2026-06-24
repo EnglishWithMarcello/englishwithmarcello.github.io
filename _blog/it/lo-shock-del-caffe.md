@@ -1,8 +1,5 @@
 ---
-layout: post
-lang: it
-ref: coffee-shock-tim-hortons
-permalink: /it/blog/lo-shock-del-caffe/
+translationKey: coffee-shock-tim-hortons
 date: 2026-06-08
 category: "Vita Quotidiana"
 title: "Lo Shock del Caffè: da Tim Hortons al Bar Italiano"
