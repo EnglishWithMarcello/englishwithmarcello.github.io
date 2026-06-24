@@ -1,8 +1,6 @@
 ---
 layout: post
-lang: en
-ref: canadian-stereotypes-italians-believe
-permalink: /blog/canadian-stereotypes-italians-believe/
+translationKey: canadian-stereotypes-italians-believe
 date: 2026-05-15
 category: "Myths"
 title: "Canadian Stereotypes Italians Actually Believe"
