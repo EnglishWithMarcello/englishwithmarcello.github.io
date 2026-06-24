@@ -1,8 +1,6 @@
 ---
 layout: post
-lang: it
-ref: canadian-calm-italian-chaos
-permalink: /it/blog/calma-canadese-caos-italiano/
+translationKey: canadian-calm-italian-chaos
 date: 2026-03-16
 category: "Comunicazione"
 title: "Dalla Calma Canadese al Caos Italiano: Come Cambia la Comunicazione"
