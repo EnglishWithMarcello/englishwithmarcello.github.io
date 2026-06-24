@@ -1,8 +1,5 @@
 ---
-layout: post
-lang: en
-ref: hockey-vs-football
-permalink: /blog/hockey-vs-football/
+translationKey: hockey-vs-football
 date: 2026-04-21
 category: "Sport"
 title: "Hockey Night vs Football: National Sports Passions"
