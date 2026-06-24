@@ -1,7 +1,9 @@
 ---
 translationKey: canadian-calm-italian-chaos
 published: true
+featured: false
 title: 'Dalla Calma Canadese al Caos Italiano: Come Cambia la Comunicazione'
+title_color: ''
 category: Comunicazione
 excerpt: Scopri come i canadesi restano calmi mentre gli italiani trasformano ogni WhatsApp in un caos infinito!
 date: 2026-03-16
@@ -13,7 +15,6 @@ english_corner:
   - term: Group chat
     definition: una chat condivisa con più persone
 line_spacing: '1.5'
-layout: post
 ---
 
 Contento che siate qui! Oggi parlerò delle divertenti differenze nel modo in cui italiani e canadesi usano WhatsApp.
