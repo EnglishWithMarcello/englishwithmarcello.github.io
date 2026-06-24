@@ -1,8 +1,5 @@
 ---
-layout: post
-lang: en
-ref: canadian-vs-italian-winters
-permalink: /blog/canadian-vs-italian-winters/
+translationKey: canadian-vs-italian-winters
 date: 2026-05-27
 category: "Climate"
 title: "Canadian Winters vs Italian Winters: -25°C vs 3°C"
