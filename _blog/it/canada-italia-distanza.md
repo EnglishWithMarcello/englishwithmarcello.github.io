@@ -18,7 +18,7 @@ english_corner:
     definition: i luoghi in cui si trova qualcosa o qualcuno
 line_spacing: '1.5'
 layout: post
-lang: en
+lang: it
 ref: canada-italy-distance
 permalink: /it/blog/canada-italia-distanza/
 ---
