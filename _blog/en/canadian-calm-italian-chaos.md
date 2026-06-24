@@ -4,7 +4,7 @@ translationKey: canadian-calm-italian-chaos
 date: 2026-03-16
 category: "Communication"
 title: "From Canadian Calm to Italian Chaos: How Communication Changes"
-excerpt: "Discover how Canadians stay calm and quiet while Italians turn every WhatsApp into endless chaos."
+excerpt: "Discover how Canadians stay calm and quiet while Italians turn every WhatsApp into endless chaos!"
 ---
 <p>Glad you're here! Today, I'll talk about the funny differences in how Italians and Canadians use WhatsApp.</p>
 <p><strong>My Canadian WhatsApp experience</strong><br>In Canada, WhatsApp conversations are like <strong>business meetings</strong>: short, direct, efficient. "Hey, how are you?" "Good, you?" "Good. Coffee later?" "Sure. 3pm?" "Perfect." Conversation over. We treat WhatsApp like a tool — get the information, make the plan, done.</p>
