@@ -1,8 +1,5 @@
 ---
-layout: post
-lang: en
-ref: coffee-shock-tim-hortons
-permalink: /blog/coffee-shock-tim-hortons/
+translationKey: coffee-shock-tim-hortons
 date: 2026-06-08
 category: "Daily Life"
 title: "The Coffee Shock: From Tim Hortons to the Italian Bar"
