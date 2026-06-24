@@ -7,8 +7,15 @@ featured_image: ''
 category: Miti
 excerpt: Capanne nei boschi? Orsi in città? E altri miti sul Canada che ci raccontiamo in Italia.
 date: 2026-05-15
+images: []
+english_corner:
+  - term: Myths
+    definition: miti, credenze false o esagerate
+  - term: First Nations
+    definition: popoli indigeni del Canada
+  - term: Cottage
+    definition: casa al lago / casa in campagna
 line_spacing: '1.5'
-layout: post
 ---
 
 Ciao a tutti! Oggi sfatiamo alcuni **myths** sul Canada che sento spesso in Italia.
