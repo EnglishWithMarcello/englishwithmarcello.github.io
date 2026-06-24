@@ -8,6 +8,13 @@ category: Sport
 excerpt: 'Hockey in Canada, football in Italy: two ways to live sport, between rituals, passion, and identity.'
 date: 2026-04-21
 images: []
+english_corner:
+  - term: NHL
+    definition: National Hockey League
+  - term: Body checking
+    definition: legal physical contact in hockey 
+  - term: Bandwagon
+    definition: supporting a winning team even if you didn't follow them before
 line_spacing: '1.5'
 ---
 
