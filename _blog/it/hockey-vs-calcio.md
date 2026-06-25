@@ -2,10 +2,10 @@
 translationKey: hockey-vs-football
 published: true
 featured: false
-title: 'Hockey Night vs Calcio: le Passioni Sportive Nazionali'
-featured_image: ''
+title: HOCKEY IN CANADA E CALCIO IN ITALIA
+featured_image: /assets/images/blog/91ca5be7-b305-4bb0-b1e2-794e733c7d8a.png
 category: Sport
-excerpt: 'Hockey in Canada, calcio in Italia: due modi di vivere lo sport, tra rituali, passione e identità.'
+excerpt: "L'hockey in Canada e il calcio in Italia sono molto più di semplici sport: rappresentano una parte fondamentale della cultura e dell'identità nazionale. Attraverso un confronto tra tradizioni, tifoserie ed esperienze personali, l'articolo mostra come entrambi riescano a unire le persone e a raccontare il carattere dei due paesi."
 date: 2026-04-21
 images: []
 english_corner:
