@@ -32,7 +32,7 @@ Welcome to my blog! Today let's talk about distances. And about how I had to com
 - In Canada, three hours by car takes you to the next city: same landscape, same people, same accent.
 - In Italy, three hours throw you into a completely different world: a new region, a dialect you don't understand, food you've never tasted, and even the climate changes!
 
-This experience really changed my <span class="c-aqua">_mindset_</span>. Before, I thought 3 hours driving was a short trip. Now, I see that it means very different things depending on the country.
+This experience really changed my _<span class="c-red">mindset</span>_. Before, I thought 3 hours driving was a short trip. Now, I see that it means very different things depending on the country.
 
 **<span class="c-aqua">Canadian geography for Italians:</span>**
 
@@ -40,10 +40,10 @@ This experience really changed my <span class="c-aqua">_mindset_</span>. Before
 - The province of Ontario is as big as France + Germany + the UK.
 - In Quebec, you can drive 12 hours in a straight line and still be in the same province.
 
-This affects the _<span class="c-aqua">lifestyle</span>_ — in Canada, long drives are normal and often necessary for work or school. In Italy, people tend to live closer to their jobs or schools, so daily travel distances are usually much shorter.
+This affects the _<span class="c-red">lifestyle</span>_ — in Canada, long drives are normal and often necessary for work or school. In Italy, people tend to live closer to their jobs or schools, so daily travel distances are usually much shorter.
 
 **<span class="c-aqua">Europe: everything is next door</span>**
-Another major difference is the distance between European _<span class="c-aqua">locations</span>_.
+Another major difference is the distance between European _<span class="c-red">locations</span>_.
 
 - In Europe, with a two-hour flight you can go anywhere: London, Paris, Madrid, Amsterdam.
 - In Canada, with a two-hour flight you're still in the same province — if you're lucky, maybe you'll reach Ottawa.
