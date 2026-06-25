@@ -6,7 +6,7 @@ title: 'CANADA VS ITALY: HOW DISTANCE FEELS DIFFERENT'
 title_color: ''
 featured_image: /assets/images/blog/Immagine 2026-06-25 085442.png
 category: Geography
-excerpt: A three-hour drive takes you to the next city in Canada — but in Italy, a different world.
+excerpt: Living in Canada completely changed the way I think about distance. What seems like a short trip there can take you across different regions and cultures in Italy. Canada's huge size shapes everyday life, making long drives normal, while in Europe everything feels much closer and easier to reach.
 date: 2026-05-03
 images:
   - image: /assets/images/blog/Immagine 2026-06-25 085442.png
@@ -23,9 +23,7 @@ english_corner:
 line_spacing: '1.5'
 ---
 
-Welcome to my blog! Today let's talk about distances. And about how I had to completely recalibrate my idea of "near" and "far."
-
-<span class="c-aqua">Canada is big, really BIG.</span> To go from Toronto to Vancouver, you have to drive about 4,400 km. That's 44 hours of driving. To give you an idea: it's like driving from Milan to… Jerusalem. 
+Welcome to my blog! Today let's talk about distances. And about how I had to completely recalibrate my idea of "near" and "far." <span class="c-aqua">Canada is big, really BIG.</span> To go from Toronto to Vancouver, you have to drive about 4,400 km. That's 44 hours of driving. To give you an idea: it's like driving from Milan to… Jerusalem. 
 
 **<span class="c-aqua">My first Italian shock:</span>**
 

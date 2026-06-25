@@ -6,7 +6,7 @@ title: 'CANADA VS ITALY: COME LA DISTANZA SI PERCEPISCE DIVERSAMENTE'
 title_color: ''
 featured_image: /assets/images/blog/Immagine 2026-06-25 085442.png
 category: Geografia
-excerpt: Un viaggio di tre ore ti porta alla città successiva in Canada — ma in Italia, un mondo diverso.
+excerpt: Vivere in Canada ha cambiato completamente il mio modo di vedere le distanze. Quello che lì è considerato un viaggio normale, in Italia ti porta in una regione completamente diversa, con cultura, dialetto e tradizioni differenti. Le enormi dimensioni del Canada influenzano lo stile di vita, mentre in Europa tutto sembra molto più vicino e facilmente raggiungibile.
 date: 2026-05-03
 images:
   - image: ''
@@ -23,9 +23,7 @@ english_corner:
 line_spacing: '1.5'
 ---
 
-Benvenuti nel mio blog! Oggi parliamo di distanze. E di come ho dovuto ricalibrare completamente la mia idea di “vicino” e “lontano.”
-
-<span class="c-aqua">Il Canada è grande, davvero GRANDE.</span> Per andare da Toronto a Vancouver bisogna percorrere circa 4.400 km. Sono 44 ore di guida. Per darvi un’idea: è come guidare da Milano a… Gerusalemme.
+Benvenuti nel mio blog! Oggi parliamo di distanze. E di come ho dovuto ricalibrare completamente la mia idea di “vicino” e “lontano.” <span class="c-aqua">Il Canada è grande, davvero GRANDE.</span> Per andare da Toronto a Vancouver bisogna percorrere circa 4.400 km. Sono 44 ore di guida. Per darvi un’idea: è come guidare da Milano a… Gerusalemme.
 
 **<span class="c-aqua">Il mio primo shock italiano:</span>**
 
