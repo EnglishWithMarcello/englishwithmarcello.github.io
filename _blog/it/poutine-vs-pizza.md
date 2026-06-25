@@ -8,6 +8,13 @@ category: Cibo
 excerpt: 'Due paesi, due storie di sapori: poutine e pizza ci mostrano come il cibo unisce le persone ovunque.'
 date: 2026-03-28
 images: []
+english_corner:
+  - term: Cheese curds
+    definition: pezzi freschi e morbidi di formaggio usati nella poutine
+  - term: Gravy
+    definition: una salsa densa a base di succhi di carne 
+  - term: Homemade
+    definition: fatto in casa, non comprato al negozio
 line_spacing: '1.5'
 ---
 
