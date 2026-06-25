@@ -1,8 +1,5 @@
 ---
-layout: post
-lang: en
-ref: two-countries-two-summers
-permalink: /blog/two-countries-two-summers/
+translationKey: two-countries-two-summers
 date: 2026-04-09
 category: "Culture"
 title: "Two Countries, Two Summers and Two Very Different Ways of Living Them"
