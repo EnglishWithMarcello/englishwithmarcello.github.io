@@ -19,24 +19,92 @@ english_corner:
 line_spacing: '1.5'
 ---
 
-Contento che siate qui! Oggi parlerò delle divertenti differenze nel modo in cui italiani e canadesi usano WhatsApp.
+**<span class="c-aqua">Stai per partire per il Canada e sei un po' nervoso all'idea di parlare con un agente di frontiera?</span>** Non preoccuparti: è assolutamente normale. La buona notizia è che, nella maggior parte dei casi, il controllo dura solo pochi minuti e le domande sono molto semplici.
+In questa guida scoprirai cosa succede quando arrivi in Canada, quali sono le domande più comuni che gli agenti di frontiera fanno ai viaggiatori e come rispondere con sicurezza, anche se il tuo inglese non è perfetto.
 
-**La mia esperienza canadese con WhatsApp**
-In Canada, le conversazioni su WhatsApp sono come **business meetings**: brevi, dirette, efficienti. "Ciao, come stai?" "Bene, e tu?" "Bene. Caffè dopo?" "Certo. Alle 15?" "Perfetto." Conversazione chiusa. Usiamo WhatsApp come uno strumento — prendi le informazioni, fai il piano, fine.
+**<span class="c-aqua">Cosa succede quando arrivi in Canada?</span>** Dopo essere sceso dall'aereo, segui semplicemente le indicazioni per _Immigration_ oppure _Arrivals_.
+In molti aeroporti canadesi, il primo passo è utilizzare un _totem automatico_. Qui scannerizzerai il passaporto e risponderai ad alcune semplici domande sul tuo viaggio. Al termine, il chiosco stamperà una ricevuta che dovrai mostrare all'agente di frontiera.
 
-**Il mio primo shock WhatsApp italiano**
-Primo gruppo: "Festa a sorpresa." 73 messaggi in 2 ore. Argomento: organizzare una festa di compleanno. Primo pensiero: "Sono tutti matti?" In Canada, la stessa conversazione avrebbe richiesto 10 messaggi al massimo.
+Successivamente, ti metterai in fila per il controllo passaporti al _border officer._
 
-**I gruppi WhatsApp italiani: un mondo parallelo**
-La **group chat** della famiglia su WhatsApp è meravigliosa e terrificante allo stesso tempo: 247 messaggi al giorno con foto di ogni pasto, buongiorno e buonanotte obbligatori. All'inizio invasivo, ora mi sento abbandonato senza almeno 50 notifiche al giorno.
+Quando sarà il tuo turno, ti avvicinerai allo sportello, consegnerai il passaporto e risponderai a qualche domanda.
 
-Organizzare un aperitivo: 89 messaggi per finire sempre nello stesso posto di sempre. Qualcuno risponde tre giorni dopo a una domanda urgente. I **voice messages** di cinque minuti solo per dire "ok, ci vediamo lì".
+<span class="c-aqua">Ricorda: non è un esame di inglese.</span>
 
-**I messaggi vocali: un nuovo mondo**
-In Canada, i vocali sono per le emergenze. In Italia li usi per raccontare qualsiasi cosa: anche solo per dire che sei al supermercato, cosa stai comprando, se prendi il latte intero o scremato. Tutto in un vocale di 4 minuti. All'inizio li odiavo. Ora mando audio di 6 minuti solo per dire che farò 10 minuti di ritardo.
+L'agente vuole semplicemente confermare la tua identità, capire il motivo del tuo viaggio e verificare che i tuoi documenti siano in regola.
 
-**Canada vs Italia:**
+**<span class="c-aqua">Le domande più comuni:</span>**
 
-- Tempo di risposta: in Canada puoi passare un'intera giornata senza rispondere e nessuno se ne accorge. In Italia, se sparisci per 2 ore, la gente inizia a chiamare per controllare se sei vivo!
-- Cultura della condivisione: i canadesi condividono una foto solo se è davvero speciale. Gli italiani condividono un tramonto, un caffè, tutto.
-- Gruppi chat: i canadesi li creano per cose pratiche, poi silenzio. Gli italiani hanno gruppi che non dormono mai.
+> _<span class="c-aqua">Why are you travelling to Canada?</span>_ 
+> Puoi rispondere: _I'm here on vacation / I'm visiting friends / I'm here for business / I'm here to study._
+
+> La cosa più importante è essere sinceri e mantenere la risposta semplice.
+
+> _<span class="c-aqua">How long will you be in Canada?</span>_
+> Puoi rispondere: _I'm staying for 2 weeks / I'll be here for 10 days / I'm here for business / I'm leaving on August 15th._
+
+> _<span class="c-aqua">Where are you staying during your trip?</span>_
+> Puoi rispondere: _I'll be staying at a hotel in Toronto / I'll be staying at my friend's house / I rented an apartment in Vancouver_
+
+> _<span class="c-aqua">Do you have a ticket for your flight home?</span>_
+> La risposta è semplicemente: _Yes, I do._
+
+> È sempre una buona idea avere il biglietto di ritorno pronto sul telefono oppure in formato cartaceo.
+
+> _<span class="c-aqua">Are you carrying any food, alcoholic beverages, or tobacco products?</span>_
+> Rispondi sempre con sincerità.
+
+> Il Canada ha regole molto rigide sull'importazione di alcuni alimenti, piante e prodotti di origine animale. Se hai dei dubbi su qualcosa che stai trasportando, è sempre meglio dichiararlo al tuo arrivo.
+
+**<span class="c-aqua">E se non capisco la domanda?</span>** Questa è una delle preoccupazioni più comuni tra i viaggiatori.
+La verità è che gli agenti di frontiera canadesi parlano ogni giorno con persone provenienti da tutto il mondo. Sono abituati ad ascoltare accenti diversi e a parlare con visitatori il cui inglese non è perfetto. 
+
+Se non capisci una domanda, puoi dire educatamente:
+
+- _Sorry, could you repeat that, please?_
+- _Could you speak a little more slowly, please?_
+
+<span class="c-aqua">Nessuno si aspetta che un turista parli un inglese perfetto.</span>
+
+**Un semplice esempio di conversazione:**
+
+> _Agente: Good afternoon._
+
+> _Tu: Good afternoon._
+
+> _Agente: What's the purpose of your visit?_
+
+> _Tu: I'm here on vacation._
+
+> _Agente: How long are you staying?_
+
+> _Tu: Two weeks._
+
+> _Agente: Where will you be staying?_
+
+> _Tu: I'll be staying at the Marriott Downtown Hotel, at 525 Bay Street, Toronto._
+
+> _Agente: Do you have a return ticket?_
+
+> _Tu: Yes, I do._
+
+> _Agente: Are you bringing any food, alcohol, tobacco, or other items to declare?_
+
+> _Tu: No, I'm not._
+
+> _Agente: Thank you. Enjoy your stay in Canada._
+
+> _Tu: Thank you!_
+
+**<span class="c-aqua">Il mio consiglio</span>** Da canadese, il mio consiglio migliore è questo: non cercare di impressionare l'agente di frontiera usando un inglese complicato.
+Parla lentamente, usa frasi semplici e rispondi solo alla domanda che ti è stata fatta.
+I canadesi apprezzano molto di più l'onestà, la gentilezza e una comunicazione chiara che un vocabolario sofisticato.
+
+<span class="c-aqua">Ricorda: comunicare bene non significa parlare un inglese perfetto, ma riuscire a farsi capire in modo naturale e con sicurezza.</span>
+
+**<span class="c-aqua">Buona vacanza!</span>** Una volta superato il controllo passaporti, ti resterà soltanto da ritirare i bagagli e iniziare la tua avventura canadese.
+Conoscere in anticipo le domande che potrebbero farti ti aiuterà ad arrivare molto più rilassato e sicuro di te.
+
+<span class="c-aqua">Ricorda: Non hai bisogno di parlare un inglese perfetto. Ascolta con attenzione, rispondi con sincerità e mantieni la calma.</span>
+
+<span class="c-red">Benvenuto in Canada! 🇨🇦</span>
