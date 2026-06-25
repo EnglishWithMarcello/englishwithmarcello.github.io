@@ -60,10 +60,10 @@ The officer simply wants to confirm your identity, understand the purpose of you
 
 If you don't understand a question, you can politely say: 
 
-- Sorry, could you repeat that, please?
-- Could you speak a little more slowly, please?
+- _Sorry, could you repeat that, please?_
+- _Could you speak a little more slowly, please?_
 
-No one expects a tourist to speak perfect English.
+<span class="c-aqua">No one expects a tourist to speak perfect English.</span>
 
 **<span class="c-aqua">A simple conversation:</span>**
 
