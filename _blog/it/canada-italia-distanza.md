@@ -2,13 +2,17 @@
 translationKey: canada-italy-distance
 published: true
 featured: false
-title: 'Canada vs Italia: Come la Distanza si Percepisce Diversamente'
+title: 'CANADA VS ITALY: COME LA DISTANZA SI PERCEPISCE DIVERSAMENTE'
 title_color: ''
 featured_image: ''
 category: Geografia
 excerpt: Un viaggio di tre ore ti porta alla città successiva in Canada — ma in Italia, un mondo diverso.
 date: 2026-05-03
-images: []
+images:
+  - image: ''
+    size: medium
+    align: center
+    caption: ''
 english_corner:
   - term: Mindset
     definition: il modo in cui pensi e vedi il mondo
