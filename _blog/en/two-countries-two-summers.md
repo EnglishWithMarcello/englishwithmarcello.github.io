@@ -1,15 +1,28 @@
 ---
 translationKey: two-countries-two-summers
+published: true
+featured: false
+title: Two Countries, Two Summers and Two Very Different Ways of Living Them
+featured_image: ''
+category: Culture
+excerpt: 'The air conditioning paradox: arctic freezers, killer drafts, and grandmas on high alert.'
 date: 2026-04-09
-category: "Culture"
-title: "Two Countries, Two Summers and Two Very Different Ways of Living Them"
-excerpt: "The air conditioning paradox: arctic freezers, killer drafts, and grandmas on high alert."
+images: []
+line_spacing: '1.5'
 ---
-<p>Hello, lovely readers! Today I want to share one of the most dramatic cultural contrasts I've experienced: the eternal battle between the North American obsession with air conditioning and the Italian fear of a <em>colpo d'aria</em>.</p>
-<p><strong>When it's summer outside and winter inside</strong><br>In Canada, summer arrives and with it, the sacred ritual of turning every indoor space into a giant walk-in freezer. The office? 18°C. The mall? You need an Arctic expedition. The cinema? Bring a parka. The supermarket was the worst — you'd walk in wearing shorts and flip-flops and within minutes start questioning all your life choices.</p>
-<p>My first summer at university in London, Ontario: 25°C outside, North Pole inside. I practically needed thermal underwear to make it through my classes!</p>
-<p><strong>How to risk your life by turning on the AC</strong><br>My first Italian summer: I set the AC to 19-20°C like I always do. Ten minutes later I was surrounded by horrified stares. "Are you crazy? Do you want to get sick?" "The temperature difference will give you a stiff neck, stomach issues, and probably ruin your digestion for a week!"</p>
-<p>The science behind the Italian <em>colpo d'aria</em> is fascinating. Apparently, any movement of air when you're hot can cause digestive problems, shoulder pain, instant neck paralysis, or general life malfunction. Just one <strong>draft</strong> is enough to spark panic among grandmothers.</p>
-<p><strong>The final paradox:</strong> Italians complain about the heat all summer but blast the AC only as a last resort. Canadians do the opposite — they blast it so hard they wander around the house with blankets and mugs of steaming coffee to survive the indoor <strong>chill</strong>.</p>
-<p>In the end, a Canadian learns not to <strong>freeze</strong> everyone to death, and an Italian learns not to fear every breeze. And if you really don't know which side to pick… always carry a scarf and a fan.</p>
-<div class="english-corner"><div class="english-corner-label">English Corner</div><ul><li><strong>Draft</strong> = an unwanted cold current of air</li><li><strong>Chill</strong> = that cold feeling when the room temperature drops</li><li><strong>Freeze</strong> = extreme cold state, near zero temperature indoors</li></ul></div>
+
+Hello, lovely readers! Today I want to share one of the most dramatic cultural contrasts I've experienced: the eternal battle between the North American obsession with air conditioning and the Italian fear of a _colpo d'aria_.
+
+**When it's summer outside and winter inside**
+In Canada, summer arrives and with it, the sacred ritual of turning every indoor space into a giant walk-in freezer. The office? 18°C. The mall? You need an Arctic expedition. The cinema? Bring a parka. The supermarket was the worst — you'd walk in wearing shorts and flip-flops and within minutes start questioning all your life choices.
+
+My first summer at university in London, Ontario: 25°C outside, North Pole inside. I practically needed thermal underwear to make it through my classes!
+
+**How to risk your life by turning on the AC**
+My first Italian summer: I set the AC to 19-20°C like I always do. Ten minutes later I was surrounded by horrified stares. "Are you crazy? Do you want to get sick?" "The temperature difference will give you a stiff neck, stomach issues, and probably ruin your digestion for a week!"
+
+The science behind the Italian _colpo d'aria_ is fascinating. Apparently, any movement of air when you're hot can cause digestive problems, shoulder pain, instant neck paralysis, or general life malfunction. Just one **draft** is enough to spark panic among grandmothers.
+
+**The final paradox:** Italians complain about the heat all summer but blast the AC only as a last resort. Canadians do the opposite — they blast it so hard they wander around the house with blankets and mugs of steaming coffee to survive the indoor **chill**.
+
+In the end, a Canadian learns not to **freeze** everyone to death, and an Italian learns not to fear every breeze. And if you really don't know which side to pick… always carry a scarf and a fan.
