@@ -19,10 +19,10 @@ Voglio condividere uno dei contrasti culturali più drammatici che ho vissuto: l
 
 La mia prima estate all'università a London, Ontario: 25°C fuori, Polo Nord dentro. Avevo praticamente bisogno di biancheria termica per sopravvivere alle lezioni!
 
-**<span class="c-aqua">Come rischiare la vita accendendo il condizionatore</span>** La mia prima estate italiana: imposto il condizionatore a 19-20°C come faccio sempre. Dieci minuti dopo mi trovo circondato da sguardi inorriditi. "Sei matto? Vuoi ammalarti?" "La differenza di temperatura ti darà il torcicollo, problemi di stomaco e probabilmente rovinerà la digestione per una settimana!
+**<span class="c-aqua">Come rischiare la vita accendendo il condizionatore</span>** La mia prima estate italiana: imposto il condizionatore a 19-20°C come faccio sempre. Dieci minuti dopo mi trovo circondato da sguardi inorriditi. "Sei matto? Vuoi ammalarti?" "La differenza di temperatura ti darà il torcicollo, problemi di stomaco e probabilmente rovinerà la digestione!
 
 La scienza dietro al colpo d'aria italiano è affascinante. A quanto pare, qualsiasi movimento d'aria quando si ha caldo può causare problemi digestivi, dolori alle spalle, paralisi istantanea del collo o malfunzionamento generale della vita. In Italia basta un _<span class="c-red">draft</span>_ per scatenare panico tra le nonne.
 
 **<span class="c-aqua">Il paradosso finale:</span>** gli italiani si lamentano del caldo per tutta l'estate ma accendono il condizionatore solo come ultima risorsa. I canadesi fanno il contrario — lo sparano così forte da girare per casa con coperte e tazze di caffè bollente per sopravvivere al freddo che hanno creato, sopportando il _<span class="c-red">chill</span>_ tra le mura domestiche
 
-Alla fine, un canadese impara a non congelare tutti, e un italiano impara a non temere ogni brezza. E se non sai da che parte stare… porta sempre una sciarpa e un ventaglio.
+Forse la verità sta nel mezzo: i canadesi potrebbero alzare di qualche grado il condizionatore e gli italiani rilassarsi un po' davanti a una corrente d'aria. Nel frattempo, io continuo ad adattarmi... a seconda del paese in cui mi trovo.

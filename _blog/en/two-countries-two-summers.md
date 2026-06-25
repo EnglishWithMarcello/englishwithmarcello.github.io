@@ -19,10 +19,10 @@ I want to share one of the most dramatic cultural contrasts I've experienced: th
 
 My first summer at university in London, Ontario: 25°C outside, North Pole inside. I practically needed thermal underwear to make it through my classes!
 
-**<span class="c-aqua">How to risk your life by turning on the AC</span>** My first Italian summer: I set the AC to 19-20°C like I always do. Ten minutes later I was surrounded by horrified stares. "Are you crazy? Do you want to get sick?" "The temperature difference will give you a stiff neck, stomach issues, and probably ruin your digestion for a week!"
+**<span class="c-aqua">How to risk your life by turning on the AC</span>** My first Italian summer: I set the AC to 19-20°C like I always do. Ten minutes later I was surrounded by horrified stares. "Are you crazy? Do you want to get sick?" "The temperature difference will give you a stiff neck, stomach issues, and probably ruin your digestion!
 
 The science behind the Italian<span class="c-aqua"> colpo d'aria</span> is fascinating. Apparently, any movement of air when you're hot can cause digestive problems, shoulder pain, instant neck paralysis, or general life malfunction. Just one <span class="c-red">_draft_</span> is enough to spark panic among grandmothers.
 
 **<span class="c-aqua">The final paradox:</span>** Italians complain about the heat all summer but blast the AC only as a last resort. Canadians do the opposite — they blast it so hard they wander around the house with blankets and mugs of steaming coffee to survive the indoor _<span class="c-red">chill</span>._
 
-In the end, a Canadian learns not to _<span class="c-red">freeze</span>_ everyone to death, and an Italian learns not to fear every breeze. And if you really don't know which side to pick… always carry a scarf and a fan.
+Maybe the truth lies somewhere in the middle: Canadians could turn the AC up a few degrees, and Italians could relax a little about a simple draft. In the meantime, I just keep adapting... depending on which country I'm in.
