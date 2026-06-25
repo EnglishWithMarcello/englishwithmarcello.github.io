@@ -1,8 +1,5 @@
 ---
-layout: post
-lang: en
-ref: poutine-vs-pizza
-permalink: /blog/poutine-vs-pizza/
+translationKey: poutine-vs-pizza
 date: 2026-03-28
 category: "Food"
 title: "Poutine vs Pizza: The Taste of Home"
