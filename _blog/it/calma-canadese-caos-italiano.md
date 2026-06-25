@@ -20,10 +20,12 @@ line_spacing: '1.5'
 ---
 
 **<span class="c-aqua">Stai per partire per il Canada e sei un po' nervoso all'idea di parlare con un agente di frontiera?</span>** Non preoccuparti: è assolutamente normale. La buona notizia è che, nella maggior parte dei casi, il controllo dura solo pochi minuti e le domande sono molto semplici.
+
 In questa guida scoprirai cosa succede quando arrivi in Canada, quali sono le domande più comuni che gli agenti di frontiera fanno ai viaggiatori e come rispondere con sicurezza, anche se il tuo inglese non è perfetto.
 
 **<span class="c-aqua">Cosa succede quando arrivi in Canada?</span>** Dopo essere sceso dall'aereo, segui semplicemente le indicazioni per <span class="c-red">_immigration_ oppure _arrivals_</span>.
-In molti aeroporti canadesi, il primo passo è utilizzare un _<span class="c-red">self-service kiosk</span>_. Qui scannerizzerai il passaporto e risponderai ad alcune semplici domande sul tuo viaggio. Al termine, il chiosco stamperà una ricevuta che dovrai mostrare all'agente di frontiera.
+
+In molti aeroporti canadesi, il primo passo è utilizzare un _<span class="c-red">self-service kiosk</span>_. Qui scannerizzerai il passaporto e risponderai ad alcune semplici domande sul tuo viaggio. Al termine, il totem stamperà una ricevuta che dovrai mostrare all'agente di frontiera.
 
 Successivamente, ti metterai in fila per il controllo passaporti al _<span class="c-red">border officer</span>._
 
