@@ -20,17 +20,17 @@ line_spacing: '1.5'
 
 Sfatiamo alcuni _<span class="c-red">myths</span>_ sul Canada che sento spesso in Italia.
 
-<span class="c-aqua">**#1 Ci sono orsi polari per le strade**</span> Realtà: Gli orsi polari vivono nell'Artico. Io sono di Toronto. È come dire che ci sono pinguini a Milano perché fa freddo d'inverno. Però ammetto: ho visto orsi neri. Alcune volte, al _<span class="c-red">cottage</span>_, un'orsa ha attraversato la strada con i suoi cuccioli.
+**<span class="c-aqua">#1 Ci sono orsi polari per le strade</span>** Realtà: Gli orsi polari vivono nell'Artico. Io sono di Toronto. È come dire che ci sono pinguini a Milano perché fa freddo d'inverno. Però ammetto: ho visto orsi neri. Alcune volte, al _<span class="c-red">cottage</span>_, un'orsa ha attraversato la strada con i suoi cuccioli.
 
-<span class="c-aqua">**#2 Fate sempre il barbecue anche con la neve** </span>Realtà: Questo è vero! Mio padre ha grigliato a -20°C. "La neve non ferma una buona bistecca," diceva sempre.
+**<span class="c-aqua">#2 Fate sempre il barbecue anche con la neve</span>** Realtà: Questo è vero! Mio padre ha grigliato a -20°C. "La neve non ferma una buona bistecca," diceva sempre.
 
-<span class="c-aqua">**#3 Tutti vivono in una capanna nel bosco** </span>Realtà: Toronto ha 3 milioni di abitanti. Vancouver è ultra-moderna. Montreal è più europea di molte città europee. Abbiamo anche grattacieli, tram e ingorghi stradali.
+**<span class="c-aqua">#3 Tutti vivono in una capanna nel bosco</span>** Realtà: Toronto ha 3 milioni di abitanti. Vancouver è ultra-moderna. Montreal è più europea di molte città europee. Abbiamo anche grattacieli, tram e ingorghi stradali.
 
-_<span class="c-aqua">_#4 Parlate tutti francese\*\* </span>Realtà: Solo il Quebec è davvero bilingue. A Toronto, se provi a parlare francese, la gente ti guarda perplessa, come se stessi parlando in codice.
+**<span class="c-aqua">#4 Parlate tutti francese</span>** Realtà: Solo il Quebec è davvero bilingue. A Toronto, se provi a parlare francese, la gente ti guarda perplessa, come se stessi parlando in codice.
 
-<span class="c-aqua">**#5 Conoscete tutti i Nativi Americani** </span>Realtà: Il Canada ha molte diverse _<span class="c-red">First Nations</span>_, con culture, lingue e tradizioni completamente diverse tra loro. È come dire che tutti gli europei sono uguali.
+**<span class="c-aqua">#5 Conoscete tutti i Nativi Americani</span>** Realtà: Il Canada ha molte diverse _<span class="c-red">First Nations</span>_, con culture, lingue e tradizioni completamente diverse tra loro. È come dire che tutti gli europei sono uguali.
 
-<span class="c-aqua">**Cosa è davvero tipico del Canada:**</span>
+**<span class="c-aqua">Cosa è davvero tipico del Canada:</span>**
 
 - La poutine (patatine fritte con formaggio e salsa)
 - Lo sciroppo d'acero su tutto
