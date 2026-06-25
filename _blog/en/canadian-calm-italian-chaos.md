@@ -19,7 +19,7 @@ english_corner:
 line_spacing: '1.5'
 ---
 
-**Are you about to travel to Canada and feeling a little nervous about speaking with a border officer?** Don't worry—it's completely normal. The good news is that, in most cases, the inspection only takes a few minutes, and the questions are very simple.
+**<span class="c-aqua">Are you about to travel to Canada and feeling a little nervous about speaking with a border officer?</span>** Don't worry—it's completely normal. The good news is that, in most cases, the inspection only takes a few minutes, and the questions are very simple.
 In this guide, you'll learn what happens when you arrive in Canada, the most common questions border officers ask, and how to answer them confidently—even if your English isn't perfect.
 
 **<span class="c-aqua">What happens when you arrive in Canada?</span>** After getting off the plane, simply follow the signs for <span class="c-red">_immigration or arrivals_</span>.
