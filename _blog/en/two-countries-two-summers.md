@@ -14,6 +14,7 @@ english_corner:
 ---
 
 I want to share one of the most dramatic cultural contrasts I've experienced: the eternal battle between the North American obsession with air conditioning and the Italian fear of a <span class="c-aqua">colpo d'aria</span>.
+
 **<span class="c-aqua">When it's summer outside and winter inside</span>** Canada, summer arrives and with it, the sacred ritual of turning every indoor space into a giant walk-in freezer. The office? 18°C. The mall? You need an Arctic expedition. The cinema? Bring a parka. The supermarket was the worst — you'd walk in wearing shorts and flip-flops and within minutes start questioning all your life choices.</p>
 
 My first summer at university in London, Ontario: 25°C outside, North Pole inside. I practically needed thermal underwear to make it through my classes!
