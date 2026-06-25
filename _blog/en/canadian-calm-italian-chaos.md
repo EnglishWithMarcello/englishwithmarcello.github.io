@@ -6,16 +6,16 @@ title: HOW TO TALK TO A CANADIAN BORDER OFFICER (WITHOUT STRESS)
 title_color: ''
 featured_image: ''
 category: Communication
-excerpt: Discover how Canadians stay calm and quiet while Italians turn every WhatsApp into endless chaos!
+excerpt: When you arrive in Canada, the border inspection is usually quick and involves a few simple questions about your trip. You don't need perfect English—just answer honestly and keep your responses short and clear. If you don't understand a question, politely ask the officer to repeat or speak more slowly. Staying calm and confident will help make the process easy and stress-free.
 date: 2026-03-16
 images: []
 english_corner:
-  - term: Business meetings
-    definition: scheduled meetings to discuss work topics
-  - term: Voice messages
-    definition: audio messages
-  - term: Group chat
-    definition: a shared messaging thread with multiple people
+  - term: Border officer
+    definition: the officer who checks your passport and asks questions about your trip.
+  - term: Immigration (or Arrivals)
+    definition: the area where you enter the country and show your passport.
+  - term: Self-service kiosk
+    definition: a machine used to scan your passport and answer travel questions.
 line_spacing: '1.5'
 ---
 
@@ -26,7 +26,7 @@ In this guide, you'll learn what happens when you arrive in Canada, the most com
 **<span class="c-aqua">What happens when you arrive in Canada?</span>** After getting off the plane, simply follow the signs for <span class="c-red">_immigration or arrivals_</span>.
 At many Canadian airports, you'll first use a _<span class="c-red">self-service kiosk</span>_ where you'll scan your passport and answer a few basic questions about your trip. Once you're finished, the kiosk will print a receipt for you to show to the border officer.
 
-After that, you'll join the line for passport control.
+After that, you'll join the line for passport control with a _<span class="c-red">border officer</span>_.
 
 When it's your turn, you'll walk up to the counter, hand over your passport, and answer a few questions.
 
