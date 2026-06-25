@@ -1,7 +1,7 @@
 ---
 translationKey: canadian-english-everything-you-need-to-know-before-visiting-or-living-in-canada
 published: true
-featured: true
+featured: false
 title: 'CANADIAN ENGLISH: EVERYTHING YOU NEED TO KNOW BEFORE VISITING OR LIVING IN CANADA'
 featured_image: ''
 category: Geography
