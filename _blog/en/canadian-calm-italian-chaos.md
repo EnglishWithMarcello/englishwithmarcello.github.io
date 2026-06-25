@@ -35,26 +35,23 @@ The officer simply wants to confirm your identity, understand the purpose of you
 
 **<span class="c-aqua">The most common questions</span>** 
 
-- Why are you travelling to Canada? 
-You could answer: I'm here on vacation / I'm visiting friends / I'm here for business / I'm here to study.
+> _<span class="c-aqua">Why are you travelling to Canada?</span>_ 
+> _You could answer: I'm here on vacation / I'm visiting friends / I'm here for business / I'm here to study._
+> The most important thing is to be honest and keep your answer simple.
 
-The most important thing is to be honest and keep your answer simple.
+> _<span class="c-aqua">How long will you be in Canada?</span>_
+> _You could answer: I'm staying for 2 weeks / I'll be here for 10 days / I'm here for business / I'm leaving on August 15th._
 
-- How long will you be in Canada?
-You could answer: I'm staying for 2 weeks / I'll be here for 10 days / I'm here for business / I'm leaving on August 15th.
+> _<span class="c-aqua">Where are you staying during your trip?</span>_
+> _You could answer: I'll be staying at a hotel in Toronto / I'll be staying at my friend's house / I rented an apartment in Vancouver_
 
-- Where are you staying during your trip?
-You could answer: I'll be staying at a hotel in Toronto / I'll be staying at my friend's house / I rented an apartment in Vancouver
+> _<span class="c-aqua">Do you have a ticket for your flight home?</span>_
+> _The answer is simply: Yes, I do._
+> It's always a good idea to have your return ticket ready on your phone or as a printed copy
 
-- Do you have a ticket for your flight home?
-The answer is simply: Yes, I do.
-
-It's always a good idea to have your return ticket ready on your phone or as a printed copy
-
-- Are you carrying any food, alcoholic beverages, or tobacco products?
-Always answer honestly.
-
-Canada has strict rules about bringing certain foods, plants, and animal products into the country. If you're unsure whether something is allowed, it's always better to declare it when you arrive.
+> _<span class="c-aqua">Are you carrying any food, alcoholic beverages, or tobacco products?</span>_
+> _Always answer honestly._
+> Canada has strict rules about bringing certain foods, plants, and animal products into the country. If you're unsure whether something is allowed, it's always better to declare it when you arrive.
 
 **<span class="c-aqua">What if I don't understand the question?</span>** This is one of the biggest worries for many travellers. The truth is that Canadian border officers speak with people from all over the world every day. They're used to hearing different accents and talking to visitors whose English isn't perfect.
 
