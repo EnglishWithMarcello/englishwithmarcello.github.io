@@ -59,24 +59,37 @@ If you don't understand a question, you can politely say:
 
 No one expects a tourist to speak perfect English.
 
-**A simple conversation:**
+**<span class="c-aqua">A simple conversation:</span>**
 
 _Officer: Good afternoon._
+
 _You: Good afternoon._
+
 _Officer: What's the purpose of your visit?_
+
 _You: I'm here on vacation._
+
 _Officer: How long are you staying?_
+
 _You: Two weeks._
+
 _Officer: Where will you be staying?_
+
 _You: I'll be staying at the Marriott Downtown Hotel, at 525 Bay Street, Toronto._
+
 _Officer: Do you have a return ticket?_
+
 _You: Yes, I do._
+
 _Officer: Are you bringing any food, alcohol, tobacco, or other items to declare?_
+
 _You: No, I'm not._
+
 _Officer: Thank you. Enjoy your stay in Canada._
+
 _You: Thank you!_
 
-**My tip** As a Canadian, my best advice is this: don't try to impress the border officer with complicated English.
+**<span class="c-aqua">My tip</span>** As a Canadian, my best advice is this: don't try to impress the border officer with complicated English.
 
 Speak slowly, use simple sentences, and answer only the question you've been asked.
 
@@ -84,7 +97,7 @@ Canadians appreciate honesty, politeness, and clear communication much more than
 
 Remember, communicating well doesn't mean speaking perfect English—it means making yourself understood naturally and confidently.
 
-<span class="c-aqua">**Enjoy your trip!** </span> Once you've finished passport control, all that's left to do is collect your luggage and start your Canadian adventure.
+**<span class="c-aqua">Enjoy your trip!</span>**  Once you've finished passport control, all that's left to do is collect your luggage and start your Canadian adventure.
 
 Knowing the questions you may be asked in advance can help you feel much more relaxed and confident when you arrive.
 
