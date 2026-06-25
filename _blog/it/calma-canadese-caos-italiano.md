@@ -1,7 +1,7 @@
 ---
 translationKey: canadian-calm-italian-chaos
 published: true
-featured: false
+featured: true
 title: 'Dalla Calma Canadese al Caos Italiano: Come Cambia la Comunicazione'
 title_color: ''
 featured_image: ''
