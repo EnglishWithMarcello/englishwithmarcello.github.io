@@ -1,8 +1,5 @@
 ---
-layout: post
-lang: it
-ref: holidays-two-countries
-permalink: /it/blog/feste-due-paesi/
+translationKey: holidays-two-countries
 date: 2026-03-04
 category: "Cultura"
 title: "Halloween, Natale e Pasqua: Due Paesi, Mille Differenze"
