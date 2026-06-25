@@ -39,21 +39,21 @@ L'agente vuole semplicemente confermare la tua identità, capire il motivo del t
 
 > _<span class="c-blue">1. Why are you travelling to Canada? Perché stai viaggiando in Canada?</span>_
 
-> Puoi rispondere: _I'm here on vacation Sono qui in vacanza / I'm visiting friends Sto visitando degli amici / I'm here for business Sono qui per lavoro / I'm here to study Sono qui per studiare._
+> Puoi rispondere: _I'm here on vacation - Sono qui in vacanza / I'm visiting friends - Sto visitando degli amici / I'm here for business - Sono qui per lavoro / I'm here to study - Sono qui per studiare._
 
 > La cosa più importante è essere sinceri e mantenere la risposta semplice.
 
 > _<span class="c-blue">2. How long will you be in Canada? Quanto tempo resterai in Canada?</span>_
 
-> Puoi rispondere: _I'm staying for 2 weeks Rimango per 2 settimane / I'll be here for 10 days Sarò qui per 10 giorni / I'm here for business / I'm leaving on August 15th Riparto il 15 agosto._
+> Puoi rispondere: _I'm staying for 2 weeks - Rimango per 2 settimane / I'll be here for 10 days - Sarò qui per 10 giorni / I'm leaving on August 15th - Riparto il 15 agosto._
 
 > _<span class="c-blue">3. Where are you staying during your trip? Dove alloggerai durante il tuo viaggio?</span>_
 
-> Puoi rispondere: _I'll be staying at a hotel in Toronto Alloggerò in un hotel a Toronto / I'll be staying at my friend's house Alloggerò a casa di un mio amico(a) / I rented an apartment in Vancouver Ho affittato un appartamento a Vancouver._
+> Puoi rispondere: _I'll be staying at a hotel in Toronto - Alloggerò in un hotel a Toronto / I'll be staying at my friend's house - Alloggerò a casa di un mio amico(a) / I rented an apartment in Vancouver - Ho affittato un appartamento a Vancouver._
 
 > _<span class="c-blue">4. Do you have a ticket for your flight home? Hai un biglietto per il volo di ritorno?</span>_
 
-> La risposta è semplicemente: _Yes, I do. Si ce l'ho._
+> La risposta è semplicemente: _Yes, I do. - Si ce l'ho._
 
 > È sempre una buona idea avere il biglietto di ritorno pronto sul telefono oppure in formato cartaceo.
 
@@ -68,8 +68,8 @@ La verità è che gli agenti di frontiera canadesi parlano ogni giorno con perso
 
 Se non capisci una domanda, puoi dire educatamente:
 
-- _Sorry, could you repeat that, please?_
-- _Could you speak a little more slowly, please?_
+- _Sorry, could you repeat that, please? Mi scusi, potrebbe ripetere, per favore?_
+- _Could you speak a little more slowly, please? Potrebbe parlare un po' più lentamente, per favore?_
 
 <span class="c-aqua">Nessuno si aspetta che un turista parli un inglese perfetto.</span>
 
