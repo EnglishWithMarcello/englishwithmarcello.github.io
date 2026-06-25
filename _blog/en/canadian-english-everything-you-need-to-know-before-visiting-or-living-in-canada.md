@@ -5,10 +5,10 @@ featured: true
 title: 'CANADIAN ENGLISH: EVERYTHING YOU NEED TO KNOW BEFORE VISITING OR LIVING IN CANADA'
 featured_image: ''
 category: Geography
-excerpt: Discover the main features of Canadian English, including pronunciation, spelling, vocabulary, and cultural influences. A practical guide for travelers and English learners.
+excerpt: Canadian English is a unique variety of English that combines features of both British and American English. It has its own spelling, vocabulary, and pronunciation, with some influence from French. Learning these differences can help you communicate more confidently and better understand Canadian culture.
 date: 2026-06-18T07:00
 images:
-  - image: /assets/images/blog/ling-app-5pYT4Om_LJI-unsplash.jpg
+  - image: /assets/images/blog/ChatGPT Image 25 giu 2026, 10_45_57.png
     size: full
     align: center
     caption: ''
