@@ -31,5 +31,8 @@ The first time I ordered a _<span class="c-red">coffee to go</span>_ at a bar 
 - "Americano" coffee is basically considered dirty water
 - It costs €1.50 — not $5 like in Canada
 
-The first time I ordered a cappuccino after lunch, the waitress asked me three times if I was sure. "Are you _really_ sure?" I thought she was joking. She wasn't.
+The first time I ordered a cappuccino after lunch, the waitress asked me three times if I was sure. "Are you _really_ sure?" I thought she was joking. 
+
+She wasn't.
+
 My moment of enlightenment came when I started to understand that the Italian bar isn't just a place to grab a coffee — it's a social _<span class="c-red">hub</span>._ It's where you read the newspaper, talk about soccer, greet your neighbors, and live everyday life.

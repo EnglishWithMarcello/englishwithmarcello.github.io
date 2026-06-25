@@ -33,5 +33,8 @@ La prima volta che ho ordinato un _<span class="c-red">caffè to go</span>_ in
 - Il caffè "americano" è considerato sostanzialmente acqua sporca
 - Costa 1,50€ — non 5$ come in Canada
 
-La prima volta che ho ordinato un cappuccino dopo pranzo, la cameriera mi ha chiesto tre volte se ero sicuro. "È davvero _sicuro_?" Pensavo stesse scherzando. Non stava scherzando.
+La prima volta che ho ordinato un cappuccino dopo pranzo, la cameriera mi ha chiesto tre volte se ero sicuro. "È davvero _sicuro_?" Pensavo stesse scherzando. 
+
+Non stava scherzando.
+
 Il mio momento di illuminazione è arrivato quando ho iniziato a capire che il bar italiano non è solo un posto dove prendere un caffè — è un _<span class="c-red">hub</span>_ sociale. È il luogo dove si legge il giornale, si parla di calcio, si salutano i vicini e si vive la vita quotidiana.
