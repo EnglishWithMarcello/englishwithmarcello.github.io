@@ -3,7 +3,7 @@ translationKey: coffee-shock-tim-hortons
 published: true
 featured: false
 title: 'THE COFFEE SHOCK: FROM TIM HORTONS TO THE ITALIAN BAR'
-featured_image: ''
+featured_image: /assets/images/blog/clement-proust-VsJTT-VTx7I-unsplash.jpg
 category: Daily Life
 excerpt: From giant Tim Hortons cups to espresso sipped standing at the bar. Life lessons you learn right there, on the spot.
 date: 2026-06-08

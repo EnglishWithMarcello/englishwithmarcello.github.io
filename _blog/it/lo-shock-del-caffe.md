@@ -3,7 +3,7 @@ translationKey: coffee-shock-tim-hortons
 published: true
 featured: false
 title: "SHOCK DEL CAFFE': DA TIM HORTONS AL BAR ITALIANO"
-featured_image: ''
+featured_image: /assets/images/blog/clement-proust-VsJTT-VTx7I-unsplash.jpg
 category: Vita Quotidiana
 excerpt: Dalle grandi tazze di Tim Hortons all'espresso bevuto in piedi al bar. Lezioni di vita che impari lì, sul momento.
 date: 2026-06-08
