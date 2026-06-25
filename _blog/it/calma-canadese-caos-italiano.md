@@ -37,28 +37,27 @@ L'agente vuole semplicemente confermare la tua identità, capire il motivo del t
 
 **<span class="c-aqua">Le domande più comuni:</span>**
 
-> _<span class="c-blue">1. Why are you travelling to Canada?</span>_ 
-> 
+> _<span class="c-blue">1. Why are you travelling to Canada? Perché stai viaggiando in Canada?</span>_
 
-> Puoi rispondere: _I'm here on vacation / I'm visiting friends / I'm here for business / I'm here to study._
+> Puoi rispondere: _I'm here on vacation Sono qui in vacanza / I'm visiting friends Sto visitando degli amici / I'm here for business Sono qui per lavoro / I'm here to study Sono qui per studiare._
 
 > La cosa più importante è essere sinceri e mantenere la risposta semplice.
 
-> _<span class="c-blue">2. How long will you be in Canada?</span>_
+> _<span class="c-blue">2. How long will you be in Canada? Quanto tempo resterai in Canada?</span>_
 
-> Puoi rispondere: _I'm staying for 2 weeks / I'll be here for 10 days / I'm here for business / I'm leaving on August 15th._
+> Puoi rispondere: _I'm staying for 2 weeks Rimango per 2 settimane / I'll be here for 10 days Sarò qui per 10 giorni / I'm here for business / I'm leaving on August 15th Riparto il 15 agosto._
 
-> _<span class="c-blue">3. Where are you staying during your trip?</span>_
+> _<span class="c-blue">3. Where are you staying during your trip? Dove alloggerai durante il tuo viaggio?</span>_
 
-> Puoi rispondere: _I'll be staying at a hotel in Toronto / I'll be staying at my friend's house / I rented an apartment in Vancouver_
+> Puoi rispondere: _I'll be staying at a hotel in Toronto Alloggerò in un hotel a Toronto / I'll be staying at my friend's house Alloggerò a casa di un mio amico(a) / I rented an apartment in Vancouver Ho affittato un appartamento a Vancouver._
 
-> _<span class="c-blue">4. Do you have a ticket for your flight home?</span>_
+> _<span class="c-blue">4. Do you have a ticket for your flight home? Hai un biglietto per il volo di ritorno?</span>_
 
-> La risposta è semplicemente: _Yes, I do._
+> La risposta è semplicemente: _Yes, I do. Si ce l'ho._
 
 > È sempre una buona idea avere il biglietto di ritorno pronto sul telefono oppure in formato cartaceo.
 
-> _<span class="c-blue">5. Are you carrying any food, alcoholic beverages, or tobacco products?</span>_
+> _<span class="c-blue">5. Are you carrying any food, alcoholic beverages, or tobacco products? Stai trasportando alimenti, bevande alcoliche o prodotti a base di tabacco?</span>_
 
 > Rispondi sempre con sincerità.
 
