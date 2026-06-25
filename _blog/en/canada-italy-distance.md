@@ -4,7 +4,7 @@ published: true
 featured: false
 title: 'CANADA VS ITALY: HOW DISTANCE FEELS DIFFERENT'
 title_color: ''
-featured_image: ''
+featured_image: /assets/images/blog/Immagine 2026-06-25 085442.png
 category: Geography
 excerpt: A three-hour drive takes you to the next city in Canada — but in Italy, a different world.
 date: 2026-05-03
