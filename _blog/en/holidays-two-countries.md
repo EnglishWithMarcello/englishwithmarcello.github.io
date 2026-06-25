@@ -1,8 +1,5 @@
 ---
-layout: post
-lang: en
-ref: holidays-two-countries
-permalink: /blog/holidays-two-countries/
+translationKey: holidays-two-countries
 date: 2026-03-04
 category: "Culture"
 title: "Halloween, Christmas and Easter: Two Countries, a Thousand Differences"
