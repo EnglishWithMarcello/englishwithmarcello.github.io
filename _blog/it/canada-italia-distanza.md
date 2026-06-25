@@ -4,7 +4,7 @@ published: true
 featured: false
 title: 'CANADA VS ITALY: COME LA DISTANZA SI PERCEPISCE DIVERSAMENTE'
 title_color: ''
-featured_image: /assets/images/blog/Immagine 2026-06-25 085442.png
+featured_image: /assets/images/blog/ChatGPT Image 25 giu 2026, 11_43_20.png
 category: Geografia
 excerpt: Vivere in Canada ha cambiato completamente il mio modo di vedere le distanze. Quello che lì è considerato un viaggio normale, in Italia ti porta in una regione completamente diversa, con cultura, dialetto e tradizioni differenti. Le enormi dimensioni del Canada influenzano lo stile di vita, mentre in Europa tutto sembra molto più vicino e facilmente raggiungibile.
 date: 2026-05-03

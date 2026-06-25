@@ -4,7 +4,7 @@ published: true
 featured: false
 title: 'CANADA VS ITALY: HOW DISTANCE FEELS DIFFERENT'
 title_color: ''
-featured_image: /assets/images/blog/Immagine 2026-06-25 085442.png
+featured_image: /assets/images/blog/ChatGPT Image 25 giu 2026, 11_43_20.png
 category: Geography
 excerpt: Living in Canada completely changed the way I think about distance. What seems like a short trip there can take you across different regions and cultures in Italy. Canada's huge size shapes everyday life, making long drives normal, while in Europe everything feels much closer and easier to reach.
 date: 2026-05-03
