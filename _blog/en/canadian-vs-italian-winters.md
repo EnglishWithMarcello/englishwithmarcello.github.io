@@ -20,15 +20,13 @@ line_spacing: '1.5'
 
 Glad you're here! Today, let's talk about how winter completely changes the way you live. And trust me: the difference between Canada and Italy is huge!
 
-**Canadian winter = social hibernation**
-From November to March, your social life basically stops. But we're talking about -25°C here, not just "a bit chilly." With temperatures that freeze your breath in 30 seconds, going outside literally becomes dangerous.
+**<span class="c-aqua">Canadian winter = social hibernation</span>** From November to March, your social life basically stops. But we're talking about -25°C here, not just "a bit chilly." With temperatures that freeze your breath in 30 seconds, going outside literally becomes dangerous.
 
-At -25°C it's not about "putting on an extra jacket." It's about survival: the air burns your skin, and walking for more than 10 minutes can give you **frostbite**.
+At -25°C it's not about "putting on an extra jacket." It's about survival: the air burns your skin, and walking for more than 10 minutes can give you _<span class="c-red">frostbite</span>_.
 
-Our winter activities? **Netflix and chill**, out of necessity. We plan **movie nights** at home, order food delivery, and do video calls with friends because meeting up in person means risking hypothermia. Bars close early, restaurants empty out. If you go out, it's for an absolute necessity: work, quick groceries, the gym.
+Our winter activities? _<span class="c-red">Netflix and chill</span>_, out of necessity. We plan _<span class="c-red">movie nights</span>_ at home, order food delivery, and do video calls with friends because meeting up in person means risking hypothermia. Bars close early, restaurants empty out. If you go out, it's for an absolute necessity: work, quick groceries, the gym.
 
-**Italian winter = life goes on**
-My first winter in Florence, January: 3°C, I'm at home in my pajamas thinking "Perfect, hibernation season activated."
+**<span class="c-aqua">Italian winter = life goes on</span>** My first winter in Florence, January: 3°C, I'm at home in my pajamas thinking "Perfect, hibernation season activated."
 
 At 6 pm a friend texts me: "Aperitivo tonight?"
 "But it's 3°C!" I answer.

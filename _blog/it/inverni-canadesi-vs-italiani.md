@@ -20,15 +20,13 @@ line_spacing: '1.5'
 
 Contento che siate qui! Oggi parliamo di come l'inverno cambia completamente il modo di vivere. E credetemi: la differenza tra Canada e Italia è enorme!
 
-**L'inverno canadese = ibernazione sociale**
-Da novembre a marzo, la vita sociale si ferma praticamente del tutto. Ma stiamo parlando di -25°C, non di "un po' freddino." Con temperature che gelano il respiro in 30 secondi, uscire diventa letteralmente pericoloso.
+**<span class="c-aqua">L'inverno canadese = ibernazione sociale</span>** Da novembre a marzo, la vita sociale si ferma praticamente del tutto. Ma stiamo parlando di -25°C, non di "un po' freddino." Con temperature che gelano il respiro in 30 secondi, uscire diventa letteralmente pericoloso.
 
-A -25°C non si tratta di "mettere un maglione in più." È una questione di sopravvivenza: l'aria brucia la pelle e camminare più di 10 minuti può causare **frostbite**.
+A -25°C non si tratta di "mettere un maglione in più." È una questione di sopravvivenza: l'aria brucia la pelle e camminare più di 10 minuti può causare _<span class="c-red">frostbite</span>_.
 
-Le nostre attività invernali? **Netflix and chill**, per necessità. Si organizzano **movie nights** a casa, si ordina cibo a domicilio e si fanno videochiamate con gli amici perché incontrarsi di persona significa rischiare l'ipotermia. I bar chiudono presto, i ristoranti si svuotano. Se esci, è per assoluta necessità: lavoro, spesa veloce, palestra.
+Le nostre attività invernali? <span class="c-red">Netflix and chill</span>, per necessità. Si organizzano <span class="c-red">movie nights</span> a casa, si ordina cibo a domicilio e si fanno videochiamate con gli amici perché incontrarsi di persona significa rischiare l'ipotermia. I bar chiudono presto, i ristoranti si svuotano. Se esci, è per assoluta necessità: lavoro, spesa veloce, palestra.
 
-**L'inverno italiano = la vita continua**
-Il mio primo inverno a Firenze, gennaio: 3°C, sono a casa in pigiama pensando "Perfetto, stagione ibernazione attivata."
+**<span class="c-aqua">L'inverno italiano = la vita continua</span>** Il mio primo inverno a Firenze, gennaio: 3°C, sono a casa in pigiama pensando "Perfetto, stagione ibernazione attivata."
 
 Alle 18 un amico mi scrive: "Aperitivo stasera?"
 "Ma ci sono 3°C!" rispondo.
