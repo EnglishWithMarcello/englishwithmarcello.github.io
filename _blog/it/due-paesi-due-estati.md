@@ -13,7 +13,7 @@ english_corner:
     definition: stato di freddo estremo, vicino allo zero in casa
 ---
 
-Voglio condividere uno dei contrasti culturali più drammatici che ho vissuto: l'eterna battaglia tra l'ossessione nordamericana per l'aria condizionata e la paura italiana del colpo d'aria.
+Voglio condividere uno dei contrasti culturali più drammatici che ho vissuto: l'eterna battaglia tra l'ossessione nordamericana per l'aria condizionata e la paura italiana del <span class="c-aqua">colpo d'aria</span>.
 
 **<span class="c-aqua">Quando fuori è estate e dentro è inverno</span>** In Canada, l'estate arriva e con essa il rituale sacro di trasformare ogni spazio al chiuso in un enorme freezer. L'ufficio? 18°C. Il centro commerciale? Serve una spedizione artica. Il cinema? Portati il piumino o rischi il _<span class="c-red">freeze</span>_. Il supermercato era il peggio — entravi in pantaloncini e flip-flop e in pochi minuti iniziavi a mettere in discussione tutte le tue scelte di vita.
 
