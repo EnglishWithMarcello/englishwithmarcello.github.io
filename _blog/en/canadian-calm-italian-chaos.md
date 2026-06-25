@@ -61,33 +61,33 @@ No one expects a tourist to speak perfect English.
 
 **<span class="c-aqua">A simple conversation:</span>**
 
-_Officer: Good afternoon._
+> _Officer: Good afternoon._
 
-_You: Good afternoon._
+> _You: Good afternoon._
 
-_Officer: What's the purpose of your visit?_
+> _Officer: What's the purpose of your visit?_
 
-_You: I'm here on vacation._
+> _You: I'm here on vacation._
 
-_Officer: How long are you staying?_
+> _Officer: How long are you staying?_
 
-_You: Two weeks._
+> _You: Two weeks._
 
-_Officer: Where will you be staying?_
+> _Officer: Where will you be staying?_
 
-_You: I'll be staying at the Marriott Downtown Hotel, at 525 Bay Street, Toronto._
+> _You: I'll be staying at the Marriott Downtown Hotel, at 525 Bay Street, Toronto._
 
-_Officer: Do you have a return ticket?_
+> _Officer: Do you have a return ticket?_
 
-_You: Yes, I do._
+> _You: Yes, I do._
 
-_Officer: Are you bringing any food, alcohol, tobacco, or other items to declare?_
+> _Officer: Are you bringing any food, alcohol, tobacco, or other items to declare?_
 
-_You: No, I'm not._
+> _You: No, I'm not._
 
-_Officer: Thank you. Enjoy your stay in Canada._
+> _Officer: Thank you. Enjoy your stay in Canada._
 
-_You: Thank you!_
+> _You: Thank you!_
 
 **<span class="c-aqua">My tip</span>** As a Canadian, my best advice is this: don't try to impress the border officer with complicated English.
 
