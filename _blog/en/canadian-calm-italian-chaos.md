@@ -20,7 +20,6 @@ line_spacing: '1.5'
 ---
 
 Are you about to travel to Canada and feeling a little nervous about speaking with a border officer? Don't worry—it's completely normal. The good news is that, in most cases, the inspection only takes a few minutes, and the questions are very simple.
-
 In this guide, you'll learn what happens when you arrive in Canada, the most common questions border officers ask, and how to answer them confidently—even if your English isn't perfect.
 
 **<span class="c-aqua">What happens when you arrive in Canada?</span>** After getting off the plane, simply follow the signs for <span class="c-red">_immigration or arrivals_</span>.
@@ -38,16 +37,23 @@ The officer simply wants to confirm your identity, understand the purpose of you
 
 - Why are you travelling to Canada? 
 You could answer: I'm here on vacation / I'm visiting friends / I'm here for business / I'm here to study.
+
 The most important thing is to be honest and keep your answer simple.
+
 - How long will you be in Canada?
 You could answer: I'm staying for 2 weeks / I'll be here for 10 days / I'm here for business / I'm leaving on August 15th.
+
 - Where are you staying during your trip?
 You could answer: I'll be staying at a hotel in Toronto / I'll be staying at my friend's house / I rented an apartment in Vancouver
+
 - Do you have a ticket for your flight home?
 The answer is simply: Yes, I do.
+
 It's always a good idea to have your return ticket ready on your phone or as a printed copy
+
 - Are you carrying any food, alcoholic beverages, or tobacco products?
 Always answer honestly.
+
 Canada has strict rules about bringing certain foods, plants, and animal products into the country. If you're unsure whether something is allowed, it's always better to declare it when you arrive.
 
 **<span class="c-aqua">What if I don't understand the question?</span>** This is one of the biggest worries for many travellers. The truth is that Canadian border officers speak with people from all over the world every day. They're used to hearing different accents and talking to visitors whose English isn't perfect.
@@ -90,17 +96,14 @@ No one expects a tourist to speak perfect English.
 > _You: Thank you!_
 
 **<span class="c-aqua">My tip</span>** As a Canadian, my best advice is this: don't try to impress the border officer with complicated English.
-
 Speak slowly, use simple sentences, and answer only the question you've been asked.
-
 Canadians appreciate honesty, politeness, and clear communication much more than a sophisticated vocabulary.
 
-Remember, communicating well doesn't mean speaking perfect English—it means making yourself understood naturally and confidently.
+<span class="c-aqua">Remember, communicating well doesn't mean speaking perfect English—it means making yourself understood naturally and confidently.</span>
 
 **<span class="c-aqua">Enjoy your trip!</span>**  Once you've finished passport control, all that's left to do is collect your luggage and start your Canadian adventure.
-
 Knowing the questions you may be asked in advance can help you feel much more relaxed and confident when you arrive.
 
-Remember: you don't need perfect English. Just listen carefully, answer honestly, and stay calm.
+<span class="c-aqua">Remember: you don't need perfect English. Just listen carefully, answer honestly, and stay calm.</span>
 
 <span class="c-red">Welcome to Canada! </span>🇨🇦
