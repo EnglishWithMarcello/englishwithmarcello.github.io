@@ -10,12 +10,12 @@ excerpt: "Quando arrivi in Canada, il controllo alla frontiera è di solito rapi
 date: 2026-03-16
 images: []
 english_corner:
-  - term: Business meetings
-    definition: riunioni di lavoro programmate
-  - term: Voice messages
-    definition: messaggi vocali
-  - term: Group chat
-    definition: una chat condivisa con più persone
+  - term: Border officer
+    definition: l'ufficiale di frontiera (o l'agente di controllo passaporti) che controlla il tuo passaporto e ti fa domande sul tuo viaggio.
+  - term: Immigration (or Arrivals)
+    definition: l'area di controllo passaporti dove entri nel paese e mostri il tuo passaporto.
+  - term: Self-service kiosk
+    definition: un totem automatico utilizzato per scansionare il tuo passaporto e rispondere alle domande sul viaggio.
 line_spacing: '1.5'
 ---
 
