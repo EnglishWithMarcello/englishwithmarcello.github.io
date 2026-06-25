@@ -8,6 +8,13 @@ category: Food
 excerpt: 'Two countries, two stories of flavour: poutine and pizza show us how food brings people together everywhere.'
 date: 2026-03-28
 images: []
+english_corner:
+  - term: Cheese curds
+    definition: fresh, soft pieces of cheese used in poutine
+  - term: Gravy
+    definition: a thick sauce made from meat juices 
+  - term: Homemade
+    definition: food made at home, not bought from a store
 line_spacing: '1.5'
 ---
 
