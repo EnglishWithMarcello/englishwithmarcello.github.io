@@ -8,6 +8,13 @@ category: Cultura
 excerpt: "Il paradosso dell'aria condizionata: congelatori artici, correnti killer e nonne in allerta massima."
 date: 2026-04-09
 images: []
+english_corner:
+  - term: Draft
+    definition: una corrente d'aria fredda indesiderata
+  - term: Chill
+    definition: quella sensazione di freddo quando la temperatura scende 
+  - term: Freeze
+    definition: stato di freddo estremo, vicino allo zero in casa
 line_spacing: '1.5'
 ---
 
