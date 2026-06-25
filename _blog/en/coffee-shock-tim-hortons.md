@@ -5,7 +5,7 @@ featured: false
 title: 'THE COFFEE SHOCK: FROM TIM HORTONS TO THE ITALIAN BAR'
 featured_image: /assets/images/blog/clement-proust-VsJTT-VTx7I-unsplash.jpg
 category: Daily Life
-excerpt: From giant Tim Hortons cups to espresso sipped standing at the bar. Life lessons you learn right there, on the spot.
+excerpt: Moving from Canada to Italy meant discovering a completely different coffee culture. Instead of large takeaway coffees, Italians enjoy a quick espresso at the bar and follow their own coffee traditions. Over time, I learned that the Italian bar is much more than a place to drink coffee—it's a place to meet and socialize.
 date: 2026-06-08
 images: []
 english_corner:

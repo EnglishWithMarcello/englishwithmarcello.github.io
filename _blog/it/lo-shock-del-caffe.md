@@ -5,7 +5,7 @@ featured: false
 title: "SHOCK DEL CAFFE': DA TIM HORTONS AL BAR ITALIANO"
 featured_image: /assets/images/blog/clement-proust-VsJTT-VTx7I-unsplash.jpg
 category: Vita Quotidiana
-excerpt: Dalle grandi tazze di Tim Hortons all'espresso bevuto in piedi al bar. Lezioni di vita che impari lì, sul momento.
+excerpt: "Trasferirmi dal Canada all'Italia ha significato scoprire una cultura del caffè completamente diversa. Invece dei grandi caffè da asporto, gli italiani bevono un espresso veloce al bar e seguono le proprie tradizioni legate al caffè. Con il tempo, ho capito che il bar italiano è molto più di un posto dove bere un caffè: è un luogo dove incontrarsi e socializzare."
 date: 2026-06-08
 images: []
 english_corner:
