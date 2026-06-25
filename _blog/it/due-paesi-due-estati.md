@@ -1,8 +1,5 @@
 ---
-layout: post
-lang: it
-ref: two-countries-two-summers
-permalink: /it/blog/due-paesi-due-estati/
+translationKey: two-countries-two-summers
 date: 2026-04-09
 category: "Cultura"
 title: "Due Paesi, Due Estati e Due Modi Molto Diversi di Viverle"
