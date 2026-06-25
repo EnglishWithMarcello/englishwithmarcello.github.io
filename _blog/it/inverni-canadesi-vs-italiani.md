@@ -3,7 +3,7 @@ translationKey: canadian-vs-italian-winters
 published: true
 featured: false
 title: 'CANADIAN WINTERS VS ITALIAN WINTERS: A BIG DIFFERENCE'
-featured_image: ''
+featured_image: /assets/images/blog/Immagine 2026-06-25 094541.png
 category: Clima
 excerpt: Gli inverni canadesi e quelli italiani sono completamente diversi. In Canada, le temperature gelide rendono difficili le attività all'aperto e spesso costringono le persone a rimanere in casa. In Italia, invece, le persone continuano la loro vita quotidiana, incontrano gli amici e si godono la vita anche quando fa freddo. Questa esperienza mi ha mostrato che l'inverno viene vissuto in modo molto diverso nei due paesi.
 date: 2026-05-27

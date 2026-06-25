@@ -3,7 +3,7 @@ translationKey: canadian-vs-italian-winters
 published: true
 featured: false
 title: 'INVERNI IN CANADA E IN ITALIA: UNA GRANDE DIFFERENZA'
-featured_image: ''
+featured_image: /assets/images/blog/Immagine 2026-06-25 094541.png
 category: Climate
 excerpt: Canadian and Italian winters are completely different. In Canada, freezing temperatures make outdoor activities difficult and often force people to stay at home. In Italy, people continue their daily routines, meeting friends and enjoying life even when it's cold. This experience showed me that winter is seen very differently in the two countries.
 date: 2026-05-27
