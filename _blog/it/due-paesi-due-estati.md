@@ -1,7 +1,7 @@
 ---
 translationKey: two-countries-two-summers
 title: DUE PAESI, DUE ESTATI E DUE MODI MOLTO DIVERSI DI VIVERLE
-featured_image: /assets/images/blog/ChatGPT Image 25 giu 2026, 11_08_51.png
+featured_image: /assets/images/blog/ChatGPT Image 25 giu 2026, 11_15_08.png
 category: Cultura
 excerpt: Una delle più grandi differenze culturali tra il Canada e l'Italia riguarda l'aria condizionata. I canadesi mantengono gli ambienti interni molto freddi anche d'estate, mentre gli italiani evitano di usare l'aria condizionata troppo forte perché temono il colpo d'aria, che si ritiene possa causare diversi problemi di salute.
 date: 2026-04-09
