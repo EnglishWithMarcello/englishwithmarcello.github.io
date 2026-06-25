@@ -35,23 +35,23 @@ The officer simply wants to confirm your identity, understand the purpose of you
 
 **<span class="c-aqua">The most common questions:</span>** 
 
-> _<span class="c-aqua">Why are you travelling to Canada?</span>_ 
+> _<span class="c-blue">Why are you travelling to Canada?</span>_ 
 > You could answer: _I'm here on vacation / I'm visiting friends / I'm here for business / I'm here to study._
 
 > The most important thing is to be honest and keep your answer simple.
 
-> _<span class="c-aqua">How long will you be in Canada?</span>_
+> _<span class="c-blue">How long will you be in Canada?</span>_
 > You could answer: _I'm staying for 2 weeks / I'll be here for 10 days / I'm here for business / I'm leaving on August 15th._
 
-> _<span class="c-aqua">Where are you staying during your trip?</span>_
+> _<span class="c-blue">Where are you staying during your trip?</span>_
 > You could answer: _I'll be staying at a hotel in Toronto / I'll be staying at my friend's house / I rented an apartment in Vancouver_
 
-> _<span class="c-aqua">Do you have a ticket for your flight home?</span>_
+> _<span class="c-blue">Do you have a ticket for your flight home?</span>_
 > The answer is simply: _Yes, I do._
 
 > It's always a good idea to have your return ticket ready on your phone or as a printed copy
 
-> _<span class="c-aqua">Are you carrying any food, alcoholic beverages, or tobacco products?</span>_
+> _<span class="c-blue">Are you carrying any food, alcoholic beverages, or tobacco products?</span>_
 > Always answer honestly.
 
 > Canada has strict rules about bringing certain foods, plants, and animal products into the country. If you're unsure whether something is allowed, it's always better to declare it when you arrive.
