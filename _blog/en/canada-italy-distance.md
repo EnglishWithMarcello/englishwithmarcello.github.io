@@ -23,7 +23,7 @@ english_corner:
 line_spacing: '1.5'
 ---
 
-Welcome to my blog! Today let's talk about distances. And about how I had to completely recalibrate my idea of "near" and "far." <span class="c-aqua">Canada is big, really BIG.</span> To go from Toronto to Vancouver, you have to drive about 4,400 km. That's 44 hours of driving. To give you an idea: it's like driving from Milan to… Jerusalem. 
+Welcome to my blog! Today let's talk about distances. And about how I had to completely recalibrate my idea of "near" and "far." <span class="c-aqua">Canada is big, really BIG.</span> To go from Toronto to Vancouver, you have to drive about 4,400 km. That's 44 hours of driving. To give you an idea: it's like driving from Milan to Jerusalem. 
 
 **<span class="c-aqua">My first Italian shock:</span>**
 
