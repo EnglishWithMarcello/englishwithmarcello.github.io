@@ -22,7 +22,7 @@ I'm taking you on a journey between two iconic dishes: Canadian poutine and Ital
 
 **<span class="c-aqua">Poutine: Canada's pride</span>** For those who don't know it, poutine is the Canadian dish: French fries, _<span class="c-red">cheese curds</span>_, and _<span class="c-red">gravy</span>_. It might sound like a mess, but it's pure genius. Poutine isn't just food — it's a symbol of comfort, resilience, and community spirit. Every serving tells a story of shared moments after a long day, family gatherings, and warmth needed to face cold winters.
 
-**<span class="c-aqua">Pizza: the Italian conquest</span>** Pizza isn't just food in Italy, it's a symbol of tradition, regional pride, and shared moments. Each slice tells a story of _homemade_ family recipes, local ingredients, and centuries of history.
+**<span class="c-aqua">Pizza: the Italian conquest</span>** Pizza isn't just food in Italy, it's a symbol of tradition, regional pride, and shared moments. Each slice tells a story of _<span class="c-red">homemade</span>_ family recipes, local ingredients, and centuries of history.
 
 **<span class="c-aqua">What I miss about poutine:</span>**
 
