@@ -3,7 +3,7 @@ translationKey: canadian-stereotypes-italians-believe
 published: true
 featured: false
 title: GLI STEREOTIPI SUL CANADA CHE GLI ITALIANI CREDONO SIANO VERI
-featured_image: /assets/images/blog/Immagine 2026-06-25 101024.png
+featured_image: /assets/images/blog/ChatGPT Image 25 giu 2026, 10_43_01.png
 category: Miti
 excerpt: Molti degli stereotipi più comuni sul Canada non sono veri. Gli orsi polari non vivono nelle città, non tutti i canadesi parlano francese e la maggior parte delle persone vive in aree urbane moderne. Tuttavia, alcuni stereotipi, come fare il barbecue anche con la neve, sono davvero veri. Il post mette inoltre in evidenza alcune vere tradizioni e abitudini canadesi, come l'amore per lo sciroppo d'acero, la poutine e il dire sempre "sorry" (scusa), anche quando non è colpa loro.
 date: 2026-05-15

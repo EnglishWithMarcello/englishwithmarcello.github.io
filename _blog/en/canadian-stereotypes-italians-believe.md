@@ -3,7 +3,7 @@ translationKey: canadian-stereotypes-italians-believe
 published: true
 featured: false
 title: CANADIAN STEREOTYPES ITALIANS ACTUALLY BELIEVE
-featured_image: /assets/images/blog/Immagine 2026-06-25 101024.png
+featured_image: /assets/images/blog/ChatGPT Image 25 giu 2026, 10_43_01.png
 category: Myths
 excerpt: Many common stereotypes about Canada are not true. Polar bears do not live in cities, not all Canadians speak French, and most people live in modern urban areas. However, some stereotypes, like barbecuing in the snow, are actually true. The post also highlights some real Canadian traditions and habits, such as loving maple syrup, poutine, and saying "sorry" all the time.
 date: 2026-05-15
