@@ -8,6 +8,13 @@ category: Culture
 excerpt: 'The air conditioning paradox: arctic freezers, killer drafts, and grandmas on high alert.'
 date: 2026-04-09
 images: []
+english_corner:
+  - term: Draft
+    definition: an unwanted cold current of air
+  - term: Chill
+    definition: that cold feeling when the room temperature drops 
+  - term: Freeze
+    definition: extreme cold state, near zero temperature indoors
 line_spacing: '1.5'
 ---
 
