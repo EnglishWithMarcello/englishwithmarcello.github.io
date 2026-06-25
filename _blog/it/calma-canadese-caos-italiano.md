@@ -2,11 +2,11 @@
 translationKey: canadian-calm-italian-chaos
 published: true
 featured: true
-title: 'Dalla Calma Canadese al Caos Italiano: Come Cambia la Comunicazione'
+title: COME PARLARE CON UN AGENTE DI FRONTIERA CANADESE (SENZA STRESS)
 title_color: ''
 featured_image: ''
 category: Comunicazione
-excerpt: Scopri come i canadesi restano calmi mentre gli italiani trasformano ogni WhatsApp in un caos infinito!
+excerpt: "Quando arrivi in Canada, il controllo alla frontiera è di solito rapido e consiste in alcune semplici domande sul tuo viaggio. Non è necessario parlare un inglese perfetto: rispondi semplicemente in modo sincero e con frasi brevi e chiare. Se non capisci una domanda, chiedi gentilmente all'ufficiale di ripeterla o di parlare più lentamente. Mantenere la calma e mostrarsi sicuri di sé contribuirà a rendere il controllo semplice e senza stress."
 date: 2026-03-16
 images: []
 english_corner:
