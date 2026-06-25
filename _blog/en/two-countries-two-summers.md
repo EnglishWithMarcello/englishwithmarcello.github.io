@@ -2,7 +2,7 @@
 translationKey: two-countries-two-summers
 title: TWO COUNTRIES, TWO SUMMERS, AND TWO VERY DIFFERENT WAYS OF LIVING THEM
 category: Culture
-excerpt: 'The air conditioning paradox: arctic freezers, killer drafts, and grandmas on high alert.'
+excerpt: One of the biggest cultural differences between Canada and Italy is air conditioning. Canadians keep indoor spaces extremely cold even in summer, while Italians avoid strong AC because they fear the colpo d'aria, which is believed to cause health problems.
 date: 2026-04-09
 english_corner:
   - term: Draft
