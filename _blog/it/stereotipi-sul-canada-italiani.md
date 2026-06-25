@@ -26,7 +26,7 @@ Sfatiamo alcuni _<span class="c-red">myths</span>_ sul Canada che sento spesso
 
 <span class="c-aqua">**#3 Tutti vivono in una capanna nel bosco** </span>Realtà: Toronto ha 3 milioni di abitanti. Vancouver è ultra-moderna. Montreal è più europea di molte città europee. Abbiamo anche grattacieli, tram e ingorghi stradali.
 
-*<span class="c-aqua">*#4 Parlate tutti francese** </span>Realtà: Solo il Quebec è davvero bilingue. A Toronto, se provi a parlare francese, la gente ti guarda perplessa, come se stessi parlando in codice.
+_<span class="c-aqua">_#4 Parlate tutti francese\*\* </span>Realtà: Solo il Quebec è davvero bilingue. A Toronto, se provi a parlare francese, la gente ti guarda perplessa, come se stessi parlando in codice.
 
 <span class="c-aqua">**#5 Conoscete tutti i Nativi Americani** </span>Realtà: Il Canada ha molte diverse _<span class="c-red">First Nations</span>_, con culture, lingue e tradizioni completamente diverse tra loro. È come dire che tutti gli europei sono uguali.
 
