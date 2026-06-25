@@ -37,24 +37,28 @@ The officer simply wants to confirm your identity, understand the purpose of you
 
 **<span class="c-aqua">The most common questions:</span>** 
 
-> _1. <span class="c-blue">Why are you travelling to Canada?</span>_ 
+> _<span class="c-blue">1. Why are you travelling to Canada?</span>_ 
 
 > You could answer: _I'm here on vacation / I'm visiting friends / I'm here for business / I'm here to study._
 
 > The most important thing is to be honest and keep your answer simple.
 
-> _2. <span class="c-blue">How long will you be in Canada?</span>_
+> _<span class="c-blue">2. How long will you be in Canada?</span>_
+
 > You could answer: _I'm staying for 2 weeks / I'll be here for 10 days / I'm here for business / I'm leaving on August 15th._
 
-> _3. <span class="c-blue">Where are you staying during your trip?</span>_
+> _<span class="c-blue">3. Where are you staying during your trip?</span>_
+
 > You could answer: _I'll be staying at a hotel in Toronto / I'll be staying at my friend's house / I rented an apartment in Vancouver_
 
-> _4.<span class="c-blue"> Do you have a ticket for your flight home?</span>_
+> _<span class="c-blue"> 4. Do you have a ticket for your flight home?</span>_
+
 > The answer is simply: _Yes, I do._
 
 > It's always a good idea to have your return ticket ready on your phone or as a printed copy
 
-> _5. <span class="c-blue">Are you carrying any food, alcoholic beverages, or tobacco products?</span>_
+> _<span class="c-blue">5. Are you carrying any food, alcoholic beverages, or tobacco products?</span>_
+
 > Always answer honestly.
 
 > Canada has strict rules about bringing certain foods, plants, and animal products into the country. If you're unsure whether something is allowed, it's always better to declare it when you arrive.
@@ -104,7 +108,7 @@ Canadians appreciate honesty, politeness, and clear communication much more than
 
 <span class="c-aqua">Remember, communicating well doesn't mean speaking perfect English—it means making yourself understood naturally and confidently.</span>
 
-**<span class="c-aqua">Enjoy your trip!</span>**  Once you've finished passport control, all that's left to do is collect your luggage and start your Canadian adventure.
+Once you've finished passport control, all that's left to do is collect your luggage and start your Canadian adventure.
 Knowing the questions you may be asked in advance can help you feel much more relaxed and confident when you arrive.
 
 <span class="c-aqua">Remember: you don't need perfect English. Just listen carefully, answer honestly, and stay calm.</span>
