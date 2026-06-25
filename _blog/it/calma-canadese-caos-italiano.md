@@ -4,7 +4,7 @@ published: true
 featured: true
 title: COME PARLARE CON UN AGENTE DI FRONTIERA CANADESE (SENZA STRESS)
 title_color: ''
-featured_image: /assets/images/blog/ChatGPT Image 25 giu 2026, 12_57_35.png
+featured_image: /assets/images/blog/ChatGPT Image 25 giu 2026, 14_10_45.png
 category: Comunicazione
 excerpt: "Quando arrivi in Canada, il controllo alla frontiera è di solito rapido e consiste in alcune semplici domande sul tuo viaggio. Non è necessario parlare un inglese perfetto: rispondi semplicemente in modo sincero e con frasi brevi e chiare. Se non capisci una domanda, chiedi gentilmente all'ufficiale di ripeterla o di parlare più lentamente. Mantenere la calma e mostrarsi sicuri di sé contribuirà a rendere il controllo semplice e senza stress."
 date: 2026-03-16
