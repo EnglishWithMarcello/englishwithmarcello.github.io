@@ -4,7 +4,7 @@ published: true
 featured: true
 title: HOW TO TALK TO A CANADIAN BORDER OFFICER (WITHOUT STRESS)
 title_color: ''
-featured_image: ''
+featured_image: /assets/images/blog/ChatGPT Image 25 giu 2026, 12_57_35.png
 category: Communication
 excerpt: When you arrive in Canada, the border inspection is usually quick and involves a few simple questions about your trip. You don't need perfect English—just answer honestly and keep your responses short and clear. If you don't understand a question, politely ask the officer to repeat or speak more slowly. Staying calm and confident will help make the process easy and stress-free.
 date: 2026-03-16
