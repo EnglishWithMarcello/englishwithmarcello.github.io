@@ -22,7 +22,7 @@ line_spacing: '1.5'
 **<span class="c-aqua">Stai per partire per il Canada e sei un po' nervoso all'idea di parlare con un agente di frontiera?</span>** Non preoccuparti: è assolutamente normale. La buona notizia è che, nella maggior parte dei casi, il controllo dura solo pochi minuti e le domande sono molto semplici.
 In questa guida scoprirai cosa succede quando arrivi in Canada, quali sono le domande più comuni che gli agenti di frontiera fanno ai viaggiatori e come rispondere con sicurezza, anche se il tuo inglese non è perfetto.
 
-**<span class="c-aqua">Cosa succede quando arrivi in Canada?</span>** Dopo essere sceso dall'aereo, segui semplicemente le indicazioni per _<span class="c-red">immigration_ oppure _arrivals</span>_.
+**<span class="c-aqua">Cosa succede quando arrivi in Canada?</span>** Dopo essere sceso dall'aereo, segui semplicemente le indicazioni per <span class="c-red">_immigration_ oppure _arrivals_</span>.
 In molti aeroporti canadesi, il primo passo è utilizzare un _<span class="c-red">self-service kiosk</span>_. Qui scannerizzerai il passaporto e risponderai ad alcune semplici domande sul tuo viaggio. Al termine, il chiosco stamperà una ricevuta che dovrai mostrare all'agente di frontiera.
 
 Successivamente, ti metterai in fila per il controllo passaporti al _<span class="c-red">border officer</span>._
@@ -36,22 +36,28 @@ L'agente vuole semplicemente confermare la tua identità, capire il motivo del t
 **<span class="c-aqua">Le domande più comuni:</span>**
 
 > _<span class="c-blue">Why are you travelling to Canada?</span>_ 
+> 
+
 > Puoi rispondere: _I'm here on vacation / I'm visiting friends / I'm here for business / I'm here to study._
 
 > La cosa più importante è essere sinceri e mantenere la risposta semplice.
 
 > _<span class="c-blue">How long will you be in Canada?</span>_
+
 > Puoi rispondere: _I'm staying for 2 weeks / I'll be here for 10 days / I'm here for business / I'm leaving on August 15th._
 
 > _<span class="c-blue">Where are you staying during your trip?</span>_
+
 > Puoi rispondere: _I'll be staying at a hotel in Toronto / I'll be staying at my friend's house / I rented an apartment in Vancouver_
 
 > _<span class="c-blue">Do you have a ticket for your flight home?</span>_
+
 > La risposta è semplicemente: _Yes, I do._
 
 > È sempre una buona idea avere il biglietto di ritorno pronto sul telefono oppure in formato cartaceo.
 
 > _<span class="c-blue">Are you carrying any food, alcoholic beverages, or tobacco products?</span>_
+
 > Rispondi sempre con sincerità.
 
 > Il Canada ha regole molto rigide sull'importazione di alcuni alimenti, piante e prodotti di origine animale. Se hai dei dubbi su qualcosa che stai trasportando, è sempre meglio dichiararlo al tuo arrivo.
@@ -66,7 +72,7 @@ Se non capisci una domanda, puoi dire educatamente:
 
 <span class="c-aqua">Nessuno si aspetta che un turista parli un inglese perfetto.</span>
 
-**Un semplice esempio di conversazione:**
+**<span class="c-aqua">Un semplice esempio di conversazione:</span>**
 
 > _Agente: Good afternoon._
 
