@@ -8,7 +8,7 @@ category: Geography
 excerpt: Canadian English is a unique variety of English that combines features of both British and American English. It has its own spelling, vocabulary, and pronunciation, with some influence from French. Learning these differences can help you communicate more confidently and better understand Canadian culture.
 date: 2026-06-18T07:00
 images:
-  - image: /assets/images/blog/ChatGPT Image 25 giu 2026, 10_45_57.png
+  - image: /assets/images/blog/ChatGPT Image 25 giu 2026, 14_32_37.png
     size: full
     align: center
     caption: ''
