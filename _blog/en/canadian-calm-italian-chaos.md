@@ -20,9 +20,11 @@ line_spacing: '1.5'
 ---
 
 **<span class="c-aqua">Are you about to travel to Canada and feeling a little nervous about speaking with a border officer?</span>** Don't worry—it's completely normal. The good news is that, in most cases, the inspection only takes a few minutes, and the questions are very simple.
+
 In this guide, you'll learn what happens when you arrive in Canada, the most common questions border officers ask, and how to answer them confidently—even if your English isn't perfect.
 
 **<span class="c-aqua">What happens when you arrive in Canada?</span>** After getting off the plane, simply follow the signs for <span class="c-red">_immigration or arrivals_</span>.
+
 At many Canadian airports, you'll first use a _<span class="c-red">self-service kiosk</span>_ where you'll scan your passport and answer a few basic questions about your trip. Once you're finished, the kiosk will print a receipt for you to show to the border officer.
 
 After that, you'll join the line for passport control with a _<span class="c-red">border officer</span>_.
@@ -35,23 +37,24 @@ The officer simply wants to confirm your identity, understand the purpose of you
 
 **<span class="c-aqua">The most common questions:</span>** 
 
-> _<span class="c-blue">Why are you travelling to Canada?</span>_ 
+> _1. <span class="c-blue">Why are you travelling to Canada?</span>_ 
+
 > You could answer: _I'm here on vacation / I'm visiting friends / I'm here for business / I'm here to study._
 
 > The most important thing is to be honest and keep your answer simple.
 
-> _<span class="c-blue">How long will you be in Canada?</span>_
+> _2. <span class="c-blue">How long will you be in Canada?</span>_
 > You could answer: _I'm staying for 2 weeks / I'll be here for 10 days / I'm here for business / I'm leaving on August 15th._
 
-> _<span class="c-blue">Where are you staying during your trip?</span>_
+> _3. <span class="c-blue">Where are you staying during your trip?</span>_
 > You could answer: _I'll be staying at a hotel in Toronto / I'll be staying at my friend's house / I rented an apartment in Vancouver_
 
-> _<span class="c-blue">Do you have a ticket for your flight home?</span>_
+> _4.<span class="c-blue"> Do you have a ticket for your flight home?</span>_
 > The answer is simply: _Yes, I do._
 
 > It's always a good idea to have your return ticket ready on your phone or as a printed copy
 
-> _<span class="c-blue">Are you carrying any food, alcoholic beverages, or tobacco products?</span>_
+> _5. <span class="c-blue">Are you carrying any food, alcoholic beverages, or tobacco products?</span>_
 > Always answer honestly.
 
 > Canada has strict rules about bringing certain foods, plants, and animal products into the country. If you're unsure whether something is allowed, it's always better to declare it when you arrive.
@@ -106,4 +109,4 @@ Knowing the questions you may be asked in advance can help you feel much more re
 
 <span class="c-aqua">Remember: you don't need perfect English. Just listen carefully, answer honestly, and stay calm.</span>
 
-<span class="c-red">Welcome to Canada! </span>🇨🇦
+<span class="c-red">Welcome to Canada! 🇨🇦</span>
