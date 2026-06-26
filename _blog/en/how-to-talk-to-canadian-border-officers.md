@@ -1,5 +1,5 @@
 ---
-translationKey: canadian-calm-italian-chaos
+translationKey: how-to-talk-to-canadian-border-officers
 published: true
 featured: true
 title: HOW TO TALK TO A CANADIAN BORDER OFFICER (WITHOUT STRESS)
